@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-09-07T23:41:06.398590+00:00",
+  "home_search": {
+    "root": "/home/jerisuh",
+    "files_enumerated": 2615888,
+    "large_or_parameter_header_candidates": 3534,
+    "header_max_bytes": 8192,
+    "errors": 0,
+    "trained_af3_archive_found": false
+  },
+  "other_search": {
+    "roots": [
+      "/media/jerisuh",
+      "/mnt",
+      "/opt",
+      "/srv"
+    ],
+    "files_enumerated": 3983671,
+    "candidate_metadata_checked": 152462,
+    "large_archive_candidates": 162,
+    "trained_af3_archive_found": false,
+    "inaccessible": [
+      "mounted volumes lost+found",
+      "/opt/containerd"
+    ],
+    "directory_symlinks_followed": false
+  },
+  "browser_download_metadata": {
+    "profiles_checked": 6,
+    "af3_trained_download_record_found": false,
+    "temporary_locked_database_snapshots_removed": true,
+    "limitations": "Browser histories may be incomplete; no claim about all past downloads."
+  },
+  "docker_metadata": {
+    "containers_checked": 117,
+    "af3_related_containers_found": 0,
+    "model_mounts_within_other_search_roots": true
+  },
+  "local_result": "Only the already rejected test-parameter archive was found as an AF3 model.",
+  "resolution": {
+    "official_source": "https://github.com/google-deepmind/alphafold3/tree/v3.0.4#obtaining-model-parameters",
+    "download_url": "https://storage.googleapis.com/alphafold3/af3.bin.zst",
+    "configured_model_dir": "/home/jerisuh/models/af3-google-20260604",
+    "receipt": "docs/af3-google-weights-acquisition.json",
+    "full_validation": "docs/af3-google-weights-validation.json",
+    "server_restarted": true,
+    "server_pid": 706910
+  },
+  "new_gpu_jobs": [
+    "88692f7955d94c50814f6e3121f963b6",
+    "3730181a45734f0dafa92a78917c48dd"
+  ],
+  "old_test_file_preserved": true,
+  "scope_note": "No unrelated file contents, browser URLs or credentials are included. CPU metadata/header searches preceded the separately authorized AF3 calculations.",
+  "verification": {
+    "pytest": {
+      "passed": 327,
+      "failed": 0,
+      "seconds": 29.91
+    },
+    "ruff": "passed",
+    "wheel_build": "passed",
+    "selected_molecular_browser": "passed",
+    "real_inference_browser": "docs/af3-official-weights-ui-verification.json",
+    "structural_audit": "docs/af3-trained-structure-quality.json",
+    "ile_template_correction": "docs/af3-ile-template-correction.json",
+    "genuine_completed_jobs": 2,
+    "unique_diffusion_samples": 10,
+    "gpu_inference_reexecuted_after_template_fix": false,
+    "comprehensive_structure_quality": "unassessed; low confidence in explicit MSA/template-free exploration"
+  }
+}

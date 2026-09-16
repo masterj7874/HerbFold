@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-09-14T02:32:20.653519+00:00",
+  "status": "passed",
+  "scope": "Real UniProt requests and real AF3 input/preflight in a separate temporary store; no AF3 execution submitted.",
+  "workspace": "tmp/uniprot-real-verification-bv6bybyn",
+  "targets": [
+    {
+      "accession": "P00533",
+      "name": "Epidermal growth factor receptor",
+      "gene": "EGFR",
+      "organism": "Homo sapiens",
+      "taxon_id": 9606,
+      "length": 1210,
+      "sequence_sha256": "dbb4583267ad40a7dfd854ee3c44ce4be38e137d0570e3eb76cf1854a74e7246",
+      "source": "https://www.uniprot.org/uniprotkb/P00533/entry",
+      "retrieved_at": "2026-09-14T02:32:17.240215+00:00",
+      "reviewed": true,
+      "sequence_version": 2,
+      "entry_version": 301,
+      "provenance": {
+        "kind": "uniprot_rest",
+        "requested_accession": "P00533",
+        "metadata_url": "https://rest.uniprot.org/uniprotkb/P00533.json",
+        "metadata_response_sha256": "90c459656751eac791efc2f369f49145d38cc949f5b41bf628180ac0a6874b02",
+        "sequence_url": "https://rest.uniprot.org/uniprotkb/P00533.json",
+        "sequence_response_sha256": "90c459656751eac791efc2f369f49145d38cc949f5b41bf628180ac0a6874b02",
+        "alias_mappings": []
+      },
+      "registered_at": "2026-09-14T02:32:17.241828+00:00"
+    },
+    {
+      "accession": "P00533-2",
+      "name": "Epidermal growth factor receptor (isoform 2)",
+      "gene": "EGFR",
+      "organism": "Homo sapiens",
+      "taxon_id": 9606,
+      "length": 405,
+      "sequence_sha256": "4a251c349e409c5f418b0c75db666194f14b69079df35f963f887985f44394b8",
+      "source": "https://www.uniprot.org/uniprotkb/P00533-2/entry",
+      "retrieved_at": "2026-09-14T02:32:18.287065+00:00",
+      "reviewed": true,
+      "sequence_version": null,
+      "entry_version": 301,
+      "provenance": {
+        "kind": "uniprot_rest",
+        "requested_accession": "P00533-2",
+        "metadata_url": "https://rest.uniprot.org/uniprotkb/P00533.json",
+        "metadata_response_sha256": "90c459656751eac791efc2f369f49145d38cc949f5b41bf628180ac0a6874b02",
+        "sequence_url": "https://rest.uniprot.org/uniprotkb/P00533-2.fasta",
+        "sequence_response_sha256": "10a39d01c59a47b481879d16da847d940484310fe509049e50b8050920113f8b",
+        "alias_mappings": [],
+        "parent_accession": "P00533",
+        "isoform_name": "2",
+        "parent_sequence_version": 2
+      },
+      "registered_at": "2026-09-14T02:32:18.288364+00:00"
+    }
+  ],
+  "prepared_jobs": [
+    {
+      "accession": "P00533",
+      "job_id": "adb1c0ed31c44807b6ee4fef2a620fbc",
+      "status": "prepared",
+      "sequence_length": 1210,
+      "runnable": true,
+      "input_sequence_matches_registered": true,
+      "source_preserved": true
+    },
+    {
+      "accession": "P00533-2",
+      "job_id": "8f8e91c86e554a98b59a08d6cf7f215d",
+      "status": "prepared",
+      "sequence_length": 405,
+      "runnable": true,
+      "input_sequence_matches_registered": true,
+      "source_preserved": true
+    }
+  ],
+  "registration_survives_store_reopen": true,
+  "gpu_calculations_started": 0
+}

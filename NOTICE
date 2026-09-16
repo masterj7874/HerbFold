@@ -1,0 +1,11 @@
+HerbFold
+Copyright 2026 Youngsahng Suh and the HerbFold contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party components and data are subject to their own terms; see
+THIRD_PARTY.md. AlphaFold 3 source code and model parameters, the full MSA and
+template databases, IBM Quantum access credentials, OpenAI API access and the
+downloaded public compound collections (COCONUT, LOTUS, ChEMBL, PubChem, Tox21,
+UniProt, PDB) are NOT included in this repository and are governed by their
+respective providers' terms.

@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-09-15T07:25:22.739355+00:00",
+  "endpoint": "/api/discovery/compounds",
+  "kind": "natural_product",
+  "checks": [
+    {
+      "name_ko": "인삼",
+      "unique_structure_search_count": 1302,
+      "resolution": {
+        "query": "Panax ginseng",
+        "taxa": [
+          "Panax ginseng"
+        ],
+        "reported_latin": "Panax ginseng",
+        "mapping_source_url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=42",
+        "source_urls": [
+          "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=42"
+        ],
+        "scope": "reported_taxon",
+        "source_name": "한국한의약진흥원 한의약소재은행 공개 보유 한약재 색인",
+        "license_label": "unspecified; factual reference index only",
+        "scope_note": "공개 원천에 보고된 학명으로 검색합니다. 모든 공정서 기원이나 실제 한약재 성분을 검증한 목록은 아닙니다.",
+        "original_query": "인삼",
+        "mapped": true,
+        "korean_name": "인삼"
+      },
+      "exists": true
+    },
+    {
+      "name_ko": "녹용",
+      "unique_structure_search_count": 32,
+      "resolution": {
+        "query": "Cervus nippon",
+        "taxa": [
+          "Cervus nippon"
+        ],
+        "reported_latin": "Cervus nippon",
+        "mapping_source_url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=10",
+        "source_urls": [
+          "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=10"
+        ],
+        "scope": "reported_taxon",
+        "source_name": "한국한의약진흥원 한의약소재은행 공개 보유 한약재 색인",
+        "license_label": "unspecified; factual reference index only",
+        "scope_note": "공개 원천에 보고된 학명으로 검색합니다. 모든 공정서 기원이나 실제 한약재 성분을 검증한 목록은 아닙니다.",
+        "original_query": "녹용",
+        "mapped": true,
+        "korean_name": "녹용"
+      },
+      "exists": true
+    },
+    {
+      "name_ko": "천마",
+      "unique_structure_search_count": 134,
+      "resolution": {
+        "query": "Gastrodia elata",
+        "taxa": [
+          "Gastrodia elata"
+        ],
+        "reported_latin": "Gastrodia elata",
+        "mapping_source_url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=50",
+        "source_urls": [
+          "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=50"
+        ],
+        "scope": "reported_taxon",
+        "source_name": "한국한의약진흥원 한의약소재은행 공개 보유 한약재 색인",
+        "license_label": "unspecified; factual reference index only",
+        "scope_note": "공개 원천에 보고된 학명으로 검색합니다. 모든 공정서 기원이나 실제 한약재 성분을 검증한 목록은 아닙니다.",
+        "original_query": "천마",
+        "mapped": true,
+        "korean_name": "천마"
+      },
+      "exists": true
+    }
+  ],
+  "interpretation": "Counts are source-reported taxon-linked structure search results, not verified composition counts for an individual medicinal material.",
+  "catalog_mutations": 0,
+  "new_af3_calculations": 0,
+  "result": "All three requested materials already resolve to nonempty natural-product structure results."
+}

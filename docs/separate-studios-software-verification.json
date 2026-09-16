@@ -1,0 +1,89 @@
+{
+  "verified_at": "2026-09-08T05:23:58.124617+00:00",
+  "scope": "Separate scientific workspaces and selected AF3 file diagnostics; no clinical accuracy, affinity, efficacy, safety or quantum advantage validation.",
+  "python_tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 574,
+    "failed": 0,
+    "warnings": 2,
+    "elapsed_seconds": 37.08,
+    "log": "tmp/separate-studios-pytest.log"
+  },
+  "frontend_tests": {
+    "command": "node --test frontend/tests/*.test.mjs",
+    "passed": 17,
+    "failed": 0,
+    "log": "tmp/separate-studios-frontend-tests.log"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check src tests scripts/verify_separate_studios_ui.py",
+    "passed": true
+  },
+  "frontend_build": {
+    "command": "npm run build",
+    "passed": true,
+    "typescript_check_included": true,
+    "log": "tmp/separate-studios-frontend-build.log",
+    "assets": [
+      "/app/assets/index-DBuGw9s9.js",
+      "/app/assets/rolldown-runtime-hePW80VL.js",
+      "/app/assets/molecular-engine-Dr-Y2Aq8.js",
+      "/app/assets/index-BNsN5XKw.css"
+    ],
+    "served_build_matches": true
+  },
+  "wheel": {
+    "path": "tmp/separate-studios-build/herbfold-0.2.0-py3-none-any.whl",
+    "sha256": "b9254fe1f2f4b311f3ff0cdb200518847938b5cd9bf587de31f41c27276309c2",
+    "source_and_bundled_assets_match": true
+  },
+  "api_checks": {
+    "url": "http://127.0.0.1:8873",
+    "status": "ok",
+    "alphafold_ready": true
+  },
+  "actual_ui_verification": {
+    "passed": true,
+    "report": "docs/separate-studios-ui-verification.json",
+    "source_artifacts_unchanged": true,
+    "javascript_errors": [],
+    "qpu_submissions": 0,
+    "af3_submissions": 0,
+    "synthetic_data_used": false
+  },
+  "actual_diagnostics_files": {
+    "jobs": 4,
+    "registered_files": 24,
+    "unique_samples": 20,
+    "top_ranked_copies": 4,
+    "report": "docs/af3-selected-diagnostics-verification.json"
+  },
+  "source_sha256": {
+    "frontend/src/App.tsx": "988df78d413c8d456bc6731a0e9635b72cf9d1286a39830be3d50a29211066cf",
+    "frontend/src/components/StudioWorkspaceHeader.tsx": "5d3a71b6ca0c86ab11c1c02228a88b04d1c45f9f5176dccbe5afa9e7a81e3735",
+    "frontend/src/components/studio-workspaces.css": "799ab5b236c20d5bdca7df199b7b264d7d529c5df6f92a24ace0cd9d6ca39219",
+    "frontend/src/lib/workspaceNavigation.ts": "be84dd0f5d01033d87a8dfa46a888e91a55617bc185cc4244d99923eec3bde6c",
+    "frontend/src/components/QuantumStudio.tsx": "c5bcd1f3cdf0ad09543a579928e81b8b5b1eac8f3a91b09ecb3b1b984c3affe3",
+    "frontend/src/components/quantum-studio.css": "1403c8dc06525a347b302cf227f042ccefb292a5cb1b1cb63e998ba9d017bf8f",
+    "frontend/src/components/AlphaFoldDiagnostics.tsx": "69a4a196f3740889d677585701fdebebf813ddf0bbbf6da153d50f888aaa32ae",
+    "frontend/src/components/alphafold-diagnostics.css": "ab992d89afdd4cfad6a26d5ab8b5655f170bade65d7f2d33a1b5d1fa996732b0",
+    "frontend/src/lib/alphaFoldDiagnostics.ts": "0f7077ab7a12e790f67878ad3cfe5b853d415f737401e9236e374d13e9121041",
+    "frontend/tests/alphafold-diagnostics.test.mjs": "cf7599f784b46453eca4aefdb36bb40195e85754bb9520002293116f4686c4a8",
+    "src/herbfold/af3_diagnostics.py": "b3844d9d6402a415e6183d25457db727d45be2f40145ba0e07f05251f0d541f3",
+    "src/herbfold/af3_studio.py": "e87a6763f758ffc6fa6f86568d17c5d2eac9e7ef263750df114ada8d976f200d",
+    "tests/test_af3_diagnostics.py": "cfa09c3b60afb25d0ac546a254d88bd5247ce604ea41d20b8db09b1af22ddb63",
+    "scripts/verify_separate_studios_ui.py": "4b62d6e32caf8cea52a4807f5749812ca02ae63ec39173490b99f5c537d82d94"
+  },
+  "evidence_sha256": {
+    "docs/separate-studios-ui-verification.json": "ed9ac77cdb9b091c5b03f1492ff3c590c18666f2cd985f5a595ee3d8c36701da",
+    "docs/af3-selected-diagnostics-verification.json": "af9a26009915df4a4114f865b87504122e558f8d8eb4eac78c048ed47bdd4654"
+  },
+  "known_warnings": [
+    "Existing Starlette/anyio deprecations and large 3D engine bundle warning."
+  ],
+  "corrected_regressions": [
+    "A restored analysis could be replaced by the newest analysis during simultaneous list initialization; actual reload regression now passes.",
+    "Unapplied target edits now block opening the previous target calculation panel."
+  ],
+  "summary_report": "docs/separate-studios-validation.md"
+}

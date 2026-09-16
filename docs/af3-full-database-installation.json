@@ -1,0 +1,474 @@
+{
+  "status": "complete",
+  "verified_at": "2026-09-08T01:40:18.574426+00:00",
+  "database_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0",
+  "official_source_plan": "docs/af3-msa-db-plan.json",
+  "manifest_path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0/official_databases_manifest.json",
+  "scope": "Installer verified complete compressed and expanded contents while decoding. This independent audit verifies all official source identifiers/checksums, archive and expanded metadata, complete PDB inventory and every installed CIF file stat. It does not repeat full database content hashing.",
+  "compressed_bytes": 238784443666,
+  "expanded_content_bytes": 672435030468,
+  "components": [
+    {
+      "kind": "fasta",
+      "relative_path": "bfd-first_non_consensus_sequences.fasta",
+      "size_bytes": 18171626364,
+      "sha256": "fd87dca06401b03f4ac3c59a82dac14db491a7933ed6abaa19e14e02c6eb1af5",
+      "record_count": 65984053,
+      "sequence_symbol_count": 16748600902,
+      "stat": {
+        "size": 18171626364,
+        "mtime_ns": 1788826654482782192,
+        "ctime_ns": 1788826655849795025,
+        "inode": 113377300,
+        "device": 66306
+      },
+      "object": "bfd-first_non_consensus_sequences.fasta.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/bfd-first_non_consensus_sequences.fasta.zst",
+        "generation": "1730822885415645",
+        "size_bytes": 9880478127,
+        "sha256": "04389850d9b217d7c9a2143960b3f42c2aa38ac297c7bf7634de6fca28331e9f",
+        "crc32c": "v9fbdw==",
+        "md5": "zN6I+uuetisMg9B+3L80WQ==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:16:42.238389+00:00",
+        "stat": {
+          "size": 9880478127,
+          "mtime_ns": 1788826602173288945,
+          "ctime_ns": 1788826602237289551,
+          "inode": 113377292,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T00:42:03.797630+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "mgy_clusters_2022_05.fa",
+      "size_bytes": 128579703018,
+      "sha256": "9e7f50956c19cbcd8181dc5e9d7d6eebc08257cc858fc07d3ec88fd6b48dbbc9",
+      "record_count": 623796864,
+      "sequence_symbol_count": 114578946467,
+      "stat": {
+        "size": 128579703018,
+        "mtime_ns": 1788831299062482061,
+        "ctime_ns": 1788831308154398188,
+        "inode": 113377319,
+        "device": 66306
+      },
+      "object": "mgy_clusters_2022_05.fa.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/mgy_clusters_2022_05.fa.zst",
+        "generation": "1730826709796458",
+        "size_bytes": 69333008025,
+        "sha256": "584b0918d0d31a7284e38127f46e4a98544efa40c5ef8a609c7e17a547dc76ed",
+        "crc32c": "gPPw4g==",
+        "md5": "0kguqSsozLFOI1u0hottUA==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:59:36.220099+00:00",
+        "stat": {
+          "size": 69333008025,
+          "mtime_ns": 1788829176085371091,
+          "ctime_ns": 1788829176219372535,
+          "inode": 113377288,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T01:35:08.154886+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "size_bytes": 80977012680,
+      "sha256": "14c05ac0827c9bf06a37acfc4b3dd1d66e48d5a5f713c0de68611aa7fedc00f9",
+      "record_count": 37105891,
+      "sequence_symbol_count": 76752808514,
+      "stat": {
+        "size": 80977012680,
+        "mtime_ns": 1788829503991792272,
+        "ctime_ns": 1788829506448817215,
+        "inode": 113377311,
+        "device": 66306
+      },
+      "object": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+        "generation": "1730828153681603",
+        "size_bytes": 17028641580,
+        "sha256": "a8a2d56b0035d8b64193aa5f6d7b04f38cb3ccb8ac406309b1c9e8936328f271",
+        "crc32c": "0jZlYg==",
+        "md5": "LambL5cEiWzptPXdlCXkMg==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:45:13.483408+00:00",
+        "stat": {
+          "size": 17028641580,
+          "mtime_ns": 1788828313338446530,
+          "ctime_ns": 1788828313482447774,
+          "inode": 113377307,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T01:05:06.450175+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "mmcif_tree",
+      "relative_path": "mmcif_files",
+      "size_bytes": 250115836927,
+      "sha256": "02abe68f11d519a6e482ab59491de1f1e4aee051c71a168e2146dc244424fd83",
+      "record_count": 195858,
+      "stat": {
+        "size": 4354048,
+        "mtime_ns": 1788831583598691719,
+        "ctime_ns": 1788831583756186272,
+        "inode": 113377314,
+        "device": 66306
+      },
+      "excluded_ancillary_members": [
+        {
+          "source_url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_2022_09_28_mmcif_files.tar.zst",
+          "source_generation": "1730832728463652",
+          "archive_path": "mmcif_files/mmcif_files.tar.gz",
+          "size_bytes": 45,
+          "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+          "preserved_relative_path": ".installation/ancillary/mmcif_files.tar.gz",
+          "stat": {
+            "size": 45,
+            "mtime_ns": 1788830563736182547,
+            "ctime_ns": 1788830563739483156,
+            "inode": 113508354,
+            "device": 66306
+          },
+          "reason": "Verified non-CIF member preserved without nested extraction"
+        }
+      ],
+      "inventory": {
+        "relative_path": "pdb_inventory.jsonl",
+        "sha256": "02abe68f11d519a6e482ab59491de1f1e4aee051c71a168e2146dc244424fd83",
+        "stat": {
+          "size": 48298030,
+          "mtime_ns": 1788831583599184694,
+          "ctime_ns": 1788831583756186272,
+          "inode": 113377313,
+          "device": 66306
+        }
+      },
+      "object": "pdb_2022_09_28_mmcif_files.tar.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_2022_09_28_mmcif_files.tar.zst",
+        "generation": "1730832728463652",
+        "size_bytes": 56979074571,
+        "sha256": "4706ec0d948ed7a005b30eea21f5a7f9362b067e48d8bea2605671a49bd43c24",
+        "crc32c": "waDF1A==",
+        "md5": "E0R+Fh0IHH1d9xeBtt4kJw==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:48:20.633643+00:00",
+        "stat": {
+          "size": 56979074571,
+          "mtime_ns": 1788828500438121543,
+          "ctime_ns": 1788828500632124340,
+          "inode": 113377289,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T01:39:43.823579+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "pdb_seqres_2022_09_28.fasta",
+      "size_bytes": 232899463,
+      "sha256": "1b3bc853322c32f2eea818065b8f569a18d25a52326a8d2c2c3de85752e55fe1",
+      "record_count": 692804,
+      "sequence_symbol_count": 189848466,
+      "stat": {
+        "size": 232899463,
+        "mtime_ns": 1788826203351549613,
+        "ctime_ns": 1788826203416550126,
+        "inode": 113377291,
+        "device": 66306
+      },
+      "object": "pdb_seqres_2022_09_28.fasta.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_seqres_2022_09_28.fasta.zst",
+        "generation": "1730832733047846",
+        "size_bytes": 26493534,
+        "sha256": "2d8ea914059e43a10be0d5abe538a61b768a6ab2fbb39b26651602907f1c2c77",
+        "crc32c": "uZUlYQ==",
+        "md5": "hqG5LTmIykmdeWUdB1N5sg==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:10:02.922184+00:00",
+        "stat": {
+          "size": 26493534,
+          "mtime_ns": 1788826202907546107,
+          "ctime_ns": 1788826202921546218,
+          "inode": 113377286,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T00:34:03.971742+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "size_bytes": 228433680,
+      "sha256": "55ef718071244ad7433678ba249aaeb67707b499f0189a38edadca8d64972318",
+      "record_count": 871599,
+      "sequence_symbol_count": 138115553,
+      "stat": {
+        "size": 228433680,
+        "mtime_ns": 1788826204254556744,
+        "ctime_ns": 1788826204300557107,
+        "inode": 113377295,
+        "device": 66306
+      },
+      "object": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+        "generation": "1730832743346741",
+        "size_bytes": 56604542,
+        "sha256": "681632ea6d5fb9e01fad23c35f71b14228f4c0730cdf63a65eff8b428d273112",
+        "crc32c": "mw7VNQ==",
+        "md5": "fdgzyQiugoizIP2zY7VoSA==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:10:03.695877+00:00",
+        "stat": {
+          "size": 56604542,
+          "mtime_ns": 1788826203676552180,
+          "ctime_ns": 1788826203695552330,
+          "inode": 113377287,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T00:34:04.045235+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "rnacentral_active_seq_id_90_cov_80_linclust.fasta",
+      "size_bytes": 13860314914,
+      "sha256": "6c33f15c48d2ac8d7d42a8699ff2e7bd6a4816f8a074157522d3c5b591f927eb",
+      "record_count": 15630712,
+      "sequence_symbol_count": 13271415730,
+      "stat": {
+        "size": 13860314914,
+        "mtime_ns": 1788828328374576430,
+        "ctime_ns": 1788828328523577717,
+        "inode": 113377302,
+        "device": 66306
+      },
+      "object": "rnacentral_active_seq_id_90_cov_80_linclust.fasta.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/rnacentral_active_seq_id_90_cov_80_linclust.fasta.zst",
+        "generation": "1730833037254881",
+        "size_bytes": 3519676108,
+        "sha256": "52eec2f751406e9d39a14d5b4ecc38138a00a26169f7ca0a45cfd650518d8878",
+        "crc32c": "iZSwlA==",
+        "md5": "9NtJoxqMJXYhDV+icylhFw==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:34:30.872395+00:00",
+        "stat": {
+          "size": 3519676108,
+          "mtime_ns": 1788827670692874766,
+          "ctime_ns": 1788827670870876318,
+          "inode": 113377305,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T00:45:28.524757+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "uniprot_all_2021_04.fa",
+      "size_bytes": 108447942931,
+      "sha256": "76f32efd5c6ba73857b0beb3bf1ff823cf0dbef3d876c70d80ee387db13a169d",
+      "record_count": 225619586,
+      "sequence_symbol_count": 78608056346,
+      "stat": {
+        "size": 108447942931,
+        "mtime_ns": 1788829660446365680,
+        "ctime_ns": 1788829664685407932,
+        "inode": 113377315,
+        "device": 66306
+      },
+      "object": "uniprot_all_2021_04.fa.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/uniprot_all_2021_04.fa.zst",
+        "generation": "1730835786074627",
+        "size_bytes": 48688827585,
+        "sha256": "af53fd1e48c797ec9de4133e1e30f5dea807cf8867a9a1d648e870e85b23c34a",
+        "crc32c": "k9mSMA==",
+        "md5": "yr9hi+b4yFOXyX9J19qTBw==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:49:07.166863+00:00",
+        "stat": {
+          "size": 48688827585,
+          "mtime_ns": 1788828547071783681,
+          "ctime_ns": 1788828547165784995,
+          "inode": 113377301,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T01:07:44.686123+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    },
+    {
+      "kind": "fasta",
+      "relative_path": "uniref90_2022_05.fa",
+      "size_bytes": 71821260491,
+      "sha256": "f0c61e13a6f71ec2b19e44d35acb531ed3a06a4a839fc12feb80d3adf883c049",
+      "record_count": 153742194,
+      "sequence_symbol_count": 52375181535,
+      "stat": {
+        "size": 71821260491,
+        "mtime_ns": 1788830138415044741,
+        "ctime_ns": 1788830140804067811,
+        "inode": 113377304,
+        "device": 66306
+      },
+      "object": "uniref90_2022_05.fa.zst",
+      "download": {
+        "url": "https://storage.googleapis.com/alphafold-databases/v3.0/uniref90_2022_05.fa.zst",
+        "generation": "1730837673075080",
+        "size_bytes": 33271639594,
+        "sha256": "4c780bbc8b47248dceee5faf956f445be2923f15f58be7eb47b07ef1f2618e6d",
+        "crc32c": "OT/GbQ==",
+        "md5": "yRNsUsqeJcLOjTpWnUfpEg==",
+        "crc32c_verified": true,
+        "md5_verified": true,
+        "verified_at": "2026-09-08T00:31:50.336083+00:00",
+        "stat": {
+          "size": 33271639594,
+          "mtime_ns": 1788827510129472290,
+          "ctime_ns": 1788827510335474093,
+          "inode": 113377296,
+          "device": 66306
+        }
+      },
+      "verified_at": "2026-09-08T01:15:40.805662+00:00",
+      "zstd_decode_verified": true,
+      "validation_version": 2,
+      "zstd_frame_eof_verified": true,
+      "source_full_hashes_reverified_during_decode": true
+    }
+  ],
+  "backend_inspection": {
+    "status": "ready",
+    "runnable": true,
+    "blockers": [],
+    "provenance": {
+      "inspection_method": "verified_install_receipt_and_required_file_stats_v1",
+      "full_contents_rehashed_this_check": false,
+      "fingerprint_sha256": "1ac78093e381753979c045f98c902dfa22f2a5391a6d3cdeae90bc3c92518ded",
+      "manifest_sha256": "64d95333d58915a1bcff93855c31f9314d12623cea23cf87680e996948a08ec5",
+      "source_tag": "v3.0.4",
+      "source_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+      "installed_at": "2026-09-08T01:39:43.835313+00:00",
+      "components": [
+        {
+          "relative_path": "bfd-first_non_consensus_sequences.fasta",
+          "kind": "fasta",
+          "size_bytes": 18171626364,
+          "sha256": "fd87dca06401b03f4ac3c59a82dac14db491a7933ed6abaa19e14e02c6eb1af5",
+          "record_count": 65984053
+        },
+        {
+          "relative_path": "mgy_clusters_2022_05.fa",
+          "kind": "fasta",
+          "size_bytes": 128579703018,
+          "sha256": "9e7f50956c19cbcd8181dc5e9d7d6eebc08257cc858fc07d3ec88fd6b48dbbc9",
+          "record_count": 623796864
+        },
+        {
+          "relative_path": "mmcif_files",
+          "kind": "mmcif_tree",
+          "size_bytes": 250115836927,
+          "sha256": "02abe68f11d519a6e482ab59491de1f1e4aee051c71a168e2146dc244424fd83",
+          "record_count": 195858
+        },
+        {
+          "relative_path": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta",
+          "kind": "fasta",
+          "size_bytes": 80977012680,
+          "sha256": "14c05ac0827c9bf06a37acfc4b3dd1d66e48d5a5f713c0de68611aa7fedc00f9",
+          "record_count": 37105891
+        },
+        {
+          "relative_path": "pdb_seqres_2022_09_28.fasta",
+          "kind": "fasta",
+          "size_bytes": 232899463,
+          "sha256": "1b3bc853322c32f2eea818065b8f569a18d25a52326a8d2c2c3de85752e55fe1",
+          "record_count": 692804
+        },
+        {
+          "relative_path": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta",
+          "kind": "fasta",
+          "size_bytes": 228433680,
+          "sha256": "55ef718071244ad7433678ba249aaeb67707b499f0189a38edadca8d64972318",
+          "record_count": 871599
+        },
+        {
+          "relative_path": "rnacentral_active_seq_id_90_cov_80_linclust.fasta",
+          "kind": "fasta",
+          "size_bytes": 13860314914,
+          "sha256": "6c33f15c48d2ac8d7d42a8699ff2e7bd6a4816f8a074157522d3c5b591f927eb",
+          "record_count": 15630712
+        },
+        {
+          "relative_path": "uniprot_all_2021_04.fa",
+          "kind": "fasta",
+          "size_bytes": 108447942931,
+          "sha256": "76f32efd5c6ba73857b0beb3bf1ff823cf0dbef3d876c70d80ee387db13a169d",
+          "record_count": 225619586
+        },
+        {
+          "relative_path": "uniref90_2022_05.fa",
+          "kind": "fasta",
+          "size_bytes": 71821260491,
+          "sha256": "f0c61e13a6f71ec2b19e44d35acb531ed3a06a4a839fc12feb80d3adf883c049",
+          "record_count": 153742194
+        }
+      ],
+      "expanded_size_bytes": 672435030468
+    }
+  },
+  "verified_components": 9,
+  "original_databases_modified_by_audit": false,
+  "gpu_jobs_started_by_audit": 0
+}

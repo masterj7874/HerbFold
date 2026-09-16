@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "method": "deduplicated-terminal-brics-parallel-v1",
+  "rdkit_version": "2026.03.6",
+  "created_at": "2026-09-07T21:29:06.564332+00:00",
+  "status": "completed",
+  "phase": "generation",
+  "catalog_path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/runtime/discovery/discovery.sqlite3",
+  "catalog_max_id": 766417,
+  "catalog_max_provenance_id": 1436510,
+  "preparation_role": "natural_product",
+  "preparation_cursor": 0,
+  "prepared_parents": 767661,
+  "invalid_parents": 474,
+  "processed_parents": 768135,
+  "natural_fragments": 117422,
+  "drug_fragments": 1296,
+  "attempted": 5000000,
+  "sanitized": 4681136,
+  "passed_filters": 3725507,
+  "retained_unique": 3701740,
+  "duplicates": 18358,
+  "rejected": 1274496,
+  "known_parent_matches": 5406,
+  "requested_attempts": 5000000,
+  "cursor": 5000000,
+  "generation_seconds": 304.33620087298914,
+  "preparation_seconds": 94.76646220500697,
+  "elapsed_seconds": 399.1026630779961,
+  "compatible_pair_slots_upper_bound": 85150669,
+  "workers": 16,
+  "interpretation": "Measured chemical enumeration only. Attempts, sanitized proposals and unique retained structures are different counts. QED/physicochemical filters do not validate efficacy, safety, binding, synthesizability or patent novelty. The finite compatible-pair count is an upper bound, not a count of drugs.",
+  "updated_at": "2026-09-07T21:37:41.154135+00:00",
+  "distinct_catalog_parent_ids": 765971,
+  "parent_role_counts": {
+    "drug": 3331,
+    "natural_product": 764330
+  },
+  "dual_role_parent_ids": 1690,
+  "parent_count_scope": "prepared_parents counts (catalog_id, source_role); shared natural/drug identities can contribute two rows",
+  "retained_milestones": [
+    {
+      "retained_threshold": 1000000,
+      "committed_retained_unique": 1000079,
+      "attempted": 1315904,
+      "generation_seconds": 85.5604566760012,
+      "timing_resolution": "committed batch boundary; at most 512 attempts per batch",
+      "measured": true
+    },
+    {
+      "retained_threshold": 2000000,
+      "committed_retained_unique": 2000163,
+      "attempted": 2662976,
+      "generation_seconds": 168.02120920699963,
+      "timing_resolution": "committed batch boundary; at most 512 attempts per batch",
+      "measured": true
+    },
+    {
+      "retained_threshold": 3000000,
+      "committed_retained_unique": 3000101,
+      "attempted": 3847232,
+      "generation_seconds": 247.53817696099577,
+      "timing_resolution": "committed batch boundary; at most 512 attempts per batch",
+      "measured": true,
+      "raw_committed_retained_unique": 3000103,
+      "post_generation_lineage_exclusions": 2
+    }
+  ],
+  "worker_pid": 3165761,
+  "logical_cpu_count": 128,
+  "aggregate_rss_mb": 155.69921875,
+  "sampled_peak_aggregate_rss_mb": 2436.65234375,
+  "aggregate_memory_scope": "Sum of live parent and direct-child RSS sampled at commits; shared pages may be counted multiple times",
+  "database_bytes": 1602277376,
+  "attempts_per_second": 16429.198976846947,
+  "retained_per_second": 12163.324604110683,
+  "process_peak_rss_mb": 238.64453125,
+  "children_peak_rss_mb": 236.09375,
+  "memory_measurement": "ru_maxrss: parent process and maximum reaped child, not summed live RSS",
+  "projection": {
+    "is_measured": false,
+    "target_attempts": 100000000,
+    "estimated_seconds": 6086.724017459783,
+    "basis_attempts": 5000000,
+    "finite_space_allows_target": false,
+    "limitation": "Linear projection of measured prefix only; later fragment-label groups can differ in runtime and filtering yield"
+  },
+  "lineage_rejected": 3,
+  "post_generation_lineage_correction": {
+    "raw_retained_unique": 3701743,
+    "excluded": 3,
+    "excluded_rowids": [
+      2412410,
+      2740849,
+      3072772
+    ],
+    "corrected_at": "2026-09-07T21:46:23.662568+00:00",
+    "scope": "Three recorded lineages had only one identical standardized parent across both source roles. Excluded after timed run; generation timing was not rerun."
+  },
+  "audit": {
+    "actual_unique_rows": 3701740,
+    "rowid_range": [
+      1,
+      3701743
+    ],
+    "rowids_contiguous": false,
+    "unique_constraint": "Full canonical isomeric SMILES plus SHA-256 key",
+    "sorted_structure_digest_sha256": "b8641601549726781902371990e680fb8b0b7c6220aeae4af54627bde8eb4fbf",
+    "all_rows_filter_violations": 0,
+    "all_rows_distinct_parent_lineage_failures": 0,
+    "distinct_parent_criterion": "Both ancestry sets are nonempty and are not the same singleton standardized-parent structure set",
+    "sample_size": 500,
+    "sample_strategy": "Lowest structure SHA-256 values, deterministic hash sample",
+    "sample_chemistry_replay_failures": 0,
+    "sample_parent_fragment_lineage_failures": 0,
+    "sample_unique_fragments_checked": 868,
+    "scope": "All stored row counts/filter columns checked; chemistry and original-parent fragment reconstruction sampled, not full biological validation",
+    "top_qed": [
+      {
+        "smiles": "CC(=O)C[C@@H](O)C(=O)N1c2ccccc2CCc2ccccc21",
+        "qed": 0.9482404623695022,
+        "left_fragment": 95557,
+        "right_fragment": 523
+      },
+      {
+        "smiles": "CC(=O)C[C@H](O)C(=O)N1c2ccccc2CCc2ccccc21",
+        "qed": 0.9482404623695022,
+        "left_fragment": 91083,
+        "right_fragment": 523
+      },
+      {
+        "smiles": "Cc1c(C)n(OC[C@](C)(N)C(C)(C)C)c2ccccc2c1=O",
+        "qed": 0.9482269474226862,
+        "left_fragment": 25501,
+        "right_fragment": 541
+      },
+      {
+        "smiles": "CN1C[C@H](C(=O)CCC#N)C=C2c3cccc4[nH]cc(c34)C[C@H]21",
+        "qed": 0.9482151489446065,
+        "left_fragment": 117367,
+        "right_fragment": 186
+      },
+      {
+        "smiles": "Cc1c2ccc(OC3=C(CO)N=C4C=CC=CC43)cc2nn1C",
+        "qed": 0.9481070399456516,
+        "left_fragment": 69470,
+        "right_fragment": 592
+      },
+      {
+        "smiles": "CN1C[C@H](C(=O)CCC#N)C[C@@H]2c3cccc4[nH]cc(c34)C[C@H]21",
+        "qed": 0.9479856104930612,
+        "left_fragment": 117367,
+        "right_fragment": 196
+      },
+      {
+        "smiles": "O=S(=O)(NC1c2ccccc2Oc2ccccc21)C1CC1",
+        "qed": 0.9479755515389674,
+        "left_fragment": 67194,
+        "right_fragment": 368
+      },
+      {
+        "smiles": "Cc1ccc([S@@](=O)Oc2ccc3c(c2)CCC(=O)N3)cc1",
+        "qed": 0.9479284245744763,
+        "left_fragment": 63093,
+        "right_fragment": 669
+      },
+      {
+        "smiles": "Cc1ccc([S@@](=O)Oc2cccc3c2CCC(=O)N3)cc1",
+        "qed": 0.9479284245744763,
+        "left_fragment": 63093,
+        "right_fragment": 782
+      },
+      {
+        "smiles": "Cc1ccc([S@@](=O)Oc2ccc3c(c2)NC(=O)CC3)cc1",
+        "qed": 0.9479284245744763,
+        "left_fragment": 63093,
+        "right_fragment": 519
+      },
+      {
+        "smiles": "CC(C)[C@](C)(C#N)N1CC=C(n2c(=O)[nH]c3ccccc32)CC1",
+        "qed": 0.9477923901698941,
+        "left_fragment": 65339,
+        "right_fragment": 969
+      },
+      {
+        "smiles": "CC(C)C(C)(C#N)N1CC=C(n2c(=O)[nH]c3ccccc32)CC1",
+        "qed": 0.9477923901698941,
+        "left_fragment": 88207,
+        "right_fragment": 969
+      },
+      {
+        "smiles": "CC(C)[C@@](C)(C#N)N1CC=C(n2c(=O)[nH]c3ccccc32)CC1",
+        "qed": 0.9477923901698941,
+        "left_fragment": 99417,
+        "right_fragment": 969
+      },
+      {
+        "smiles": "O=C(C[C@]1(O)Cc2ccccc21)C1CCc2cc(F)ccc2O1",
+        "qed": 0.9477001315037165,
+        "left_fragment": 102166,
+        "right_fragment": 933
+      },
+      {
+        "smiles": "O=C(C[C@@]1(O)Cc2ccccc21)C1CCc2cc(F)ccc2O1",
+        "qed": 0.9477001315037165,
+        "left_fragment": 93808,
+        "right_fragment": 933
+      },
+      {
+        "smiles": "c1nc2c([nH]1)CN(CC[C@@H]1CCc3ccc4c(c31)CCO4)CC2",
+        "qed": 0.9476860987973762,
+        "left_fragment": 62007,
+        "right_fragment": 712
+      },
+      {
+        "smiles": "c1nc2c([nH]1)CCN(CC[C@@H]1CCc3ccc4c(c31)CCO4)C2",
+        "qed": 0.9476860987973762,
+        "left_fragment": 68802,
+        "right_fragment": 712
+      },
+      {
+        "smiles": "CCC(C)(C)C(=O)N/C=C1/CCn2c1nc1ccccc1c2=O",
+        "qed": 0.9476188607287207,
+        "left_fragment": 107038,
+        "right_fragment": 250
+      },
+      {
+        "smiles": "NS(=O)(=O)c1ccc(O[C@H]2CCCc3ccccc32)cc1",
+        "qed": 0.9475756407283402,
+        "left_fragment": 69607,
+        "right_fragment": 394
+      },
+      {
+        "smiles": "CC1(S(=O)(=O)NC2CCCn3c2cc2ccccc23)CC1",
+        "qed": 0.947568471014655,
+        "left_fragment": 69850,
+        "right_fragment": 1212
+      }
+    ],
+    "checked_at": "2026-09-07T21:48:27.058257+00:00"
+  },
+  "screening_filters": {
+    "mw": [
+      120,
+      650
+    ],
+    "logp": [
+      -2,
+      6
+    ],
+    "max_tpsa": 180,
+    "min_qed": 0.25,
+    "max_heavy_atoms": 256,
+    "qed_alert_rejection": false
+  },
+  "enumeration_order": "BRICS attachment-label pair groups; SHA-256 ordering of unique fragment SMILES within each group",
+  "timing_scope": "Accumulated active preparation/generation wall seconds; excludes pauses between run invocations"
+}

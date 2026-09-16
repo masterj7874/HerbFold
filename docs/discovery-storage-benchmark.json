@@ -1,0 +1,79 @@
+{
+  "observed_at": "2026-09-07T10:00:28.251233+00:00",
+  "source_url": "https://zenodo.org/records/19360665",
+  "early_5000_import": {
+    "processed_records": 5000,
+    "inserted_compounds": 1460,
+    "inserted_records": 4978,
+    "duplicate_records": 22,
+    "invalid_records": 0,
+    "elapsed_seconds": 2.251,
+    "rows_per_second": 2216.7,
+    "rdkit_version": "2026.03.6"
+  },
+  "in_flight_import": {
+    "status": "running",
+    "processed_records": 53000,
+    "inserted_compounds": 38563,
+    "inserted_records": 53000,
+    "elapsed_seconds": 50.462,
+    "invalid_records": 0,
+    "source_id": "coconut-2026-09"
+  },
+  "keyset_scan": {
+    "rows": 50000,
+    "elapsed_seconds": 0.122701,
+    "rows_per_second": 407494.6,
+    "source": "lotus-2026-04",
+    "batch_size": 500,
+    "include_sources": false,
+    "first_id": 1,
+    "last_id": 50000,
+    "query_plan": [
+      [
+        10,
+        0,
+        0,
+        "SEARCH discovery_provenance USING COVERING INDEX discovery_provenance_source_compound (source_id=? AND compound_id>? AND compound_id<?)"
+      ]
+    ]
+  },
+  "storage_observation": {
+    "id": 1,
+    "compound_count": 265828,
+    "provenance_count": 747270,
+    "database_bytes": 3554500608,
+    "wal_bytes": 15853792,
+    "measurement_note": "Counts and physical file sizes observed during ongoing import; not a transaction-consistent filesystem snapshot."
+  },
+  "limits": "No 100-million-row load test performed. This artifact measures import and indexed catalog reads, not drug efficacy, candidate generation, AF3 or QPU throughput.",
+  "import_reports_observed": [
+    {
+      "source_id": "coconut-2026-09",
+      "status": "running",
+      "processed_records": 75500,
+      "inserted_compounds": 55193,
+      "inserted_records": 75500,
+      "duplicate_records": 0,
+      "elapsed_seconds": 72.72,
+      "invalid_records": 0
+    },
+    {
+      "source_id": "lotus-2026-04",
+      "status": "completed",
+      "processed_records": 709740,
+      "inserted_compounds": 227265,
+      "inserted_records": 694270,
+      "duplicate_records": 15470,
+      "elapsed_seconds": 409.962,
+      "invalid_records": 0
+    }
+  ],
+  "lotus_only_storage_observation": {
+    "compound_count": 220938,
+    "provenance_count": 656839,
+    "database_bytes": 3158052864,
+    "wal_bytes": 16409992,
+    "measurement_note": "Earlier in-flight read before COCONUT import; approximate bytes per record."
+  }
+}

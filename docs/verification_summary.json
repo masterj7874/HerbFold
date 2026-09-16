@@ -1,0 +1,14 @@
+{
+  "tests": {
+    "passed": 132,
+    "warnings": 2,
+    "notes": "Upstream Starlette/httpx and anyio deprecation warnings; no test failures"
+  },
+  "lint": "passed",
+  "browser": "passed desktop/mobile, zero JS errors",
+  "package_build": "passed wheel + source distribution",
+  "af3_real_gpu": "completed; low-confidence/clashing pose failed quality gate",
+  "ibm_real_qpu": "completed156qubits;3QPU_seconds;zero-valued measured kernel",
+  "full_msa_database": "not installed",
+  "clinical_efficacy": "not established"
+}

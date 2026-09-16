@@ -1,0 +1,223 @@
+{
+  "created_at": "2026-09-08T05:20:43.287577+00:00",
+  "passed": true,
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "read_style_posts": [
+    "/api/molecules/describe",
+    "/api/molecular/resolve",
+    "/api/molecules/svg",
+    "/api/molecules/svg",
+    "/api/molecules/describe",
+    "/api/molecular/resolve",
+    "/api/molecules/describe",
+    "/api/molecular/resolve",
+    "/api/molecules/describe",
+    "/api/molecules/describe",
+    "/api/molecular/resolve",
+    "/api/molecules/describe",
+    "/api/molecular/conformer",
+    "/api/molecules/describe",
+    "/api/molecular/resolve",
+    "/api/molecules/describe",
+    "/api/molecules/svg",
+    "/api/molecules/svg",
+    "/api/molecules/describe"
+  ],
+  "screenshots": {
+    "quantum-desktop": "docs/images/separate-studios-quantum-desktop.png",
+    "af3-quercetin-diagnostics": "docs/images/separate-studios-af3-quercetin-diagnostics.png",
+    "af3-aspirin-diagnostics": "docs/images/separate-studios-af3-aspirin-diagnostics.png",
+    "alphafold-desktop": "docs/images/separate-studios-alphafold-desktop.png",
+    "alphafold-mobile360": "docs/images/separate-studios-alphafold-mobile360.png",
+    "quantum-mobile360": "docs/images/separate-studios-quantum-mobile360.png"
+  },
+  "quantum_source_analysis_id": "b3d261566fa14891925d3b1fd730f2d1",
+  "quantum_job_id": "f1b0f1c6867b4d21b40193e65ab980bf",
+  "quantum_route_and_result_restore": true,
+  "unapplied_target_change_blocks_opening_old_target": true,
+  "af3_selections": {
+    "quercetin": {
+      "job_id": "d80fe6aa1e6945538da31833a471d6ed",
+      "structure_sha256": "daee83d0c5b8072527e08f37cc37641dfb7bc26c1d014f71b4d3f889c4b0433b",
+      "summary_metrics": {
+        "ptm": 0.89,
+        "iptm": 0.85,
+        "ranking_score": 0.89,
+        "fraction_disordered": 0.07,
+        "has_clash": false,
+        "chain_ptm": [
+          0.89,
+          0.28
+        ],
+        "chain_iptm": [
+          0.85,
+          0.85
+        ],
+        "chain_pair_iptm": [
+          [
+            0.89,
+            0.85
+          ],
+          [
+            0.85,
+            0.28
+          ]
+        ],
+        "chain_pair_pae_min": [
+          [
+            0.76,
+            2.26
+          ],
+          [
+            4.73,
+            0.76
+          ]
+        ]
+      },
+      "plddt": {
+        "all": {
+          "count": 4887,
+          "min": 10.05,
+          "mean": 90.80640270104358,
+          "max": 98.97
+        },
+        "protein": {
+          "count": 4865,
+          "min": 10.05,
+          "mean": 90.91929496402878,
+          "max": 98.97
+        },
+        "selected_ligand": {
+          "count": 22,
+          "min": 53.23,
+          "mean": 65.8418181818182,
+          "max": 78.75
+        }
+      },
+      "independent_raw_pae": [
+        {
+          "frame_chain": "A",
+          "target_chain": "B",
+          "mean": 6.844295605057194,
+          "min": 2.3,
+          "max": 31.7,
+          "count": 13288
+        },
+        {
+          "frame_chain": "B",
+          "target_chain": "A",
+          "mean": 17.103062913907284,
+          "min": 4.7,
+          "max": 31.3,
+          "count": 13288
+        }
+      ],
+      "confidence_sha256": "01c40db7f91e85e9bbeeea058232b95a404e98cdfac70b6c8b161cece23cb852"
+    },
+    "aspirin": {
+      "job_id": "b868a97038e144f8a605a722d911338b",
+      "structure_sha256": "d7328059bc516ae1570bad203c99d1b2318c5c5b4dd11fe886d6950436b3370f",
+      "summary_metrics": {
+        "ptm": 0.9,
+        "iptm": 0.88,
+        "ranking_score": 0.92,
+        "fraction_disordered": 0.07,
+        "has_clash": false,
+        "chain_ptm": [
+          0.9,
+          0.04
+        ],
+        "chain_iptm": [
+          0.88,
+          0.88
+        ],
+        "chain_pair_iptm": [
+          [
+            0.9,
+            0.88
+          ],
+          [
+            0.88,
+            0.04
+          ]
+        ],
+        "chain_pair_pae_min": [
+          [
+            0.76,
+            2.2
+          ],
+          [
+            4.47,
+            0.77
+          ]
+        ]
+      },
+      "plddt": {
+        "all": {
+          "count": 4878,
+          "min": 9.34,
+          "mean": 90.89881303813038,
+          "max": 98.98
+        },
+        "protein": {
+          "count": 4865,
+          "min": 9.34,
+          "mean": 90.9467954779034,
+          "max": 98.98
+        },
+        "selected_ligand": {
+          "count": 13,
+          "min": 61.5,
+          "mean": 72.9423076923077,
+          "max": 82.92
+        }
+      },
+      "independent_raw_pae": [
+        {
+          "frame_chain": "A",
+          "target_chain": "B",
+          "mean": 6.402585328578706,
+          "min": 2.2,
+          "max": 31.7,
+          "count": 7852
+        },
+        {
+          "frame_chain": "B",
+          "target_chain": "A",
+          "mean": 17.19782221090168,
+          "min": 4.5,
+          "max": 31.4,
+          "count": 7852
+        }
+      ],
+      "confidence_sha256": "be75747b48216743a70da39ab5025ea108113f03d2f9be2300988ebb0d9131b4"
+    }
+  },
+  "conformer_does_not_retain_prediction_metrics": true,
+  "quantum_individual_execution_restore": true,
+  "independent_selection_and_browser_back": true,
+  "mobile": {
+    "alphafold": {
+      "width": 334,
+      "scrollWidth": 334,
+      "documentWidth": 360,
+      "viewport": 360
+    },
+    "quantum": {
+      "width": 334,
+      "scrollWidth": 334,
+      "documentWidth": 360,
+      "viewport": 360
+    }
+  },
+  "original_artifacts": {
+    "runtime/f1b0f1c6867b4d21b40193e65ab980bf/quantum.json": "942bb398c27442a5eb8ec43c3e62a3e0826ecff649cade417c0cc9de1bf34970",
+    "runtime/b868a97038e144f8a605a722d911338b/af3_manifest.json": "3d6f1a14e060bdc27c72690f6bbbab50415384d6f5bcfbffbb5f06a7d7279681",
+    "runtime/d80fe6aa1e6945538da31833a471d6ed/af3_manifest.json": "bc96390d28d70d03ee48b5dbdc1223786ba7253f5b05be5cf9a88f0fa500cc07"
+  },
+  "original_artifacts_unchanged": true,
+  "synthetic_data_used": false,
+  "qpu_submissions": 0,
+  "af3_submissions": 0
+}

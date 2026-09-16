@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-08T01:13:14.466890+00:00",
+  "status": "implementation_and_isolated_tests_verified",
+  "cause": "Exactly one 45-byte regular non-CIF ancillary file; no hardlinks, symlinks, special entries or unsafe paths observed.",
+  "source": {
+    "url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_2022_09_28_mmcif_files.tar.zst",
+    "generation": "1730832728463652",
+    "sha256_from_verified_download_receipt": "4706ec0d948ed7a005b30eea21f5a7f9362b067e48d8bea2605671a49bd43c24"
+  },
+  "archive_member_audit": "docs/af3-pdb-archive-member-audit.json",
+  "ancillary_byte_evidence": "docs/af3-pdb-ancillary-member.json",
+  "installer_sha256": "d7884bf807c8cdba23c257458f4042719b2170ed2b13cd9a61935ab66cc74cf6",
+  "tests_sha256": "3eb1b4e8db7c6470de5f48d789baf657999bc1563ec196ddbf7acf6e94b248be",
+  "validation_version": 2,
+  "tests": {
+    "passed": 86,
+    "scope": "Isolated temporary local files and mocked HTTP only; no production installer execution or interruption. Includes all prior 71 tests, immediate future failure publication, exact ancillary identity/opaque preservation/reuse, changed source/path/size/content/type/duplication/missing/tamper rejection, and preserved ancillary retry after later CIF write failure."
+  },
+  "resume": {
+    "completed_v2_receipts": "Remain reusable after existing stat/inventory checks, no full data decode required.",
+    "verified_archives": "Remain reusable after existing source receipt and stat checks, no network or partial hash needed.",
+    "failed_pdb_partial": "Rebuilt only inside this installer disposable pdb-tree.expanding; source archive remains untouched.",
+    "ancillary": "Original 45 bytes retained under .installation/ancillary/mmcif_files.tar.gz and included in excluded_ancillary_members receipt; never extracted or used as template.",
+    "future_errors": "Failed expansion component is immediately published while other work continues."
+  },
+  "production_process_manipulated": false,
+  "gpu_or_network_used": false
+}

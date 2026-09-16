@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-09-08T00:20:15.789236+00:00",
+  "url": "http://127.0.0.1:8873",
+  "synthetic_data_used": false,
+  "prediction_mutations": [],
+  "javascript_errors": [],
+  "compounds": {
+    "quercetin": {
+      "job_id": "3730181a45734f0dafa92a78917c48dd",
+      "actual_ptm": 0.21,
+      "actual_iptm": 0.32,
+      "comparison_search_job": "f4ca1037ecd848a9aececc51572092b5",
+      "screens": {
+        "desktop": {
+          "path": "docs/images/af3-msa-quercetin-desktop.png",
+          "width": 1224,
+          "scrollWidth": 1224,
+          "clientWidth": 1224,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "width": 103.3125,
+              "height": 44
+            },
+            {
+              "width": 118.71875,
+              "height": 44
+            }
+          ]
+        },
+        "mobile360": {
+          "path": "docs/images/af3-msa-quercetin-mobile360.png",
+          "width": 232,
+          "scrollWidth": 232,
+          "clientWidth": 232,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "width": 71.515625,
+              "height": 59.1875
+            },
+            {
+              "width": 71.53125,
+              "height": 78.375
+            }
+          ]
+        }
+      }
+    },
+    "aspirin": {
+      "job_id": "88692f7955d94c50814f6e3121f963b6",
+      "actual_ptm": 0.2,
+      "actual_iptm": 0.37,
+      "comparison_search_job": "e58c9b7dbdb3489e9fbed7baeee44525",
+      "screens": {
+        "desktop": {
+          "path": "docs/images/af3-msa-aspirin-desktop.png",
+          "width": 1224,
+          "scrollWidth": 1224,
+          "clientWidth": 1224,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "width": 103.3125,
+              "height": 44
+            },
+            {
+              "width": 118.71875,
+              "height": 44
+            }
+          ]
+        },
+        "mobile360": {
+          "path": "docs/images/af3-msa-aspirin-mobile360.png",
+          "width": 232,
+          "scrollWidth": 232,
+          "clientWidth": 232,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "width": 71.515625,
+              "height": 59.1875
+            },
+            {
+              "width": 71.53125,
+              "height": 78.375
+            }
+          ]
+        }
+      }
+    }
+  },
+  "passed": true,
+  "scope": "실제 기존 무MSA 결과 및 미완료 표준 기록을 새 production UI에서 확인. 실제 MSA 검색/완료 비교는 아직 수행되지 않았으며, 임의 신뢰도 개선값 없음.",
+  "bundle": "index-Jj4sC99f.js",
+  "unit_tests": {
+    "command": "node --test tests/prediction-evidence.test.mjs",
+    "passed": 6,
+    "fixture_scope": "프런트 순수 비교 함수의 합성 단위 테스트 입력만 사용; production 데이터로 제공하지 않음"
+  }
+}

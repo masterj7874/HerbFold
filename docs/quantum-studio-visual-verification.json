@@ -1,0 +1,142 @@
+{
+  "validated_at_utc": "2026-09-09T02:30:44.321880+00:00",
+  "app_url": "http://127.0.0.1:8873/#quantum",
+  "status": "passed",
+  "scope": "Quantum Studio explanation, original SVG circuit/observable graphics, interaction, display accuracy and archived-result identity binding; no new scientific experiment",
+  "build": {
+    "command": "cd frontend && npm run build",
+    "passed": true,
+    "log": "tmp/quantum-studio-v3/build.log",
+    "existing_warning": "Molecular-engine chunk exceeds 500 kB; this work adds no new 3D dependency"
+  },
+  "unit_tests": {
+    "command": "cd frontend && node --test tests/*.test.mjs",
+    "passed": 22,
+    "failed": 0,
+    "log": "tmp/quantum-studio-v3/unit-tests.log"
+  },
+  "browser": {
+    "passed": true,
+    "scope": "UI/data-binding tests using two archived projected jobs, one legacy job and explicitly injected browser-only malformed/pending and local-mode fixtures",
+    "checks": {
+      "reduced_motion_disables_auto_play": true,
+      "archived_block_count_and_first_angle": {
+        "blocks": 51,
+        "angle": "0.935343"
+      },
+      "block_selection_uses_recorded_nodes": true,
+      "actual_selected_circuit_svg_download": true,
+      "sample_selection_updates_actual_xyz": [
+        0.8576643129631014,
+        0.8030028253983023
+      ],
+      "unphysical_raw_estimate_not_normalized": {
+        "sample": 0,
+        "qubit": 84,
+        "raw_norm": 1.0071631416975806
+      },
+      "sphere_pointer_keyboard_zoom_reset": true,
+      "matrix_selection_reports_actual_pair": {
+        "expected": 0.9709176695740952,
+        "displayed": 0.970918
+      },
+      "actual_identity_linked_2d_structure": true,
+      "all_five_stages_and_keyboard_tabs": true,
+      "record_switch_updates_topology_and_identity": {
+        "first": 51,
+        "second": 33
+      },
+      "global_zero_is_observation_not_missing": true,
+      "animation_advances_and_pauses_without_job_submission": true,
+      "motion_preference_changes_apply_without_reload_and_stop_playback": true,
+      "five_mobile_stages_no_page_overflow": true,
+      "injected_pending_missing_axes_unknown_schemas_remain_unavailable": true,
+      "injected_local_mode_labels_calculation_and_does_not_claim_hardware_measurement": true,
+      "archived_records_unchanged": true
+    },
+    "page_errors": [],
+    "blocked_mutation_attempts": [],
+    "new_hardware_or_llm_jobs": 0,
+    "source_job_hashes": {
+      "f1b0f1c6867b4d21b40193e65ab980bf": "d9ddab7e19ff8971220e84dbd0d08e5dccf74844306b405c32c7c19272c6e52e",
+      "b7b8e72a18874d75bf6edca4561baed9": "0b2afdcac9f293497bafc48f1a0d00189be96fbd8a3102ff79b5621ee2abb8e4"
+    },
+    "screenshots": [
+      "tmp/quantum-studio-v3/verification/desktop-circuit.png",
+      "tmp/quantum-studio-v3/verification/desktop-comparison.png",
+      "tmp/quantum-studio-v3/verification/desktop-measurement.png",
+      "tmp/quantum-studio-v3/verification/desktop-overview.png",
+      "tmp/quantum-studio-v3/verification/mobile-sphere-detail.png",
+      "tmp/quantum-studio-v3/verification/mobile-stage-0.png",
+      "tmp/quantum-studio-v3/verification/mobile-stage-1.png",
+      "tmp/quantum-studio-v3/verification/mobile-stage-2.png",
+      "tmp/quantum-studio-v3/verification/mobile-stage-3.png",
+      "tmp/quantum-studio-v3/verification/mobile-stage-4.png"
+    ]
+  },
+  "visual_review": {
+    "passed": true,
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1050
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "independent_review": "tmp/quantum-studio-v3/qa-reference/visual-qa.md",
+    "final_root_images_opened": [
+      "desktop-overview.png",
+      "desktop-circuit.png",
+      "desktop-measurement.png",
+      "desktop-comparison.png",
+      "mobile-stage-3.png",
+      "mobile-sphere-detail.png"
+    ],
+    "findings_resolved": [
+      "Nonwrapping axis controls",
+      "Mobile heading wraps at complete words",
+      "10 px matrix cells and separate large pair value",
+      "Mobile XYZ values preserve precision in 2 by 2 layout"
+    ],
+    "capture_note": "Circuit scrolling is intentionally contained. Full-element mobile screenshots can include the fixed navigation overlay; the page remains scrollable."
+  },
+  "independent_data_review": {
+    "path": "tmp/quantum-studio-v3/data-contract-final.md",
+    "all_prior_findings_resolved": true,
+    "followup_resolution": "The final local-source wording concern was corrected after review and checked using an explicitly injected browser-only local-mode fixture."
+  },
+  "behavior_fixes_found_during_verification": [
+    "Dynamic reduced-motion preference uses reactive matchMedia subscription; toggling it stops active playback without reload.",
+    "Local ideal calculations are labelled as calculations rather than hardware measurements."
+  ],
+  "preserved_scientific_records": true,
+  "new_hardware_or_llm_jobs": 0,
+  "source_sha256": {
+    "frontend/src/components/QuantumJourney.tsx": "6ac673cca051e60698f8b81b55dd69856bceee25045e66cb9475122fb12e1225",
+    "frontend/src/components/QuantumBlochSphere.tsx": "e42f93e842c3689ac5dcba21daa2f1d682f5993a58787dd34501bcf51a8922e4",
+    "frontend/src/components/quantum-journey.css": "8c8db2bc590c6fa99dbcc87ebbc3b3ed3cf21cb1f864a49ad72daa8bc5febc07",
+    "frontend/src/components/quantum-bloch.css": "196df74c9720552a1024baaf28b3c4cecda3e2e2985d059f2d4d111b3f4f8db3",
+    "frontend/src/components/QuantumPanel.tsx": "a70bfea5a2fb1f973f3e26364cb8630009a9ba0ddaf25e77e249a710f2eac523",
+    "frontend/src/components/QuantumStudio.tsx": "cbf099b9d771832fe736cf3c0f25fcf7f9c507a46d14ed317bb5a21a38044284",
+    "frontend/src/lib/quantumJourney.ts": "2c8a77856eaf0abc3f404fd5aad954344bfd6592ce84af8b31438c0d52147ef7",
+    "frontend/src/lib/useMotionPreference.ts": "c4c6e331e536c445680e5d13a3c1311a0a22af4ef9827d4c1dd19a1a95488087",
+    "frontend/tests/quantum-journey.test.mjs": "bb1aa1efe6841de85baebbe21a83c8419783d924fdf1f89e67d55f775a1f6bbc",
+    "scripts/verify_quantum_journey_ui.py": "b3b110fbc4ec8557a8827f96176e4cb09c903b571030fbc801fba4a7cea25e8c"
+  },
+  "production_index_sha256": "eef0a5f643fcb75bc59eefb4eed7967ed51db00a3c24d16dfd5e679941b87c94",
+  "screenshot_sha256": {
+    "tmp/quantum-studio-v3/verification/desktop-circuit.png": "15ad17ee0f133280ef47d8f716481ca4385744c01454bca51ab7bdfffe486f9a",
+    "tmp/quantum-studio-v3/verification/desktop-comparison.png": "e4a5c3639ab29d7fcb00fad38dca58af2778c6edf0e9144e8f01f2941411fd02",
+    "tmp/quantum-studio-v3/verification/desktop-measurement.png": "365a40ad2962c4626efbbf5c3ab19ba72241708b969001fc58d27d48dc103db0",
+    "tmp/quantum-studio-v3/verification/desktop-overview.png": "54b0eaf4647ecc6001ebe4188880ff6750ea631548679e68c728ceea06ea4a0e",
+    "tmp/quantum-studio-v3/verification/mobile-sphere-detail.png": "04d2c8ddc69cc6abf1d8590ce1cc860527e563c883b032106f7e98a1cdcf14f5",
+    "tmp/quantum-studio-v3/verification/mobile-stage-0.png": "056b9647f54a2383224318439c91080fb3a40fa4361f58e92a57e27f66ee60c8",
+    "tmp/quantum-studio-v3/verification/mobile-stage-1.png": "ea2044939b7116a79bb8d49109df2effe21435f55bd8847f6cf836649ca2d064",
+    "tmp/quantum-studio-v3/verification/mobile-stage-2.png": "60109c8c03ffcadbe76e36c531ac8cc60d64b15b518414b6e55a2e33ec35543f",
+    "tmp/quantum-studio-v3/verification/mobile-stage-3.png": "f0a42259b52f93e128c92a4b3a7662bc6a517491a1fa9ac03eadccb2bb58d63a",
+    "tmp/quantum-studio-v3/verification/mobile-stage-4.png": "4669c62202eea9735eb297dd21e4507ac679610bdac767d2548adbb8f229a785"
+  }
+}

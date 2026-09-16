@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-14T01:41:38.280130+00:00",
+  "status": "passed",
+  "server_listening": "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess\nLISTEN 0      2048         0.0.0.0:9018      0.0.0.0:*    users:((\"herbfold\",pid=904500,fd=14))",
+  "health": "ok",
+  "alphafold_runnable": true,
+  "assets": [
+    "/app/assets/index-DxocUAU8.js",
+    "/app/assets/rolldown-runtime-hePW80VL.js",
+    "/app/assets/molecular-engine-Dr-Y2Aq8.js",
+    "/app/assets/index-5rActkAN.css"
+  ],
+  "actual_job": {
+    "id": "308e4b99d57a432ebfd11c90a67ec02c",
+    "status": "interrupted",
+    "error": "GPU 메모리 할당 실패가 수분간 반복되어 이 AF3 계산을 중단했습니다. 다른 서비스가 GPU 메모리 대부분을 사용하고 있습니다. 완료된 MSA·템플릿 검색 결과는 보존했습니다. GPU 메모리를 확보한 뒤 같은 조건으로 다시 준비하세요."
+  },
+  "log_endpoint": "ok",
+  "all_job_states_preserved_after_restart": true,
+  "gpu_inference_rerun": false,
+  "remaining_constraint": "GPU memory is occupied by other services; installation readiness does not reserve free GPU memory."
+}

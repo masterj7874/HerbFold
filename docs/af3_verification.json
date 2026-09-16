@@ -1,0 +1,149 @@
+{
+  "af3_version": "3.0.4",
+  "source_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+  "created_at": "2026-09-07T07:54:56.823471+00:00",
+  "scope": "runtime_execution_only_synthetic_parameter_signature",
+  "model_seeds": [
+    1
+  ],
+  "samples_per_seed": 1,
+  "num_recycles": 3,
+  "msa_mode": "none",
+  "templates": "none",
+  "execution_verified": true,
+  "device": "gpu",
+  "cuda_visible_devices": "1",
+  "scientific_limits": [
+    "Single-seed, single-sample, reduced-recycle, MSA-free smoke test checks execution, not accuracy or efficacy.",
+    "AlphaFold 3 confidence describes predicted structure quality. It is not binding affinity (Kd/Ki/IC50), a validated binding probability, or efficacy.",
+    "Ibuprofen catalog structure has unspecified stereochemistry; no stereoisomer-specific effect is established.",
+    "If PTGS2 runs out of memory, a separately identified insulin A-chain fallback only tests the software execution path.",
+    "This smoke produced low confidence (pTM/ipTM 0.39), a significant-clash flag, and ranking -99.11. The resulting pose fails quality checks and must not be used for affinity conclusions."
+  ],
+  "attempts": [
+    {
+      "job_id": "2e03b13d30d54f69b5582e24c6eceecb",
+      "target_accession": "P35354",
+      "target_name": "Prostaglandin G/H synthase 2",
+      "protein_residues": 604,
+      "target_source": "https://www.uniprot.org/uniprotkb/P35354/entry",
+      "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+      "ligand": "ibuprofen",
+      "ligand_source": "https://pubchem.ncbi.nlm.nih.gov/compound/3672",
+      "input_sha256": "8e11c299b907343bee13960ad71eccced30086a8e6e30ae2a16b1c4abd6bc0e6",
+      "started_at": "2026-09-07T07:54:58.066153+00:00",
+      "status": "completed",
+      "execution_verified": true,
+      "runtime_log": "runtime/2e03b13d30d54f69b5582e24c6eceecb/run.log",
+      "manifest": "runtime/2e03b13d30d54f69b5582e24c6eceecb/af3_manifest.json",
+      "returncode": 0,
+      "elapsed_seconds": 166.16,
+      "finished_at": "2026-09-07T07:57:44.234386+00:00",
+      "metrics": {
+        "ptm": 0.39,
+        "iptm": 0.39,
+        "ranking_score": -99.11,
+        "fraction_disordered": 1.0,
+        "has_clash": true,
+        "chain_ptm": [
+          0.38,
+          0.0
+        ],
+        "chain_iptm": [
+          0.39,
+          0.39
+        ],
+        "chain_pair_iptm": [
+          [
+            0.38,
+            0.39
+          ],
+          [
+            0.39,
+            0.0
+          ]
+        ],
+        "chain_pair_pae_min": [
+          [
+            2.65,
+            8.28
+          ],
+          [
+            4.91,
+            10.56
+          ]
+        ]
+      },
+      "chain_ids": [
+        "A",
+        "B"
+      ],
+      "structure_sha256": "6fc95b98048cb1ad2e62bb1ea20783a0cdd00b0cc21c0eea663e42b7a2f06a4a",
+      "structure": "runtime/2e03b13d30d54f69b5582e24c6eceecb/output/ptgs2_ibuprofen_smoke/ptgs2_ibuprofen_smoke_model.cif",
+      "result": "runtime/2e03b13d30d54f69b5582e24c6eceecb/result.json",
+      "pocket_geometry": {
+        "structure_features": {
+          "ligand_heavy_atoms": 15,
+          "contact_pairs": 26,
+          "pocket_residues": 26,
+          "min_distance_angstrom": 1.0765263582467433,
+          "mean_nearest_distance_angstrom": 5.52441538547584,
+          "ligand_contact_fraction": 0.5333333333333333,
+          "close_atom_pairs": 1
+        },
+        "ligand_chain": "B",
+        "cutoff_angstrom": 5.0,
+        "contact_residues": [
+          "A:10",
+          "A:100",
+          "A:109",
+          "A:11",
+          "A:120",
+          "A:125",
+          "A:141",
+          "A:270",
+          "A:296",
+          "A:307",
+          "A:336",
+          "A:339",
+          "A:366",
+          "A:368",
+          "A:40",
+          "A:41",
+          "A:437",
+          "A:445",
+          "A:449",
+          "A:467",
+          "A:5",
+          "A:501",
+          "A:568",
+          "A:578",
+          "A:60",
+          "A:69"
+        ],
+        "method": "heavy_atom_geometry_v1",
+        "note": "Geometric proximity and close-contact flags are not calibrated affinity, hydrogen-bond assignments, or validated clash scores."
+      },
+      "validation_recovery": "Real AF3 3.0.4 emitted token-level summary chain_ids. Parser compatibility corrected and original artifacts revalidated without rerunning inference.",
+      "prediction_eligible": false,
+      "trained_parameters_verified": false,
+      "current_job_status": "quarantined"
+    }
+  ],
+  "status": "completed",
+  "completed_at": "2026-09-07T07:59:46.180594+00:00",
+  "verified_job_id": "2e03b13d30d54f69b5582e24c6eceecb",
+  "verified_target": "P35354",
+  "prediction_eligible": false,
+  "trained_parameters_verified": false,
+  "parameter_audit": {
+    "audited_at": "2026-09-07T23:05:13.711674+00:00",
+    "classification": "synthetic_parameter_signature",
+    "prediction_eligible": false,
+    "reason": "64-byte zero identifier and all 404 parameter tensors match the uniform[-1,1] performance-test recipe; trained parameter provenance is unsupported.",
+    "source": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md",
+    "parameter_sha256": "cec2df7fb03948b277109b0ae0faf4ddd007501a896d2a6c5444a56221242dd6",
+    "prior_job_status": "completed",
+    "report": "docs/af3-parameter-audit.json"
+  }
+}

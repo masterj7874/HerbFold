@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-09-14T00:14:28.804981+00:00",
+  "database_total": 766417,
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "checks": {
+    "bounded_distinct_pages": true,
+    "db_selection_reaches_af3": "discovery_31",
+    "korean_herb_search": "DB 검색 결과 342개",
+    "source_and_herb_filter": 196,
+    "drug_filter_search": true,
+    "empty_state": true,
+    "selection_survives_catalog_refresh": true,
+    "selection_survives_workspace_change": true,
+    "mobile_no_horizontal_overflow": true,
+    "no_jobs_created": true
+  },
+  "screenshots": [
+    "docs/images/studio-library-desktop.png",
+    "docs/images/studio-library-desktop-list.png",
+    "docs/images/studio-library-mobile.png"
+  ],
+  "status": "passed"
+}

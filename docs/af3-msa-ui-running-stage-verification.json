@@ -1,0 +1,125 @@
+{
+  "created_at": "2026-09-08T01:44:06.455227+00:00",
+  "mode": "running-stage",
+  "url": "http://127.0.0.1:8873",
+  "browser_surface": "System Chrome/Playwright fallback; use only after documented Browser unavailability",
+  "mock_data_used": false,
+  "gpu_jobs_submitted": 0,
+  "blocked_mutations": [],
+  "read_style_posts": [
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/conformer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/resolve"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/resolve"
+    }
+  ],
+  "javascript_errors": [],
+  "jobs": {
+    "aspirin": {
+      "job_id": "b868a97038e144f8a605a722d911338b",
+      "mode": "running_stage_only",
+      "completed_qa_performed": false,
+      "automatic_polling_observed": true,
+      "observed_status": "running",
+      "stage": "data_pipeline",
+      "features": {
+        "status": "searching",
+        "cache_hit": false,
+        "counts": {
+          "unpaired_msa_sequences": null,
+          "paired_msa_sequences": null,
+          "non_query_sequences": null,
+          "template_count": null
+        }
+      },
+      "screens": {
+        "desktop": {
+          "layout": {
+            "width": 1276,
+            "height": 1605.09375,
+            "clientWidth": 1274,
+            "scrollWidth": 1274,
+            "documentOverflow": false,
+            "clippedControls": [],
+            "smallControls": []
+          },
+          "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-running-desktop.png"
+        },
+        "mobile360": {
+          "layout": {
+            "width": 262,
+            "height": 2745.75,
+            "clientWidth": 260,
+            "scrollWidth": 260,
+            "documentOverflow": false,
+            "clippedControls": [],
+            "smallControls": []
+          },
+          "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-running-mobile360.png"
+        }
+      },
+      "database_provenance": {
+        "status": "ready",
+        "fingerprint_sha256": "1ac78093e381753979c045f98c902dfa22f2a5391a6d3cdeae90bc3c92518ded",
+        "manifest_sha256": "64d95333d58915a1bcff93855c31f9314d12623cea23cf87680e996948a08ec5",
+        "source_tag": "v3.0.4",
+        "component_count": 9,
+        "all_component_names_and_hashes_visible": true,
+        "screenshot": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-running-provenance-desktop.png"
+      },
+      "display_name": "아스피린"
+    }
+  },
+  "passed": true,
+  "verification_script_sha256": "3e95dd013b2309a357bbd1a0a41deb007b69e836badd26ee30195cd533431da3",
+  "scope": "Actual UI identity/provenance/controls only; no efficacy, safety or independent accuracy validation",
+  "input_reports": {
+    "msa": {
+      "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/af3-msa-selected-predictions.json",
+      "sha256": "e331358e4e50a6b02271994dca2267a81b6c01b313e14ebd32cc2dc540204b65"
+    },
+    "raw_comparison": null
+  },
+  "frontend_assets": [
+    "http://127.0.0.1:8873/app/assets/index-Jj4sC99f.js"
+  ]
+}

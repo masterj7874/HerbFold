@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-14T03:20:11.670163+00:00",
+  "status": "passed",
+  "listening": "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess\nLISTEN 0      2048         0.0.0.0:9018      0.0.0.0:*    users:((\"herbfold\",pid=2396118,fd=14))",
+  "health": "ok",
+  "alphafold_runnable": true,
+  "assets": [
+    "/app/assets/index-2uwbpjaE.js",
+    "/app/assets/rolldown-runtime-hePW80VL.js",
+    "/app/assets/molecular-engine-Dr-Y2Aq8.js",
+    "/app/assets/index-CnqwfsKq.css"
+  ],
+  "job_id": "31dfd5615cb848c5a98c78dc657c3692",
+  "job_status": "completed",
+  "structure_status": "matched",
+  "target": "P00533",
+  "diagnostics_status": "available",
+  "identity_verified": true,
+  "job_states_preserved": true,
+  "new_gpu_calculations_started": 0,
+  "tests": {
+    "backend": 134,
+    "frontend": 57
+  },
+  "frontend_rechecked_at": "2026-09-14T03:26:21.983841+00:00",
+  "frontend_rebuild_without_backend_restart": true
+}

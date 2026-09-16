@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "camera_distance_angstrom": {
+    "fit": 25.8172,
+    "button_in": 20.7048,
+    "button_out": 25.7765,
+    "wheel_in": 24.8333,
+    "wheel_out": 25.8735,
+    "keyboard_in": 20.7056,
+    "keyboard_out": 25.8115,
+    "mobile_fit": 39.4253,
+    "pinch_in": 18.9857,
+    "reduced_motion_fit": 25.8735,
+    "reduced_motion_zoom": 20.6988
+  },
+  "wheel_prevents_viewport_page_scroll": true,
+  "wheel_outside_viewport_scrolls_page": true,
+  "keyboard_fit_restored": true,
+  "mobile_overflow": false,
+  "javascript_errors": [],
+  "hardware_submitted": false
+}

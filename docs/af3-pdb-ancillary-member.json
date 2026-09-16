@@ -1,0 +1,9 @@
+{
+  "path": "mmcif_files/mmcif_files.tar.gz",
+  "size_bytes": 45,
+  "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+  "hex": "1f8b0800000000000003edc1010d000000c2a0f74f6d0e37a00000000000000000008037039ade1d2700280000",
+  "read_offset": 51760162304,
+  "elapsed_seconds": 67.02671645800001,
+  "scope": "Read-only exact 45 bytes from verified archive; no nested archive extraction."
+}

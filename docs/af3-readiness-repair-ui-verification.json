@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-14T01:10:59.511869+00:00",
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "job_id": "1bf7e67cd1a34bb2b0dd0415a592db21",
+  "screenshots": [
+    "docs/images/af3-readiness-repaired-desktop.png",
+    "docs/images/af3-readiness-repaired-mobile.png"
+  ],
+  "status": "passed",
+  "current_runtime_ready": true,
+  "execution_button_enabled": true,
+  "no_blockers_for_prepared_job": true,
+  "no_jobs_submitted": true
+}

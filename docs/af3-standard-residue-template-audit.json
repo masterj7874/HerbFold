@@ -1,0 +1,2056 @@
+{
+  "source": "wwPDB Chemical Component Dictionary via RCSB",
+  "scope": "20 standard residues; exact named heavy-atom edges including optional terminal OXT; aromatic bond flags normalized to order1.5",
+  "rdkit_version": "2026.03.6",
+  "residues": [
+    {
+      "component": "ALA",
+      "source_url": "https://files.rcsb.org/ligands/download/ALA.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/ALA.cif",
+      "source_sha256": "6d32b34d4f7b3ddf0cd3dff3f98ddaf7649bc5303ff9a8bd95ba62283f47a1ca",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "CYS",
+      "source_url": "https://files.rcsb.org/ligands/download/CYS.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/CYS.cif",
+      "source_sha256": "b28c79381f9f41fe57a9e97468fc8101d5fd1064272a22da1eed6d05d27a24cc",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "SG",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "SG",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "ASP",
+      "source_url": "https://files.rcsb.org/ligands/download/ASP.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/ASP.cif",
+      "source_sha256": "82c4a2d0b5eda0a32c36f106f0bb00edbc5bc51172db414fdc494025b7b8c858",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CG",
+          "OD1",
+          2.0
+        ],
+        [
+          "CG",
+          "OD2",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CG",
+          "OD1",
+          2.0
+        ],
+        [
+          "CG",
+          "OD2",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "GLU",
+      "source_url": "https://files.rcsb.org/ligands/download/GLU.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/GLU.cif",
+      "source_sha256": "99fa19054d31b07e7101b33ad9cc847cc6a209da60de279aed5e6a9236bb6da4",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "OE1",
+          2.0
+        ],
+        [
+          "CD",
+          "OE2",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "OE1",
+          2.0
+        ],
+        [
+          "CD",
+          "OE2",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "PHE",
+      "source_url": "https://files.rcsb.org/ligands/download/PHE.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/PHE.cif",
+      "source_sha256": "002c626d24aec78fd622459d4f4470c682c7c3f9f97d32414fec4313d780496e",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CE1",
+          1.5
+        ],
+        [
+          "CD1",
+          "CG",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE2",
+          1.5
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CE1",
+          "CZ",
+          1.5
+        ],
+        [
+          "CE2",
+          "CZ",
+          1.5
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CE1",
+          1.5
+        ],
+        [
+          "CD1",
+          "CG",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE2",
+          1.5
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CE1",
+          "CZ",
+          1.5
+        ],
+        [
+          "CE2",
+          "CZ",
+          1.5
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "GLY",
+      "source_url": "https://files.rcsb.org/ligands/download/GLY.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/GLY.cif",
+      "source_sha256": "c49458946b0ebc057db6ad0a4e1557a1caaed4c80a203accd458efddccbf92ff",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "HIS",
+      "source_url": "https://files.rcsb.org/ligands/download/HIS.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/HIS.cif",
+      "source_sha256": "89355e09d9c622dd514738e559d7a75ab0a1659df9a179978e88e1a44704a46f",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CD2",
+          "NE2",
+          1.5
+        ],
+        [
+          "CE1",
+          "ND1",
+          1.5
+        ],
+        [
+          "CE1",
+          "NE2",
+          1.5
+        ],
+        [
+          "CG",
+          "ND1",
+          1.5
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CD2",
+          "NE2",
+          1.5
+        ],
+        [
+          "CE1",
+          "ND1",
+          1.5
+        ],
+        [
+          "CE1",
+          "NE2",
+          1.5
+        ],
+        [
+          "CG",
+          "ND1",
+          1.5
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "ILE",
+      "source_url": "https://files.rcsb.org/ligands/download/ILE.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/ILE.cif",
+      "source_sha256": "8166adcc6acb4661f4a167b0a4295879612dfad3f1a6b6f1b7bd0589c5bded93",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG1",
+          1.0
+        ],
+        [
+          "CB",
+          "CG2",
+          1.0
+        ],
+        [
+          "CD1",
+          "CG1",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG1",
+          1.0
+        ],
+        [
+          "CB",
+          "CG2",
+          1.0
+        ],
+        [
+          "CD1",
+          "CG2",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [
+        [
+          "CD1",
+          "CG2"
+        ]
+      ],
+      "ccd_only_edges": [
+        [
+          "CD1",
+          "CG1"
+        ]
+      ],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "LYS",
+      "source_url": "https://files.rcsb.org/ligands/download/LYS.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/LYS.cif",
+      "source_sha256": "318a0f6fa8f98682b35e1793517d5b683b9045c1e6174bc564b7d43e07e4c07c",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CE",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CE",
+          "NZ",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CE",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CE",
+          "NZ",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "LEU",
+      "source_url": "https://files.rcsb.org/ligands/download/LEU.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/LEU.cif",
+      "source_sha256": "fc56e022bc8baa25dc6e543b2c46664e365779aa1dda9831576fdf10b30ab84b",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CG",
+          1.0
+        ],
+        [
+          "CD2",
+          "CG",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CG",
+          1.0
+        ],
+        [
+          "CD2",
+          "CG",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "MET",
+      "source_url": "https://files.rcsb.org/ligands/download/MET.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/MET.cif",
+      "source_sha256": "a89adea8738d069b0a7bb0c3efc26b362dcc624ef9abd3b3f4bfaedd785f3afd",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CE",
+          "SD",
+          1.0
+        ],
+        [
+          "CG",
+          "SD",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CE",
+          "SD",
+          1.0
+        ],
+        [
+          "CG",
+          "SD",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "ASN",
+      "source_url": "https://files.rcsb.org/ligands/download/ASN.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/ASN.cif",
+      "source_sha256": "81491bbdb49f96e2945192c07510324d206298d3479029b76defba2ed6ab2dc7",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CG",
+          "ND2",
+          1.0
+        ],
+        [
+          "CG",
+          "OD1",
+          2.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CG",
+          "ND2",
+          1.0
+        ],
+        [
+          "CG",
+          "OD1",
+          2.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "PRO",
+      "source_url": "https://files.rcsb.org/ligands/download/PRO.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/PRO.cif",
+      "source_sha256": "08674e4d60bc40ad5702b8de6e5e4abb66c2bbb603832c021c31194f4b4e593c",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "N",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "N",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "GLN",
+      "source_url": "https://files.rcsb.org/ligands/download/GLN.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/GLN.cif",
+      "source_sha256": "b542ea5c013fbe0c7acee8e3f42d5dc4e392bd16c0aa545edbf6cb3c335ca30f",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "NE2",
+          1.0
+        ],
+        [
+          "CD",
+          "OE1",
+          2.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "NE2",
+          1.0
+        ],
+        [
+          "CD",
+          "OE1",
+          2.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "ARG",
+      "source_url": "https://files.rcsb.org/ligands/download/ARG.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/ARG.cif",
+      "source_sha256": "191c437cfa501e0a87d275ca3d39974a1a9c8dc704df61bfc442a4c314e196ac",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "NE",
+          1.0
+        ],
+        [
+          "CZ",
+          "NE",
+          1.0
+        ],
+        [
+          "CZ",
+          "NH1",
+          1.0
+        ],
+        [
+          "CZ",
+          "NH2",
+          2.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "CG",
+          1.0
+        ],
+        [
+          "CD",
+          "NE",
+          1.0
+        ],
+        [
+          "CZ",
+          "NE",
+          1.0
+        ],
+        [
+          "CZ",
+          "NH1",
+          2.0
+        ],
+        [
+          "CZ",
+          "NH2",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [
+        {
+          "edge": [
+            "CZ",
+            "NH1"
+          ],
+          "rdkit": 2.0,
+          "ccd": 1.0
+        },
+        {
+          "edge": [
+            "CZ",
+            "NH2"
+          ],
+          "rdkit": 1.0,
+          "ccd": 2.0
+        }
+      ],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "SER",
+      "source_url": "https://files.rcsb.org/ligands/download/SER.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/SER.cif",
+      "source_sha256": "46db0296a07732854d2c3ca67ed0f74f4c82ddc5698d0e59f433039a5d7c88a0",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "OG",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "OG",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "THR",
+      "source_url": "https://files.rcsb.org/ligands/download/THR.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/THR.cif",
+      "source_sha256": "feb75dfac5bfcc7045de7a75a31575f3bf3e5b411716a06e92712924759dd554",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG2",
+          1.0
+        ],
+        [
+          "CB",
+          "OG1",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG2",
+          1.0
+        ],
+        [
+          "CB",
+          "OG1",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "VAL",
+      "source_url": "https://files.rcsb.org/ligands/download/VAL.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/VAL.cif",
+      "source_sha256": "9c3c807970c817b1e1a4b43164db91a5bf1e7bf438b3269c5649f6ce84d4c0ed",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG1",
+          1.0
+        ],
+        [
+          "CB",
+          "CG2",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG1",
+          1.0
+        ],
+        [
+          "CB",
+          "CG2",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "TRP",
+      "source_url": "https://files.rcsb.org/ligands/download/TRP.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/TRP.cif",
+      "source_sha256": "4cea7e281ee404f3e72fc20d3ba98064373cdd9309a7f5c75479a04c4b6e36d6",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CG",
+          1.5
+        ],
+        [
+          "CD1",
+          "NE1",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE2",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE3",
+          1.5
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CE2",
+          "CZ2",
+          1.5
+        ],
+        [
+          "CE2",
+          "NE1",
+          1.5
+        ],
+        [
+          "CE3",
+          "CZ3",
+          1.5
+        ],
+        [
+          "CH2",
+          "CZ2",
+          1.5
+        ],
+        [
+          "CH2",
+          "CZ3",
+          1.5
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CG",
+          1.5
+        ],
+        [
+          "CD1",
+          "NE1",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE2",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE3",
+          1.5
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CE2",
+          "CZ2",
+          1.5
+        ],
+        [
+          "CE2",
+          "NE1",
+          1.5
+        ],
+        [
+          "CE3",
+          "CZ3",
+          1.5
+        ],
+        [
+          "CH2",
+          "CZ2",
+          1.5
+        ],
+        [
+          "CH2",
+          "CZ3",
+          1.5
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    },
+    {
+      "component": "TYR",
+      "source_url": "https://files.rcsb.org/ligands/download/TYR.cif",
+      "source_path": "runtime/molecular-selection-research/standard-residue-ccd/TYR.cif",
+      "source_sha256": "fa0ef32f9d623e087a527b0a146c0494a5a656037c6448d956072dd2406fa554",
+      "ccd_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CE1",
+          1.5
+        ],
+        [
+          "CD1",
+          "CG",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE2",
+          1.5
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CE1",
+          "CZ",
+          1.5
+        ],
+        [
+          "CE2",
+          "CZ",
+          1.5
+        ],
+        [
+          "CZ",
+          "OH",
+          1.0
+        ]
+      ],
+      "rdkit_heavy_bonds": [
+        [
+          "C",
+          "CA",
+          1.0
+        ],
+        [
+          "C",
+          "O",
+          2.0
+        ],
+        [
+          "C",
+          "OXT",
+          1.0
+        ],
+        [
+          "CA",
+          "CB",
+          1.0
+        ],
+        [
+          "CA",
+          "N",
+          1.0
+        ],
+        [
+          "CB",
+          "CG",
+          1.0
+        ],
+        [
+          "CD1",
+          "CE1",
+          1.5
+        ],
+        [
+          "CD1",
+          "CG",
+          1.5
+        ],
+        [
+          "CD2",
+          "CE2",
+          1.5
+        ],
+        [
+          "CD2",
+          "CG",
+          1.5
+        ],
+        [
+          "CE1",
+          "CZ",
+          1.5
+        ],
+        [
+          "CE2",
+          "CZ",
+          1.5
+        ],
+        [
+          "CZ",
+          "OH",
+          1.0
+        ]
+      ],
+      "rdkit_only_edges": [],
+      "ccd_only_edges": [],
+      "different_orders": [],
+      "current_application_adjacency_matches_ccd": true
+    }
+  ],
+  "verified_at": "2026-09-07T23:55:27.956480+00:00",
+  "summary": {
+    "standard_residues_compared": 20,
+    "raw_rdkit_named_edge_mismatches": [
+      "ILE"
+    ],
+    "current_application_named_edges_match_all_20_ccd_components": true,
+    "aromatic_bond_flags_normalized": true,
+    "bond_order_only_difference": "ARG: raw RDKit neutral guanidine has CZ=NH1 and CZ\u2013NH2; CCD ARG +1 guanidinium has CZ\u2013NH1 and CZ=NH2(+1). Same heavy-atom adjacency, different protonation/resonance representation; this cannot cause a long-edge warning.",
+    "coordinate_changes_performed": false,
+    "source_records": "Official wwPDB CCD files downloaded from files.rcsb.org; exact URL, local cached bytes and SHA256 retained per component."
+  }
+}

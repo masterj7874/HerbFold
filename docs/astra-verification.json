@@ -1,0 +1,112 @@
+{
+  "verified_at": "2026-09-07",
+  "version": "0.2.0",
+  "analysis_id": "6261f526e20240a3881377a0992ae650",
+  "status": "completed",
+  "model": "gpt-6-astra",
+  "llm_used": true,
+  "usage": {
+    "llm_calls": 8,
+    "input_tokens": 23189,
+    "output_tokens": 5264,
+    "source_requests": 3
+  },
+  "stages": [
+    {
+      "id": "coordinator",
+      "status": "completed",
+      "started": "2026-09-07T08:54:21.909590+00:00",
+      "finished": "2026-09-07T08:54:41.870845+00:00"
+    },
+    {
+      "id": "evidence",
+      "status": "completed",
+      "started": "2026-09-07T08:59:24.333017+00:00",
+      "finished": "2026-09-07T08:59:43.455550+00:00"
+    },
+    {
+      "id": "chemistry",
+      "status": "completed",
+      "started": "2026-09-07T08:59:24.327938+00:00",
+      "finished": "2026-09-07T08:59:45.779111+00:00"
+    },
+    {
+      "id": "candidate_design",
+      "status": "completed",
+      "started": "2026-09-07T08:59:45.787636+00:00",
+      "finished": "2026-09-07T09:00:05.100803+00:00"
+    },
+    {
+      "id": "structure",
+      "status": "completed",
+      "started": "2026-09-07T09:00:05.108949+00:00",
+      "finished": "2026-09-07T09:00:06.394221+00:00"
+    },
+    {
+      "id": "quantum",
+      "status": "completed",
+      "started": "2026-09-07T09:00:06.401447+00:00",
+      "finished": "2026-09-07T09:00:06.557995+00:00"
+    },
+    {
+      "id": "review",
+      "status": "completed",
+      "started": "2026-09-07T09:00:06.565397+00:00",
+      "finished": "2026-09-07T09:00:34.111571+00:00"
+    },
+    {
+      "id": "report",
+      "status": "completed",
+      "started": "2026-09-07T09:00:34.120492+00:00",
+      "finished": "2026-09-07T09:00:59.399130+00:00"
+    }
+  ],
+  "candidate_count": 4,
+  "candidate_ids": [
+    "brics-21717ed9d845",
+    "brics-1cb44e9da7aa",
+    "brics-1869b7b03c2b",
+    "brics-8858bd5076aa"
+  ],
+  "af3": {
+    "execution_requested": false,
+    "prepared_jobs": [
+      "fc5892276559425fb369b291f73e7716"
+    ],
+    "models_generated": 0,
+    "msa_search_ready": false
+  },
+  "quantum": {
+    "mode": "local",
+    "qubits": 4,
+    "kernel_shape": [
+      6,
+      6
+    ],
+    "ibm_submitted_this_run": false
+  },
+  "response_ids": [
+    "resp_0adf48593d894cd1016a9e7bbe859487d08a70adfc2f437f52",
+    "resp_0f8873a4a9ac21de016a9e7bd2b17087d084b33d749ecf7351",
+    "resp_0e814a7aa84211fc016a9e7bd5bd9087d094cc2f467eaa5ac0",
+    "resp_0b63f288212ee631016a9e7cecd13887d0aad77026be453601",
+    "resp_02e7cc16b6659588016a9e7cecd36887d09e1f00257738ea67",
+    "resp_0e62f68b94b573f3016a9e7d020ec487d0afbdc372cb8e80ec",
+    "resp_0472a3b4459cf37b016a9e7d16de4887d0b03a1bd12312e0d2",
+    "resp_059d595b6f74a7c4016a9e7d32f59087d0ac52800c64740b08"
+  ],
+  "recovery_test": "Original two specialist decisions stopped incorrectly at their scope boundary. Explicit resume with versioned role contracts reused tool checkpoints and completed within the original eight-call budget; original stops retained.",
+  "python_tests": 185,
+  "ruff": "passed",
+  "typescript": "passed",
+  "vite_build": "passed",
+  "wheel_and_sdist": "passed",
+  "browser_report": "astra-ui-verification.json",
+  "atomic_viewer_report": "astra-viewer-verification.json",
+  "ibm_read_only_check": {
+    "maximum_usable_qubits": 156,
+    "selected_max_backend": "ibm_marrakesh",
+    "submitted": false
+  },
+  "protein_viewer_report": "astra-protein-verification.json"
+}

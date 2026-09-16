@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-14T00:37:07.011978+00:00",
+  "database_total": 766417,
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "checks": {
+    "single_compound_primary_has_no_comparison_inputs": true,
+    "bounded_distinct_pages": true,
+    "korean_herb_search": "DB 검색 결과 342개",
+    "source_and_herb_filter": 196,
+    "single_compound_descriptors_and_stored_af3_structure": 182149,
+    "af3_action_uses_single_selected_compound_and_applied_target": true,
+    "same_category_comparison": {
+      "left_id": "baicalein",
+      "left_name": "Baicalein",
+      "right_id": "quercetin",
+      "right_name": "Quercetin",
+      "left_canonical_smiles": "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12",
+      "right_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+      "tanimoto": 0.32,
+      "identical_structure": false,
+      "fingerprint": "Morgan radius=2, bits=2048, chirality=True",
+      "standardization": "RDKit Cleanup + FragmentParent; charge/stereo retained; no tautomer or pH enumeration",
+      "interpretation": "Structural similarity only; not common indication, binding affinity, efficacy, or interchangeability. Identity refers to standardized structures, not original salts."
+    },
+    "comparison_survives_catalog_refresh": true,
+    "stale_comparison_results_hidden": true,
+    "candidate_design_in_separate_optional_section": true,
+    "primary_selection_independent_of_comparison": true,
+    "mobile_no_horizontal_overflow": true,
+    "no_jobs_created": true
+  },
+  "screenshots": [
+    "docs/images/single-compound-alphafold-desktop.png",
+    "docs/images/single-compound-alphafold-library.png",
+    "docs/images/single-compound-af3-structure.png",
+    "docs/images/single-compound-comparison-desktop.png",
+    "docs/images/single-compound-comparison-mobile.png",
+    "docs/images/single-compound-alphafold-mobile.png"
+  ],
+  "status": "passed"
+}

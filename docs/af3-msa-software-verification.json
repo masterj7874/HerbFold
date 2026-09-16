@@ -1,0 +1,84 @@
+{
+  "verified_at": "2026-09-08T01:25:45.906982+00:00",
+  "scope": "Software regression and build checks; actual full database installation and MSA inference are verified in separate reports.",
+  "python_tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 483,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 2,
+    "elapsed_seconds": 34.58
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check src tests scripts/install_af3_databases.py scripts/verify_af3_msa_comparison.py scripts/verify_af3_msa_ui.py scripts/verify_molecular_selection.py",
+    "passed": true
+  },
+  "wheel": {
+    "path": "tmp/msa-build/herbfold-0.2.0-py3-none-any.whl",
+    "built": true
+  },
+  "frontend_build": {
+    "reported_passed": true,
+    "javascript": "index-Jj4sC99f.js",
+    "css": "index-Lnff_V69.css",
+    "baseline_ui_report": "docs/af3-msa-evidence-ui-verification.json"
+  },
+  "artifact_sha256": {
+    "src/herbfold/af3_databases.py": "d09100c59b86c8f600d1a73fbb19b073cb994b7d90711d238278c9b6d00da25a",
+    "src/herbfold/af3_features.py": "7e67f287ee19659f0978ae302b4b9f4970c4d635a15f1f99e38b6f2363f0c143",
+    "src/herbfold/af3_execution.py": "b874ce8bd4abb3d9574556ea0a5bece8a7ba11dd1cbda8b6daf37208d18b2652",
+    "src/herbfold/af3_studio.py": "e178fec7f07fb98314f93c4f60e88e5af481464a21956f3aaa91c8e76e35f0e4",
+    "src/herbfold/alphafold.py": "b8e6f03e7682a3536291cbdf0f92dd1ae50bf9b8766ff910010141b97c7d86dd",
+    "scripts/install_af3_databases.py": "d7884bf807c8cdba23c257458f4042719b2170ed2b13cd9a61935ab66cc74cf6",
+    "scripts/verify_af3_msa_comparison.py": "7dc90273a28c6b7a69be51fdb460bf01ca90111184eab1ccc7f511865151ea20",
+    "pyproject.toml": "03fcc92e0446dedae907d8b8ce32f6fe5cb80e53448c93b2d582c1030abcf495",
+    "uv.lock": "510519ddef42f958be7968140131bc0b83f334d1cc56d2981611dcc6ff3e7ad6"
+  },
+  "actual_database_report": "docs/af3-full-database-installation.json",
+  "actual_msa_report": "docs/af3-msa-selected-predictions.json",
+  "actual_comparison_report": "docs/af3-msa-structure-comparison.json",
+  "final_verification_at": "2026-09-08T02:04:06.800721+00:00",
+  "browser_checks": {
+    "running_msa": {
+      "path": "docs/af3-msa-ui-running-stage-verification.json",
+      "sha256": "0ccadc74961e30083cf9f29c839efa3cc37ac5d4d7a4b460349bf66d521bae01",
+      "passed": true
+    },
+    "completed_msa": {
+      "path": "docs/af3-msa-ui-complete-verification.json",
+      "sha256": "2ee654bb29f1e9361ef66f938358d64706e23332ec7953f48ee651b1204c07d1",
+      "passed": true
+    },
+    "molecular_selection_regression": {
+      "path": "docs/molecular-selection-verification.json",
+      "sha256": "61eeebd8236870dd25d731b50efeff81b4548506a77baffb0dc3fa7a6bc76608",
+      "passed": true
+    }
+  },
+  "browser_checks_scope": "Actual production API and rendered UI; read-only structural requests, no new AF3 executions, no synthetic prediction data.",
+  "standalone_ui_check_script_sha256": {
+    "scripts/verify_af3_msa_ui.py": "3e95dd013b2309a357bbd1a0a41deb007b69e836badd26ee30195cd533431da3",
+    "scripts/verify_molecular_selection.py": "ae1d8f0fe6d1bd21caacbc109595da6c4f6e1646d0133cc9fb1c40a97d08063b"
+  },
+  "actual_report_receipts": {
+    "actual_database_report": {
+      "sha256": "fd0526ddaa0bc7119359a0ee42125a157f796afd6fe4e9e55b1bbcdc8150da09",
+      "status": "complete",
+      "passed": null,
+      "genuine_inference_completed": null
+    },
+    "actual_msa_report": {
+      "sha256": "3332db56577ce7a82c070f4f23a750cd64b715c7a67e270bb467f7a8b9ec744a",
+      "status": "completed",
+      "passed": null,
+      "genuine_inference_completed": true
+    },
+    "actual_comparison_report": {
+      "sha256": "9867d2662d0c6f0b2f3b912da142c0195245d43f48793ecdec852e7313e75e3a",
+      "status": null,
+      "passed": true,
+      "genuine_inference_completed": null
+    }
+  },
+  "summary_report": "docs/af3-msa-validation.md"
+}

@@ -1,0 +1,16 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+runtime/
+tmp/
+external/
+*.egg-info/
+dist/
+frontend/node_modules/
+frontend/*.tsbuildinfo
+output/
+research/
+.env.local-backup

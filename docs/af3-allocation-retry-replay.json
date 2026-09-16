@@ -1,0 +1,11 @@
+{
+  "test": "read-only replay of actual interrupted inference log",
+  "job_id": "308e4b99d57a432ebfd11c90a67ec02c",
+  "configured_retry_timeout_seconds": 180,
+  "trigger": {
+    "seconds_of_observed_retries": 180,
+    "clock_second_of_day": 37510
+  },
+  "processes_started_or_stopped": 0,
+  "status": "passed"
+}

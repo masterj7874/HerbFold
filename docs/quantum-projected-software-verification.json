@@ -1,0 +1,99 @@
+{
+  "verified_at": "2026-09-08T03:05:48.798193+00:00",
+  "scope": "Software/build and actual IBM measurement provenance checks; no affinity/efficacy/safety or quantum-advantage validation.",
+  "python_tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 551,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 2,
+    "elapsed_seconds": 35.6,
+    "log": "tmp/quantum-upgrade-final-pytest.log"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check src tests scripts/verify_projected_quantum.py scripts/audit_projected_quantum.py scripts/verify_quantum_projected_ui.py",
+    "passed": true
+  },
+  "wheel": {
+    "path": "tmp/quantum-build/herbfold-0.2.0-py3-none-any.whl",
+    "built": true,
+    "sha256": "689b90e988bc2009756024d8a37f70bc6ec98442ea09658e90939e459dfde787",
+    "matches_final_frontend_assets": true
+  },
+  "source_sha256": {
+    "src/herbfold/quantum.py": "4b1db843c5f93d0ac000d123ef311983e324aa72b3967292438d665034f451c6",
+    "src/herbfold/quantum_projected.py": "b1b3533d96cedde9a46e43df7a2f676226797b12a8f0f37675b829f33808b5cf",
+    "src/herbfold/api.py": "b0c99c1230233232250e3b7b3a633381fade8042e1ea4c5aacffcbacd08feed9",
+    "src/herbfold/orchestration.py": "ec179c8af1182407ceb7dc009e19e34c8eada78bc5ba1006280d9add0c4fd34e",
+    "src/herbfold/kernel_model.py": "24a5eaf5eaa4053ed65b08c02bb694dcbc0244537d43d0cbcf0a5871c8fa0e6a",
+    "scripts/verify_projected_quantum.py": "b720492a55357f05ddce82dd8f07744312a3fbbde04fb7afae387af89292bc43",
+    "scripts/audit_projected_quantum.py": "d964226cc73529ded83fe2ff20af106a8edb137464c71d57a6f5204f67b46b2f",
+    "tests/test_quantum_projected.py": "0fe1204d42b1fe3f673d9aa9ac8d800e9124ab1e7474cb062dcdd2b797a187b7",
+    "tests/test_quantum_api.py": "835e73feffe52656f74619ccef458e1e7bbf1bf3e50a12d2009babc171f950ec",
+    "tests/test_projected_audit.py": "15b633d99131c572abeff41b2a7542063bca42b621c05f8ff34a18f2f8e76ef7",
+    "scripts/verify_quantum_projected_ui.py": "1e1f60e3f2b6fe13263ca58bfe155c6b86c85b2088f08de4d1d9fc7791389167",
+    "frontend/src/components/QuantumPanel.tsx": "50c087fa48c69fe29842dd352dce9ae721061f7d97247b0ce7be6c6db27a0626",
+    "frontend/src/components/quantum-panel.css": "835972bdcf718fedab6ed68b533d0f2a581e3dc82578eaa74cb7fc1b29502e33",
+    "frontend/src/types/quantum.ts": "9d61c490dee1184a544062f41baf67f4ae1b77c0d1b855867fb67d77b69cd505",
+    "frontend/src/lib/quantumEvidence.ts": "232aeef457ed258d4f36d2bbb4f751608f0a6c51555e9b432d1306c4cce1acc0",
+    "frontend/tests/quantum-evidence.test.mjs": "9b7ec74f8c3e58ecfb278dc2c5d2e70c7bf05c2d9d1bb8faa25195e63e1b3cd3",
+    "src/herbfold/static/app.js": "85016f9625814bd56edab2ca9473bddfc83f2718be51cec055ba834045f2f413",
+    "scripts/verify_quantum_selection_race.py": "303551734dc714593001eb730bd9f6e711227d51ff12e679ba418c35b499dde5"
+  },
+  "actual_evidence_sha256": {
+    "docs/quantum-projected-verification.json": "7ec53031206cc5d8483475e35d4a465d6b41545af3fd3ed356ba6a03629f5e8c",
+    "docs/quantum-projected-independent-audit.json": "945aee9711ec1a557b75b32d98d3e3f7df9b99aab155b52c4bcf6bed3632f306",
+    "docs/quantum-zero-kernel-audit.json": "403c63ee8ba40473b6f5ecd974b8b85a88e6196714cb54367da5b5f8a0b03f8b",
+    "docs/quantum-zero-kernel-latest-analysis-audit.json": "aed8b52e795f1fb40ab3e6a3c12d16953abd4e165fb195766caf17c9500ed5ce",
+    "docs/quantum-projected-ui-verification.json": "f3cac211ec296b6a1528996ab75a95173009b334e488592a464d97b494dd2bef"
+  },
+  "ui_verification": {
+    "status": "passed",
+    "report": "docs/quantum-projected-ui-verification.json",
+    "sha256": "f3cac211ec296b6a1528996ab75a95173009b334e488592a464d97b494dd2bef",
+    "source_analysis_id": "b3d261566fa14891925d3b1fd730f2d1",
+    "store_job_id": "f1b0f1c6867b4d21b40193e65ab980bf",
+    "javascript_errors": [],
+    "qpu_submissions": 0,
+    "synthetic_data_used": false,
+    "analysis_and_result_restored_after_reload": true,
+    "archive_preserves_measured_method_and_values": true,
+    "source_kernel_unchanged_after_qa": true,
+    "desktop_width": 431,
+    "mobile_viewport_width": 360,
+    "mobile_panel_width": 222
+  },
+  "summary_report": "docs/quantum-projected-validation.md",
+  "known_warnings": [
+    "Existing Starlette/httpx and anyio deprecations; no failed Python tests."
+  ],
+  "frontend": {
+    "build_command": "npm run build",
+    "build_passed": true,
+    "typescript_check_included": true,
+    "unit_test_command": "node --test tests/quantum-evidence.test.mjs",
+    "unit_tests_passed": 5,
+    "assets": [
+      "/app/assets/index-CP2p6pNV.js",
+      "/app/assets/rolldown-runtime-hePW80VL.js",
+      "/app/assets/molecular-engine-Dr-Y2Aq8.js",
+      "/app/assets/index-CnC6AAn-.css"
+    ],
+    "served_bundle_matches_build": true
+  },
+  "final_api_checks": {
+    "base_url": "http://127.0.0.1:8873",
+    "health_status": "ok",
+    "alphafold_ready": true,
+    "linked_projected_job_id": "f1b0f1c6867b4d21b40193e65ab980bf",
+    "linked_projected_job_status": "completed",
+    "linked_kernel_matches_actual_ui_receipt": true,
+    "original_manifest_sha256_unchanged": "069605c6860ceee6c00cbd7cd950c15907c4773cde490a81822d4a11a962392e"
+  },
+  "selection_race_verification": {
+    "status": "passed",
+    "report": "docs/quantum-selection-race-verification.json",
+    "sha256": "e4a0e6e8b7727c8dc2d38e15507fe6970ed0e093881e353a991ae632e67ea52e",
+    "scope": "Actual delayed analysis response; selected analysis and linked quantum result remain unchanged"
+  }
+}

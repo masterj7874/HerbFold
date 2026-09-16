@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-09-14T01:38:08.236288+00:00",
+  "status": "passed",
+  "actual_job_id": "308e4b99d57a432ebfd11c90a67ec02c",
+  "actual_compound": {
+    "id": 1,
+    "canonical_smiles": "CCCCCCCCCC[C@@H](O)[C@H]1CC[C@H]([C@H]2CC[C@H]([C@H](O)CCCCCCCCCC[C@H](O)CC3=C[C@H](C)OC3=O)O2)O1",
+    "inchikey": "MBABCNBNDNGODA-WGCJABNLSA-N",
+    "display_name": "(2S)-4-((2S,13R)-2,13-Dihydroxy-13-((2R,5R)-5-((2R,5R)-5-((1R)-1-Hydroxyundecyl)Oxolan-2-Yl)Oxolan-2-Yl)Tridecyl)-2-Methyl-2H-Furan-5-One",
+    "formula": "C37H66O7",
+    "created_at": "2026-09-07T09:52:45.115361+00:00"
+  },
+  "replay_scope": "Isolated browser responses only; a stored Aspirin completed job is shown as pending then its actual completed response. No server job records are changed.",
+  "replay_completed_job_id": "b868a97038e144f8a605a722d911338b",
+  "checks": {
+    "actual_interruption_has_no_running_spinner_and_retains_msa": {
+      "status": "interrupted",
+      "error": "GPU 메모리 할당 실패가 수분간 반복되어 이 AF3 계산을 중단했습니다. 다른 서비스가 GPU 메모리 대부분을 사용하고 있습니다. 완료된 MSA·템플릿 검색 결과는 보존했습니다. GPU 메모리를 확보한 뒤 같은 조건으로 다시 준비하세요.",
+      "msa_features_status": "ready",
+      "retry_enabled": true,
+      "mobile_no_horizontal_overflow": true
+    },
+    "replay_completed_status_and_structure_before_log_deadline": {
+      "result_button_seconds": 3.32,
+      "status": 5,
+      "held_logs": 2,
+      "held_status": 0
+    },
+    "replay_status_timeout_auto_recovers": {
+      "status": 4,
+      "held_logs": 0,
+      "held_status": 1
+    },
+    "replay_selection_change_aborts_old_status_without_retry_or_error": {
+      "status": 2,
+      "held_logs": 0,
+      "held_status": 2
+    },
+    "no_jobs_created_or_status_changed": true
+  },
+  "screenshots": [
+    "docs/images/af3-progress-actual-interrupted-desktop.png",
+    "docs/images/af3-progress-actual-interrupted-mobile.png",
+    "docs/images/af3-progress-replay-completed-with-hung-log.png",
+    "docs/images/af3-progress-replay-status-timeout.png"
+  ],
+  "javascript_errors": [],
+  "blocked_mutations": []
+}

@@ -1,0 +1,627 @@
+{
+  "verified_at": "2026-09-08T00:04:23.855480+00:00",
+  "status": "metadata_only_not_installed",
+  "source_tag": "v3.0.4",
+  "source_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+  "source_manifest_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/fetch_databases.sh",
+  "source_installation_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/installation.md",
+  "objects": [
+    {
+      "object": "pdb_2022_09_28_mmcif_files.tar.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_2022_09_28_mmcif_files.tar.zst",
+      "head_status": 200,
+      "compressed_bytes": 56979074571,
+      "generation": "1730832728463652",
+      "etag": "\"13447e161d081c7d5df71781b6de2427\"",
+      "last_modified": "Tue, 05 Nov 2024 18:52:08 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "waDF1A==",
+        "md5": "E0R+Fh0IHH1d9xeBtt4kJw=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/56979074571",
+      "prefix_generation": "1730832728463652",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "2b34db4d2bc3e2c3e6ed02b54ac34ce8e8c4efe606ba450356a492e59716ee4e",
+        "frame_content_size_bytes": 250266275840,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "mgy_clusters_2022_05.fa.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/mgy_clusters_2022_05.fa.zst",
+      "head_status": 200,
+      "compressed_bytes": 69333008025,
+      "generation": "1730826709796458",
+      "etag": "\"d2482ea92b28ccb14e235bb4868b6d50\"",
+      "last_modified": "Tue, 05 Nov 2024 17:11:49 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "gPPw4g==",
+        "md5": "0kguqSsozLFOI1u0hottUA=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/69333008025",
+      "prefix_generation": "1730826709796458",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "d3e1e5e69c5dbb1e848e3acc24c4b9b3ad5a655135ef6860bfe97051a1eb4c45",
+        "frame_content_size_bytes": 128579703018,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "bfd-first_non_consensus_sequences.fasta.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/bfd-first_non_consensus_sequences.fasta.zst",
+      "head_status": 200,
+      "compressed_bytes": 9880478127,
+      "generation": "1730822885415645",
+      "etag": "\"ccde88faeb9eb62b0c83d07edcbf3459\"",
+      "last_modified": "Tue, 05 Nov 2024 16:08:05 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "v9fbdw==",
+        "md5": "zN6I+uuetisMg9B+3L80WQ=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/9880478127",
+      "prefix_generation": "1730822885415645",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "d57ba869b89dc4b1595a084c7b978ffdc21565e88dddc02d5a09778d3f307d10",
+        "frame_content_size_bytes": 18171626364,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "uniref90_2022_05.fa.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/uniref90_2022_05.fa.zst",
+      "head_status": 200,
+      "compressed_bytes": 33271639594,
+      "generation": "1730837673075080",
+      "etag": "\"c9136c52ca9e25c2ce8d3a569d47e912\"",
+      "last_modified": "Tue, 05 Nov 2024 20:14:33 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "OT/GbQ==",
+        "md5": "yRNsUsqeJcLOjTpWnUfpEg=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/33271639594",
+      "prefix_generation": "1730837673075080",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "8b8df78b6cfac9529abee69fbd0108d7dd4134f7503abe97e3c9aed3598e89c8",
+        "frame_content_size_bytes": 71821260491,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "uniprot_all_2021_04.fa.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/uniprot_all_2021_04.fa.zst",
+      "head_status": 200,
+      "compressed_bytes": 48688827585,
+      "generation": "1730835786074627",
+      "etag": "\"cabf618be6f8c85397c97f49d7da9307\"",
+      "last_modified": "Tue, 05 Nov 2024 19:43:06 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "k9mSMA==",
+        "md5": "yr9hi+b4yFOXyX9J19qTBw=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/48688827585",
+      "prefix_generation": "1730835786074627",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "00a094fc62efda8cf00f7108e074ead2a020071562fad4fdf728b3d5bcb36b49",
+        "frame_content_size_bytes": 108447942931,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "pdb_seqres_2022_09_28.fasta.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_seqres_2022_09_28.fasta.zst",
+      "head_status": 200,
+      "compressed_bytes": 26493534,
+      "generation": "1730832733047846",
+      "etag": "\"86a1b92d3988ca499d79651d075379b2\"",
+      "last_modified": "Tue, 05 Nov 2024 18:52:13 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "uZUlYQ==",
+        "md5": "hqG5LTmIykmdeWUdB1N5sg=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/26493534",
+      "prefix_generation": "1730832733047846",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "71223da4f4226504f36d2aeccda6dfbdadd7749f128bdf0c98f4fae8d5369f51",
+        "frame_content_size_bytes": 232899463,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "rnacentral_active_seq_id_90_cov_80_linclust.fasta.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/rnacentral_active_seq_id_90_cov_80_linclust.fasta.zst",
+      "head_status": 200,
+      "compressed_bytes": 3519676108,
+      "generation": "1730833037254881",
+      "etag": "\"f4db49a31a8c2576210d5fa273296117\"",
+      "last_modified": "Tue, 05 Nov 2024 18:57:17 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "iZSwlA==",
+        "md5": "9NtJoxqMJXYhDV+icylhFw=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/3519676108",
+      "prefix_generation": "1730833037254881",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "2562c9712c9d2ddfa1f0d88c2d8f1a4abcf4f730e6a2fbdebf786142393ae1ac",
+        "frame_content_size_bytes": 13860314914,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "head_status": 200,
+      "compressed_bytes": 17028641580,
+      "generation": "1730828153681603",
+      "etag": "\"2da99b2f9704896ce9b4f5dd9425e432\"",
+      "last_modified": "Tue, 05 Nov 2024 17:35:53 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "0jZlYg==",
+        "md5": "LambL5cEiWzptPXdlCXkMg=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/17028641580",
+      "prefix_generation": "1730828153681603",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "a3d764bbeb2c4b385eb242b32d18f6161f6ce4f1531185b58fde6553172ee7f4",
+        "frame_content_size_bytes": 80977012680,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    },
+    {
+      "object": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "url": "https://storage.googleapis.com/alphafold-databases/v3.0/rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "head_status": 200,
+      "compressed_bytes": 56604542,
+      "generation": "1730832743346741",
+      "etag": "\"7dd833c908ae8288b320fdb363b56848\"",
+      "last_modified": "Tue, 05 Nov 2024 18:52:23 GMT",
+      "accept_ranges": "bytes",
+      "stored_content_encoding": "identity",
+      "hashes": {
+        "crc32c": "mw7VNQ==",
+        "md5": "fdgzyQiugoizIP2zY7VoSA=="
+      },
+      "prefix_status": 206,
+      "prefix_content_range": "bytes 0-63/56604542",
+      "prefix_generation": "1730832743346741",
+      "zstd_first_frame": {
+        "prefix_bytes_fetched": 64,
+        "prefix_sha256": "175826b0534bd52574fdba66be0f3a418d0db5a09b1883d3e3b7852a6c6c5f60",
+        "frame_content_size_bytes": 228433680,
+        "frame_content_size_unknown": false,
+        "window_size_bytes": 2097152,
+        "dictionary_id": 0,
+        "frame_checksum_present": true,
+        "scope": "First frame header only; total expanded size is not verified and concatenated frames are not excluded."
+      },
+      "object_generation_consistent": true,
+      "metadata_status": "verified_head_and_bounded_prefix"
+    }
+  ],
+  "object_count": 9,
+  "total_compressed_bytes": 238784443666,
+  "total_object_body_bytes_fetched": 131648,
+  "full_object_downloads_performed": 0,
+  "database_installation_verified": false,
+  "pdb_tar_prefix_probe": {
+    "compressed_prefix_bytes_fetched": 131072,
+    "compressed_prefix_sha256": "5883deb9af0f052080a87e06b68818305987851f3f1f4bf0e4a05f4be5675e7f",
+    "prefix_response_status": 206,
+    "source_url": "https://storage.googleapis.com/alphafold-databases/v3.0/pdb_2022_09_28_mmcif_files.tar.zst",
+    "source_generation": "1730832728463652",
+    "decoded_bytes_available": 524288,
+    "decode_output_cap_bytes": 2097152,
+    "prefix_tar_headers": [
+      {
+        "name": "mmcif_files",
+        "size_bytes": 0,
+        "type": "5",
+        "is_directory": true,
+        "is_regular_file": false,
+        "linkname": ""
+      },
+      {
+        "name": "mmcif_files/5obw.cif",
+        "size_bytes": 701424,
+        "type": "0",
+        "is_directory": false,
+        "is_regular_file": true,
+        "linkname": ""
+      }
+    ],
+    "header_checksum_validation": "tarfile.TarInfo.frombuf validates each inspected tar header checksum",
+    "scope": "Bounded initial prefix only, not a full archive validation; first entries do not guarantee later entries are safe or valid."
+  },
+  "runtime_bindings": [
+    {
+      "object": "pdb_2022_09_28_mmcif_files.tar.zst",
+      "required_relative_path": "mmcif_files",
+      "cli_flag": "pdb_database_path",
+      "default_cli_value": "${DB_DIR}/mmcif_files",
+      "role": "PDB template structures; protein template extraction after sequence search"
+    },
+    {
+      "object": "mgy_clusters_2022_05.fa.zst",
+      "required_relative_path": "mgy_clusters_2022_05.fa",
+      "cli_flag": "mgnify_database_path",
+      "default_cli_value": "${DB_DIR}/mgy_clusters_2022_05.fa",
+      "role": "Protein unpaired MSA; Jackhmmer, max5000 sequences"
+    },
+    {
+      "object": "bfd-first_non_consensus_sequences.fasta.zst",
+      "required_relative_path": "bfd-first_non_consensus_sequences.fasta",
+      "cli_flag": "small_bfd_database_path",
+      "default_cli_value": "${DB_DIR}/bfd-first_non_consensus_sequences.fasta",
+      "role": "Protein unpaired MSA; Jackhmmer, max5000 sequences; smallBFD, not AF2 full BFD archive"
+    },
+    {
+      "object": "uniref90_2022_05.fa.zst",
+      "required_relative_path": "uniref90_2022_05.fa",
+      "cli_flag": "uniref90_database_path",
+      "default_cli_value": "${DB_DIR}/uniref90_2022_05.fa",
+      "role": "Protein unpaired MSA; Jackhmmer, max10000 sequences"
+    },
+    {
+      "object": "uniprot_all_2021_04.fa.zst",
+      "required_relative_path": "uniprot_all_2021_04.fa",
+      "cli_flag": "uniprot_cluster_annot_database_path",
+      "default_cli_value": "${DB_DIR}/uniprot_all_2021_04.fa",
+      "role": "Protein paired MSA; Jackhmmer, max50000 sequences"
+    },
+    {
+      "object": "pdb_seqres_2022_09_28.fasta.zst",
+      "required_relative_path": "pdb_seqres_2022_09_28.fasta",
+      "cli_flag": "seqres_database_path",
+      "default_cli_value": "${DB_DIR}/pdb_seqres_2022_09_28.fasta",
+      "role": "Protein template sequence search with hmmbuild/hmmsearch"
+    },
+    {
+      "object": "rnacentral_active_seq_id_90_cov_80_linclust.fasta.zst",
+      "required_relative_path": "rnacentral_active_seq_id_90_cov_80_linclust.fasta",
+      "cli_flag": "rna_central_database_path",
+      "default_cli_value": "${DB_DIR}/rnacentral_active_seq_id_90_cov_80_linclust.fasta",
+      "role": "RNA MSA; Nhmmer, max10000 sequences"
+    },
+    {
+      "object": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "required_relative_path": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "cli_flag": "ntrna_database_path",
+      "default_cli_value": "${DB_DIR}/nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "role": "RNA MSA; Nhmmer, max10000 sequences"
+    },
+    {
+      "object": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+      "required_relative_path": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "cli_flag": "rfam_database_path",
+      "default_cli_value": "${DB_DIR}/rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "role": "RNA MSA; Nhmmer, max10000 sequences"
+    }
+  ],
+  "storage_plan": {
+    "compressed_size_bytes_verified_by_head": 238784443666,
+    "compressed_GiB": 222.3853428531438,
+    "expanded_first_frame_sizes_sum_bytes": 672585469381,
+    "expanded_first_frame_sizes_sum_GiB": 626.394030992873,
+    "compressed_plus_expanded_bytes_estimate": 911369913047,
+    "compressed_plus_expanded_GiB_estimate": 848.7793738460168,
+    "size_scope": "Expanded size is the sum of first-frame declared content sizes; PDB is TAR bytes including headers/padding, not measured extracted tree disk usage. Whole-frame integrity, trailing data/concatenated frames and filesystem overhead remain to be validated during installation.",
+    "provided_available_SSD_TiB": 1.3,
+    "provided_available_HDD_TiB": 6.4,
+    "approx_SSD_GiB_remaining_after_both": 482.4206261539832,
+    "recommended_layout": "Use SSD for expanded 8 FASTAs and mmcif_files; retain compressed source objects under a separate .downloads subdirectory. Stream verified PDB compressed bytes through tar extraction to avoid another250GB intermediate tar. HDD can retain secondary archives if desired.",
+    "official_documentation_rough_sizes": "Installation docs estimate around252GB compressed and630GB expanded; use observed byte counts rather than interpreting these approximations as exact."
+  },
+  "primary_sources": [
+    {
+      "url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/fetch_databases.sh",
+      "supports": "Exact9objectnames, GCS v3.0 base URL and decompressed layout"
+    },
+    {
+      "url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/installation.md",
+      "supports": "Complete protein/RNA/PDB scope, SSD recommendation, RAM guidance and approximate storage"
+    },
+    {
+      "url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/run_alphafold.py",
+      "supports": "Exact default DB flags, multi db_dir lookup, all9path validation, pipeline-only and inference-only flags"
+    },
+    {
+      "url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/src/alphafold3/data/pipeline.py",
+      "supports": "Actual protein/RNA tools and search limits, templates and explicit empty/null input semantics"
+    },
+    {
+      "url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/performance.md",
+      "supports": "Reusable feature workflow, disk/CPU/RAM dependence, sharding and global Z-value requirements"
+    },
+    {
+      "url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/input.md",
+      "supports": "Meaning of unpairedMsa, pairedMsa and templates"
+    },
+    {
+      "url": "https://docs.cloud.google.com/storage/docs/data-validation",
+      "supports": "Client verification of full-object CRC32C/MD5; a partial Range payload is not validated by the whole-object checksum"
+    },
+    {
+      "url": "https://github.com/facebook/zstd/blob/dev/doc/zstd_compression_format.md",
+      "supports": "Zstd frame content size and frame checksum semantics; multiple concatenated frames are possible"
+    }
+  ],
+  "source_code_snapshot": {
+    "commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+    "matches_official_manifest_object_set": true,
+    "files": [
+      {
+        "path": "external/alphafold3/fetch_databases.sh",
+        "sha256": "74b403b6f82b962081363c1a2af4b1a927fb8f9600b4dfb4703b764d18697412"
+      },
+      {
+        "path": "external/alphafold3/run_alphafold.py",
+        "sha256": "a1dc5033fdd5473de06a1dfa02bdf3f53120ea83294f880198bcb26e64c2d075"
+      },
+      {
+        "path": "external/alphafold3/src/alphafold3/data/pipeline.py",
+        "sha256": "4ea97ae53422710c2924caa391023c8013f708f070775ad04f8cd1a1f82544d9"
+      },
+      {
+        "path": "external/alphafold3/src/alphafold3/data/structure_stores.py",
+        "sha256": "e6caeedc1decf74a78abea27fec4d38ed15c6542a1fbe7a2b5ca79522e1b6cca"
+      },
+      {
+        "path": "external/alphafold3/docs/installation.md",
+        "sha256": "4e91ac50393d9579316ca13cf438d516a17cea2f73c2ef1a0a1066b37c797c34"
+      },
+      {
+        "path": "external/alphafold3/docs/performance.md",
+        "sha256": "5fb82c4be3c91f6d488196a57be03dab6a3685d629c87c72d719bc868fc9e38a"
+      },
+      {
+        "path": "external/alphafold3/docs/input.md",
+        "sha256": "e75407473d8c6975a91bd40605b7c8075008426a15a1a952826996e3387226c1"
+      }
+    ]
+  },
+  "required_execution_conditions": {
+    "all9paths_required_at_pipeline_initialization": true,
+    "reason": "run_alphafold.py expand_path is called for all9 database arguments before chain-specific processing; existence is weaker than whole dataset validation.",
+    "protein_search_tools": [
+      "jackhmmer",
+      "hmmbuild",
+      "hmmsearch"
+    ],
+    "complete_pipeline_binary_paths": [
+      "jackhmmer",
+      "nhmmer",
+      "hmmalign",
+      "hmmsearch",
+      "hmmbuild"
+    ],
+    "protein_search_concurrency": "4 independent databases searched concurrently; unsharded --jackhmmer_n_cpu=8 can use approximately32CPUcores overall. Root should fit actual available CPU/RAM/I/O.",
+    "protein_search_defaults": {
+      "n_iter": 1,
+      "e_value": 0.0001,
+      "unpaired_merge": [
+        "uniref90",
+        "small_bfd",
+        "mgnify"
+      ],
+      "unpaired_deduplicate": true,
+      "paired_merge": [
+        "uniprot_cluster_annot"
+      ],
+      "paired_deduplicate": false
+    },
+    "template_defaults": {
+      "max_hits": 4,
+      "max_template_date": "2021-09-30",
+      "input_profile": "Merged unpaired protein MSA in current pipeline.py",
+      "min_align_ratio": 0.1,
+      "min_hit_length": 10,
+      "deduplicate_sequences": true
+    },
+    "RNA_search_defaults": {
+      "e_value": 0.001,
+      "parallel_databases": 3,
+      "alphabet": "rna"
+    },
+    "unsharded_Z_values": "Default None lets tools infer full database sizes; retain defaults for a direct unsharded standard run.",
+    "sharded_Z_values": "Must explicitly supply whole-protein sequence counts and whole-RNA database size in megabases; count actual validated FASTAs rather than copying inconsistent example filenames.",
+    "database_directory_resolution": "--db_dir may be repeated; each ${DB_DIR} placeholder searches supplied directories in order. FASTA tools read expanded files, not their .zst source archives."
+  },
+  "feature_reuse_plan": {
+    "target_accession": "P35354",
+    "target_sequence_length": 604,
+    "initial_input": "Omit unpairedMsa, pairedMsa, templates or set all three to null. Empty strings/empty templates deliberately disable those searches.",
+    "initial_pipeline_flags": {
+      "run_data_pipeline": true,
+      "run_inference": false,
+      "max_template_date": "2021-09-30"
+    },
+    "cache_outputs": "Retain validated *_data.json containing full target sequence, actual A3M alignments and template mmCIF/query mappings; capture tool logs and the complete verified database manifest fingerprint.",
+    "cache_key_fields": [
+      "full protein sequence SHA256",
+      "protein modifications if any",
+      "AF3 commit/version",
+      "max_template_date",
+      "search settings/binaries versions",
+      "verified full database manifest fingerprint"
+    ],
+    "reuse_inference_flags": {
+      "run_data_pipeline": false,
+      "run_inference": true
+    },
+    "reuse_scope": "Same604aa target features can be reused for separately calculated aspirin and quercetin complexes; each ligand remains its own exact-identity input and inference output.",
+    "never_claimed_here": "This research task neither created MSAs nor executed any inference."
+  },
+  "installation_acceptance_criteria": [
+    "Pin each source generation/ETag for a fresh transfer and all resumed Range segments; require consistent Content-Range and object byte count.",
+    "Only treat source transfer as complete after hashing all compressed bytes: match published Google CRC32C, and MD5 where supplied; also record local SHA256. Retrieved HEAD hashes alone are not a content verification.",
+    "Complete zstd decode must reach valid end of every permitted frame, verify frame checksum and total bytes; reject truncation or unexpected trailing frames/data rather than relying only on the64byte first header.",
+    "Write each expanded FASTA to staging; compute full output SHA256 and byte count, count FASTA records/residues streaming, reject empty records/headerless content or malformed files. Publish the final expected filename atomically only after success.",
+    "For PDB tar, validate every header and safe relative path, allow expected regular files/directories only, reject absolute paths, .., symlink/hardlink escapes and special device nodes. Stream each file to staging with exact member byte counts and SHA256; validate the entire archive, not this prefix probe.",
+    "Retain a complete mmcif_files tree inventory with path/size/hash and actual file count; do not substitute the official approximate200k count for measured verification.",
+    "Write a completion receipt containing all9 source generations, Google checksum matches, full compressed/output hashes, source snapshot, records/tree counts and final paths. Runnable status requires complete validated receipt plus matching current file identity/stat state.",
+    "Check all five actual executable binary paths and versions. Do not run the unmodified fetch script and infer success merely from its final Complete message; capture every parallel child exit code.",
+    "Run actual target data pipeline and independently confirm complete query alignment coverage, non-query homolog rows, paired/unpaired depths, template IDs/dates/mappings and full604aa target identity before using features for inference."
+  ],
+  "structure_confidence_assessment_plan": {
+    "compare_against_jobs": [
+      "88692f7955d94c50814f6e3121f963b6",
+      "3730181a45734f0dafa92a78917c48dd"
+    ],
+    "controlled_fields": [
+      "same exact604aa humanPTGS2 sequence",
+      "same respective ligand canonical identity",
+      "same official trained weights SHA256",
+      "same AF3 commit/numerics fix",
+      "same seed1,5samples,10recycles"
+    ],
+    "record_all_samples": [
+      "pTM",
+      "ipTM",
+      "mean/median protein and ligand pLDDT",
+      "PAE including inter-chain PAE",
+      "has_clash",
+      "ranking score",
+      "full observed target and exact ligand graph",
+      "official named bond geometry"
+    ],
+    "interpretation_limits": [
+      "Adding both MSA and templates tests the combined full pipeline; it does not isolate an MSA-only causal effect.",
+      "pTM/ipTM/pLDDT can improve without experimentally validating binding or affinity.",
+      "Templates can include close humanCOX2 experimental structures; record their exact identities and date cutoffs to make use of prior structural evidence visible.",
+      "Do not select one favorable sample while concealing the5sample range.",
+      "Similarity to a known protein template does not establish a novel ligand pose or medicinal efficacy."
+    ]
+  },
+  "local_cpu_tool_observations": {
+    "probe": "Read-only -h calls, no search or inference execution",
+    "binaries": [
+      {
+        "binary": "jackhmmer",
+        "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/tools/hmmer-3.4-af3/bin/jackhmmer",
+        "sha256": "7834eeb264a026a809a07eb1ecebf23c6c55c3072323a544566329ed74818811",
+        "help_exit_code": 0,
+        "version": "3.4",
+        "in_current_shell_PATH": null,
+        "seq_limit_patch_present": true
+      },
+      {
+        "binary": "nhmmer",
+        "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/tools/hmmer-3.4-af3/bin/nhmmer",
+        "sha256": "e35cf498e5ad7b3636706df349945037707f8577faa2f4eff116ad1451e9ade8",
+        "help_exit_code": 0,
+        "version": "3.4",
+        "in_current_shell_PATH": null,
+        "seq_limit_patch_present": null
+      },
+      {
+        "binary": "hmmalign",
+        "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/tools/hmmer-3.4-af3/bin/hmmalign",
+        "sha256": "62ed2fb6121213ca9a74ec4b80d3af69e60ef870b687610bf3c58e91f821ef89",
+        "help_exit_code": 0,
+        "version": "3.4",
+        "in_current_shell_PATH": null,
+        "seq_limit_patch_present": null
+      },
+      {
+        "binary": "hmmsearch",
+        "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/tools/hmmer-3.4-af3/bin/hmmsearch",
+        "sha256": "6f7adb8d499ce48e6f99b6100b6f16ae49b68b4c4872365ec5c0ebb563712c1d",
+        "help_exit_code": 0,
+        "version": "3.4",
+        "in_current_shell_PATH": null,
+        "seq_limit_patch_present": null
+      },
+      {
+        "binary": "hmmbuild",
+        "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/tools/hmmer-3.4-af3/bin/hmmbuild",
+        "sha256": "f3b383266d3b817d8018be1b3c9ccb73823368b4f1557ad015d518d18788d8a6",
+        "help_exit_code": 0,
+        "version": "3.4",
+        "in_current_shell_PATH": null,
+        "seq_limit_patch_present": null
+      }
+    ],
+    "requirement": "AF3 child process must explicitly use these binary paths or prepend their bin directory to PATH. Current ordinary shell PATH does not resolve them.",
+    "official_tool_source_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docker/Dockerfile",
+    "official_jackhmmer_patch_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docker/jackhmmer_seq_limit.patch"
+  }
+}

@@ -1,0 +1,3031 @@
+{
+  "verified_at": "2026-09-07T23:55:12.111764+00:00",
+  "scope": "Independent CPU structural audit of ten actual separately computed AF3 samples; excludes duplicate top-ranked copies from sample counts. Coordinates are unmodified.",
+  "status": "completed",
+  "gpu_executions_started_by_audit": 0,
+  "jobs": [
+    {
+      "job_id": "88692f7955d94c50814f6e3121f963b6",
+      "compound": "aspirin",
+      "status": "completed",
+      "audit_completed": true,
+      "execution_verified": true,
+      "return_code": 0,
+      "execution_profile": {
+        "runner": "native",
+        "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+        "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+        "model_dir": "/home/jerisuh/models/af3-google-20260604",
+        "database_dir": null,
+        "docker_image": "herbfold-af3:3.0.4",
+        "device": "gpu",
+        "num_diffusion_samples": 5,
+        "num_recycles": 10,
+        "max_template_date": "2021-09-30",
+        "flash_attention": "triton"
+      },
+      "msa_mode": "none",
+      "model_seeds": [
+        1
+      ],
+      "samples_per_seed": 5,
+      "num_recycles": 10,
+      "target_accession": "P35354",
+      "target_sequence_length": 604,
+      "ligand_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "top_ranked_copy_path": "runtime/88692f7955d94c50814f6e3121f963b6/output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+      "top_ranked_copy_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+      "aggregate": {
+        "sample_count": 5,
+        "all_identity_checks_passed": true,
+        "all_finite_coordinates": true,
+        "any_has_clash": false,
+        "ptm_range": [
+          0.19,
+          0.2
+        ],
+        "iptm_range": [
+          0.2,
+          0.37
+        ],
+        "ranking_score_range": [
+          0.22,
+          0.35
+        ],
+        "backbone_outside_0_9_to_2_1_counts_by_sample": [
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          }
+        ],
+        "peptide_outside_0_9_to_2_1_counts_by_sample": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ligand_bond_outside_0_9_to_2_1_counts_by_sample": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "all_viewer_covalent_bond_geometry_screens_clear": true,
+        "all_original_files_unchanged_after_template_correction": true,
+        "protein_intraresidue_ccd_outside_viewer_threshold_counts_by_sample": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "sample": 0,
+          "structure_path": "runtime/88692f7955d94c50814f6e3121f963b6/output/studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_model.cif",
+          "structure_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+          "cartesian_coordinates_sha256_float64_le": "e4bd70e0715097e614c30911bcd5d619174c442443456286f86ebe8ce7641c7e",
+          "ca_coordinates_sha256_float64_le": "d88088d220a52ba7bbc866605c2d7cf3ad053d128c5aaea4b19e51cef1a79df2",
+          "is_selected_top_sample": true,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4878,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "observed_component_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 13,
+            "observed_heavy_atoms": 13,
+            "expected_bonds": 13,
+            "observed_internal_bonds": 13,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 13,
+              "min_angstrom": 1.2173787413948052,
+              "p05_angstrom": 1.2188664096455024,
+              "median_angstrom": 1.3800764471579101,
+              "p95_angstrom": 1.4863049081932584,
+              "max_angstrom": 1.4890214907784227,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.432800404801729,
+              "p05_angstrom": 1.4494345098986121,
+              "median_angstrom": 1.4618594323643148,
+              "p95_angstrom": 1.472440813339864,
+              "max_angstrom": 1.479002704527615,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5053125921216497,
+              "p05_angstrom": 1.5179814886875287,
+              "median_angstrom": 1.5274761863922701,
+              "p95_angstrom": 1.5384379714951537,
+              "max_angstrom": 1.5465018590354158,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.213650691096906,
+              "p05_angstrom": 1.2222100677762517,
+              "median_angstrom": 1.2288008382053346,
+              "p95_angstrom": 1.235204578196451,
+              "max_angstrom": 1.2483565195888568,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.294176958533877,
+            "p05_angstrom": 1.310537406655137,
+            "median_angstrom": 1.3271665306207805,
+            "p95_angstrom": 1.3415529061140994,
+            "max_angstrom": 1.3559384204306624,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.2,
+            "iptm": 0.37,
+            "ranking_score": 0.35,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.04,
+            "chain_ptm": [
+              0.2,
+              0.03
+            ],
+            "chain_iptm": [
+              0.37,
+              0.37
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.37
+              ],
+              [
+                0.37,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.14
+              ],
+              [
+                15.84,
+                0.77
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 27.344350143501433,
+            "all_median": 25.51,
+            "protein_mean": 27.37602877697842,
+            "ligand_mean": 15.489230769230769
+          },
+          "summary_sha256": "6fe248de289917f921d11f5c8cfadefc14645eb7b60d0ce7ff9c031ad7b79f24",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.827065,
+            "coord_span_angstrom": [
+              62.849,
+              65.788,
+              85.952
+            ],
+            "center_angstrom": [
+              -0.57756,
+              0.490228,
+              1.056201
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2017100315799958,
+              "median_angstrom": 1.4722747705506591,
+              "max_angstrom": 1.8270648592756629,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.490291246703141,
+              "median_angstrom": 1.5295589143179324,
+              "max_angstrom": 1.538499918752029,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9596832600803764,
+              "median_angstrom": 3.11541128788299,
+              "max_angstrom": 3.1980758277439274,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.525028852186081,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.023907075291832
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5292733568593937,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.152165128923294
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5156044998613591,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1427569107393594
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.198076,
+              "coord_span_angstrom": [
+                62.849,
+                65.788,
+                85.952
+              ],
+              "center_angstrom": [
+                -0.57756,
+                0.490228,
+                1.056201
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.827065,
+              "coord_span_angstrom": [
+                62.849,
+                65.788,
+                85.952
+              ],
+              "center_angstrom": [
+                -0.57756,
+                0.490228,
+                1.056201
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 1,
+          "structure_path": "runtime/88692f7955d94c50814f6e3121f963b6/output/studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_model.cif",
+          "structure_sha256": "daf68c65da10a8b7c323dbbff3e00e290d0d12091f6c27a318cceeca8da0f2b6",
+          "cartesian_coordinates_sha256_float64_le": "bd320513a7a0c4453f787f0cde5264d751c66787865208434a838e2cface9aad",
+          "ca_coordinates_sha256_float64_le": "2a2b8ff77dd28a48e5eb5a78e7b5a104342f0751672e7fad29a297f0e494cf56",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4878,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "observed_component_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 13,
+            "observed_heavy_atoms": 13,
+            "expected_bonds": 13,
+            "observed_internal_bonds": 13,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 13,
+              "min_angstrom": 1.203093512574978,
+              "p05_angstrom": 1.2268491270408513,
+              "median_angstrom": 1.3717310231966047,
+              "p95_angstrom": 1.474663541875425,
+              "max_angstrom": 1.4875110083626266,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4355141935905762,
+              "p05_angstrom": 1.4498564928803175,
+              "median_angstrom": 1.4611274756151935,
+              "p95_angstrom": 1.4725917960164066,
+              "max_angstrom": 1.485710604391045,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5082032356416681,
+              "p05_angstrom": 1.517857074663961,
+              "median_angstrom": 1.5277550523561554,
+              "p95_angstrom": 1.538238147628534,
+              "max_angstrom": 1.552011597894809,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.2181428487661043,
+              "p05_angstrom": 1.22292428124187,
+              "median_angstrom": 1.2288779434904638,
+              "p95_angstrom": 1.234654201503322,
+              "max_angstrom": 1.2450726886411103,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.2934063553268937,
+            "p05_angstrom": 1.3119945501546366,
+            "median_angstrom": 1.3262250940168478,
+            "p95_angstrom": 1.340875235109852,
+            "max_angstrom": 1.3496232807713417,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.2,
+            "iptm": 0.31,
+            "ranking_score": 0.31,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.05,
+            "chain_ptm": [
+              0.2,
+              0.03
+            ],
+            "chain_iptm": [
+              0.31,
+              0.31
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.31
+              ],
+              [
+                0.31,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                16.19
+              ],
+              [
+                16.32,
+                0.77
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.218888888888888,
+            "all_median": 26.0,
+            "protein_mean": 28.25006577595067,
+            "ligand_mean": 16.551538461538463
+          },
+          "summary_sha256": "17f3360849db353aa22f4762dc29cef8bbea5da16f468f23c0acd9e9c0ff03cb",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.829129,
+            "coord_span_angstrom": [
+              71.652,
+              72.424,
+              70.42
+            ],
+            "center_angstrom": [
+              -1.396476,
+              -0.056898,
+              -0.067295
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2060721371460308,
+              "median_angstrom": 1.472170506429198,
+              "max_angstrom": 1.8291290277069012,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.488393765103845,
+              "median_angstrom": 1.5286508719037601,
+              "max_angstrom": 1.5375126015743728,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9631064780058107,
+              "median_angstrom": 3.1059479194359287,
+              "max_angstrom": 3.2119990660023547,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5255559642307466,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 2.9631064780058107
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5287596279337046,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1657387763364175
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5259308634404118,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1052255956693386
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.211999,
+              "coord_span_angstrom": [
+                71.652,
+                72.424,
+                70.42
+              ],
+              "center_angstrom": [
+                -1.396476,
+                -0.056898,
+                -0.067295
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.829129,
+              "coord_span_angstrom": [
+                71.652,
+                72.424,
+                70.42
+              ],
+              "center_angstrom": [
+                -1.396476,
+                -0.056898,
+                -0.067295
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 2,
+          "structure_path": "runtime/88692f7955d94c50814f6e3121f963b6/output/studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_model.cif",
+          "structure_sha256": "04425e62a53757e6e0ced0d52716882d8d193ded644e1724fe6bbf64dfefa620",
+          "cartesian_coordinates_sha256_float64_le": "98931bc78c1d55a212ec4fa6b5df3f8299713cac5926f35c529ae6f2daa18d5d",
+          "ca_coordinates_sha256_float64_le": "6b5492f638572e8757e7a0ced655d303d27e29958f09ef9173bc4a3b797d16b9",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4878,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "observed_component_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 13,
+            "observed_heavy_atoms": 13,
+            "expected_bonds": 13,
+            "observed_internal_bonds": 13,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 13,
+              "min_angstrom": 1.204825298539169,
+              "p05_angstrom": 1.2207355335809944,
+              "median_angstrom": 1.373014930727267,
+              "p95_angstrom": 1.4748131039744368,
+              "max_angstrom": 1.4819868420468505,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4173263562073481,
+              "p05_angstrom": 1.4500844457338828,
+              "median_angstrom": 1.4622159549106908,
+              "p95_angstrom": 1.473220163392256,
+              "max_angstrom": 1.4807856023070949,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.50615171878533,
+              "p05_angstrom": 1.5172177495538612,
+              "median_angstrom": 1.5284708044315307,
+              "p95_angstrom": 1.5387317667469236,
+              "max_angstrom": 1.5433969029384504,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.2161866633046094,
+              "p05_angstrom": 1.2224796112796898,
+              "median_angstrom": 1.2292263826898149,
+              "p95_angstrom": 1.2350261330433965,
+              "max_angstrom": 1.2509860111128341,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.2997695949667405,
+            "p05_angstrom": 1.313904067858251,
+            "median_angstrom": 1.330773459308533,
+            "p95_angstrom": 1.3436529313762424,
+            "max_angstrom": 1.3797064905261551,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.2,
+            "iptm": 0.26,
+            "ranking_score": 0.29,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.09,
+            "chain_ptm": [
+              0.2,
+              0.03
+            ],
+            "chain_iptm": [
+              0.26,
+              0.26
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.26
+              ],
+              [
+                0.26,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                17.93
+              ],
+              [
+                15.88,
+                0.77
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.355610906109057,
+            "all_median": 26.52,
+            "protein_mean": 28.39511202466598,
+            "ligand_mean": 13.573076923076927
+          },
+          "summary_sha256": "38786915f2490dcf9c9888e5a06fbc5b3f03c079b3703f26c7c54ec5687f26df",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.82698,
+            "coord_span_angstrom": [
+              77.137,
+              83.192,
+              63.267
+            ],
+            "center_angstrom": [
+              -0.233224,
+              -0.051922,
+              -0.77092
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2018544004994967,
+              "median_angstrom": 1.472315862850088,
+              "max_angstrom": 1.8269800217845842,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5206554507842993,
+              "median_angstrom": 1.5318221168277955,
+              "max_angstrom": 1.540574892694283,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.967708038200523,
+              "median_angstrom": 3.101804555353233,
+              "max_angstrom": 3.1895813204870636,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5250711458813975,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.0392727748591444
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5276884499137897,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.0933464080183466
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5276134982383471,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1380101975615053
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.189581,
+              "coord_span_angstrom": [
+                77.137,
+                83.192,
+                63.267
+              ],
+              "center_angstrom": [
+                -0.233224,
+                -0.051922,
+                -0.77092
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.82698,
+              "coord_span_angstrom": [
+                77.137,
+                83.192,
+                63.267
+              ],
+              "center_angstrom": [
+                -0.233224,
+                -0.051922,
+                -0.77092
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 3,
+          "structure_path": "runtime/88692f7955d94c50814f6e3121f963b6/output/studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_model.cif",
+          "structure_sha256": "16b1a62d6e8d37f5f2b679c005777392eac27db90e1521d74339e1f08572e089",
+          "cartesian_coordinates_sha256_float64_le": "841a88a7b62624cd8db8078cd93f75d51d30b2c7b23bd3d35ef5b350eea6ad13",
+          "ca_coordinates_sha256_float64_le": "aca84ef7c911fd6a19c4674a06f9fcd451d36822946606c123b70099ae23ef93",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4878,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "observed_component_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 13,
+            "observed_heavy_atoms": 13,
+            "expected_bonds": 13,
+            "observed_internal_bonds": 13,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 13,
+              "min_angstrom": 1.2131380795276356,
+              "p05_angstrom": 1.2208652643690663,
+              "median_angstrom": 1.3698642268487788,
+              "p95_angstrom": 1.4836660698714035,
+              "max_angstrom": 1.4911753753331634,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4391129212122327,
+              "p05_angstrom": 1.4499449766635415,
+              "median_angstrom": 1.4623713615544804,
+              "p95_angstrom": 1.4731957778342593,
+              "max_angstrom": 1.480083105774806,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5079340171240911,
+              "p05_angstrom": 1.5178978880621095,
+              "median_angstrom": 1.5289473500201896,
+              "p95_angstrom": 1.5385153861681278,
+              "max_angstrom": 1.5477435188040685,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.216375764309697,
+              "p05_angstrom": 1.2232337668417663,
+              "median_angstrom": 1.2294124612933854,
+              "p95_angstrom": 1.2357103018041018,
+              "max_angstrom": 1.2448943730292927,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.2945926000097483,
+            "p05_angstrom": 1.3099039658268925,
+            "median_angstrom": 1.3253414654344746,
+            "p95_angstrom": 1.3391337125008553,
+            "max_angstrom": 1.351737400533106,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.19,
+            "iptm": 0.2,
+            "ranking_score": 0.22,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.05,
+            "chain_ptm": [
+              0.19,
+              0.03
+            ],
+            "chain_iptm": [
+              0.2,
+              0.2
+            ],
+            "chain_pair_iptm": [
+              [
+                0.19,
+                0.2
+              ],
+              [
+                0.2,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                20.99
+              ],
+              [
+                19.19,
+                0.77
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.259665846658464,
+            "all_median": 26.14,
+            "protein_mean": 28.295274409044197,
+            "ligand_mean": 14.933846153846153
+          },
+          "summary_sha256": "d426461a1da4679d42693fb998f23a366ef72c2ff734d714717d77f3d99cf4f2",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.832873,
+            "coord_span_angstrom": [
+              74.992,
+              82.167,
+              70.443
+            ],
+            "center_angstrom": [
+              1.847596,
+              0.705417,
+              0.351152
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2004611613875724,
+              "median_angstrom": 1.4727416609847077,
+              "max_angstrom": 1.832873427162936,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5087968716828644,
+              "median_angstrom": 1.531496812784631,
+              "max_angstrom": 1.545448155067001,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9432072641932643,
+              "median_angstrom": 3.1144967710031817,
+              "max_angstrom": 3.2505054991493236,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5302424644480381,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.108160549263825
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5297336369446808,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.128670484407075
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5087968716828644,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.2505054991493236
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.250505,
+              "coord_span_angstrom": [
+                74.992,
+                82.167,
+                70.443
+              ],
+              "center_angstrom": [
+                1.847596,
+                0.705417,
+                0.351152
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.832873,
+              "coord_span_angstrom": [
+                74.992,
+                82.167,
+                70.443
+              ],
+              "center_angstrom": [
+                1.847596,
+                0.705417,
+                0.351152
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 4,
+          "structure_path": "runtime/88692f7955d94c50814f6e3121f963b6/output/studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_model.cif",
+          "structure_sha256": "287ff8cd1f2b21614e5222840ae46210102005f124c373d30e465c4132956d4c",
+          "cartesian_coordinates_sha256_float64_le": "64b044b2b271bacc65cc5a65a20ea7f07c90ae7e32d29dcaf6712eeaa0ba6f58",
+          "ca_coordinates_sha256_float64_le": "af98908e97b619f4bbe498309133701e64729eeb4552089a3e7e318d087ea817",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4878,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "observed_component_canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 13,
+            "observed_heavy_atoms": 13,
+            "expected_bonds": 13,
+            "observed_internal_bonds": 13,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 13,
+              "min_angstrom": 1.222345695783316,
+              "p05_angstrom": 1.2300772126569488,
+              "median_angstrom": 1.3725898877669194,
+              "p95_angstrom": 1.4783352759259443,
+              "max_angstrom": 1.4791213608085034,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.434053346288066,
+              "p05_angstrom": 1.4495965645044417,
+              "median_angstrom": 1.4614641630839496,
+              "p95_angstrom": 1.473832282676822,
+              "max_angstrom": 1.5047624397226307,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.505162781894371,
+              "p05_angstrom": 1.51661786546487,
+              "median_angstrom": 1.5281616406599743,
+              "p95_angstrom": 1.5388102379957544,
+              "max_angstrom": 1.556042737202293,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.2090641008647973,
+              "p05_angstrom": 1.2219517788603382,
+              "median_angstrom": 1.228630741914794,
+              "p95_angstrom": 1.235201299366906,
+              "max_angstrom": 1.246138836566776,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.283467958306712,
+            "p05_angstrom": 1.312170072447217,
+            "median_angstrom": 1.3273386907643427,
+            "p95_angstrom": 1.341664336649489,
+            "max_angstrom": 1.355302549248691,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.2,
+            "iptm": 0.31,
+            "ranking_score": 0.32,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.05,
+            "chain_ptm": [
+              0.2,
+              0.03
+            ],
+            "chain_iptm": [
+              0.31,
+              0.31
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.31
+              ],
+              [
+                0.31,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                14.8
+              ],
+              [
+                14.84,
+                0.77
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.646119311193114,
+            "all_median": 26.25,
+            "protein_mean": 28.681035971223018,
+            "ligand_mean": 15.579230769230767
+          },
+          "summary_sha256": "da6b35f1a2a763e1ed9b466d7e313cd1604a34190fafd59930f98b3d976429cc",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.827315,
+            "coord_span_angstrom": [
+              81.598,
+              64.189,
+              87.785
+            ],
+            "center_angstrom": [
+              -0.409768,
+              -0.821866,
+              -0.488479
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2015664775616868,
+              "median_angstrom": 1.4730030549866484,
+              "max_angstrom": 1.827314970113255,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.4893659724862793,
+              "median_angstrom": 1.5295355424389059,
+              "max_angstrom": 1.537726243516706,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9377712640707747,
+              "median_angstrom": 3.1141536024330927,
+              "max_angstrom": 3.3482549186105888,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.537726243516706,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1452278136885408
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.4893659724862793,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1270116725077948
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5257555505388154,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.3482549186105888
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.348255,
+              "coord_span_angstrom": [
+                81.598,
+                64.189,
+                87.785
+              ],
+              "center_angstrom": [
+                -0.409768,
+                -0.821866,
+                -0.488479
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.827315,
+              "coord_span_angstrom": [
+                81.598,
+                64.189,
+                87.785
+              ],
+              "center_angstrom": [
+                -0.409768,
+                -0.821866,
+                -0.488479
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "3730181a45734f0dafa92a78917c48dd",
+      "compound": "quercetin",
+      "status": "completed",
+      "audit_completed": true,
+      "execution_verified": true,
+      "return_code": 0,
+      "execution_profile": {
+        "runner": "native",
+        "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+        "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+        "model_dir": "/home/jerisuh/models/af3-google-20260604",
+        "database_dir": null,
+        "docker_image": "herbfold-af3:3.0.4",
+        "device": "gpu",
+        "num_diffusion_samples": 5,
+        "num_recycles": 10,
+        "max_template_date": "2021-09-30",
+        "flash_attention": "triton"
+      },
+      "msa_mode": "none",
+      "model_seeds": [
+        1
+      ],
+      "samples_per_seed": 5,
+      "num_recycles": 10,
+      "target_accession": "P35354",
+      "target_sequence_length": 604,
+      "ligand_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+      "top_ranked_copy_path": "runtime/3730181a45734f0dafa92a78917c48dd/output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+      "top_ranked_copy_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+      "aggregate": {
+        "sample_count": 5,
+        "all_identity_checks_passed": true,
+        "all_finite_coordinates": true,
+        "any_has_clash": false,
+        "ptm_range": [
+          0.2,
+          0.21
+        ],
+        "iptm_range": [
+          0.21,
+          0.35
+        ],
+        "ranking_score_range": [
+          0.24,
+          0.34
+        ],
+        "backbone_outside_0_9_to_2_1_counts_by_sample": [
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          },
+          {
+            "N-CA": 0,
+            "CA-C": 0,
+            "C-O": 0
+          }
+        ],
+        "peptide_outside_0_9_to_2_1_counts_by_sample": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ligand_bond_outside_0_9_to_2_1_counts_by_sample": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "all_viewer_covalent_bond_geometry_screens_clear": true,
+        "all_original_files_unchanged_after_template_correction": true,
+        "protein_intraresidue_ccd_outside_viewer_threshold_counts_by_sample": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "sample": 0,
+          "structure_path": "runtime/3730181a45734f0dafa92a78917c48dd/output/studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_model.cif",
+          "structure_sha256": "f24d78b8517b74764145162864832577e615dd6d8b9c7cd4c974728b20189d94",
+          "cartesian_coordinates_sha256_float64_le": "351a09ea87d2b453b0ddc6baa937c40431f6d0603977c11973a275b298e48e2f",
+          "ca_coordinates_sha256_float64_le": "680f5a3e650187304fb1d86a5d49c06fc26b0a72167603157b77cc5cbe5bc045",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4887,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "observed_component_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 22,
+            "observed_heavy_atoms": 22,
+            "expected_bonds": 24,
+            "observed_internal_bonds": 24,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 24,
+              "min_angstrom": 1.2684652143436963,
+              "p05_angstrom": 1.2822976161535127,
+              "median_angstrom": 1.379056048608493,
+              "p95_angstrom": 1.4137179362075774,
+              "max_angstrom": 1.4368709058227889,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4325009598600629,
+              "p05_angstrom": 1.4491269612188957,
+              "median_angstrom": 1.4608314413205816,
+              "p95_angstrom": 1.472520983545953,
+              "max_angstrom": 1.4834534033801001,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5035428161512405,
+              "p05_angstrom": 1.5159760381060123,
+              "median_angstrom": 1.5271979242834435,
+              "p95_angstrom": 1.5377192526240957,
+              "max_angstrom": 1.5484269437077107,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.2139435736474748,
+              "p05_angstrom": 1.2225733094914115,
+              "median_angstrom": 1.2286390845007071,
+              "p95_angstrom": 1.23520431486119,
+              "max_angstrom": 1.2490392307689937,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.2959957561658912,
+            "p05_angstrom": 1.309158928326176,
+            "median_angstrom": 1.3258759368809747,
+            "p95_angstrom": 1.3400652592615672,
+            "max_angstrom": 1.3523827121048242,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.21,
+            "iptm": 0.24,
+            "ranking_score": 0.27,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.06,
+            "chain_ptm": [
+              0.21,
+              0.23
+            ],
+            "chain_iptm": [
+              0.24,
+              0.24
+            ],
+            "chain_pair_iptm": [
+              [
+                0.21,
+                0.24
+              ],
+              [
+                0.24,
+                0.23
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                16.36
+              ],
+              [
+                18.33,
+                0.78
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.727190505422556,
+            "all_median": 26.66,
+            "protein_mean": 28.79294347379239,
+            "ligand_mean": 14.18681818181818
+          },
+          "summary_sha256": "de0eed07ec254bd0daacd055400320097e620126fc6292ad02bfe033e9f461ab",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.845373,
+            "coord_span_angstrom": [
+              73.355,
+              68.099,
+              79.414
+            ],
+            "center_angstrom": [
+              -0.577561,
+              0.490222,
+              1.056208
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2021014932192726,
+              "median_angstrom": 1.4720723487655085,
+              "max_angstrom": 1.845373133000477,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5069021202453732,
+              "median_angstrom": 1.5293225591608874,
+              "max_angstrom": 1.5382880094442664,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9683943471176466,
+              "median_angstrom": 3.113801444074839,
+              "max_angstrom": 3.2819617608985023,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5170702027262941,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 2.9683943471176466
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5227947990454904,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.130895399083144
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5309163922304823,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1021790728454084
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.281962,
+              "coord_span_angstrom": [
+                73.355,
+                68.099,
+                79.414
+              ],
+              "center_angstrom": [
+                -0.577561,
+                0.490222,
+                1.056208
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.845373,
+              "coord_span_angstrom": [
+                73.355,
+                68.099,
+                79.414
+              ],
+              "center_angstrom": [
+                -0.577561,
+                0.490222,
+                1.056208
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 1,
+          "structure_path": "runtime/3730181a45734f0dafa92a78917c48dd/output/studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_model.cif",
+          "structure_sha256": "a14cffd0eeb83cb877f60576bada57843b86d2088e99ab0c92a86de87865ef4b",
+          "cartesian_coordinates_sha256_float64_le": "dc2a5878963f11c08d43667fbe5cfe98c1ed31a7bb6ec7468e8e99a3f0edbc24",
+          "ca_coordinates_sha256_float64_le": "83277070c52b58b960573467d28371c8b08a3505367bd3827beb6070b9d32a50",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4887,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "observed_component_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 22,
+            "observed_heavy_atoms": 22,
+            "expected_bonds": 24,
+            "observed_internal_bonds": 24,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 24,
+              "min_angstrom": 1.2683323696886395,
+              "p05_angstrom": 1.2861240025707998,
+              "median_angstrom": 1.3863306819704162,
+              "p95_angstrom": 1.4255638410878777,
+              "max_angstrom": 1.432553314889188,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4388901973396018,
+              "p05_angstrom": 1.4512088409312534,
+              "median_angstrom": 1.4626650333944586,
+              "p95_angstrom": 1.473072315599406,
+              "max_angstrom": 1.480944630970382,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5091756027712613,
+              "p05_angstrom": 1.5181721893950682,
+              "median_angstrom": 1.5287171088558988,
+              "p95_angstrom": 1.5388067763232642,
+              "max_angstrom": 1.546739797121674,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.2154871451397586,
+              "p05_angstrom": 1.2233818086176143,
+              "median_angstrom": 1.2293750444839175,
+              "p95_angstrom": 1.235390282247671,
+              "max_angstrom": 1.2505910602591095,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.292958235984443,
+            "p05_angstrom": 1.3127530983215758,
+            "median_angstrom": 1.329176060572866,
+            "p95_angstrom": 1.343321889934406,
+            "max_angstrom": 1.3626415522799837,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.2,
+            "iptm": 0.35,
+            "ranking_score": 0.34,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.04,
+            "chain_ptm": [
+              0.2,
+              0.24
+            ],
+            "chain_iptm": [
+              0.35,
+              0.35
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.35
+              ],
+              [
+                0.35,
+                0.24
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                14.73
+              ],
+              [
+                16.51,
+                0.78
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.44062410476775,
+            "all_median": 26.2,
+            "protein_mean": 28.498758478931144,
+            "ligand_mean": 15.585
+          },
+          "summary_sha256": "795a998aa78e6deaaea7948cef4bd9da2ad8081ff9942678417d3a0b62cb3bcb",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.831504,
+            "coord_span_angstrom": [
+              72.881,
+              66.698,
+              68.423
+            ],
+            "center_angstrom": [
+              -1.396466,
+              -0.056885,
+              -0.067304
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2061890399104114,
+              "median_angstrom": 1.4725960070569257,
+              "max_angstrom": 1.831503753749907,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5134744794676918,
+              "median_angstrom": 1.5307008137380538,
+              "max_angstrom": 1.5376169874191656,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9172927518505913,
+              "median_angstrom": 3.1012145708554573,
+              "max_angstrom": 3.194464900417596,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5245336992011687,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 2.9172927518505913
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5311293217752704,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.166960372344434
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5271813906671323,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.067440789974599
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.194465,
+              "coord_span_angstrom": [
+                72.881,
+                66.698,
+                68.423
+              ],
+              "center_angstrom": [
+                -1.396466,
+                -0.056885,
+                -0.067304
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.831504,
+              "coord_span_angstrom": [
+                72.881,
+                66.698,
+                68.423
+              ],
+              "center_angstrom": [
+                -1.396466,
+                -0.056885,
+                -0.067304
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 2,
+          "structure_path": "runtime/3730181a45734f0dafa92a78917c48dd/output/studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_model.cif",
+          "structure_sha256": "970195cff8385bc26e32a119f57b38992b59743a80f81ffd045978c9334569e6",
+          "cartesian_coordinates_sha256_float64_le": "aa91c8136b0ae12f35a9ee8fc6734d147c55e3c24ee96ec12ee9055e5089dcfe",
+          "ca_coordinates_sha256_float64_le": "aaa4967006e1f034948de23c075190e84a92cffcf75c07a5132437c59d490b12",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4887,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "observed_component_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 22,
+            "observed_heavy_atoms": 22,
+            "expected_bonds": 24,
+            "observed_internal_bonds": 24,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 24,
+              "min_angstrom": 1.2671144383993107,
+              "p05_angstrom": 1.2903096850763882,
+              "median_angstrom": 1.3850922508405734,
+              "p95_angstrom": 1.4326033499131567,
+              "max_angstrom": 1.444259325744514,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4350536575334034,
+              "p05_angstrom": 1.453360485121508,
+              "median_angstrom": 1.4635074305095586,
+              "p95_angstrom": 1.4739892971558781,
+              "max_angstrom": 1.4820516185342543,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5096774489936584,
+              "p05_angstrom": 1.5197847271274891,
+              "median_angstrom": 1.5301441108149314,
+              "p95_angstrom": 1.5397537612668413,
+              "max_angstrom": 1.5471851860717902,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.2181342290568806,
+              "p05_angstrom": 1.2238204107935977,
+              "median_angstrom": 1.2295722833353155,
+              "p95_angstrom": 1.2357695375537112,
+              "max_angstrom": 1.2515066919517464,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.2982280231145833,
+            "p05_angstrom": 1.3141273149876551,
+            "median_angstrom": 1.3283553741375091,
+            "p95_angstrom": 1.3429943407867213,
+            "max_angstrom": 1.3606972477373498,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.21,
+            "iptm": 0.29,
+            "ranking_score": 0.28,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.02,
+            "chain_ptm": [
+              0.21,
+              0.24
+            ],
+            "chain_iptm": [
+              0.29,
+              0.29
+            ],
+            "chain_pair_iptm": [
+              [
+                0.21,
+                0.29
+              ],
+              [
+                0.29,
+                0.24
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.42
+              ],
+              [
+                16.47,
+                0.78
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.5241006752609,
+            "all_median": 26.73,
+            "protein_mean": 28.582951695786228,
+            "ligand_mean": 15.509999999999996
+          },
+          "summary_sha256": "dca1f6cbc528aa05d17178bbb8d19b5fbdfe556b59e47ef4edd4c4ae76192d33",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.825066,
+            "coord_span_angstrom": [
+              75.293,
+              75.698,
+              72.975
+            ],
+            "center_angstrom": [
+              -0.233212,
+              -0.051917,
+              -0.770901
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2048526880909547,
+              "median_angstrom": 1.473619353835988,
+              "max_angstrom": 1.8250657522401748,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5155771178003448,
+              "median_angstrom": 1.5312487301117508,
+              "max_angstrom": 1.5399227253339673,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9579102420458945,
+              "median_angstrom": 3.099344210624868,
+              "max_angstrom": 3.220400751459358,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5227123825594915,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 2.9579102420458945
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5399227253339673,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1536534368887126
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.532236600528781,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.0701583021075636
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.220401,
+              "coord_span_angstrom": [
+                75.293,
+                75.698,
+                72.975
+              ],
+              "center_angstrom": [
+                -0.233212,
+                -0.051917,
+                -0.770901
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.825066,
+              "coord_span_angstrom": [
+                75.293,
+                75.698,
+                72.975
+              ],
+              "center_angstrom": [
+                -0.233212,
+                -0.051917,
+                -0.770901
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 3,
+          "structure_path": "runtime/3730181a45734f0dafa92a78917c48dd/output/studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_model.cif",
+          "structure_sha256": "ee08bc17bd09ecfe62e94e37b3d8eeb31ffefa4bd1ecf0795d3102cf5adf583f",
+          "cartesian_coordinates_sha256_float64_le": "c0752a5712aa93329da40482b4815781af504bb3a27dc2ab97f19d34116c69f2",
+          "ca_coordinates_sha256_float64_le": "48eb2616ae0f25882487f6773666cc30468935442f6cf3fd7e570c68e139e13f",
+          "is_selected_top_sample": true,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4887,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "observed_component_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 22,
+            "observed_heavy_atoms": 22,
+            "expected_bonds": 24,
+            "observed_internal_bonds": 24,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 24,
+              "min_angstrom": 1.2781854325566377,
+              "p05_angstrom": 1.2960158284380738,
+              "median_angstrom": 1.3890323890362195,
+              "p95_angstrom": 1.4253578487413459,
+              "max_angstrom": 1.442704404928466,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4426243447273448,
+              "p05_angstrom": 1.451583376868149,
+              "median_angstrom": 1.462906011954661,
+              "p95_angstrom": 1.4730177697372822,
+              "max_angstrom": 1.4787876791480243,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.507013603123741,
+              "p05_angstrom": 1.518784316148182,
+              "median_angstrom": 1.5293415249267548,
+              "p95_angstrom": 1.5406924090120482,
+              "max_angstrom": 1.5451954568921058,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.214445140794758,
+              "p05_angstrom": 1.2235969107239684,
+              "median_angstrom": 1.2293258314758662,
+              "p95_angstrom": 1.2355482990145872,
+              "max_angstrom": 1.248787011463526,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.3012436359114308,
+            "p05_angstrom": 1.3151956124799797,
+            "median_angstrom": 1.3290605704782608,
+            "p95_angstrom": 1.3424052294117466,
+            "max_angstrom": 1.3597510801613657,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.21,
+            "iptm": 0.32,
+            "ranking_score": 0.34,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.09,
+            "chain_ptm": [
+              0.21,
+              0.24
+            ],
+            "chain_iptm": [
+              0.32,
+              0.32
+            ],
+            "chain_pair_iptm": [
+              [
+                0.21,
+                0.32
+              ],
+              [
+                0.32,
+                0.24
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.73
+              ],
+              [
+                17.41,
+                0.78
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.3770349907919,
+            "all_median": 26.74,
+            "protein_mean": 28.443636176772863,
+            "ligand_mean": 13.649090909090914
+          },
+          "summary_sha256": "18b0ce20b9e9017381b5835e6d49a98218a37465fc80fe3ef701c5a327783fd0",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.830096,
+            "coord_span_angstrom": [
+              72.834,
+              91.177,
+              75.39
+            ],
+            "center_angstrom": [
+              1.847605,
+              0.705399,
+              0.351156
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2061388808922457,
+              "median_angstrom": 1.4727216301799877,
+              "max_angstrom": 1.8300956259168542,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5162262364172432,
+              "median_angstrom": 1.5302813466383298,
+              "max_angstrom": 1.5400610377514257,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 3.0003808091640622,
+              "median_angstrom": 3.099811126983691,
+              "max_angstrom": 3.2241592702594586,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5237283222412037,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.0003808091640622
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.533988591874137,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.1509368448129833
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5235304394727396,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.0368037473633365
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.224159,
+              "coord_span_angstrom": [
+                72.834,
+                91.177,
+                75.39
+              ],
+              "center_angstrom": [
+                1.847605,
+                0.705399,
+                0.351156
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.830096,
+              "coord_span_angstrom": [
+                72.834,
+                91.177,
+                75.39
+              ],
+              "center_angstrom": [
+                1.847605,
+                0.705399,
+                0.351156
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "sample": 4,
+          "structure_path": "runtime/3730181a45734f0dafa92a78917c48dd/output/studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_model.cif",
+          "structure_sha256": "392d5188e4577cf20cd1942864df985c1a98c4e05f0209ac6eb7e778e65541ca",
+          "cartesian_coordinates_sha256_float64_le": "c177f04543ad4199f8485a42d802efdf351cb7fffc14feab134ef3db0743ee72",
+          "ca_coordinates_sha256_float64_le": "13a1f78825f83bb5ef040cdc2e4f1900808288bf76b42d12c3fb8359d58738c8",
+          "is_selected_top_sample": false,
+          "selected_top_sample_match_method": "Exact full atom identity columns and coordinate-only SHA; full file hash may differ because AF3 rewrites top-copy metadata",
+          "atom_count": 4887,
+          "finite_coordinates": true,
+          "observed_target_residue_count": 604,
+          "observed_full_target_sequence_matches": true,
+          "observed_target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+          "ligand": {
+            "chain_id": "B",
+            "component": "LIG_B",
+            "expected_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "observed_component_canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+            "canonical_identity_matches": true,
+            "expected_heavy_atoms": 22,
+            "observed_heavy_atoms": 22,
+            "expected_bonds": 24,
+            "observed_internal_bonds": 24,
+            "full_atom_name_element_charge_and_bond_graph_matches": true,
+            "identity_method": "AF3 echoed component SMILES plus observed complete atom names/elements/charges and reconstructed expected bond graph; no claim of experimental chemistry",
+            "bond_length_distribution": {
+              "count": 24,
+              "min_angstrom": 1.2718655589330194,
+              "p05_angstrom": 1.2949963196887369,
+              "median_angstrom": 1.3869783563646356,
+              "p95_angstrom": 1.4171925707786908,
+              "max_angstrom": 1.445475700245425,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0
+            }
+          },
+          "backbone_bond_geometry": {
+            "N-CA": {
+              "count": 604,
+              "min_angstrom": 1.4390618471768324,
+              "p05_angstrom": 1.4500298099829436,
+              "median_angstrom": 1.4624956410129024,
+              "p95_angstrom": 1.4744195807162461,
+              "max_angstrom": 1.4826331306159302,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "CA-C": {
+              "count": 604,
+              "min_angstrom": 1.5098244931117002,
+              "p05_angstrom": 1.519017363173944,
+              "median_angstrom": 1.528633867206557,
+              "p95_angstrom": 1.538440653921808,
+              "max_angstrom": 1.5477011985522269,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            },
+            "C-O": {
+              "count": 604,
+              "min_angstrom": 1.21269328356349,
+              "p05_angstrom": 1.2224667880927809,
+              "median_angstrom": 1.2291507230543641,
+              "p95_angstrom": 1.2353673328331223,
+              "max_angstrom": 1.2455019068632518,
+              "count_below_0_9_angstrom": 0,
+              "count_above_2_1_angstrom": 0,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "outlier_residues": []
+            }
+          },
+          "peptide_C_to_next_N_geometry": {
+            "count": 603,
+            "min_angstrom": 1.294482908346032,
+            "p05_angstrom": 1.3123471244790295,
+            "median_angstrom": 1.327573726766238,
+            "p95_angstrom": 1.34189641794353,
+            "max_angstrom": 1.3490996997998352,
+            "count_below_0_9_angstrom": 0,
+            "count_above_2_1_angstrom": 0,
+            "count_outside_0_9_to_2_1_angstrom": 0
+          },
+          "confidence": {
+            "ptm": 0.21,
+            "iptm": 0.21,
+            "ranking_score": 0.24,
+            "has_clash": 0.0,
+            "fraction_disordered": 0.06,
+            "chain_ptm": [
+              0.21,
+              0.24
+            ],
+            "chain_iptm": [
+              0.21,
+              0.21
+            ],
+            "chain_pair_iptm": [
+              [
+                0.21,
+                0.21
+              ],
+              [
+                0.21,
+                0.24
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                20.23
+              ],
+              [
+                17.76,
+                0.78
+              ]
+            ]
+          },
+          "atom_plddt": {
+            "all_mean": 28.853795784735013,
+            "all_median": 26.88,
+            "protein_mean": 28.922998972250774,
+            "ligand_mean": 13.550454545454546
+          },
+          "summary_sha256": "205297ad9671232b3f065cdc4cb55e3a4d25da8f3875b57e1d107bfd1690ba3c",
+          "viewer_geometry_diagnostics": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.826116,
+            "coord_span_angstrom": [
+              72.813,
+              77.866,
+              77.71
+            ],
+            "center_angstrom": [
+              -0.40977,
+              -0.821875,
+              -0.488463
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "scene_warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+          ],
+          "structural_identity_checks_passed": true,
+          "coordinate_quality_interpretation": "Geometry screening and model confidence only; not binding, efficacy or an experimental validation.",
+          "protein_intraresidue_ccd_bond_geometry": {
+            "source": "docs/af3-standard-residue-template-audit.json",
+            "statistics": {
+              "count": 4397,
+              "min_angstrom": 1.2030631737361095,
+              "median_angstrom": 1.473813421027232,
+              "max_angstrom": 1.826116370881112,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "viewer_threshold_outliers": [],
+            "scope": "Every observed named heavy-atom intraresidue edge present in official CCD; peptide connections audited separately."
+          },
+          "ile_template_correction_check": {
+            "ile_residue_count": 34,
+            "original_file_sha256_unchanged": true,
+            "official_CG1_CD1": {
+              "count": 34,
+              "min_angstrom": 1.5206202681800611,
+              "median_angstrom": 1.5317315062843893,
+              "max_angstrom": 1.5418216498674546,
+              "count_outside_0_9_to_2_1_angstrom": 0,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 0
+            },
+            "incorrect_template_nonbond_CG2_CD1": {
+              "count": 34,
+              "min_angstrom": 2.9292826766974875,
+              "median_angstrom": 3.1015190168296622,
+              "max_angstrom": 3.218993320900184,
+              "count_outside_0_9_to_2_1_angstrom": 34,
+              "count_outside_viewer_0_65_to_2_4_angstrom": 34
+            },
+            "examples": [
+              {
+                "sequence_id": 63,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5231821952740914,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.0475176783736635
+              },
+              {
+                "sequence_id": 77,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.5294554586518694,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.218993320900184
+              },
+              {
+                "sequence_id": 91,
+                "residue_name": "ILE",
+                "official_CG1_CD1_distance_angstrom": 1.521884029747337,
+                "incorrect_template_nonbond_CG2_CD1_distance_angstrom": 3.129419914297216
+              }
+            ],
+            "prior_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 34,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 3.218993,
+              "coord_span_angstrom": [
+                72.813,
+                77.866,
+                77.71
+              ],
+              "center_angstrom": [
+                -0.40977,
+                -0.821875,
+                -0.488463
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "current_viewer_geometry_diagnostics": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.826116,
+              "coord_span_angstrom": [
+                72.813,
+                77.866,
+                77.71
+              ],
+              "center_angstrom": [
+                -0.40977,
+                -0.821875,
+                -0.488463
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "MSA and templates were explicitly absent.",
+    "Identity, finite coordinates and plausible local bond lengths do not validate the predicted global protein fold or binding pose.",
+    "ipTM/pTM/ranking score are structural confidence, not affinity, efficacy or human safety.",
+    "The 0.9–2.1 angstrom screen is a broad backbone/organic-bond diagnostic, not a complete stereochemical validation."
+  ],
+  "top_model_coordinate_comparison": {
+    "matched_chain": "A",
+    "matched_ca_residues": 604,
+    "correspondence": "Full human P35354 residue IDs1–604; CA atoms only",
+    "raw_ca_coordinate_sha256_float64_le": {
+      "aspirin": "d88088d220a52ba7bbc866605c2d7cf3ad053d128c5aaea4b19e51cef1a79df2",
+      "quercetin": "48eb2616ae0f25882487f6773666cc30468935442f6cf3fd7e570c68e139e13f"
+    },
+    "raw_coordinate_arrays_identical": false,
+    "raw_ca_rmsd_without_alignment_angstrom": 33.184742466449386,
+    "kabsch_aligned_ca_rmsd_angstrom": 22.02958483531608,
+    "interpretation": "Distinct numerical coordinate outputs only. This comparison does not assess pose accuracy or compare binding affinity."
+  },
+  "ile_template_discrepancy": {
+    "verified_at": "2026-09-07T23:55:12.111658+00:00",
+    "cause": "Application protein bond template used RDKit ILE branch atom naming inconsistent with wwPDB/AF3 naming; all 34 old long-bond warnings per sample were an incorrect CG2–CD1 nonbond. This was not sidechain coordinate distortion.",
+    "official_source_url": "https://files.rcsb.org/ligands/download/ILE.cif",
+    "official_source_sha256": "8166adcc6acb4661f4a167b0a4295879612dfad3f1a6b6f1b7bd0589c5bded93",
+    "official_heavy_atom_bonds": [
+      [
+        "C",
+        "CA",
+        1.0
+      ],
+      [
+        "C",
+        "O",
+        2.0
+      ],
+      [
+        "C",
+        "OXT",
+        1.0
+      ],
+      [
+        "CA",
+        "CB",
+        1.0
+      ],
+      [
+        "CA",
+        "N",
+        1.0
+      ],
+      [
+        "CB",
+        "CG1",
+        1.0
+      ],
+      [
+        "CB",
+        "CG2",
+        1.0
+      ],
+      [
+        "CD1",
+        "CG1",
+        1.0
+      ]
+    ],
+    "incorrect_edge": [
+      "CG2",
+      "CD1"
+    ],
+    "correct_edge": [
+      "CG1",
+      "CD1"
+    ],
+    "correct_bond_order": 1,
+    "before_report_path": "docs/af3-trained-structure-quality-before-ile-template-fix.json",
+    "all_standard_residue_comparison_path": "docs/af3-standard-residue-template-audit.json",
+    "standard_residue_comparison": "All 20 named heavy-atom graphs checked; ILE is the only adjacency discrepancy. ARG formal-charge/protonation and guanidinium resonance bond-order representation differs between neutral RDKit and +1 CCD ARG; no adjacency discrepancy.",
+    "all_340_correct_ILE_bonds": {
+      "count": 340,
+      "min_angstrom": 1.488393765103845,
+      "median_angstrom": 1.5304251043039514,
+      "max_angstrom": 1.545448155067001,
+      "count_outside_0_9_to_2_1_angstrom": 0,
+      "count_outside_viewer_0_65_to_2_4_angstrom": 0
+    },
+    "all_340_incorrect_nonbond_pairs": {
+      "count": 340,
+      "min_angstrom": 2.9172927518505913,
+      "median_angstrom": 3.1047626203888576,
+      "max_angstrom": 3.3482549186105888,
+      "count_outside_0_9_to_2_1_angstrom": 340,
+      "count_outside_viewer_0_65_to_2_4_angstrom": 340
+    },
+    "samples": [
+      {
+        "compound": "aspirin",
+        "sample": 0,
+        "is_selected_top_sample": true,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.490291246703141,
+          "median_angstrom": 1.5295589143179324,
+          "max_angstrom": 1.538499918752029,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9596832600803764,
+          "median_angstrom": 3.11541128788299,
+          "max_angstrom": 3.1980758277439274,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2017100315799958,
+          "median_angstrom": 1.4722747705506591,
+          "max_angstrom": 1.8270648592756629,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "aspirin",
+        "sample": 1,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.488393765103845,
+          "median_angstrom": 1.5286508719037601,
+          "max_angstrom": 1.5375126015743728,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9631064780058107,
+          "median_angstrom": 3.1059479194359287,
+          "max_angstrom": 3.2119990660023547,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2060721371460308,
+          "median_angstrom": 1.472170506429198,
+          "max_angstrom": 1.8291290277069012,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "aspirin",
+        "sample": 2,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5206554507842993,
+          "median_angstrom": 1.5318221168277955,
+          "max_angstrom": 1.540574892694283,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.967708038200523,
+          "median_angstrom": 3.101804555353233,
+          "max_angstrom": 3.1895813204870636,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2018544004994967,
+          "median_angstrom": 1.472315862850088,
+          "max_angstrom": 1.8269800217845842,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "aspirin",
+        "sample": 3,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5087968716828644,
+          "median_angstrom": 1.531496812784631,
+          "max_angstrom": 1.545448155067001,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9432072641932643,
+          "median_angstrom": 3.1144967710031817,
+          "max_angstrom": 3.2505054991493236,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2004611613875724,
+          "median_angstrom": 1.4727416609847077,
+          "max_angstrom": 1.832873427162936,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "aspirin",
+        "sample": 4,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.4893659724862793,
+          "median_angstrom": 1.5295355424389059,
+          "max_angstrom": 1.537726243516706,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9377712640707747,
+          "median_angstrom": 3.1141536024330927,
+          "max_angstrom": 3.3482549186105888,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2015664775616868,
+          "median_angstrom": 1.4730030549866484,
+          "max_angstrom": 1.827314970113255,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "quercetin",
+        "sample": 0,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5069021202453732,
+          "median_angstrom": 1.5293225591608874,
+          "max_angstrom": 1.5382880094442664,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9683943471176466,
+          "median_angstrom": 3.113801444074839,
+          "max_angstrom": 3.2819617608985023,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2021014932192726,
+          "median_angstrom": 1.4720723487655085,
+          "max_angstrom": 1.845373133000477,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "quercetin",
+        "sample": 1,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5134744794676918,
+          "median_angstrom": 1.5307008137380538,
+          "max_angstrom": 1.5376169874191656,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9172927518505913,
+          "median_angstrom": 3.1012145708554573,
+          "max_angstrom": 3.194464900417596,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2061890399104114,
+          "median_angstrom": 1.4725960070569257,
+          "max_angstrom": 1.831503753749907,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "quercetin",
+        "sample": 2,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5155771178003448,
+          "median_angstrom": 1.5312487301117508,
+          "max_angstrom": 1.5399227253339673,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9579102420458945,
+          "median_angstrom": 3.099344210624868,
+          "max_angstrom": 3.220400751459358,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2048526880909547,
+          "median_angstrom": 1.473619353835988,
+          "max_angstrom": 1.8250657522401748,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "quercetin",
+        "sample": 3,
+        "is_selected_top_sample": true,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5162262364172432,
+          "median_angstrom": 1.5302813466383298,
+          "max_angstrom": 1.5400610377514257,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 3.0003808091640622,
+          "median_angstrom": 3.099811126983691,
+          "max_angstrom": 3.2241592702594586,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2061388808922457,
+          "median_angstrom": 1.4727216301799877,
+          "max_angstrom": 1.8300956259168542,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      },
+      {
+        "compound": "quercetin",
+        "sample": 4,
+        "is_selected_top_sample": false,
+        "official_CG1_CD1": {
+          "count": 34,
+          "min_angstrom": 1.5206202681800611,
+          "median_angstrom": 1.5317315062843893,
+          "max_angstrom": 1.5418216498674546,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "incorrect_template_nonbond_CG2_CD1": {
+          "count": 34,
+          "min_angstrom": 2.9292826766974875,
+          "median_angstrom": 3.1015190168296622,
+          "max_angstrom": 3.218993320900184,
+          "count_outside_0_9_to_2_1_angstrom": 34,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 34
+        },
+        "protein_intraresidue_ccd_bonds": {
+          "count": 4397,
+          "min_angstrom": 1.2030631737361095,
+          "median_angstrom": 1.473813421027232,
+          "max_angstrom": 1.826116370881112,
+          "count_outside_0_9_to_2_1_angstrom": 0,
+          "count_outside_viewer_0_65_to_2_4_angstrom": 0
+        },
+        "all_original_coordinates_unchanged": true
+      }
+    ],
+    "coordinate_or_inference_changes_performed": false,
+    "interpretation": "Correcting the application bond graph removes false long-bond warnings; low AF3 confidence remains and this does not validate fold, binding, efficacy or safety."
+  }
+}

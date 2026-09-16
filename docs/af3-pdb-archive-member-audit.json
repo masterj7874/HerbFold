@@ -1,0 +1,41 @@
+{
+  "started_at": "2026-09-08T01:03:14.696926+00:00",
+  "status": "completed",
+  "source_archive": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0/.downloads/pdb_2022_09_28_mmcif_files.tar.zst",
+  "source_compressed_bytes": 56979074571,
+  "source_sha256_from_completed_receipt": "4706ec0d948ed7a005b30eea21f5a7f9362b067e48d8bea2605671a49bd43c24",
+  "source_generation": "1730832728463652",
+  "scope": "Read-only metadata scan of locally downloaded Google-checksum-verified compressed source. Member bodies discarded; no extraction, tree changes or new network/GPU work.",
+  "member_count": 195860,
+  "member_type_counts": {
+    "5": 1,
+    "0": 195859
+  },
+  "sum_declared_regular_member_bytes": 250115836927,
+  "unexpected_members": [
+    {
+      "archive_member_index": 41108,
+      "name": "mmcif_files/mmcif_files.tar.gz",
+      "type": "0",
+      "is_regular": true,
+      "is_hardlink": false,
+      "is_symlink": false,
+      "is_directory": false,
+      "size": 45,
+      "linkname": "",
+      "path_safe": true,
+      "tar_header_offset": 51760161792,
+      "tar_data_offset": 51760162304,
+      "prior_link_target": null,
+      "pax_headers": {},
+      "content_sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+      "content_hex_evidence": "docs/af3-pdb-ancillary-member.json",
+      "handling": "Preserve original 45 bytes outside template tree only when source URL, generation, exact archive path, regular type, size and content SHA256 match; never extract nested contents."
+    }
+  ],
+  "elapsed_seconds": 407.6424770859885,
+  "updated_at": "2026-09-08T01:10:02.339393+00:00",
+  "cif_regular_member_count": 195858,
+  "unexpected_member_classification": "Exactly one 45-byte regular non-CIF ancillary file; no hardlinks, symlinks, special entries or unsafe paths observed.",
+  "installation_status": "This metadata audit is not an installation completion receipt; production installation and full source hash/frame/output validation remain separate."
+}

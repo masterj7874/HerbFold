@@ -1,0 +1,77 @@
+{
+  "verified_at": "2026-09-08T00:50:55.977015+00:00",
+  "implementation_sha256": "dcb7785c75f11eac4ebc748cb8c4968c87699200440424a8925261931c9c2ad5",
+  "prior_validator_sha256": "cd5a1c96f8c6f80e018bf18b12feb09b436387bf1a8e080e1880836b95f92833",
+  "scope": "CPU-only parser benchmark on two bounded real source prefixes; production installer was not stopped or started and database files were not modified",
+  "validation_version": 2,
+  "sources": [
+    {
+      "source": "bfd",
+      "source_path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0/bfd-first_non_consensus_sequences.fasta",
+      "scope": "Read-only first8MiB snapshot, trimmed before last partial record; not a complete source validation",
+      "prefix_bytes": 8388570,
+      "prefix_sha256": "258032c6be8c0bae01f96e0f46b9f58420019a50fb06e0c30b5bf2caa79db013",
+      "chunk_size_bytes": 4194304,
+      "records": 114063,
+      "symbols": 6372189,
+      "rounds": 5,
+      "elapsed_seconds": {
+        "before": [
+          0.15852907199587207,
+          0.15169982799852733,
+          0.15071969501150306,
+          0.15471783399698325,
+          0.15261269800248556
+        ],
+        "after": [
+          0.038619015002041124,
+          0.028246580011909828,
+          0.02713202399900183,
+          0.026615862996550277,
+          0.029266863988596015
+        ]
+      },
+      "median_MiB_per_second": {
+        "before": 52.420040174151715,
+        "after": 283.21884479476415
+      },
+      "speedup": 5.4028734784224595,
+      "records_symbols_identical": true
+    },
+    {
+      "source": "uniref90",
+      "source_path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0/.downloads/uniref90_2022_05.fa.zst",
+      "scope": "Read-only first8MiB snapshot, trimmed before last partial record; not a complete source validation",
+      "prefix_bytes": 8359269,
+      "prefix_sha256": "db0d589f94e2e662b4afbb05377d3b568c213c8b4f5132ff61f6637e33ecf6eb",
+      "chunk_size_bytes": 4194304,
+      "records": 286,
+      "symbols": 8194761,
+      "rounds": 5,
+      "elapsed_seconds": {
+        "before": [
+          0.10913217799679842,
+          0.1049792650010204,
+          0.1049963910045335,
+          0.1091478510061279,
+          0.11064255300152581
+        ],
+        "after": [
+          0.021090081994771026,
+          0.01669673300057184,
+          0.016473045005113818,
+          0.015517078994889744,
+          0.015845105008338578
+        ]
+      },
+      "median_MiB_per_second": {
+        "before": 73.04921697306206,
+        "after": 483.94332357837663
+      },
+      "speedup": 6.624894059533008,
+      "records_symbols_identical": true
+    }
+  ],
+  "minimum_measured_speedup": 5.4028734784224595,
+  "interpretation": "Median5interleaved parser-only timings. Excludes source reading, hashing, decompression and output writing; actual full installation speedup can be smaller."
+}

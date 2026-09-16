@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-09-14T03:26:20.892819+00:00",
+  "job_id": "31dfd5615cb848c5a98c78dc657c3692",
+  "compound": {
+    "id": 87,
+    "display_name": "Bruceajavanone A",
+    "canonical_smiles": "CCCCCC(=O)O[C@@H]1C[C@]2(C)C(=CC[C@H]2[C@@H]2C[C@@H]([C@@H]3OC3(C)C)O[C@@H]2OC(C)=O)[C@]2(C)[C@H](O)C[C@H]3C(C)(C)C(=O)C=C[C@]3(C)[C@@H]12",
+    "formula": "C38H56O8"
+  },
+  "checks": {
+    "restored_selection_recovers_list_scene_and_diagnostics_after_token_refresh": true,
+    "molecular_profile_formula_recovers_without_stale_auth_error": true,
+    "online_and_visible_events_coalesce_into_one_immediate_status_read": true,
+    "completed_structure_independent_of_hung_log_replay": {
+      "result_button_seconds": 3.18,
+      "mode": "hung_log",
+      "status_requests": 5,
+      "scene_requests": 2,
+      "held_log_requests": 2,
+      "held_scene_requests": 0
+    },
+    "scene_timeout_releases_loading_and_connection_refresh_recovers_actual_structure": {
+      "mode": null,
+      "status_requests": 3,
+      "scene_requests": 4,
+      "held_log_requests": 0,
+      "held_scene_requests": 2
+    },
+    "test_sent_no_af3_prepare_execute_or_job_mutations": true
+  },
+  "screenshots": [
+    "docs/images/af3-reconnect-actual-completed-desktop.png",
+    "docs/images/af3-reconnect-actual-structure-desktop.png",
+    "docs/images/af3-reconnect-actual-completed-mobile.png",
+    "docs/images/af3-reconnect-replay-scene-timeout.png"
+  ],
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "observed_external_job_changes": [],
+  "status": "passed"
+}

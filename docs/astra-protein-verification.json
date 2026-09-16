@@ -1,0 +1,25 @@
+{
+  "hardware_submitted": false,
+  "checks": [
+    "Cached experimental PDB 5IKR loads actual Cα backbone and ligand atoms",
+    "Searching a real Cα atom and choosing atomic focus transitions from backbone to real ball-and-stick topology",
+    "All four protein representations render; experimental B factor remains distinct from unavailable pLDDT",
+    "Cached real AF3 output loads with true pLDDT coloring and prominent existing geometry-error counts"
+  ],
+  "javascript_errors": [],
+  "pdb_atom_count": 18781,
+  "pdb_bond_count": 18577,
+  "focused_pdb_atom": {
+    "index": 1,
+    "name": "CA",
+    "element": "C",
+    "chain_id": "A",
+    "residue_name": "ASN",
+    "residue_id": "1",
+    "b_factor": 55.98
+  },
+  "af3_atom_count": 4880,
+  "af3_bond_count": 5015,
+  "af3_abnormal_bond_count": 5013,
+  "passed": true
+}

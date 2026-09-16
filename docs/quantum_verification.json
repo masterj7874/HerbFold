@@ -1,0 +1,203 @@
+{
+  "checked_at": "2026-09-07T07:59:47.323032+00:00",
+  "status": "completed",
+  "submission_attempted": true,
+  "free_plan_evidence": {
+    "checked_at": "2026-09-07T07:59:36.884545+00:00",
+    "instance_plan": "open",
+    "instance_pinned": true,
+    "usage_consumed_seconds": 19.0,
+    "usage_limit_seconds": 600.0,
+    "usage_remaining_seconds": 581.0,
+    "usage_limit_reached": false,
+    "usage_period": {
+      "start_time": "2026-08-10T07:59:36.635Z",
+      "end_time": "2026-09-07T07:59:36.635Z"
+    },
+    "required_maximum_qpu_seconds": 30,
+    "eligible_for_free_validation": true,
+    "sources": [
+      "https://quantum.cloud.ibm.com/docs/en/guides/instances",
+      "https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/qiskit-runtime-service",
+      "https://quantum.cloud.ibm.com/docs/en/api/qiskit-runtime-rest/tags/instances"
+    ]
+  },
+  "backend": {
+    "name": "ibm_fez",
+    "num_qubits": 156,
+    "used_qubits": 156
+  },
+  "molecules": [
+    {
+      "id": "quercetin",
+      "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+      "pubchem_cid": 5280343,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280343"
+    },
+    {
+      "id": "luteolin",
+      "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+      "pubchem_cid": 5280445,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280445"
+    }
+  ],
+  "feature_names": [
+    "molecular_weight/500",
+    "logp/5",
+    "tpsa/150",
+    "hbd/5",
+    "hba/10",
+    "qed"
+  ],
+  "payload": {
+    "features": [
+      [
+        0.604476,
+        0.3976,
+        0.8757333333333335,
+        1.0,
+        0.7,
+        0.43419
+      ],
+      [
+        0.5724779999999999,
+        0.45648,
+        0.7408666666666667,
+        0.8,
+        0.6,
+        0.510622
+      ]
+    ],
+    "mode": "ibm",
+    "qubits": "max",
+    "shots": 1024,
+    "max_circuits": 3,
+    "circuits_per_job": 3,
+    "max_total_shots": 3072,
+    "max_jobs": 1,
+    "max_execution_time": 30,
+    "layers": 2,
+    "backend_name": null
+  },
+  "purpose": "Minimal real maximum-accessible-qubit execution check; molecular feature similarity only, not binding affinity or efficacy.",
+  "authorization": "User requested IBM Quantum maximum qubits; this check is constrained to verified Open/free allowance and one job.",
+  "hardware_executed": true,
+  "store_job_id": "ad63801d6a444fe08452bcacc7dfbf53",
+  "submitted_at": "2026-09-07T07:59:59.285610+00:00",
+  "compilation": {
+    "logical_qubits": 156,
+    "depth": 45,
+    "operation_counts": {
+      "rz": 2184,
+      "sx": 1248,
+      "cz": 620,
+      "measure": 156,
+      "barrier": 2
+    },
+    "connected_components": 1
+  },
+  "jobs": [
+    {
+      "job_id": "daf6tvm42tqs73avi9u0",
+      "status": "DONE",
+      "quantum_seconds": 3.0,
+      "observations": [
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "zero_counts": 0,
+          "shots": 1024,
+          "fidelity": 0.0,
+          "wilson_95": [
+            0,
+            0.0037374040400176777
+          ]
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "zero_counts": 0,
+          "shots": 1024,
+          "fidelity": 0.0,
+          "wilson_95": [
+            0,
+            0.0037374040400176777
+          ]
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "zero_counts": 0,
+          "shots": 1024,
+          "fidelity": 0.0,
+          "wilson_95": [
+            0,
+            0.0037374040400176777
+          ]
+        }
+      ],
+      "measurement_diagnostics": [
+        {
+          "bitstring_width": 156,
+          "observed_distinct_bitstrings": 1024,
+          "minimum_observed_hamming_weight": 7,
+          "mean_hamming_weight": 22.1591796875
+        },
+        {
+          "bitstring_width": 156,
+          "observed_distinct_bitstrings": 1024,
+          "minimum_observed_hamming_weight": 9,
+          "mean_hamming_weight": 23.5791015625
+        },
+        {
+          "bitstring_width": 156,
+          "observed_distinct_bitstrings": 1024,
+          "minimum_observed_hamming_weight": 7,
+          "mean_hamming_weight": 22.44140625
+        }
+      ]
+    }
+  ],
+  "refreshed_at": "2026-09-07T08:02:04.478496+00:00",
+  "usage_after": {
+    "checked_at": "2026-09-07T08:02:01.364299+00:00",
+    "instance_plan": "open",
+    "instance_pinned": true,
+    "usage_consumed_seconds": 22.0,
+    "usage_limit_seconds": 600.0,
+    "usage_remaining_seconds": 578.0,
+    "usage_limit_reached": false,
+    "usage_period": {
+      "start_time": "2026-08-10T08:02:01.091Z",
+      "end_time": "2026-09-07T08:02:01.091Z"
+    },
+    "required_maximum_qpu_seconds": 30,
+    "eligible_for_free_validation": true,
+    "sources": [
+      "https://quantum.cloud.ibm.com/docs/en/guides/instances",
+      "https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/qiskit-runtime-service",
+      "https://quantum.cloud.ibm.com/docs/en/api/qiskit-runtime-rest/tags/instances"
+    ]
+  },
+  "kernel": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "kernel_diagnostics": {
+    "min_eigenvalue": 0.0,
+    "mean_diagonal": 0.0,
+    "psd_projection_applied": false
+  }
+}

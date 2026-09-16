@@ -1,0 +1,1388 @@
+{
+  "model_dir": "/home/jerisuh/models/af3-google-20260604",
+  "source_download_receipt": "docs/af3-google-weights-acquisition.json",
+  "parameter_validation": "docs/af3-google-weights-validation.json",
+  "jobs": {
+    "aspirin": {
+      "job": {
+        "id": "88692f7955d94c50814f6e3121f963b6",
+        "kind": "alphafold",
+        "status": "completed",
+        "created": "2026-09-07T23:37:43.597700+00:00",
+        "updated": "2026-09-07T23:52:35.542855+00:00",
+        "payload": {
+          "name": "studio_P35354_a2ed32347ddc",
+          "modelSeeds": [
+            1
+          ],
+          "sequences": [
+            {
+              "protein": {
+                "id": "A",
+                "sequence": "MLARALLLCAVLALSHTANPCCSHPCQNRGVCMSVGFDQYKCDCTRTGFYGENCSTPEFLTRIKLFLKPTPNTVHYILTHFKGFWNVVNNIPFLRNAIMSYVLTSRSHLIDSPPTYNADYGYKSWEAFSNLSYYTRALPPVPDDCPTPLGVKGKKQLPDSNEIVEKLLLRRKFIPDPQGSNMMFAFFAQHFTHQFFKTDHKRGPAFTNGLGHGVDLNHIYGETLARQRKLRLFKDGKMKYQIIDGEMYPPTVKDTQAEMIYPPQVPEHLRFAVGQEVFGLVPGLMMYATIWLREHNRVCDVLKQEHPEWGDEQLFQTSRLILIGETIKIVIEDYVQHLSGYHFKLKFDPELLFNKQFQYQNRIAAEFNTLYHWHPLLPDTFQIHDQKYNYQQFIYNNSILLEHGITQFVESFTRQIAGRVAGGRNVPPAVQKVSQASIDQSRQMKYQSFNEYRKRFMLKPYESFEELTGEKEMSAELEALYGDIDAVELYPALLVEKPRPDAIFGETMVEVGAPFSLKGLMGNVICSPAYWKPSTFGGEVGFQIINTASIQSLICNNVKGCPFTSFSVPDPELIKTVTINASSSRSGLDDINPTVLLKERSTEL",
+                "unpairedMsa": "",
+                "pairedMsa": "",
+                "templates": []
+              }
+            },
+            {
+              "ligand": {
+                "id": "B",
+                "smiles": "CC(=O)Oc1ccccc1C(=O)O"
+              }
+            }
+          ],
+          "dialect": "alphafold3",
+          "version": 4
+        },
+        "result": {
+          "models": [
+            {
+              "name": "studio_P35354_a2ed32347ddc_seed-1_sample-0",
+              "summary_path": "studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_summary_confidences.json",
+              "structure_path": "studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_model.cif",
+              "metrics": {
+                "ptm": 0.2,
+                "iptm": 0.37,
+                "ranking_score": 0.35,
+                "fraction_disordered": 0.04,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.2,
+                  0.03
+                ],
+                "chain_iptm": [
+                  0.37,
+                  0.37
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.2,
+                    0.37
+                  ],
+                  [
+                    0.37,
+                    0.03
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    15.14
+                  ],
+                  [
+                    15.84,
+                    0.77
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 0,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+              "confidence_path": "studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_confidences.json"
+            },
+            {
+              "name": "studio_P35354_a2ed32347ddc",
+              "summary_path": "studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_summary_confidences.json",
+              "structure_path": "studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+              "metrics": {
+                "ptm": 0.2,
+                "iptm": 0.37,
+                "ranking_score": 0.35,
+                "fraction_disordered": 0.04,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.2,
+                  0.03
+                ],
+                "chain_iptm": [
+                  0.37,
+                  0.37
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.2,
+                    0.37
+                  ],
+                  [
+                    0.37,
+                    0.03
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    15.14
+                  ],
+                  [
+                    15.84,
+                    0.77
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": null,
+              "sample": null,
+              "is_top_ranked_copy": true,
+              "structure_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+              "confidence_path": "studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_confidences.json"
+            },
+            {
+              "name": "studio_P35354_a2ed32347ddc_seed-1_sample-4",
+              "summary_path": "studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_summary_confidences.json",
+              "structure_path": "studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_model.cif",
+              "metrics": {
+                "ptm": 0.2,
+                "iptm": 0.31,
+                "ranking_score": 0.32,
+                "fraction_disordered": 0.05,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.2,
+                  0.03
+                ],
+                "chain_iptm": [
+                  0.31,
+                  0.31
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.2,
+                    0.31
+                  ],
+                  [
+                    0.31,
+                    0.03
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    14.8
+                  ],
+                  [
+                    14.84,
+                    0.77
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 4,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "287ff8cd1f2b21614e5222840ae46210102005f124c373d30e465c4132956d4c",
+              "confidence_path": "studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_confidences.json"
+            },
+            {
+              "name": "studio_P35354_a2ed32347ddc_seed-1_sample-1",
+              "summary_path": "studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_summary_confidences.json",
+              "structure_path": "studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_model.cif",
+              "metrics": {
+                "ptm": 0.2,
+                "iptm": 0.31,
+                "ranking_score": 0.31,
+                "fraction_disordered": 0.05,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.2,
+                  0.03
+                ],
+                "chain_iptm": [
+                  0.31,
+                  0.31
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.2,
+                    0.31
+                  ],
+                  [
+                    0.31,
+                    0.03
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    16.19
+                  ],
+                  [
+                    16.32,
+                    0.77
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 1,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "daf68c65da10a8b7c323dbbff3e00e290d0d12091f6c27a318cceeca8da0f2b6",
+              "confidence_path": "studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_confidences.json"
+            },
+            {
+              "name": "studio_P35354_a2ed32347ddc_seed-1_sample-2",
+              "summary_path": "studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_summary_confidences.json",
+              "structure_path": "studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_model.cif",
+              "metrics": {
+                "ptm": 0.2,
+                "iptm": 0.26,
+                "ranking_score": 0.29,
+                "fraction_disordered": 0.09,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.2,
+                  0.03
+                ],
+                "chain_iptm": [
+                  0.26,
+                  0.26
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.2,
+                    0.26
+                  ],
+                  [
+                    0.26,
+                    0.03
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    17.93
+                  ],
+                  [
+                    15.88,
+                    0.77
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 2,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "04425e62a53757e6e0ced0d52716882d8d193ded644e1724fe6bbf64dfefa620",
+              "confidence_path": "studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_confidences.json"
+            },
+            {
+              "name": "studio_P35354_a2ed32347ddc_seed-1_sample-3",
+              "summary_path": "studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_summary_confidences.json",
+              "structure_path": "studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_model.cif",
+              "metrics": {
+                "ptm": 0.19,
+                "iptm": 0.2,
+                "ranking_score": 0.22,
+                "fraction_disordered": 0.05,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.19,
+                  0.03
+                ],
+                "chain_iptm": [
+                  0.2,
+                  0.2
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.19,
+                    0.2
+                  ],
+                  [
+                    0.2,
+                    0.03
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    20.99
+                  ],
+                  [
+                    19.19,
+                    0.77
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 3,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "16b1a62d6e8d37f5f2b679c005777392eac27db90e1521d74339e1f08572e089",
+              "confidence_path": "studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_confidences.json"
+            }
+          ],
+          "model_count": 6,
+          "warnings": [
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-0",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-1",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-2",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-3",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-4",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc"
+          ],
+          "confidence_note": "AlphaFold 3 confidence describes predicted structure quality. It is not binding affinity (Kd/Ki/IC50), a validated binding probability, or efficacy.",
+          "affinity_prediction": null,
+          "source": "imported_af3_artifacts",
+          "execution_verified": true,
+          "execution_provenance": {
+            "expected_version": "3.0.4",
+            "expected_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+            "verified_date": "2026-09-07",
+            "release_url": "https://github.com/google-deepmind/alphafold3/releases/tag/v3.0.4",
+            "runner": "native",
+            "device": "gpu",
+            "runtime_probed": true,
+            "parameters": {
+              "status": "unverified_parameters",
+              "identifier_status": "nonzero_unverified",
+              "trained_parameters_authenticated": false,
+              "records_checked": 2,
+              "decoded_bytes_checked": 1267,
+              "full_container_validated": false,
+              "inspection_scope": "Identifier and at least one parameter record; bounded prefix only",
+              "note": "A nonzero identifier does not prove trained weights, Google origin or usage rights.",
+              "compressed": true,
+              "parameter_files": [
+                {
+                  "name": "af3.bin.zst",
+                  "size_bytes": 1020545840
+                }
+              ],
+              "stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+              "inspection_method": "bounded_parameter_prefix_cpu_v1",
+              "source_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md"
+            },
+            "source_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+            "source_modified": false,
+            "entrypoint_sha256": "a1dc5033fdd5473de06a1dfa02bdf3f53120ea83294f880198bcb26e64c2d075",
+            "runtime": {
+              "version": "3.0.4",
+              "module": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/src/alphafold3/__init__.py",
+              "jax_version": "0.10.2",
+              "jaxlib_version": "0.10.2",
+              "devices": [
+                "cuda:0"
+              ]
+            },
+            "cuda_environment": {
+              "LD_LIBRARY_PATH": null,
+              "CUDA_VISIBLE_DEVICES": "1",
+              "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+              "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+            }
+          },
+          "execution": {
+            "owner": {
+              "pid": 491647,
+              "start_ticks": "8702771",
+              "boot_id": "a01cabcd-6035-44e4-8641-55714e5c22d5"
+            },
+            "started_at": "2026-09-07T23:38:14.510470+00:00",
+            "child": {
+              "pid": 511715,
+              "start_ticks": "8712025",
+              "boot_id": "a01cabcd-6035-44e4-8641-55714e5c22d5"
+            },
+            "finished_at": "2026-09-07T23:40:59.097304+00:00",
+            "return_code": 0
+          },
+          "execution_profile": {
+            "runner": "native",
+            "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+            "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+            "model_dir": "/home/jerisuh/models/af3-google-20260604",
+            "database_dir": null,
+            "docker_image": "herbfold-af3:3.0.4",
+            "device": "gpu",
+            "num_diffusion_samples": 5,
+            "num_recycles": 10,
+            "max_template_date": "2021-09-30",
+            "flash_attention": "triton"
+          },
+          "msa_mode": "none",
+          "model_seeds": [
+            1
+          ],
+          "samples_per_seed": 5,
+          "num_recycles": 10,
+          "return_code": 0,
+          "submission_context": {
+            "parameter_stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+            "cuda_environment": {
+              "LD_LIBRARY_PATH": null,
+              "CUDA_VISIBLE_DEVICES": "1",
+              "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+              "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+            }
+          },
+          "output_validation": {
+            "status": "identity_verified_quality_unassessed",
+            "identity_verified": true,
+            "quality_pass": null,
+            "geometry": {
+              "atom_count": 4878,
+              "bond_count": 5013,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.827065,
+              "coord_span_angstrom": [
+                62.849,
+                65.788,
+                85.952
+              ],
+              "center_angstrom": [
+                -0.57756,
+                0.490228,
+                1.056201
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "summary_metrics": {
+              "ptm": 0.2,
+              "iptm": 0.37,
+              "ranking_score": 0.35,
+              "fraction_disordered": 0.04,
+              "has_clash": false,
+              "chain_ptm": [
+                0.2,
+                0.03
+              ],
+              "chain_iptm": [
+                0.37,
+                0.37
+              ],
+              "chain_pair_iptm": [
+                [
+                  0.2,
+                  0.37
+                ],
+                [
+                  0.37,
+                  0.03
+                ]
+              ],
+              "chain_pair_pae_min": [
+                [
+                  0.76,
+                  15.14
+                ],
+                [
+                  15.84,
+                  0.77
+                ]
+              ]
+            },
+            "artifact": "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+            "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+            "selected_ligand_atom_count": 13,
+            "warnings": [
+              "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+              "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+            ],
+            "affinity": null,
+            "efficacy": "not_assessed",
+            "safety": "not_assessed"
+          },
+          "viewer_template_correction": {
+            "corrected_at": "2026-09-07T23:52:35.371939+00:00",
+            "component": "ILE",
+            "removed_bond": [
+              "CG2",
+              "CD1"
+            ],
+            "correct_bond": [
+              "CG1",
+              "CD1"
+            ],
+            "old_validation_artifact": "output_validation_before_ile_template_fix.json",
+            "coordinates_changed": false,
+            "source": "https://files.rcsb.org/ligands/download/ILE.cif"
+          }
+        },
+        "error": null
+      },
+      "requested": {
+        "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "target_accession": "P35354",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "msa_mode": "none",
+        "seeds": [
+          1
+        ],
+        "af3_version": "3.0.4",
+        "af3_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+        "execution_profile": {
+          "runner": "native",
+          "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+          "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+          "model_dir": "/home/jerisuh/models/af3-google-20260604",
+          "database_dir": null,
+          "docker_image": "herbfold-af3:3.0.4",
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10,
+          "max_template_date": "2021-09-30",
+          "flash_attention": "triton"
+        },
+        "submission_context": {
+          "parameter_stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+          "cuda_environment": {
+            "LD_LIBRARY_PATH": null,
+            "CUDA_VISIBLE_DEVICES": "1",
+            "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+            "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+          }
+        },
+        "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "exploratory_ack": true
+      },
+      "reused": false,
+      "retry_of": null,
+      "readiness": {
+        "runnable": false,
+        "blockers": [],
+        "warnings": [
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-0",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-1",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-2",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-3",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc_seed-1_sample-4",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_a2ed32347ddc",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "parameter_status": "unverified_parameters",
+        "parameters": {
+          "status": "unverified_parameters",
+          "identifier_status": "nonzero_unverified",
+          "trained_parameters_authenticated": false,
+          "records_checked": 2,
+          "decoded_bytes_checked": 1267,
+          "full_container_validated": false,
+          "inspection_scope": "Identifier and at least one parameter record; bounded prefix only",
+          "note": "A nonzero identifier does not prove trained weights, Google origin or usage rights.",
+          "compressed": true,
+          "parameter_files": [
+            {
+              "name": "af3.bin.zst",
+              "size_bytes": 1020545840
+            }
+          ],
+          "stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+          "inspection_method": "bounded_parameter_prefix_cpu_v1",
+          "source_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md"
+        }
+      },
+      "queue_position": null,
+      "orphan_process_active": false,
+      "input_url": "/api/jobs/88692f7955d94c50814f6e3121f963b6/artifacts/fold_input.json",
+      "log_url": "/api/molecular/predictions/88692f7955d94c50814f6e3121f963b6/log",
+      "scene_url": "/api/molecular/predictions/88692f7955d94c50814f6e3121f963b6/scene",
+      "output_validation": {
+        "status": "identity_verified_quality_unassessed",
+        "identity_verified": true,
+        "quality_pass": null,
+        "geometry": {
+          "atom_count": 4878,
+          "bond_count": 5013,
+          "long_bond_count": 0,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 1.827065,
+          "coord_span_angstrom": [
+            62.849,
+            65.788,
+            85.952
+          ],
+          "center_angstrom": [
+            -0.57756,
+            0.490228,
+            1.056201
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "summary_metrics": {
+          "ptm": 0.2,
+          "iptm": 0.37,
+          "ranking_score": 0.35,
+          "fraction_disordered": 0.04,
+          "has_clash": false,
+          "chain_ptm": [
+            0.2,
+            0.03
+          ],
+          "chain_iptm": [
+            0.37,
+            0.37
+          ],
+          "chain_pair_iptm": [
+            [
+              0.2,
+              0.37
+            ],
+            [
+              0.37,
+              0.03
+            ]
+          ],
+          "chain_pair_pae_min": [
+            [
+              0.76,
+              15.14
+            ],
+            [
+              15.84,
+              0.77
+            ]
+          ]
+        },
+        "artifact": "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+        "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+        "selected_ligand_atom_count": 13,
+        "warnings": [
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "affinity": null,
+        "efficacy": "not_assessed",
+        "safety": "not_assessed"
+      },
+      "execution_note": "완료는 AF3 프로세스와 출력 읽기가 끝났다는 뜻입니다. 구조 품질·결합·효능·안전성 검증 통과를 의미하지 않습니다.",
+      "verification": {
+        "unique_samples": 5,
+        "sample_artifact_sha256": {
+          "output/studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_model.cif": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+          "output/studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_model.cif": "daf68c65da10a8b7c323dbbff3e00e290d0d12091f6c27a318cceeca8da0f2b6",
+          "output/studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_model.cif": "04425e62a53757e6e0ced0d52716882d8d193ded644e1724fe6bbf64dfefa620",
+          "output/studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_model.cif": "16b1a62d6e8d37f5f2b679c005777392eac27db90e1521d74339e1f08572e089",
+          "output/studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_model.cif": "287ff8cd1f2b21614e5222840ae46210102005f124c373d30e465c4132956d4c"
+        },
+        "top_model_is_additional_copy_not_new_sample": true,
+        "elapsed_seconds": 164.587,
+        "scene_matches_requested_job": true,
+        "scene_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+        "ligand_atom_count": 13,
+        "validation_scope": "Real trained AF3 process completion and output identity; scientific quality is assessed separately, never equated with completion."
+      }
+    },
+    "quercetin": {
+      "job": {
+        "id": "3730181a45734f0dafa92a78917c48dd",
+        "kind": "alphafold",
+        "status": "completed",
+        "created": "2026-09-07T23:37:44.862888+00:00",
+        "updated": "2026-09-07T23:52:35.716128+00:00",
+        "payload": {
+          "name": "studio_P35354_6abdb61491ab",
+          "modelSeeds": [
+            1
+          ],
+          "sequences": [
+            {
+              "protein": {
+                "id": "A",
+                "sequence": "MLARALLLCAVLALSHTANPCCSHPCQNRGVCMSVGFDQYKCDCTRTGFYGENCSTPEFLTRIKLFLKPTPNTVHYILTHFKGFWNVVNNIPFLRNAIMSYVLTSRSHLIDSPPTYNADYGYKSWEAFSNLSYYTRALPPVPDDCPTPLGVKGKKQLPDSNEIVEKLLLRRKFIPDPQGSNMMFAFFAQHFTHQFFKTDHKRGPAFTNGLGHGVDLNHIYGETLARQRKLRLFKDGKMKYQIIDGEMYPPTVKDTQAEMIYPPQVPEHLRFAVGQEVFGLVPGLMMYATIWLREHNRVCDVLKQEHPEWGDEQLFQTSRLILIGETIKIVIEDYVQHLSGYHFKLKFDPELLFNKQFQYQNRIAAEFNTLYHWHPLLPDTFQIHDQKYNYQQFIYNNSILLEHGITQFVESFTRQIAGRVAGGRNVPPAVQKVSQASIDQSRQMKYQSFNEYRKRFMLKPYESFEELTGEKEMSAELEALYGDIDAVELYPALLVEKPRPDAIFGETMVEVGAPFSLKGLMGNVICSPAYWKPSTFGGEVGFQIINTASIQSLICNNVKGCPFTSFSVPDPELIKTVTINASSSRSGLDDINPTVLLKERSTEL",
+                "unpairedMsa": "",
+                "pairedMsa": "",
+                "templates": []
+              }
+            },
+            {
+              "ligand": {
+                "id": "B",
+                "smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12"
+              }
+            }
+          ],
+          "dialect": "alphafold3",
+          "version": 4
+        },
+        "result": {
+          "models": [
+            {
+              "name": "studio_P35354_6abdb61491ab_seed-1_sample-1",
+              "summary_path": "studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_summary_confidences.json",
+              "structure_path": "studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_model.cif",
+              "metrics": {
+                "ptm": 0.2,
+                "iptm": 0.35,
+                "ranking_score": 0.34,
+                "fraction_disordered": 0.04,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.2,
+                  0.24
+                ],
+                "chain_iptm": [
+                  0.35,
+                  0.35
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.2,
+                    0.35
+                  ],
+                  [
+                    0.35,
+                    0.24
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    14.73
+                  ],
+                  [
+                    16.51,
+                    0.78
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 1,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "a14cffd0eeb83cb877f60576bada57843b86d2088e99ab0c92a86de87865ef4b",
+              "confidence_path": "studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_confidences.json"
+            },
+            {
+              "name": "studio_P35354_6abdb61491ab_seed-1_sample-3",
+              "summary_path": "studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_summary_confidences.json",
+              "structure_path": "studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_model.cif",
+              "metrics": {
+                "ptm": 0.21,
+                "iptm": 0.32,
+                "ranking_score": 0.34,
+                "fraction_disordered": 0.09,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.21,
+                  0.24
+                ],
+                "chain_iptm": [
+                  0.32,
+                  0.32
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.21,
+                    0.32
+                  ],
+                  [
+                    0.32,
+                    0.24
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    15.73
+                  ],
+                  [
+                    17.41,
+                    0.78
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 3,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "ee08bc17bd09ecfe62e94e37b3d8eeb31ffefa4bd1ecf0795d3102cf5adf583f",
+              "confidence_path": "studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_confidences.json"
+            },
+            {
+              "name": "studio_P35354_6abdb61491ab",
+              "summary_path": "studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_summary_confidences.json",
+              "structure_path": "studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+              "metrics": {
+                "ptm": 0.21,
+                "iptm": 0.32,
+                "ranking_score": 0.34,
+                "fraction_disordered": 0.09,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.21,
+                  0.24
+                ],
+                "chain_iptm": [
+                  0.32,
+                  0.32
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.21,
+                    0.32
+                  ],
+                  [
+                    0.32,
+                    0.24
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    15.73
+                  ],
+                  [
+                    17.41,
+                    0.78
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": null,
+              "sample": null,
+              "is_top_ranked_copy": true,
+              "structure_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+              "confidence_path": "studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_confidences.json"
+            },
+            {
+              "name": "studio_P35354_6abdb61491ab_seed-1_sample-2",
+              "summary_path": "studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_summary_confidences.json",
+              "structure_path": "studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_model.cif",
+              "metrics": {
+                "ptm": 0.21,
+                "iptm": 0.29,
+                "ranking_score": 0.28,
+                "fraction_disordered": 0.02,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.21,
+                  0.24
+                ],
+                "chain_iptm": [
+                  0.29,
+                  0.29
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.21,
+                    0.29
+                  ],
+                  [
+                    0.29,
+                    0.24
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    15.42
+                  ],
+                  [
+                    16.47,
+                    0.78
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 2,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "970195cff8385bc26e32a119f57b38992b59743a80f81ffd045978c9334569e6",
+              "confidence_path": "studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_confidences.json"
+            },
+            {
+              "name": "studio_P35354_6abdb61491ab_seed-1_sample-0",
+              "summary_path": "studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_summary_confidences.json",
+              "structure_path": "studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_model.cif",
+              "metrics": {
+                "ptm": 0.21,
+                "iptm": 0.24,
+                "ranking_score": 0.27,
+                "fraction_disordered": 0.06,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.21,
+                  0.23
+                ],
+                "chain_iptm": [
+                  0.24,
+                  0.24
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.21,
+                    0.24
+                  ],
+                  [
+                    0.24,
+                    0.23
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    16.36
+                  ],
+                  [
+                    18.33,
+                    0.78
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 0,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "f24d78b8517b74764145162864832577e615dd6d8b9c7cd4c974728b20189d94",
+              "confidence_path": "studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_confidences.json"
+            },
+            {
+              "name": "studio_P35354_6abdb61491ab_seed-1_sample-4",
+              "summary_path": "studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_summary_confidences.json",
+              "structure_path": "studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_model.cif",
+              "metrics": {
+                "ptm": 0.21,
+                "iptm": 0.21,
+                "ranking_score": 0.24,
+                "fraction_disordered": 0.06,
+                "has_clash": false,
+                "chain_ptm": [
+                  0.21,
+                  0.24
+                ],
+                "chain_iptm": [
+                  0.21,
+                  0.21
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.21,
+                    0.21
+                  ],
+                  [
+                    0.21,
+                    0.24
+                  ]
+                ],
+                "chain_pair_pae_min": [
+                  [
+                    0.76,
+                    20.23
+                  ],
+                  [
+                    17.76,
+                    0.78
+                  ]
+                ]
+              },
+              "chain_ids": [
+                "A",
+                "B"
+              ],
+              "seed": 1,
+              "sample": 4,
+              "is_top_ranked_copy": false,
+              "structure_sha256": "392d5188e4577cf20cd1942864df985c1a98c4e05f0209ac6eb7e778e65541ca",
+              "confidence_path": "studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_confidences.json"
+            }
+          ],
+          "model_count": 6,
+          "warnings": [
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-0",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-1",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-2",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-3",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-4",
+            "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab"
+          ],
+          "confidence_note": "AlphaFold 3 confidence describes predicted structure quality. It is not binding affinity (Kd/Ki/IC50), a validated binding probability, or efficacy.",
+          "affinity_prediction": null,
+          "source": "imported_af3_artifacts",
+          "execution_verified": true,
+          "execution_provenance": {
+            "expected_version": "3.0.4",
+            "expected_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+            "verified_date": "2026-09-07",
+            "release_url": "https://github.com/google-deepmind/alphafold3/releases/tag/v3.0.4",
+            "runner": "native",
+            "device": "gpu",
+            "runtime_probed": true,
+            "parameters": {
+              "status": "unverified_parameters",
+              "identifier_status": "nonzero_unverified",
+              "trained_parameters_authenticated": false,
+              "records_checked": 2,
+              "decoded_bytes_checked": 1267,
+              "full_container_validated": false,
+              "inspection_scope": "Identifier and at least one parameter record; bounded prefix only",
+              "note": "A nonzero identifier does not prove trained weights, Google origin or usage rights.",
+              "compressed": true,
+              "parameter_files": [
+                {
+                  "name": "af3.bin.zst",
+                  "size_bytes": 1020545840
+                }
+              ],
+              "stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+              "inspection_method": "bounded_parameter_prefix_cpu_v1",
+              "source_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md"
+            },
+            "source_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+            "source_modified": false,
+            "entrypoint_sha256": "a1dc5033fdd5473de06a1dfa02bdf3f53120ea83294f880198bcb26e64c2d075",
+            "runtime": {
+              "version": "3.0.4",
+              "module": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/src/alphafold3/__init__.py",
+              "jax_version": "0.10.2",
+              "jaxlib_version": "0.10.2",
+              "devices": [
+                "cuda:0"
+              ]
+            },
+            "cuda_environment": {
+              "LD_LIBRARY_PATH": null,
+              "CUDA_VISIBLE_DEVICES": "1",
+              "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+              "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+            }
+          },
+          "execution": {
+            "owner": {
+              "pid": 491647,
+              "start_ticks": "8702771",
+              "boot_id": "a01cabcd-6035-44e4-8641-55714e5c22d5"
+            },
+            "started_at": "2026-09-07T23:41:00.642542+00:00",
+            "child": {
+              "pid": 556001,
+              "start_ticks": "8728639",
+              "boot_id": "a01cabcd-6035-44e4-8641-55714e5c22d5"
+            },
+            "finished_at": "2026-09-07T23:43:43.232814+00:00",
+            "return_code": 0
+          },
+          "execution_profile": {
+            "runner": "native",
+            "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+            "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+            "model_dir": "/home/jerisuh/models/af3-google-20260604",
+            "database_dir": null,
+            "docker_image": "herbfold-af3:3.0.4",
+            "device": "gpu",
+            "num_diffusion_samples": 5,
+            "num_recycles": 10,
+            "max_template_date": "2021-09-30",
+            "flash_attention": "triton"
+          },
+          "msa_mode": "none",
+          "model_seeds": [
+            1
+          ],
+          "samples_per_seed": 5,
+          "num_recycles": 10,
+          "return_code": 0,
+          "submission_context": {
+            "parameter_stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+            "cuda_environment": {
+              "LD_LIBRARY_PATH": null,
+              "CUDA_VISIBLE_DEVICES": "1",
+              "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+              "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+            }
+          },
+          "output_validation": {
+            "status": "identity_verified_quality_unassessed",
+            "identity_verified": true,
+            "quality_pass": null,
+            "geometry": {
+              "atom_count": 4887,
+              "bond_count": 5024,
+              "long_bond_count": 0,
+              "short_bond_count": 0,
+              "max_bond_length_angstrom": 1.830096,
+              "coord_span_angstrom": [
+                72.834,
+                91.177,
+                75.39
+              ],
+              "center_angstrom": [
+                1.847605,
+                0.705399,
+                0.351156
+              ],
+              "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+            },
+            "summary_metrics": {
+              "ptm": 0.21,
+              "iptm": 0.32,
+              "ranking_score": 0.34,
+              "fraction_disordered": 0.09,
+              "has_clash": false,
+              "chain_ptm": [
+                0.21,
+                0.24
+              ],
+              "chain_iptm": [
+                0.32,
+                0.32
+              ],
+              "chain_pair_iptm": [
+                [
+                  0.21,
+                  0.32
+                ],
+                [
+                  0.32,
+                  0.24
+                ]
+              ],
+              "chain_pair_pae_min": [
+                [
+                  0.76,
+                  15.73
+                ],
+                [
+                  17.41,
+                  0.78
+                ]
+              ]
+            },
+            "artifact": "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+            "sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+            "selected_ligand_atom_count": 22,
+            "warnings": [
+              "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+              "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+            ],
+            "affinity": null,
+            "efficacy": "not_assessed",
+            "safety": "not_assessed"
+          },
+          "viewer_template_correction": {
+            "corrected_at": "2026-09-07T23:52:35.371939+00:00",
+            "component": "ILE",
+            "removed_bond": [
+              "CG2",
+              "CD1"
+            ],
+            "correct_bond": [
+              "CG1",
+              "CD1"
+            ],
+            "old_validation_artifact": "output_validation_before_ile_template_fix.json",
+            "coordinates_changed": false,
+            "source": "https://files.rcsb.org/ligands/download/ILE.cif"
+          }
+        },
+        "error": null
+      },
+      "requested": {
+        "canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+        "target_accession": "P35354",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "msa_mode": "none",
+        "seeds": [
+          1
+        ],
+        "af3_version": "3.0.4",
+        "af3_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+        "execution_profile": {
+          "runner": "native",
+          "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+          "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+          "model_dir": "/home/jerisuh/models/af3-google-20260604",
+          "database_dir": null,
+          "docker_image": "herbfold-af3:3.0.4",
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10,
+          "max_template_date": "2021-09-30",
+          "flash_attention": "triton"
+        },
+        "submission_context": {
+          "parameter_stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+          "cuda_environment": {
+            "LD_LIBRARY_PATH": null,
+            "CUDA_VISIBLE_DEVICES": "1",
+            "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+            "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+          }
+        },
+        "smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+        "exploratory_ack": true
+      },
+      "reused": false,
+      "retry_of": null,
+      "readiness": {
+        "runnable": false,
+        "blockers": [],
+        "warnings": [
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-0",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-1",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-2",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-3",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab_seed-1_sample-4",
+          "Normalized AF3 token-level chain_ids to chain order: studio_P35354_6abdb61491ab",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "parameter_status": "unverified_parameters",
+        "parameters": {
+          "status": "unverified_parameters",
+          "identifier_status": "nonzero_unverified",
+          "trained_parameters_authenticated": false,
+          "records_checked": 2,
+          "decoded_bytes_checked": 1267,
+          "full_container_validated": false,
+          "inspection_scope": "Identifier and at least one parameter record; bounded prefix only",
+          "note": "A nonzero identifier does not prove trained weights, Google origin or usage rights.",
+          "compressed": true,
+          "parameter_files": [
+            {
+              "name": "af3.bin.zst",
+              "size_bytes": 1020545840
+            }
+          ],
+          "stat_fingerprint_sha256": "17a14591ab1ec59ffb4a1bac4a7786d1277f8ab47c33d3e6f5a0e3f4a8b3b79a",
+          "inspection_method": "bounded_parameter_prefix_cpu_v1",
+          "source_url": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md"
+        }
+      },
+      "queue_position": null,
+      "orphan_process_active": false,
+      "input_url": "/api/jobs/3730181a45734f0dafa92a78917c48dd/artifacts/fold_input.json",
+      "log_url": "/api/molecular/predictions/3730181a45734f0dafa92a78917c48dd/log",
+      "scene_url": "/api/molecular/predictions/3730181a45734f0dafa92a78917c48dd/scene",
+      "output_validation": {
+        "status": "identity_verified_quality_unassessed",
+        "identity_verified": true,
+        "quality_pass": null,
+        "geometry": {
+          "atom_count": 4887,
+          "bond_count": 5024,
+          "long_bond_count": 0,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 1.830096,
+          "coord_span_angstrom": [
+            72.834,
+            91.177,
+            75.39
+          ],
+          "center_angstrom": [
+            1.847605,
+            0.705399,
+            0.351156
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "summary_metrics": {
+          "ptm": 0.21,
+          "iptm": 0.32,
+          "ranking_score": 0.34,
+          "fraction_disordered": 0.09,
+          "has_clash": false,
+          "chain_ptm": [
+            0.21,
+            0.24
+          ],
+          "chain_iptm": [
+            0.32,
+            0.32
+          ],
+          "chain_pair_iptm": [
+            [
+              0.21,
+              0.32
+            ],
+            [
+              0.32,
+              0.24
+            ]
+          ],
+          "chain_pair_pae_min": [
+            [
+              0.76,
+              15.73
+            ],
+            [
+              17.41,
+              0.78
+            ]
+          ]
+        },
+        "artifact": "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+        "sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+        "selected_ligand_atom_count": 22,
+        "warnings": [
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "affinity": null,
+        "efficacy": "not_assessed",
+        "safety": "not_assessed"
+      },
+      "execution_note": "완료는 AF3 프로세스와 출력 읽기가 끝났다는 뜻입니다. 구조 품질·결합·효능·안전성 검증 통과를 의미하지 않습니다.",
+      "verification": {
+        "unique_samples": 5,
+        "sample_artifact_sha256": {
+          "output/studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_model.cif": "f24d78b8517b74764145162864832577e615dd6d8b9c7cd4c974728b20189d94",
+          "output/studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_model.cif": "a14cffd0eeb83cb877f60576bada57843b86d2088e99ab0c92a86de87865ef4b",
+          "output/studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_model.cif": "970195cff8385bc26e32a119f57b38992b59743a80f81ffd045978c9334569e6",
+          "output/studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_model.cif": "ee08bc17bd09ecfe62e94e37b3d8eeb31ffefa4bd1ecf0795d3102cf5adf583f",
+          "output/studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_model.cif": "392d5188e4577cf20cd1942864df985c1a98c4e05f0209ac6eb7e778e65541ca"
+        },
+        "top_model_is_additional_copy_not_new_sample": true,
+        "elapsed_seconds": 162.59,
+        "scene_matches_requested_job": true,
+        "scene_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+        "ligand_atom_count": 22,
+        "validation_scope": "Real trained AF3 process completion and output identity; scientific quality is assessed separately, never equated with completion."
+      }
+    }
+  },
+  "standard_search": {
+    "job_id": "e58c9b7dbdb3489e9fbed7baeee44525",
+    "status": "blocked",
+    "blockers": [
+      "AF3_DB_DIR needs the official genetic/template databases for MSA search",
+      "AF3_DB_DIR must be configured for MSA search"
+    ]
+  },
+  "verified_at": "2026-09-07T23:53:47.787433+00:00",
+  "genuine_inference_completed": true,
+  "completed_jobs": 2,
+  "unique_structure_samples": 10,
+  "all_outputs_quality_pass": null,
+  "msa_mode": "none",
+  "exploratory_only": true,
+  "efficacy_validated": false,
+  "safety_validated": false,
+  "geometry_template_correction_report": "docs/af3-ile-template-correction.json",
+  "overall_structure_quality": "unassessed; low pTM/ipTM in MSA/template-free exploratory inference"
+}

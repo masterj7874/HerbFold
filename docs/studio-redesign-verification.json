@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "checks": {
+    "frontend_assets": [
+      "http://127.0.0.1:8873/app/assets/index-DoL929kB.js",
+      "http://127.0.0.1:8873/app/assets/index-BfjcbYeQ.css",
+      "http://127.0.0.1:8873/app/assets/MoleculeViewer-DTStmNdW.css"
+    ],
+    "initial_catalog_count": 7,
+    "fit_distance_angstrom": 25.8735,
+    "button_zoom_distances": [
+      25.8735,
+      20.6988,
+      25.8735
+    ],
+    "ordinary_wheel_zoom_distances": [
+      25.8735,
+      24.8333,
+      25.8735
+    ],
+    "wheel_over_canvas_preserves_page_position": true,
+    "keyboard_zoom_distances": [
+      25.8735,
+      20.6988,
+      25.8735
+    ],
+    "keyboard_fit_restores_original_distance": true,
+    "reduced_motion_disables_autorotation": true,
+    "atom_selection_and_distance": "#0 ↔ #1 · 1.398 Å",
+    "representations": [
+      "stick",
+      "spacefill",
+      "ballstick"
+    ],
+    "page_scroll_outside_canvas": true,
+    "analysis_dialog_focus_trap_and_restore": true,
+    "expanded_viewer_widths": [
+      724,
+      1276
+    ],
+    "responsive": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "horizontal_overflow": false,
+        "zoom_button_size": [
+          73.921875,
+          42
+        ]
+      },
+      {
+        "width": 1024,
+        "height": 900,
+        "horizontal_overflow": false,
+        "zoom_button_size": [
+          73.921875,
+          42
+        ]
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "horizontal_overflow": false,
+        "zoom_button_size": [
+          73.921875,
+          42
+        ]
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "horizontal_overflow": false,
+        "zoom_button_size": [
+          57.546875,
+          48
+        ]
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "horizontal_overflow": false,
+        "zoom_button_size": [
+          48.3125,
+          48
+        ]
+      }
+    ],
+    "chrome_emulated_two_touch_pinch_distances": [
+      51.7416,
+      29.7177
+    ]
+  },
+  "javascript_errors": [],
+  "analysis_submitted": false,
+  "hardware_submitted": false,
+  "forbidden_execution_requests": [],
+  "style_audit": {
+    "panels": [
+      {
+        "name": "에이전트 분석",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "name": "실측 · 검증",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "name": "연구 기록",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "name": "분자 스튜디오",
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "name": "에이전트 분석",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "name": "실측 · 검증",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "name": "연구 기록",
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "name": "분자 스튜디오",
+        "width": 390,
+        "overflow": false
+      }
+    ],
+    "contrast": [
+      {
+        "color": "rgb(83, 100, 124)",
+        "background": [
+          240,
+          243,
+          249
+        ],
+        "font_size": "13px",
+        "ratio": 5.426405162282597,
+        "text": "분자를 선택하고, 확대하고, 원자 사이의 연결을 확인하세요.",
+        "selector": ".page-heading p"
+      },
+      {
+        "color": "rgb(91, 111, 137)",
+        "background": [
+          237,
+          244,
+          255
+        ],
+        "font_size": "11px",
+        "ratio": 4.653419747568777,
+        "text": "Quercetin",
+        "selector": ".compound-main small"
+      },
+      {
+        "color": "rgb(83, 105, 128)",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "font_size": "12px",
+        "ratio": 5.675472212735916,
+        "text": "분자량",
+        "selector": ".property-list dt"
+      },
+      {
+        "color": "rgb(94, 113, 140)",
+        "background": [
+          247,
+          250,
+          255
+        ],
+        "font_size": "10px",
+        "ratio": 4.760400578655969,
+        "text": "PDB 5IKR · mefenamic acid",
+        "selector": ".library-reference small"
+      },
+      {
+        "color": "rgb(173, 195, 220)",
+        "background": [
+          11,
+          19,
+          36
+        ],
+        "font_size": "11px",
+        "ratio": 10.254064154455504,
+        "text": "휠로 확대·축소 · 드래그로 회전· 더블 클릭으로 원자 확대",
+        "selector": ".mv-interaction-hint"
+      },
+      {
+        "color": "rgb(196, 233, 242)",
+        "background": [
+          11,
+          19,
+          36
+        ],
+        "font_size": "12px",
+        "ratio": 14.375098176105533,
+        "text": "RDKit · 계산 배좌",
+        "selector": ".mv-source"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          40,
+          94,
+          220
+        ],
+        "font_size": "13px",
+        "ratio": 5.637937917841367,
+        "text": "새 분석",
+        "selector": ".primary-button"
+      },
+      {
+        "color": "rgb(36, 93, 200)",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "font_size": "12px",
+        "ratio": 6.043547980842467,
+        "text": "전체",
+        "selector": ".segmented-control button.active"
+      }
+    ],
+    "errors": [],
+    "wide_studio_width": 1276
+  },
+  "checked_at": "2026-09-07T18:37:11.950421+09:00",
+  "index_sha256": "9a6ca7cb9f950ec7c6e1e40fe926e66b3d8ca027d6480bf06d95421cf331a470"
+}

@@ -1,0 +1,888 @@
+{
+  "verified_at": "2026-09-07T10:24:25.715068+00:00",
+  "url": "http://127.0.0.1:8873",
+  "catalog": {
+    "compound_count": 766417,
+    "provenance_count": 1436510,
+    "sources": [
+      {
+        "id": "coconut-2026-09",
+        "source_url": "https://coconut.naturalproducts.net/download",
+        "license_label": "CC0 (release); upstream collection notices retained",
+        "first_fetched_at": "2026-09-07T09:59:37.387618+00:00",
+        "last_fetched_at": "2026-09-07T09:59:37.387618+00:00",
+        "record_count": 738823,
+        "compound_count": 728421
+      },
+      {
+        "id": "lotus-2026-04",
+        "source_url": "https://zenodo.org/records/19360665",
+        "license_label": "CC BY 4.0 (Zenodo release)",
+        "first_fetched_at": "2026-09-07T09:52:45.115361+00:00",
+        "last_fetched_at": "2026-09-07T09:52:45.115361+00:00",
+        "record_count": 694270,
+        "compound_count": 227265
+      },
+      {
+        "id": "chembl-approved",
+        "source_url": "https://www.ebi.ac.uk/chembl/",
+        "license_label": "CC BY-SA 3.0",
+        "first_fetched_at": "2026-09-07T10:11:39.066647+00:00",
+        "last_fetched_at": "2026-09-07T10:11:39.066647+00:00",
+        "record_count": 3417,
+        "compound_count": 3417
+      }
+    ],
+    "imports": [
+      {
+        "completed_at": "2026-09-07T10:12:20.202082+00:00",
+        "duplicate_records": 0,
+        "elapsed_seconds": 41.135,
+        "id": "d2ff48659c754330960392a20e3a0979",
+        "inserted_compounds": 1699,
+        "inserted_records": 3417,
+        "invalid_examples": [
+          {
+            "external_id": "CHEMBL11359",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 160
+          },
+          {
+            "external_id": "CHEMBL604",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 296
+          },
+          {
+            "external_id": "CHEMBL55643",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 636
+          },
+          {
+            "external_id": "CHEMBL1120",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 823
+          },
+          {
+            "external_id": "CHEMBL136478",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 908
+          },
+          {
+            "external_id": "CHEMBL414804",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 942
+          },
+          {
+            "external_id": "CHEMBL1351",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1007
+          },
+          {
+            "external_id": "CHEMBL1366",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1026
+          },
+          {
+            "external_id": "CHEMBL262135",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1049
+          },
+          {
+            "external_id": "CHEMBL444436",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1314
+          },
+          {
+            "external_id": "CHEMBL1200333",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1630
+          },
+          {
+            "external_id": "CHEMBL1200346",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1640
+          },
+          {
+            "external_id": "CHEMBL1200415",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1689
+          },
+          {
+            "external_id": "CHEMBL1200421",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1693
+          },
+          {
+            "external_id": "CHEMBL1200431",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1699
+          },
+          {
+            "external_id": "CHEMBL1200443",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1707
+          },
+          {
+            "external_id": "CHEMBL1200452",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1712
+          },
+          {
+            "external_id": "CHEMBL1200457",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1716
+          },
+          {
+            "external_id": "CHEMBL1200528",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1765
+          },
+          {
+            "external_id": "CHEMBL1200529",
+            "reason": "Missing SMILES or structure exceeds 100,000 characters",
+            "record": 1766
+          }
+        ],
+        "invalid_records": 808,
+        "license_label": "CC BY-SA 3.0",
+        "limit_reached": false,
+        "max_records": null,
+        "processed_records": 4225,
+        "rdkit_version": "2026.03.6",
+        "source_id": "chembl-approved",
+        "source_url": "https://www.ebi.ac.uk/chembl/",
+        "started_at": "2026-09-07T10:11:39.066647+00:00",
+        "status": "completed"
+      },
+      {
+        "completed_at": "2026-09-07T10:11:39.024288+00:00",
+        "duplicate_records": 0,
+        "elapsed_seconds": 721.637,
+        "file_bytes": 699943510,
+        "file_name": "coconut_csv-09-2026.csv",
+        "format": "csv",
+        "id": "8002108159cd4603a0efa1055ef4e086",
+        "inserted_compounds": 537453,
+        "inserted_records": 738823,
+        "invalid_examples": [
+          {
+            "external_id": "CNP0553545.0",
+            "reason": "Invalid SMILES",
+            "record": 235457
+          },
+          {
+            "external_id": "CNP0422373.1",
+            "reason": "Invalid SMILES",
+            "record": 455454
+          },
+          {
+            "external_id": "CNP0483652.0",
+            "reason": "Invalid SMILES",
+            "record": 620240
+          },
+          {
+            "external_id": "CNP0540214.0",
+            "reason": "Invalid SMILES",
+            "record": 645540
+          }
+        ],
+        "invalid_records": 4,
+        "license_label": "CC0 (release); upstream collection notices retained",
+        "limit_reached": false,
+        "max_records": null,
+        "processed_records": 738827,
+        "rdkit_version": "2026.03.6",
+        "source_id": "coconut-2026-09",
+        "source_url": "https://coconut.naturalproducts.net/download",
+        "started_at": "2026-09-07T09:59:37.387618+00:00",
+        "status": "completed"
+      },
+      {
+        "completed_at": "2026-09-07T09:59:35.076913+00:00",
+        "duplicate_records": 15470,
+        "elapsed_seconds": 409.962,
+        "file_bytes": 90298678,
+        "file_name": "260413_frozen_metadata.csv.gz",
+        "format": "csv",
+        "id": "8a1cf141e6bc446280952c9ca51858aa",
+        "inserted_compounds": 227265,
+        "inserted_records": 694270,
+        "invalid_examples": [],
+        "invalid_records": 0,
+        "license_label": "CC BY 4.0 (Zenodo release)",
+        "limit_reached": false,
+        "max_records": null,
+        "processed_records": 709740,
+        "rdkit_version": "2026.03.6",
+        "source_id": "lotus-2026-04",
+        "source_url": "https://zenodo.org/records/19360665",
+        "started_at": "2026-09-07T09:52:45.115361+00:00",
+        "status": "completed"
+      }
+    ],
+    "database_bytes": 6428745728,
+    "max_page_size": 500,
+    "identity_policy": "RDKit canonical isomeric SMILES / full standard InChIKey; salts and isotopes retained",
+    "evidence_scope": "Source-reported natural products; herbal origin and efficacy are not assumed"
+  },
+  "sqlite_counts_match": true,
+  "foreign_keys_valid": true,
+  "download_receipts": [
+    {
+      "file": "nikom-herbs-index-page39.html",
+      "bytes": 38217,
+      "sha256": "eb0ad07d26ee68697b179f649ef1f5befa22f3058a88ed4d644efad4c536b460",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=39"
+    },
+    {
+      "file": "nikom-herbs-index-page52.html",
+      "bytes": 37686,
+      "sha256": "0cea6ea775155b4c1e902e8ccf2999d9f6a2c31f247669852cf9b9b21ba6e7cb",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=52"
+    },
+    {
+      "file": "nikom-herbs-index-page67.html",
+      "bytes": 35311,
+      "sha256": "340932a498223556ff2824490de0a48edff35212c1644d7e43037cb50ea09a13",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=67"
+    },
+    {
+      "file": "nikom-herbs-index-page30.html",
+      "bytes": 37876,
+      "sha256": "4fceb5e71fe1bce4c10553b712bf519d4db7f215b11f5ebbdebaaf4599d53a51",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=30"
+    },
+    {
+      "file": "nikom-herbs-index-page50.html",
+      "bytes": 38400,
+      "sha256": "c2ab84f9cddd9c1b6b0bf4ce9fd3f2ac4b86a660e14d5ead0c21ac8418371a1e",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=50"
+    },
+    {
+      "file": "nikom-herbs-index-page32.html",
+      "bytes": 38174,
+      "sha256": "1fab8065af6b08209bc331cee87b85a8299934a2d7fb5793558ef3d7d5b10cd4",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=32"
+    },
+    {
+      "file": "nikom-herbs-index-page25.html",
+      "bytes": 38698,
+      "sha256": "e400840bf77f39fb8d6879b0f23e602fdf9c9844ef823a967edb06c7e50aa638",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=25"
+    },
+    {
+      "file": "nikom-herbs-index-page45.html",
+      "bytes": 38375,
+      "sha256": "17aef45431caf6abe7c36e0c5158d5d38cb32172ef3bc9826fd77ec4c4155aa3",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=45"
+    },
+    {
+      "file": "nikom-herbs-index-page46.html",
+      "bytes": 38554,
+      "sha256": "8941516c431a4e0153e100abf42679178110d986a37dff1861f80e0d3a723ca3",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=46"
+    },
+    {
+      "file": "nikom-herbs-index-page24.html",
+      "bytes": 38892,
+      "sha256": "d2812eb1719d03601f50b41a3028b34fb967220bb63d0b002cbd2a8ab71b73ae",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=24"
+    },
+    {
+      "file": "nikom-herbs-index-page44.html",
+      "bytes": 37654,
+      "sha256": "e16ba6cdfcea6ad1d09cf1c58a90f67904414f348766bd2e3479248e325f26f2",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=44"
+    },
+    {
+      "file": "nikom-herbs-index-page34.html",
+      "bytes": 38151,
+      "sha256": "913511e628290395d9ca40329ba69da76bdb07621cb096e35b4a752b9768aac0",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=34"
+    },
+    {
+      "file": "nikom-herbs-index-page22.html",
+      "bytes": 38202,
+      "sha256": "5f3f007b7dd7aa83f50d15fe2fe3307e1c2648722811cb4f02ab7d5547f10db2",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=22"
+    },
+    {
+      "file": "nikom-herbs-index-page23.html",
+      "bytes": 37878,
+      "sha256": "be3e27757cc4db756fd6167c526cb850f84533d85a6db09e5ca322eee22cf417",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=23"
+    },
+    {
+      "file": "nikom-herbs-index-page60.html",
+      "bytes": 37558,
+      "sha256": "4988bdb85363ef87acb320739a6c504428281e3d9803672b5d69bdfc554d4207",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=60"
+    },
+    {
+      "file": "nikom-herbs-index-page40.html",
+      "bytes": 38140,
+      "sha256": "91542eb9b3a4e7eb85fe06ecd8e0cd71211dc90abd1c01e2dec17f3a132a23e6",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=40"
+    },
+    {
+      "file": "nikom-herbs-index-page47.html",
+      "bytes": 37855,
+      "sha256": "3947efd78d611b685fc069a43eb5e3fee3cb04e4ab52a50c2529bdf88ac98202",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=47"
+    },
+    {
+      "file": "nikom-herbs-index-page13.html",
+      "bytes": 38191,
+      "sha256": "3ca02467b0008ab1f0183fd6a414b62948cc49a1290565ecea7d672a4c09607f",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=13"
+    },
+    {
+      "file": "nikom-herbs-index-page33.html",
+      "bytes": 37718,
+      "sha256": "eff951899fc4da3a3b3cfc427fdbcc2a2f1b6f2761f8f9e1e32e0ec4953c99ae",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=33"
+    },
+    {
+      "file": "nikom-herbs-index-page66.html",
+      "bytes": 35343,
+      "sha256": "24820f8bf5248cce8853df7a22b900e469666088c72e92ebfcc0a344e9218c2a",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=66"
+    },
+    {
+      "file": "nikom-herbs-index-page31.html",
+      "bytes": 38057,
+      "sha256": "5eb5d856920287a1dc54a67b5c405d371360aa469fcebcd9aa4c7959dff7bc05",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=31"
+    },
+    {
+      "file": "nikom-herbs-index-page51.html",
+      "bytes": 38081,
+      "sha256": "127a3ae32c321aa0ace79cfd03369c286bb8814755d7076695f87a126efa7d69",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=51"
+    },
+    {
+      "file": "nikom-herbs-index-page48.html",
+      "bytes": 38754,
+      "sha256": "d9de940aa7159acfba343504211117df1e0bca8cb346f1443df41290d178b962",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=48"
+    },
+    {
+      "file": "nikom-herbs-index-page56.html",
+      "bytes": 37673,
+      "sha256": "cc5fc3a76998a3fe021f3c12cf4c8e4ac94ad7a0ae4f079998f1ddb9b5458c72",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=56"
+    },
+    {
+      "file": "260413_frozen_metadata.csv.gz",
+      "bytes": 90298678,
+      "sha256": "09885dcfb3bc0e6d700fefcd5778e91446a1f9d5d2fbbcbf00eb5d2e83b68844",
+      "url": "https://zenodo.org/api/records/19360665/files/260413_frozen_metadata.csv.gz/content"
+    },
+    {
+      "file": "nikom-herbs-index-page11.html",
+      "bytes": 38546,
+      "sha256": "37fa4f4b57a2ebf7556c5b2950805b89c8932d973a3a145c42e492837330cd37",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=11"
+    },
+    {
+      "file": "nikom-herbs-index-page54.html",
+      "bytes": 38196,
+      "sha256": "798b9524654b8f2cbc5e915d0514a1859f9ce0742890e9b4a1068131a7a8fe83",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=54"
+    },
+    {
+      "file": "coconut_csv-09-2026.zip",
+      "bytes": 247982286,
+      "sha256": "38b8a3a73a40c90239ff4d5b0caf832981fd3029f4c8fc0f43c5011b39461800",
+      "url": "https://coconut.s3.uni-jena.de/prod/downloads/2026-09/coconut_csv-09-2026.zip"
+    },
+    {
+      "file": "nikom-herbs-index-page10.html",
+      "bytes": 37041,
+      "sha256": "120d9c8d8da1d92217fa4a563c6ad5fd3ec295cc2bda8d8788acfc40884884d9",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=10"
+    },
+    {
+      "file": "nikom-herbs-index-page5.html",
+      "bytes": 38450,
+      "sha256": "c8e1c5d3c9f0324b3ea7e2a9d512c64a96b9990cdf7ac8b4bf52d2b7641c424c",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=5"
+    },
+    {
+      "file": "nikom-herbs-index-page20.html",
+      "bytes": 38094,
+      "sha256": "b8866abcb1a937578d8bb009668a63356793319ef281cd3329d33d688e9726f5",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=20"
+    },
+    {
+      "file": "nikom-herbs-index-page57.html",
+      "bytes": 37960,
+      "sha256": "20a8d4cb4a580dae86c2e7c6a8b6448ac924078db2adc078c5ea044cc8ac652f",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=57"
+    },
+    {
+      "file": "nikom-herbs-index-page4.html",
+      "bytes": 38320,
+      "sha256": "c513208fcd3e612447a580ddf8c637d361cb3671e0f12c302bbae8f62dc2ea5b",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=4"
+    },
+    {
+      "file": "nikom-herbs-index-page12.html",
+      "bytes": 38486,
+      "sha256": "0cd6c9665bb0f2ac400a3370c5f5b66cffbf14a7fe958cd985a0ad495ef75211",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=12"
+    },
+    {
+      "file": "nikom-herbs-index-page41.html",
+      "bytes": 39113,
+      "sha256": "7d31ea55222de9bfd9bfbd80b168697da7059921efd1de9b5a22d8dbd9641569",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=41"
+    },
+    {
+      "file": "nikom-herbs-index-page18.html",
+      "bytes": 37398,
+      "sha256": "3fc8296857285d032abd29d6f8068844afff6bfe69b7697ac9f5935524abca6e",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=18"
+    },
+    {
+      "file": "nikom-herbs-index-page65.html",
+      "bytes": 35237,
+      "sha256": "367c8881fef1de3057e45f250277b6c532b12d3c3b194c2ecc08332a393d8c53",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=65"
+    },
+    {
+      "file": "nikom-herbs-index-page61.html",
+      "bytes": 38267,
+      "sha256": "ffd3011537552255cb5efccda9f00a7f0d0cd394b9212431e3b4f05a30a9edc9",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=61"
+    },
+    {
+      "file": "nikom-herbs-index-page42.html",
+      "bytes": 37953,
+      "sha256": "702e651be9bb9b4094ef8b2c43237f5c3542e27afd524fdab876c917b96f18d3",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=42"
+    },
+    {
+      "file": "nikom-herbs-index-page69.html",
+      "bytes": 35361,
+      "sha256": "83b413e35de03f2ca726c76d24b8dda14ef05144b1086f56591cff76e344bf75",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=69"
+    },
+    {
+      "file": "nikom-herbs-index-page62.html",
+      "bytes": 36943,
+      "sha256": "314e393a5082d544385cf61880860570c5543e250ad9051e45828543c67d67e1",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=62"
+    },
+    {
+      "file": "nikom-herbs-index-page29.html",
+      "bytes": 38115,
+      "sha256": "b2c7f2433179a318b857665acbc3e46ccf8521f49efc7a63e358e055894d3a78",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=29"
+    },
+    {
+      "file": "nikom-herbs-index-page26.html",
+      "bytes": 38307,
+      "sha256": "a4a4f01f4d0ad74b075e46f29d737c1926f2bdfc699c7f6d9815f9abf5468f69",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=26"
+    },
+    {
+      "file": "nikom-herbs-index-page68.html",
+      "bytes": 35305,
+      "sha256": "60519b7d7bda4bf2460826224b006d167c44e2575ca4c2b2065f9c4b0f3096c1",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=68"
+    },
+    {
+      "file": "nikom-herbs-index-page37.html",
+      "bytes": 38817,
+      "sha256": "f5c40936bf6ae51c09643c4fdb23a0068eb9f7b23c39b52e38a1169285c4cb0a",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=37"
+    },
+    {
+      "file": "nikom-herbs-index-page59.html",
+      "bytes": 38437,
+      "sha256": "4677dd2e395069dda279ba655947ddbf63517fbae6c288f620525b93206f5114",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=59"
+    },
+    {
+      "file": "nikom-herbs-index-page3.html",
+      "bytes": 38026,
+      "sha256": "7b8d5d1813ef33e9a8850e4df54362f5b1b9d6b55c30f4c1c08b799203970539",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=3"
+    },
+    {
+      "file": "nikom-herbs-index-page43.html",
+      "bytes": 38460,
+      "sha256": "d082a7dba8ffbe4d090b3f9f7a28eedd8e82f545603dd588dea89f9207d0fdfb",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=43"
+    },
+    {
+      "file": "260413_frozen.csv.gz",
+      "bytes": 20594507,
+      "sha256": "c0744fb4d4395a638739078601836d9472612c1ed6db6c8e4f0b5e8a972ced70",
+      "url": "https://zenodo.org/api/records/19360665/files/260413_frozen.csv.gz/content"
+    },
+    {
+      "file": "nikom-herbs-index-page64.html",
+      "bytes": 35284,
+      "sha256": "5f284d17d36df20eaa397081c1f639e8d25f570c570c8cf8c43499529f79705e",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=64"
+    },
+    {
+      "file": "nikom-herbs-index-page49.html",
+      "bytes": 38636,
+      "sha256": "bde89b3b961e5f75e13265519ad22ed2273fc417f640204e48426cd2188376ea",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=49"
+    },
+    {
+      "file": "nikom-herbs-index-page2.html",
+      "bytes": 38674,
+      "sha256": "88ec448ed03a097f8dfb07fb10d98cd551776de84c3c86cbacecd2f3697e1f48",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=2"
+    },
+    {
+      "file": "nikom-herbs-index-page36.html",
+      "bytes": 38532,
+      "sha256": "09d1835c5f3714fb739a74574b882ecb9c8c92420332fac4c27178bde6f305a6",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=36"
+    },
+    {
+      "file": "nikom-herbs-index-page1.html",
+      "bytes": 38314,
+      "sha256": "de8951683864de034829775252192054b69da8a1593ac3e13a983b6c0623b033",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do"
+    },
+    {
+      "file": "nikom-herbs-index-page55.html",
+      "bytes": 38101,
+      "sha256": "e95c65b99c3e36fcdfaed743118545b67dc4b220425196512d9020928e7f25f7",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=55"
+    },
+    {
+      "file": "nikom-herbs-index-page70.html",
+      "bytes": 33484,
+      "sha256": "88ed82b22e9bc965a75098fe8d871db626752b9f2390206f8fbb449d97cfc12e",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=70"
+    },
+    {
+      "file": "nikom-herbs-index-page8.html",
+      "bytes": 38044,
+      "sha256": "11b74b967c5121308566996a6d068372868051a64f6149969eb4efe4db9ed439",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=8"
+    },
+    {
+      "file": "nikom-herbs-index-page19.html",
+      "bytes": 38521,
+      "sha256": "0081ec574615bc05884da64ada1b6a6b831f9a40e4a19f8b8a47047798344179",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=19"
+    },
+    {
+      "file": "nikom-herbs-index-page27.html",
+      "bytes": 38972,
+      "sha256": "a88d403ee85d0b5763ec14783c026b288dbd6faf252501f302cb914fdafbdb40",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=27"
+    },
+    {
+      "file": "nikom-herbs-index-page63.html",
+      "bytes": 35328,
+      "sha256": "d017f8e851ff00d690ecd3fa0727119cbb8794de0ac6af57bb2d323036603a30",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=63"
+    },
+    {
+      "file": "nikom-herbs-index-page17.html",
+      "bytes": 38161,
+      "sha256": "fa745dd78fe73927753000e9f631ba9528767de4b38cdd1d03be02e4f7187f19",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=17"
+    },
+    {
+      "file": "nikom-herbs-index-page7.html",
+      "bytes": 37316,
+      "sha256": "febd0a618304712c43de949156a98ef7a9f3afb4f30fe6aa1e0e683f2916f868",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=7"
+    },
+    {
+      "file": "nikom-herbs-index-page9.html",
+      "bytes": 37841,
+      "sha256": "16c128c81553599760dbdf204a3f2fbab273eaff79d34d6f4c75cdf561654459",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=9"
+    },
+    {
+      "file": "nikom-herbs-index-page15.html",
+      "bytes": 38516,
+      "sha256": "e8c0eee5c9d8856af3099683ac80eb334ee413da47823cf04ec6f723c25273df",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=15"
+    },
+    {
+      "file": "nikom-herbs-index-page21.html",
+      "bytes": 38089,
+      "sha256": "29904d87e20382b99b2f2f5684726803a64be62ba0d251a7325cfc941916853f",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=21"
+    },
+    {
+      "file": "nikom-herbs-index-page14.html",
+      "bytes": 37838,
+      "sha256": "9bcf646abe5b049cbe3ce2f8ec98505133c2f555d5a9937ae4dbe6cb5b7886dd",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=14"
+    },
+    {
+      "file": "nikom-herbs-index-page6.html",
+      "bytes": 37832,
+      "sha256": "51e2ad1f598e2ade71dd0ca7988aec3efb0b2b37517eea2a359404c3f8bd7e76",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=6"
+    },
+    {
+      "file": "nikom-herbs-index-page35.html",
+      "bytes": 38491,
+      "sha256": "e1e9cb137ed8d890c5026d1e9ee241578a2cf3f923c4963ce878ed113b96966d",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=35"
+    },
+    {
+      "file": "nikom-herbs-index-page28.html",
+      "bytes": 37565,
+      "sha256": "45f47720865007eaa01bb9cf29e1b5072eaaf3f04c4fee9c7a94dcf4334e5b8f",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=28"
+    },
+    {
+      "file": "nikom-herbs-index-page58.html",
+      "bytes": 37523,
+      "sha256": "dec22fe7f2bf75efa6ad59bda99ce75fc6ff21c8b43eb26df6a7827918ae9942",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=58"
+    },
+    {
+      "file": "nikom-herbs-index-page53.html",
+      "bytes": 37205,
+      "sha256": "23d52f6a1c13094b2bddf249641c641281f46f0f7e9ff384dd54a93f8a50e820",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=53"
+    },
+    {
+      "file": "nikom-herbs-index-page38.html",
+      "bytes": 38658,
+      "sha256": "b7830456fbb9bb78159356ae2f27d7fb26325a954b0ba250c2aaeab74aae6bb7",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=38"
+    },
+    {
+      "file": "nikom-herbs-index-page16.html",
+      "bytes": 37439,
+      "sha256": "1fe1533cd0c0b69a491e342de0dd54e859b02c30c1727ed30f00b2aa6ab36dd0",
+      "url": "https://nikom.or.kr/kmmb/module/herbs/index.do?viewPage=16"
+    }
+  ],
+  "taxon_search_counts": {
+    "Scutellaria baicalensis": 196,
+    "Coptis chinensis": 11,
+    "Panax ginseng": 653,
+    "Glycyrrhiza": 853,
+    "Zingiber officinale": 714
+  },
+  "campaigns": [
+    {
+      "id": "5dc6a27485934703b902f65fff32aa98",
+      "created_at": "2026-09-07T10:15:19.350042+00:00",
+      "updated_at": "2026-09-07T10:22:20.452371+00:00",
+      "status": "budget_exhausted",
+      "reason": "attempt_budget",
+      "rdkit_version": "2026.03.6",
+      "method_version": "brics-terminal-pair-stream-v1",
+      "requested": 10000,
+      "attempted": 100000,
+      "generated": 37966,
+      "retained": 4895,
+      "rejected": 70881,
+      "duplicates": 24224,
+      "pairs_visited": 32492,
+      "cursor_pair": 32492,
+      "cursor_product": 1,
+      "total_pairs": 74400,
+      "plant_count": 800,
+      "drug_count": 93,
+      "seed_count": 893,
+      "invalid_seed_count": 5,
+      "duplicate_seed_count": 2,
+      "elapsed_seconds": 328.9991403689128,
+      "payload_bytes": 39648023,
+      "request": {
+        "filters": {
+          "max_logp": 6.0,
+          "max_mw": 650.0,
+          "max_tpsa": 180.0,
+          "min_logp": -2.0,
+          "min_mw": 120.0,
+          "min_qed": 0.25
+        },
+        "max_attempts": 100000,
+        "max_products_per_pair": 100,
+        "max_runtime_seconds": 1200,
+        "max_storage_mb": 1024,
+        "name": "감초속 성분 × ChEMBL 약물 확장 탐색",
+        "reject_alerts": false,
+        "seed": 42,
+        "target_candidates": 10000
+      },
+      "name": "감초속 성분 × ChEMBL 약물 확장 탐색",
+      "target_candidates": 10000,
+      "cursor": {
+        "pair": 32492,
+        "product": 1
+      },
+      "bounded_product_ceiling": 7440000,
+      "progress_fraction": 0.4895,
+      "interpretation": "Unvalidated computational candidates, not new medicines. QED and descriptor filters do not predict affinity, efficacy, safety or synthesis feasibility. Novelty is only relative to the campaign input structures; no patent or external novelty search has been performed. Requested counts are targets; enumeration can exhaust its finite search space or resource budget before reaching them.",
+      "count_definitions": {
+        "requested": "User target, not an achieved molecule count",
+        "attempted": "Product proposals plus one attempt for each empty/failed pair",
+        "generated": "Sanitized product proposals, before lineage/filter checks; includes repeats",
+        "retained": "Unique structures with two-parent fragment ancestry passing configured filters",
+        "rejected": "Attempts rejected for invalid structure, lineage, parent identity or filters",
+        "duplicates": "Otherwise admissible proposals already retained in this campaign",
+        "payload_bytes": "Stored JSON source/candidate bytes; excludes SQLite index and WAL overhead"
+      },
+      "all_retained_structures_sanitized": 4895,
+      "descriptor_recomputations": 25
+    },
+    {
+      "id": "f31db5de956c486daadc1d5c78ce0c2b",
+      "created_at": "2026-09-07T10:00:05.353253+00:00",
+      "updated_at": "2026-09-07T10:00:24.381510+00:00",
+      "status": "exhausted",
+      "reason": "bounded_search_space_exhausted",
+      "rdkit_version": "2026.03.6",
+      "method_version": "brics-terminal-pair-stream-v1",
+      "requested": 1000000,
+      "attempted": 6245,
+      "generated": 2462,
+      "retained": 937,
+      "rejected": 4163,
+      "duplicates": 1145,
+      "pairs_visited": 1500,
+      "cursor_pair": 1500,
+      "cursor_product": 0,
+      "total_pairs": 1500,
+      "plant_count": 500,
+      "drug_count": 3,
+      "seed_count": 503,
+      "invalid_seed_count": 0,
+      "duplicate_seed_count": 0,
+      "elapsed_seconds": 18.44940833200235,
+      "payload_bytes": 5421007,
+      "request": {
+        "filters": {
+          "max_logp": 6.0,
+          "max_mw": 650.0,
+          "max_tpsa": 180.0,
+          "min_logp": -2.0,
+          "min_mw": 120.0,
+          "min_qed": 0.25
+        },
+        "max_attempts": 10000,
+        "max_products_per_pair": 100,
+        "max_runtime_seconds": 1200,
+        "max_storage_mb": 1024,
+        "name": "LOTUS 실제 자료 500종 × 비교 약물 3종",
+        "reject_alerts": false,
+        "seed": 42,
+        "target_candidates": 1000000
+      },
+      "name": "LOTUS 실제 자료 500종 × 비교 약물 3종",
+      "target_candidates": 1000000,
+      "cursor": {
+        "pair": 1500,
+        "product": 0
+      },
+      "bounded_product_ceiling": 150000,
+      "progress_fraction": 0.000937,
+      "interpretation": "Unvalidated computational candidates, not new medicines. QED and descriptor filters do not predict affinity, efficacy, safety or synthesis feasibility. Novelty is only relative to the campaign input structures; no patent or external novelty search has been performed. Requested counts are targets; enumeration can exhaust its finite search space or resource budget before reaching them.",
+      "count_definitions": {
+        "requested": "User target, not an achieved molecule count",
+        "attempted": "Product proposals plus one attempt for each empty/failed pair",
+        "generated": "Sanitized product proposals, before lineage/filter checks; includes repeats",
+        "retained": "Unique structures with two-parent fragment ancestry passing configured filters",
+        "rejected": "Attempts rejected for invalid structure, lineage, parent identity or filters",
+        "duplicates": "Otherwise admissible proposals already retained in this campaign",
+        "payload_bytes": "Stored JSON source/candidate bytes; excludes SQLite index and WAL overhead"
+      },
+      "all_retained_structures_sanitized": 937,
+      "descriptor_recomputations": 25
+    }
+  ],
+  "candidate_unique_across_verified_campaigns": 5741,
+  "korean_search_aliases": 569,
+  "external_compute_submissions": {
+    "llm": 0,
+    "alphafold3": 0,
+    "ibm_qpu": 0
+  },
+  "scope": "Actual imported source data and bounded local campaigns. Hundred-million capacity not load-tested; no drug efficacy or external novelty claim.",
+  "validation": {
+    "python_tests": {
+      "passed": 247,
+      "elapsed_seconds": 17.19
+    },
+    "ruff": "passed",
+    "frontend_build": "passed",
+    "browser": {
+      "verified_at": "2026-09-07T10:25:09.636742+00:00",
+      "checks": [
+        "Final catalogue and cross-campaign sum match the API; desktop and 390px library screenshots captured without horizontal overflow",
+        "Final source-specific LOTUS searches show 황금 196 and 인삼 653 with factual Korean-to-taxon captions",
+        "Final extended campaign visibly stops at its 100000-attempt budget with 4895 retained against a 10000 target; desktop and 390px campaign captures match actual counters",
+        "Mixed LOTUS/ChEMBL aspirin opened from ChEMBL remains a drug in the studio filter, renders a genuine RDKit conformer, and preserves the ChEMBL source URL with an accurate generic label"
+      ],
+      "javascript_errors": [],
+      "discovery_mutations": [],
+      "hardware_submitted": false,
+      "observed_compound_count": 766417,
+      "observed_provenance_count": 1436510,
+      "observed_campaign_retained_sum": 5832,
+      "herb_suggestions": 569,
+      "source_specific_korean_searches": {
+        "황금": {
+          "source": "lotus-2026-04",
+          "total": 196,
+          "query": "Scutellaria baicalensis"
+        },
+        "인삼": {
+          "source": "lotus-2026-04",
+          "total": 653,
+          "query": "Panax ginseng"
+        }
+      },
+      "campaign": {
+        "id": "5dc6a27485934703b902f65fff32aa98",
+        "status": "budget_exhausted",
+        "reason": "attempt_budget",
+        "requested": 10000,
+        "attempted": 100000,
+        "generated": 37966,
+        "retained": 4895,
+        "rejected": 70881,
+        "duplicates": 24224
+      },
+      "drug_role_check": {
+        "name": "Aspirin",
+        "sources": [
+          "lotus-2026-04",
+          "chembl-approved"
+        ],
+        "selected_source": "chembl-approved",
+        "studio_category": "drug",
+        "studio_source_url": "https://www.ebi.ac.uk/chembl/"
+      },
+      "passed": true
+    },
+    "restart_checkpoint_preserved": true,
+    "resumed_campaign_id": "5dc6a27485934703b902f65fff32aa98"
+  },
+  "frontend_index_sha256": "609a8d03d60a727d6f355c8b04210f92d4454e319cdf8f2c94219d84d55c7db1",
+  "exports": [
+    {
+      "path": "runtime/discovery/shortlist-baseline.jsonl",
+      "records": 937,
+      "sha256": "0ff41cb18aedd8beb25f33229584a59fae34c9560515c02bd18711d26cda6622"
+    },
+    {
+      "path": "runtime/discovery/shortlist-herbal-top1000.jsonl",
+      "records": 1000,
+      "sha256": "37c6b1fc127545704841caa608c32c556f154110ffa4f70e2404cc169661bd26"
+    }
+  ]
+}

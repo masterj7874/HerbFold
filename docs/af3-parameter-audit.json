@@ -1,0 +1,124 @@
+{
+  "audited_at": "2026-09-07T23:05:13.711674+00:00",
+  "classification": "synthetic_parameter_signature",
+  "prediction_eligible": false,
+  "reason": "64-byte zero identifier and all 404 parameter tensors match the uniform[-1,1] performance-test recipe; trained parameter provenance is unsupported.",
+  "source": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md",
+  "container": {
+    "filename": "af3.bin.zst",
+    "size_bytes": 1007928004,
+    "mtime_utc": "2026-02-09T11:00:56.211170+00:00",
+    "file_sha256": "cec2df7fb03948b277109b0ae0faf4ddd007501a896d2a6c5444a56221242dd6",
+    "records": 405,
+    "parameter_values": 368384538,
+    "dtypes": {
+      "uint8": 1,
+      "float32": 266,
+      "bfloat16": 138
+    },
+    "nonfinite_record_count": 0,
+    "all_zero_record_count": 0,
+    "zero_value_count": 0,
+    "nonzero_value_count": 368384538,
+    "metadata_records": [
+      {
+        "scope": "__meta__",
+        "name": "__identifier__",
+        "dtype": "uint8",
+        "shape": [
+          64
+        ],
+        "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+      }
+    ],
+    "layout_sha256": "fbbbbd9df5d3d2f8b32ba1ae6db8e8923da5b4601600be5777561a04e739b569",
+    "header_examples": [
+      {
+        "scope": "diffuser/~/diffusion_head/diffusion_atom_features_layer_norm",
+        "name": "scale",
+        "dtype": "float32",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "scope": "diffuser/~/diffusion_head/diffusion_atom_features_to_position_update",
+        "name": "weights",
+        "dtype": "float32",
+        "shape": [
+          128,
+          3
+        ]
+      },
+      {
+        "scope": "diffuser/~/diffusion_head/diffusion_atom_positions_to_features",
+        "name": "weights",
+        "dtype": "float32",
+        "shape": [
+          3,
+          128
+        ]
+      },
+      {
+        "scope": "diffuser/~/diffusion_head/diffusion_atom_transformer_decoder/__layer_stack_with_per_layer/diffusion_atom_transformer_decoderadaptive_zero_cond",
+        "name": "bias",
+        "dtype": "float32",
+        "shape": [
+          3,
+          128
+        ]
+      },
+      {
+        "scope": "diffuser/~/diffusion_head/diffusion_atom_transformer_decoder/__layer_stack_with_per_layer/diffusion_atom_transformer_decoderadaptive_zero_cond",
+        "name": "weights",
+        "dtype": "float32",
+        "shape": [
+          3,
+          128,
+          128
+        ]
+      }
+    ],
+    "note": "CPU-only stream decoding and aggregate integrity checks; no numeric weight values or model identifier content disclosed. Valid format does not authenticate training or acquisition provenance.",
+    "metadata_identifier_is_all_zero_64_bytes": true
+  },
+  "distribution": {
+    "nonmetadata_tensors": 404,
+    "all_tensors_values_bounded_minus_one_to_one": true,
+    "sampled_values": 1034458,
+    "uniform_minus_one_to_one_histogram_10_equal_bins": [
+      103648,
+      103708,
+      103450,
+      103444,
+      102656,
+      103712,
+      103452,
+      103595,
+      102899,
+      103894
+    ],
+    "layer_norm_scale_sample_negative_fractions": [
+      0.4922,
+      0.4792,
+      0.5286,
+      0.5052,
+      0.5,
+      0.4583,
+      0.5417,
+      0.5156,
+      0.4375,
+      0.5234,
+      0.5104,
+      0.457,
+      0.4974,
+      0.4981,
+      0.5312
+    ],
+    "sample_standard_deviation_median": 0.5770811836689387,
+    "sample_mean_absolute_median": 0.008661232155949012,
+    "scope": "Aggregate statistical integrity diagnostic; no raw parameter values or full tensors emitted. Uniform random pattern is evidence about provenance, not proof of any specific creation history."
+  },
+  "numerics_report": "docs/af3-numerics-verification.json",
+  "limits": "Statistical audit identifies a synthetic-test signature; it does not establish who created or supplied the file."
+}

@@ -1,0 +1,40 @@
+{
+  "corrected_at": "2026-09-07T23:52:35.371939+00:00",
+  "scope": "Correct RDKit ILE atom-name template only; original AF3 coordinates and process evidence preserved.",
+  "source": "https://files.rcsb.org/ligands/download/ILE.cif",
+  "jobs": [
+    {
+      "job_id": "88692f7955d94c50814f6e3121f963b6",
+      "old_long_bonds": 34,
+      "new_long_bonds": 0,
+      "quality_pass": null,
+      "identity_verified": true,
+      "coordinates_unchanged": true,
+      "structure_sha256": {
+        "output/studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_model.cif": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+        "output/studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_model.cif": "daf68c65da10a8b7c323dbbff3e00e290d0d12091f6c27a318cceeca8da0f2b6",
+        "output/studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_model.cif": "04425e62a53757e6e0ced0d52716882d8d193ded644e1724fe6bbf64dfefa620",
+        "output/studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_model.cif": "16b1a62d6e8d37f5f2b679c005777392eac27db90e1521d74339e1f08572e089",
+        "output/studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_model.cif": "287ff8cd1f2b21614e5222840ae46210102005f124c373d30e465c4132956d4c",
+        "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733"
+      }
+    },
+    {
+      "job_id": "3730181a45734f0dafa92a78917c48dd",
+      "old_long_bonds": 34,
+      "new_long_bonds": 0,
+      "quality_pass": null,
+      "identity_verified": true,
+      "coordinates_unchanged": true,
+      "structure_sha256": {
+        "output/studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_model.cif": "f24d78b8517b74764145162864832577e615dd6d8b9c7cd4c974728b20189d94",
+        "output/studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_model.cif": "a14cffd0eeb83cb877f60576bada57843b86d2088e99ab0c92a86de87865ef4b",
+        "output/studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_model.cif": "970195cff8385bc26e32a119f57b38992b59743a80f81ffd045978c9334569e6",
+        "output/studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_model.cif": "ee08bc17bd09ecfe62e94e37b3d8eeb31ffefa4bd1ecf0795d3102cf5adf583f",
+        "output/studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_model.cif": "392d5188e4577cf20cd1942864df985c1a98c4e05f0209ac6eb7e778e65541ca",
+        "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61"
+      }
+    }
+  ],
+  "inference_rerun": false
+}

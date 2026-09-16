@@ -1,0 +1,43 @@
+{
+  "verified_at": "2026-09-08T00:35:34.273360+00:00",
+  "scope": "Isolated CPU installer code review and temporary/mock fixture tests; no production installer execution, network transfer or GPU work by this audit.",
+  "installer_path": "scripts/install_af3_databases.py",
+  "installer_sha256": "a514fafd6d412afc42bf6d3cd3b1fd500ffc09ee787825addbd3af6d007e530f",
+  "test_file": "tests/test_af3_database_installer.py",
+  "test_command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q tests/test_af3_database_installer.py",
+  "tests_passed": 41,
+  "ruff": "passed",
+  "reproduced_before_fixes": [
+    "Short FileIO writes could publish an archive shorter than the verified in-memory bytes",
+    "Partial write followed by OSError could append duplicate prefix bytes on retry",
+    "Empty FASTA sequences could be counted as valid records",
+    "Modified PDB inventory was ignored during receipt reuse",
+    "Zstd stream_reader can return all decoded bytes without error when1\u20133checksum footer bytes are missing"
+  ],
+  "fixes": [
+    "write_all plus final file size check; actual partial disk bytes rehashed before resume",
+    "All source generation, range, size, CRC32C and MD5 checks use ValueError guards, including under python -O",
+    "Single zstd frame/block/footer boundaries checked incrementally; libzstd checksum and full source SHA256/CRC32C/MD5 checked while decoding with bounded reads",
+    "Each FASTA header and nonempty sequence validated, including chunk boundaries; symbols counted",
+    "PDB inventory hash/stat and every leaf stat verified; no symlink/traversal/duplicate/special-member extraction",
+    "Legacy completion receipts upgraded by comparing verified decoded bytes against existing files; no expanded database duplicate or rewrite",
+    "Archive or expanded file published immediately before a missing receipt can be recovered by complete verification"
+  ],
+  "resume_procedure": [
+    "Parent controls stopping only the installer process; this audit did not stop or interact with the running downloader",
+    "Terminate the old installer and confirm exit/release of its file lock before starting the same CLI with new code",
+    "Retain compressed .partial files and old completed files/receipts; new download() rebuilds hashes and Range offset from disk",
+    "Unfinished .installation/*.expanding data are disposable staging and are rebuilt; published legacy files are preserved and compared against freshly decoded verified source",
+    "Use a new log and require final status complete plus9 validated v2 component receipts"
+  ],
+  "legacy_upgrade_io": "Read compressed source and existing expanded data once for byte-for-byte comparison; no extra expanded copy. PDB inventory is regenerated with leaf stat fingerprints after all comparisons pass.",
+  "synthetic_parser_benchmark": {
+    "dataset": "Repeated synthetic valid FASTA records only; not an actual source throughput claim",
+    "bytes": 8700000,
+    "records": 100000,
+    "elapsed_seconds": 0.12822203699033707,
+    "MiB_per_second": 64.70780489440861,
+    "limitation": "Measures only FASTA validation, excluding source IO, hash computations, decompression and filesystem writing."
+  },
+  "dependencies": "The system Python has httpx, google_crc32c,zstandard,pytest. The application .venv lacks the optional CRC32C/zstandard packages, so this test module intentionally skips there. No package installation was performed."
+}

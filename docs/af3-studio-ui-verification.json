@@ -1,0 +1,376 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-07T23:19:45.910072+00:00",
+  "production": {
+    "standard": {
+      "job_id": "f4ca1037ecd848a9aececc51572092b5",
+      "status": "blocked",
+      "requested": {
+        "canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+        "target_accession": "P35354",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "msa_mode": "search",
+        "seeds": [
+          1
+        ],
+        "af3_version": "3.0.4",
+        "af3_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+        "execution_profile": {
+          "runner": "native",
+          "repo_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3",
+          "python_bin": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/.venv/bin/python",
+          "model_dir": "/home/jerisuh/models",
+          "database_dir": null,
+          "docker_image": "herbfold-af3:3.0.4",
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10,
+          "max_template_date": "2021-09-30",
+          "flash_attention": "triton"
+        },
+        "submission_context": {
+          "parameter_stat_fingerprint_sha256": "40a48c900d3692791f23d5e4646ef7234c53b331bcce04fb3638a19c01d41312",
+          "cuda_environment": {
+            "LD_LIBRARY_PATH": null,
+            "CUDA_VISIBLE_DEVICES": "1",
+            "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+            "XLA_FLAGS": "--xla_gpu_autotune_level=3"
+          }
+        },
+        "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "exploratory_ack": false
+      },
+      "blockers": [
+        "AF3 parameters contain an all-zero model identifier, the upstream random/test-parameter marker. Supply verified trained parameters before prediction.",
+        "AF3_DB_DIR needs the official genetic/template databases for MSA search",
+        "AF3_DB_DIR must be configured for MSA search"
+      ]
+    },
+    "exploratory_still_rejects_test_weights": {
+      "job_id": "40a5db5e926e45a5991d61eb63a1bda6",
+      "blockers": [
+        "AF3 parameters contain an all-zero model identifier, the upstream random/test-parameter marker. Supply verified trained parameters before prediction."
+      ]
+    },
+    "refresh_restores_selected_job": true,
+    "blocked_retry_preserves_previous_record": true,
+    "api_blocked_execution_status": 409,
+    "gpu_inference_started": false,
+    "genuine_new_predictions_generated": 0,
+    "mobile_horizontal_overflow": false,
+    "quarantined_archive": {
+      "job_id": "2e03b13d30d54f69b5582e24c6eceecb",
+      "source": "structure_file",
+      "atoms_preserved": 4880,
+      "confidence_removed_from_scene": true,
+      "original_coordinates_preserved": true
+    }
+  },
+  "isolated_control_flow_fixture": {
+    "queued_reload_completed_exact_result": {
+      "job_id": "da5d763b5c7b44539ef43a849914117c",
+      "structure_sha256": "e25976229815ba315b27f10e33b2c3232108b769dd8b663d1f19aa84753ea092",
+      "selection": {
+        "canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+        "target_accession": "P35354",
+        "target_chains": [
+          "A"
+        ],
+        "ligand_chains": [
+          "B"
+        ],
+        "ligand_residues": [
+          {
+            "chain_id": "B",
+            "residue_id": "1",
+            "component": "LIG_B"
+          }
+        ],
+        "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+        "target_identity": "Full observed protein sequence equals the pinned UniProt sequence"
+      },
+      "source": "alphafold3_prediction"
+    },
+    "independent_compound_results": [
+      {
+        "job_id": "23c0ca3e746446afbf106f207c869a7a",
+        "structure_sha256": "91b3751db965918ead4a9b1208de0ee390714c3d05de91c098b11abe3ae51ffd",
+        "selection": {
+          "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+          "target_accession": "P35354",
+          "target_chains": [
+            "A"
+          ],
+          "ligand_chains": [
+            "B"
+          ],
+          "ligand_residues": [
+            {
+              "chain_id": "B",
+              "residue_id": "1",
+              "component": "LIG_B"
+            }
+          ],
+          "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+          "target_identity": "Full observed protein sequence equals the pinned UniProt sequence"
+        },
+        "source": "alphafold3_prediction"
+      },
+      {
+        "job_id": "da5d763b5c7b44539ef43a849914117c",
+        "structure_sha256": "e25976229815ba315b27f10e33b2c3232108b769dd8b663d1f19aa84753ea092",
+        "selection": {
+          "canonical_smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+          "target_accession": "P35354",
+          "target_chains": [
+            "A"
+          ],
+          "ligand_chains": [
+            "B"
+          ],
+          "ligand_residues": [
+            {
+              "chain_id": "B",
+              "residue_id": "1",
+              "component": "LIG_B"
+            }
+          ],
+          "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+          "target_identity": "Full observed protein sequence equals the pinned UniProt sequence"
+        },
+        "source": "alphafold3_prediction"
+      }
+    ],
+    "actual_cpu_process_log_visible": true,
+    "failure_and_explicit_new_retry": {
+      "failed_id": "86292791204145dbb9d049ab8e7f3a5d",
+      "retry_id": "d7601d67558346859360ad48d2119b39"
+    },
+    "explicit_exploratory_workflow": {
+      "job_id": "170135a5740b4458ad1be04b793adf7e",
+      "structure_sha256": "91b3751db965918ead4a9b1208de0ee390714c3d05de91c098b11abe3ae51ffd",
+      "selection": {
+        "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "target_accession": "P35354",
+        "target_chains": [
+          "A"
+        ],
+        "ligand_chains": [
+          "B"
+        ],
+        "ligand_residues": [
+          {
+            "chain_id": "B",
+            "residue_id": "1",
+            "component": "LIG_B"
+          }
+        ],
+        "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+        "target_identity": "Full observed protein sequence equals the pinned UniProt sequence"
+      },
+      "source": "alphafold3_prediction"
+    },
+    "explicit_job_selection_loads_that_job": true,
+    "test_fixture": true,
+    "scientific_results": false,
+    "gpu_execution": false,
+    "server_stopped_after_test": true
+  },
+  "javascript_errors": [],
+  "production_ui_execute_requests": [],
+  "automated_checks": {
+    "pytest": {
+      "passed": 326,
+      "failed": 0,
+      "warnings": 2,
+      "seconds": 30.13
+    },
+    "ruff": "passed",
+    "molecular_selection_browser": "passed",
+    "wheel_build": "passed",
+    "note": "CPU fixture checks establish software control flow, not trained-model prediction accuracy."
+  },
+  "final_presentation_check": {
+    "assets": [
+      "/app/assets/index-iCdme2yK.js"
+    ],
+    "passed": true,
+    "viewports": [
+      1440,
+      390,
+      360
+    ],
+    "layout": {
+      "mock_data_used": false,
+      "production_mutations": [],
+      "javascript_errors": [],
+      "screens": {
+        "desktop": {
+          "width": 1276,
+          "height": 851.25,
+          "clientWidth": 1274,
+          "scrollWidth": 1274,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "작업 새로고침",
+              "width": 129.21875,
+              "height": 44,
+              "left": 1143.46875,
+              "right": 1272.6875
+            },
+            {
+              "label": "연구 기록",
+              "width": 105.3125,
+              "height": 44,
+              "left": 1280.6875,
+              "right": 1386
+            },
+            {
+              "label": "이 조건으로 입력 준비",
+              "width": 172.15625,
+              "height": 44,
+              "left": 182,
+              "right": 354.15625
+            },
+            {
+              "label": "",
+              "width": 44,
+              "height": 44,
+              "left": 1342,
+              "right": 1386
+            },
+            {
+              "label": "같은 조건으로 다시 준비",
+              "width": 184.125,
+              "height": 44,
+              "left": 676.3125,
+              "right": 860.4375
+            },
+            {
+              "label": "입력 JSON",
+              "width": 90.484375,
+              "height": 44,
+              "left": 869.4375,
+              "right": 959.921875
+            }
+          ],
+          "clippedControls": []
+        },
+        "mobile-390": {
+          "width": 292,
+          "height": 1519.21875,
+          "clientWidth": 290,
+          "scrollWidth": 290,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "작업 새로고침",
+              "width": 129.21875,
+              "height": 44,
+              "left": 100,
+              "right": 229.21875
+            },
+            {
+              "label": "연구 기록",
+              "width": 105.3125,
+              "height": 44,
+              "left": 237.21875,
+              "right": 342.53125
+            },
+            {
+              "label": "이 조건으로 입력 준비",
+              "width": 172.15625,
+              "height": 44,
+              "left": 115,
+              "right": 287.15625
+            },
+            {
+              "label": "",
+              "width": 44,
+              "height": 44,
+              "left": 318,
+              "right": 362
+            },
+            {
+              "label": "같은 조건으로 다시 준비",
+              "width": 262,
+              "height": 44,
+              "left": 100,
+              "right": 362
+            },
+            {
+              "label": "입력 JSON",
+              "width": 262,
+              "height": 44,
+              "left": 100,
+              "right": 362
+            }
+          ],
+          "clippedControls": []
+        },
+        "mobile-360": {
+          "width": 262,
+          "height": 1616.8125,
+          "clientWidth": 260,
+          "scrollWidth": 260,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "작업 새로고침",
+              "width": 129.21875,
+              "height": 44,
+              "left": 202.78125,
+              "right": 332
+            },
+            {
+              "label": "연구 기록",
+              "width": 105.3125,
+              "height": 44,
+              "left": 226.6875,
+              "right": 332
+            },
+            {
+              "label": "이 조건으로 입력 준비",
+              "width": 172.15625,
+              "height": 44,
+              "left": 115,
+              "right": 287.15625
+            },
+            {
+              "label": "",
+              "width": 44,
+              "height": 44,
+              "left": 288,
+              "right": 332
+            },
+            {
+              "label": "같은 조건으로 다시 준비",
+              "width": 232,
+              "height": 44,
+              "left": 100,
+              "right": 332
+            },
+            {
+              "label": "입력 JSON",
+              "width": 232,
+              "height": 44,
+              "left": 100,
+              "right": 332
+            }
+          ],
+          "clippedControls": []
+        }
+      },
+      "job_id": "40a5db5e926e45a5991d61eb63a1bda6",
+      "job_status": "blocked",
+      "localized_standard_blockers": [
+        "현재 모델 파일은 무작위 시험용 가중치입니다. 정식 학습 가중치를 제공해야 예측을 실행할 수 있습니다.",
+        "표준 MSA 계산에 필요한 공식 유전정보·템플릿 데이터베이스를 AF3_DB_DIR에 설정해야 합니다."
+      ],
+      "selection_restored_after_reload": true,
+      "passed": true
+    },
+    "changes_since_control_flow_check": "Known blocker translation, duplicate message suppression, raw diagnostics disclosure; execution flow unchanged."
+  }
+}

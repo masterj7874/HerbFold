@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-09-07T23:36:48.630250+00:00",
+  "verification_scope": "Independent CPU-only full compressed container decode, published-schema agreement, aggregate tensor finiteness and distribution, and full-file SHA-256. No model inference or accuracy claim.",
+  "file": "/home/jerisuh/models/af3-google-20260604/af3.bin.zst",
+  "size_bytes": 1020545840,
+  "sha256": "74d0258616917cd122f5eab6d076afe4a8930e96823851e65e4f777dfb1f33ff",
+  "matches_acquisition_receipt_sha256": true,
+  "acquisition_receipt": "docs/af3-google-weights-acquisition.json",
+  "source_url": "https://storage.googleapis.com/alphafold3/af3.bin.zst",
+  "source_document": "https://github.com/google-deepmind/alphafold3/tree/v3.0.4#obtaining-model-parameters",
+  "full_container_decoded": true,
+  "decoded_container_bytes": 1146811260,
+  "records": 405,
+  "published_schema_records": 405,
+  "published_schema_exact_match": true,
+  "layout_sha256": "1862f187536683477aedf5a0753299aa00b17f1e37105176a3f8e272d23e60ff",
+  "metadata_identifier": {
+    "present": true,
+    "dtype": "uint8",
+    "shape": [
+      64
+    ],
+    "nonzero": true,
+    "contents_disclosed": false
+  },
+  "parameter_values": 368384538,
+  "dtypes": {
+    "uint8": 1,
+    "float32": 266,
+    "bfloat16": 138
+  },
+  "nonfinite_tensor_count": 0,
+  "all_zero_tensor_count": 0,
+  "zero_parameter_value_count": 25122,
+  "parameter_values_outside_minus_one_to_one": 13477870,
+  "aggregate_sample": {
+    "sampled_values": 1034458,
+    "histogram_within_minus_one_to_one_10_equal_bins": [
+      20506,
+      33852,
+      56956,
+      98822,
+      243299,
+      254541,
+      103846,
+      67112,
+      39928,
+      25042
+    ],
+    "sampled_values_outside_minus_one_to_one": 90554,
+    "tensor_standard_deviation_median": 0.3637751014357003,
+    "layer_norm_scale_negative_fraction_median": 0.0,
+    "no_raw_weight_values_emitted": true
+  },
+  "contrasts_with_rejected_local_archive": {
+    "old_sha256": "cec2df7fb03948b277109b0ae0faf4ddd007501a896d2a6c5444a56221242dd6",
+    "old_identifier_all_zero": true,
+    "new_identifier_all_zero": false,
+    "old_values_outside_minus_one_to_one": 0,
+    "new_values_outside_minus_one_to_one": 13477870,
+    "old_tensor_standard_deviation_median": 0.5770811836689387,
+    "new_tensor_standard_deviation_median": 0.3637751014357003
+  },
+  "passed": true,
+  "file_unchanged_during_inspection": true,
+  "gpu_used": false,
+  "elapsed_seconds": 3.307,
+  "limitations": [
+    "A trained-model prediction has not been executed by this validation.",
+    "Publisher origin is established by the separate official-source acquisition receipt and checksum, not inferred from the nonzero identifier or parameter statistics alone.",
+    "A valid full parameter archive does not guarantee numerical correctness, GPU capacity or a biologically accurate pose."
+  ]
+}

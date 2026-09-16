@@ -1,0 +1,62 @@
+export type Compound = {
+  id: string;
+  name: string;
+  name_ko?: string;
+  category: "herbal" | "natural_product" | "drug" | "candidate";
+  smiles: string;
+  source_url?: string;
+  pubchem_cid?: number;
+  botanical_examples?: { herb_name_ko: string; taxon: string }[];
+  descriptors?: Record<string, any>;
+  generated?: boolean;
+  parents?: string[];
+  max_parent_similarity?: number;
+  [key: string]: any;
+};
+export type AnalysisStage = {
+  id: string;
+  label: string;
+  depends_on: string[];
+  status: string;
+  started?: string;
+  finished?: string;
+  result?: any;
+  error?: string;
+};
+export type AnalysisEvent = {
+  seq: number;
+  time: string;
+  stage: string;
+  type: string;
+  status?: string;
+  summary: string;
+  response_id?: string;
+  usage?: any;
+  artifact?: string;
+};
+export type Analysis = {
+  id: string;
+  status: string;
+  mode: string;
+  model?: string;
+  llm_used: boolean;
+  request: any;
+  created: string;
+  updated: string;
+  stages: AnalysisStage[];
+  events: AnalysisEvent[];
+  result: any;
+  usage: { llm_calls: number; input_tokens: number; output_tokens: number };
+  error?: string;
+  cancel_requested?: boolean;
+};
+export type Job = {
+  id: string;
+  kind: string;
+  status: string;
+  created: string;
+  updated: string;
+  payload: any;
+  result: any;
+  error?: string;
+};

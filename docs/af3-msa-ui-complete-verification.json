@@ -1,0 +1,284 @@
+{
+  "created_at": "2026-09-08T01:58:50.799097+00:00",
+  "mode": "complete",
+  "url": "http://127.0.0.1:8873",
+  "browser_surface": "System Chrome/Playwright fallback; use only after documented Browser unavailability",
+  "mock_data_used": false,
+  "gpu_jobs_submitted": 0,
+  "blocked_mutations": [],
+  "read_style_posts": [
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/conformer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/resolve"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/resolve"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/resolve"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/svg"
+    }
+  ],
+  "javascript_errors": [],
+  "jobs": {
+    "aspirin": {
+      "job_id": "b868a97038e144f8a605a722d911338b",
+      "status": "completed",
+      "features": {
+        "status": "ready",
+        "cache_hit": false,
+        "counts": {
+          "unpaired_msa_sequences": 11229,
+          "paired_msa_sequences": 17801,
+          "non_query_sequences": 11228,
+          "template_count": 4
+        }
+      },
+      "comparison": {
+        "baseline_job_id": "88692f7955d94c50814f6e3121f963b6",
+        "msa_job_id": "b868a97038e144f8a605a722d911338b",
+        "counts": {
+          "unpaired_msa_sequences": 11229,
+          "paired_msa_sequences": 17801,
+          "non_query_sequences": 11228,
+          "template_count": 4
+        },
+        "cache_hit": false,
+        "confidence_deltas": {
+          "ptm": 0.7,
+          "iptm": 0.51
+        },
+        "provenance_verified": true,
+        "quality_certification_claimed": false
+      },
+      "screens": {
+        "desktop": {
+          "layout": {
+            "width": 1276,
+            "height": 1790.171875,
+            "clientWidth": 1274,
+            "scrollWidth": 1274,
+            "documentOverflow": false,
+            "clippedControls": [],
+            "smallControls": []
+          },
+          "comparison": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-comparison-desktop.png",
+          "provenance": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-provenance-desktop.png",
+          "complex": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-complex-desktop.png",
+          "atom": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-atom-desktop.png"
+        },
+        "mobile360": {
+          "layout": {
+            "width": 262,
+            "height": 3089.21875,
+            "clientWidth": 260,
+            "scrollWidth": 260,
+            "documentOverflow": false,
+            "clippedControls": [],
+            "smallControls": []
+          },
+          "comparison": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-comparison-mobile360.png",
+          "viewer_height": 650,
+          "camera": {
+            "ligand": 47.7126,
+            "out": 59.6407,
+            "in": 47.7126
+          },
+          "viewer": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-aspirin-viewer-mobile360.png"
+        }
+      },
+      "displayed_scene_switch": {
+        "baseline_job_id": "88692f7955d94c50814f6e3121f963b6",
+        "baseline_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+        "msa_job_id": "b868a97038e144f8a605a722d911338b",
+        "msa_sha256": "d7328059bc516ae1570bad203c99d1b2318c5c5b4dd11fe886d6950436b3370f",
+        "viewer_downloads_matched": true
+      },
+      "camera": {
+        "full_distance": 308.8325,
+        "selected_atom_distance": 4.2,
+        "zoom_out_distance": 5.25,
+        "zoom_in_distance": 4.2,
+        "atom": {
+          "index": 4865,
+          "name": "C1",
+          "element": "C",
+          "chain_id": "B",
+          "residue_id": "1"
+        }
+      },
+      "display_name": "아스피린"
+    },
+    "quercetin": {
+      "job_id": "d80fe6aa1e6945538da31833a471d6ed",
+      "status": "completed",
+      "features": {
+        "status": "ready",
+        "cache_hit": true,
+        "counts": {
+          "unpaired_msa_sequences": 11229,
+          "paired_msa_sequences": 17801,
+          "non_query_sequences": 11228,
+          "template_count": 4
+        }
+      },
+      "comparison": {
+        "baseline_job_id": "3730181a45734f0dafa92a78917c48dd",
+        "msa_job_id": "d80fe6aa1e6945538da31833a471d6ed",
+        "counts": {
+          "unpaired_msa_sequences": 11229,
+          "paired_msa_sequences": 17801,
+          "non_query_sequences": 11228,
+          "template_count": 4
+        },
+        "cache_hit": true,
+        "confidence_deltas": {
+          "ptm": 0.68,
+          "iptm": 0.53
+        },
+        "provenance_verified": true,
+        "quality_certification_claimed": false
+      },
+      "screens": {
+        "desktop": {
+          "layout": {
+            "width": 1276,
+            "height": 1790.171875,
+            "clientWidth": 1274,
+            "scrollWidth": 1274,
+            "documentOverflow": false,
+            "clippedControls": [],
+            "smallControls": []
+          },
+          "comparison": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-quercetin-comparison-desktop.png",
+          "provenance": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-quercetin-provenance-desktop.png",
+          "complex": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-quercetin-complex-desktop.png",
+          "atom": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-quercetin-atom-desktop.png"
+        },
+        "mobile360": {
+          "layout": {
+            "width": 262,
+            "height": 3089.21875,
+            "clientWidth": 260,
+            "scrollWidth": 260,
+            "documentOverflow": false,
+            "clippedControls": [],
+            "smallControls": []
+          },
+          "comparison": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-quercetin-comparison-mobile360.png",
+          "viewer_height": 650,
+          "camera": {
+            "ligand": 66.9498,
+            "out": 83.6873,
+            "in": 66.9498
+          },
+          "viewer": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/images/af3-msa-quercetin-viewer-mobile360.png"
+        }
+      },
+      "displayed_scene_switch": {
+        "baseline_job_id": "3730181a45734f0dafa92a78917c48dd",
+        "baseline_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+        "msa_job_id": "d80fe6aa1e6945538da31833a471d6ed",
+        "msa_sha256": "daee83d0c5b8072527e08f37cc37641dfb7bc26c1d014f71b4d3f889c4b0433b",
+        "viewer_downloads_matched": true
+      },
+      "camera": {
+        "full_distance": 293.257,
+        "selected_atom_distance": 4.2,
+        "zoom_out_distance": 5.25,
+        "zoom_in_distance": 4.2,
+        "atom": {
+          "index": 4865,
+          "name": "O1",
+          "element": "O",
+          "chain_id": "B",
+          "residue_id": "1"
+        }
+      },
+      "display_name": "퀘르세틴"
+    }
+  },
+  "passed": true,
+  "verification_script_sha256": "3e95dd013b2309a357bbd1a0a41deb007b69e836badd26ee30195cd533431da3",
+  "scope": "Actual UI identity/provenance/controls only; no efficacy, safety or independent accuracy validation",
+  "input_reports": {
+    "msa": {
+      "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/af3-msa-selected-predictions.json",
+      "sha256": "3332db56577ce7a82c070f4f23a750cd64b715c7a67e270bb467f7a8b9ec744a"
+    },
+    "raw_comparison": {
+      "path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/docs/af3-msa-structure-comparison.json",
+      "sha256": "9867d2662d0c6f0b2f3b912da142c0195245d43f48793ecdec852e7313e75e3a"
+    }
+  },
+  "frontend_assets": [
+    "http://127.0.0.1:8873/app/assets/index-Jj4sC99f.js"
+  ],
+  "selected_msa_job_restored_after_reload": true,
+  "selected_molecules_have_distinct_actual_cifs": true
+}

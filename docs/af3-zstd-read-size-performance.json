@@ -1,0 +1,233 @@
+{
+  "recorded_at": "2026-09-08T01:16:11.126913+00:00",
+  "scope": "Two concurrent CPU workers using real bounded 128 MiB compressed prefixes held in memory; decoded output SHA256 + FASTA counts checked identical. Includes compressed SHA256/MD5/CRC32C and frame parsing. Prefixes intentionally stop before EOF so no full-file validation claim. No production mutation, GPU or network. Real output-file writing excluded.",
+  "compressed_prefix_limit_each": 134217728,
+  "samples": [
+    {
+      "name": "mgy_clusters_2022_05.fa.zst",
+      "target": 239075328,
+      "compressed_prefix_sha256": "e381d8081da7fc9bf5028a06161ff28daa9c57810d89c01e97bdf0600d21aeb2"
+    },
+    {
+      "name": "uniref90_2022_05.fa.zst",
+      "target": 364904448,
+      "compressed_prefix_sha256": "ec43c9251892cc1baa94c1235414448169a2e93c242ffa7d1c5f638d1663944d"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "read_size": 131075,
+      "seconds": 2.7831759980035713,
+      "combined_mib_s": 206.9578066256595,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 129108875,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.3440685249952367
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 130943925,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.7814737090084236
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "read_size": 4194304,
+      "seconds": 2.620865686010802,
+      "combined_mib_s": 219.77471149111986,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 130023424,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.054232645998127
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 134217728,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.6177963219961384
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "read_size": 4194304,
+      "seconds": 2.649339607989532,
+      "combined_mib_s": 217.41267078896738,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 130023424,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.065072698998847
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 134217728,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.645832783993683
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "read_size": 131075,
+      "seconds": 2.818673818008392,
+      "combined_mib_s": 204.35142098385398,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 129108875,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.312217774990131
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 130943925,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.8170858410012443
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "read_size": 131075,
+      "seconds": 2.7453774250025162,
+      "combined_mib_s": 209.80721803650442,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 129108875,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.3522491049952805
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 130943925,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.7434896849881625
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "read_size": 4194304,
+      "seconds": 2.5800658730004216,
+      "combined_mib_s": 223.2501138934703,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 130023424,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.032744878990343
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 134217728,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.5769869840005413
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "read_size": 4194304,
+      "seconds": 2.6232875190034974,
+      "combined_mib_s": 219.57181430833165,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 130023424,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.0459949799987953
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 134217728,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.6197186910139862
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "read_size": 131075,
+      "seconds": 2.816138590002083,
+      "combined_mib_s": 204.53538829549362,
+      "results": [
+        {
+          "name": "mgy_clusters_2022_05.fa.zst",
+          "decoded_bytes": 239075328,
+          "compressed_bytes_read": 129108875,
+          "sha256": "edb5c4ae6f59c29ee964546e59c4782218b519b6c608d9122645dfc235b40697",
+          "records_started": 1059480,
+          "sequence_symbols": 215485984,
+          "seconds": 2.3840475019969745
+        },
+        {
+          "name": "uniref90_2022_05.fa.zst",
+          "decoded_bytes": 364904448,
+          "compressed_bytes_read": 130943925,
+          "sha256": "f786684572d176e6171a038e74e573cd535d879354f4ea200b73be6460289145",
+          "records_started": 41926,
+          "sequence_symbols": 354024058,
+          "seconds": 2.814417911999044
+        }
+      ]
+    }
+  ],
+  "median_combined_mib_s": {
+    "131075": 205.74659746057654,
+    "4194304": 219.67326289972576
+  },
+  "speedup": 1.0676884362173606,
+  "output_and_fasta_counts_identical": true
+}

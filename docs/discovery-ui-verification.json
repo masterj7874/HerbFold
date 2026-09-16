@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-09-07T10:25:09.636742+00:00",
+  "checks": [
+    "Final catalogue and cross-campaign sum match the API; desktop and 390px library screenshots captured without horizontal overflow",
+    "Final source-specific LOTUS searches show 황금 196 and 인삼 653 with factual Korean-to-taxon captions",
+    "Final extended campaign visibly stops at its 100000-attempt budget with 4895 retained against a 10000 target; desktop and 390px campaign captures match actual counters",
+    "Mixed LOTUS/ChEMBL aspirin opened from ChEMBL remains a drug in the studio filter, renders a genuine RDKit conformer, and preserves the ChEMBL source URL with an accurate generic label"
+  ],
+  "javascript_errors": [],
+  "discovery_mutations": [],
+  "hardware_submitted": false,
+  "observed_compound_count": 766417,
+  "observed_provenance_count": 1436510,
+  "observed_campaign_retained_sum": 5832,
+  "herb_suggestions": 569,
+  "source_specific_korean_searches": {
+    "황금": {
+      "source": "lotus-2026-04",
+      "total": 196,
+      "query": "Scutellaria baicalensis"
+    },
+    "인삼": {
+      "source": "lotus-2026-04",
+      "total": 653,
+      "query": "Panax ginseng"
+    }
+  },
+  "campaign": {
+    "id": "5dc6a27485934703b902f65fff32aa98",
+    "status": "budget_exhausted",
+    "reason": "attempt_budget",
+    "requested": 10000,
+    "attempted": 100000,
+    "generated": 37966,
+    "retained": 4895,
+    "rejected": 70881,
+    "duplicates": 24224
+  },
+  "drug_role_check": {
+    "name": "Aspirin",
+    "sources": [
+      "lotus-2026-04",
+      "chembl-approved"
+    ],
+    "selected_source": "chembl-approved",
+    "studio_category": "drug",
+    "studio_source_url": "https://www.ebi.ac.uk/chembl/"
+  },
+  "passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-07T22:01:31.477505+00:00",
+  "pytest": {
+    "command": ".venv/bin/pytest -q",
+    "passed": 272,
+    "failed": 0,
+    "warnings": 2,
+    "elapsed_seconds": 24.68
+  },
+  "ruff": {
+    "command": ".venv/bin/ruff check src scripts tests",
+    "passed": true
+  },
+  "frontend": {
+    "production_build_passed": true,
+    "browser_report": "docs/validation-ui-verification.json",
+    "browser_passed": true,
+    "browser_report_sha256": "66aedc200bf898dbdcb9ce499fba5ddedd6886b550a25c9166371d724129e54a"
+  },
+  "api_report": "docs/validation-api-verification.json",
+  "code_sha256": {
+    "src/herbfold/scale_validation.py": "464ec83db7c5a86c4bf280d5608e3d30982bd1056381232ac434abac3e4f59d8",
+    "src/herbfold/bio_validation.py": "ffca25b95d4331b95655029cb3806f48f901191079a8fc5bc45737c684d5bd2a",
+    "src/herbfold/toxicity_validation.py": "28c2e1e3e23b6bd24c2dedce1db0a53555b7ef62aff21716e08b9b07d5b11117",
+    "src/herbfold/validation_api.py": "23d3da81fa1e48da289c9fb719f9f32a17ea81f3ab5643e7ec5995cb274b91ff",
+    "scripts/prepare_validation_cohort.py": "c7380efe7400868cb7fdae71b0177a7bde8125f35b7d13506cbbdcdbd5325fe9"
+  },
+  "scope": "Software behavior only; does not establish efficacy, human safety, AlphaFold accuracy or quantum advantage."
+}

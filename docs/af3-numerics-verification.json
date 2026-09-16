@@ -1,0 +1,71 @@
+{
+  "verified_at": "2026-09-07T23:00:52.994911+00:00",
+  "scope": "synthetic_arithmetic_diagnostic_only",
+  "issue": "https://github.com/jax-ml/jax/issues/39336",
+  "records": [
+    {
+      "configuration": "current_environment",
+      "xla_flags": null,
+      "return_code": 0,
+      "jax": "0.10.2",
+      "devices": [
+        "cuda:0"
+      ],
+      "checks": [
+        {
+          "multiplier": 0.1,
+          "maximum_absolute_error": 0.10722509026527405,
+          "passed": false
+        },
+        {
+          "multiplier": 0.5,
+          "maximum_absolute_error": 0.059569552540779114,
+          "passed": false
+        },
+        {
+          "multiplier": 2.0,
+          "maximum_absolute_error": 0.11913898587226868,
+          "passed": false
+        },
+        {
+          "multiplier": 1.0,
+          "maximum_absolute_error": 2.9616057872772217e-07,
+          "passed": true
+        }
+      ],
+      "passed": false
+    },
+    {
+      "configuration": "autotune_level_3",
+      "xla_flags": "--xla_gpu_autotune_level=3",
+      "return_code": 0,
+      "jax": "0.10.2",
+      "devices": [
+        "cuda:0"
+      ],
+      "checks": [
+        {
+          "multiplier": 0.1,
+          "maximum_absolute_error": 2.9569491744041443e-08,
+          "passed": true
+        },
+        {
+          "multiplier": 0.5,
+          "maximum_absolute_error": 1.4808028936386108e-07,
+          "passed": true
+        },
+        {
+          "multiplier": 2.0,
+          "maximum_absolute_error": 5.923211574554443e-07,
+          "passed": true
+        },
+        {
+          "multiplier": 1.0,
+          "maximum_absolute_error": 2.9616057872772217e-07,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

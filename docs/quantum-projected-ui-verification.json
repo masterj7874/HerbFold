@@ -1,0 +1,466 @@
+{
+  "created_at": "2026-09-08T02:55:56.674739+00:00",
+  "passed": true,
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "read_style_posts": [
+    {
+      "method": "POST",
+      "path": "/api/molecular/conformer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    },
+    {
+      "method": "POST",
+      "path": "/api/quantum/plan"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecular/conformer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/molecules/describe"
+    }
+  ],
+  "screenshots": {
+    "legacy-desktop": "docs/images/quantum-projected-legacy-desktop.png",
+    "measured-desktop": "docs/images/quantum-projected-measured-desktop.png",
+    "observables-desktop": "docs/images/quantum-projected-observables-desktop.png",
+    "readout-worst-desktop": "docs/images/quantum-projected-readout-worst-desktop.png",
+    "references-desktop": "docs/images/quantum-projected-references-desktop.png",
+    "provenance-desktop": "docs/images/quantum-projected-provenance-desktop.png",
+    "plan-desktop": "docs/images/quantum-projected-plan-desktop.png",
+    "legacy-mobile360": "docs/images/quantum-projected-legacy-mobile360.png",
+    "measured-mobile360": "docs/images/quantum-projected-measured-mobile360.png",
+    "archive-desktop": "docs/images/quantum-projected-archive-desktop.png"
+  },
+  "synthetic_data_used": false,
+  "qpu_submissions": 0,
+  "scope": "Actual UI/provenance/plan review only; no scientific advantage or efficacy validation",
+  "receipt_sha256": "7ec53031206cc5d8483475e35d4a465d6b41545af3fd3ed356ba6a03629f5e8c",
+  "source_analysis_id": "b3d261566fa14891925d3b1fd730f2d1",
+  "store_job_id": "f1b0f1c6867b4d21b40193e65ab980bf",
+  "original_kernel": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "projected_kernel": [
+    [
+      1.0,
+      0.9709176695740952,
+      0.9932907556520635,
+      0.94729071407996
+    ],
+    [
+      0.9709176695740952,
+      1.0,
+      0.9569313742193407,
+      0.974386496218928
+    ],
+    [
+      0.9932907556520635,
+      0.9569313742193407,
+      1.0,
+      0.947082038509039
+    ],
+    [
+      0.94729071407996,
+      0.974386496218928,
+      0.947082038509039,
+      1.0
+    ]
+  ],
+  "maximum_prepared_state_error": {
+    "rate": 0.3857421875,
+    "logical_qubit": 72,
+    "prepared_state": 1,
+    "physical_qubit": 72
+  },
+  "desktop_layout": {
+    "width": 431,
+    "scrollWidth": 431,
+    "documentOverflow": false,
+    "controls": [
+      {
+        "label": "brics-8d4157767bb0 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "전체 결과 JSON",
+        "height": 44
+      },
+      {
+        "label": "연결된 양자 기록 새로고침",
+        "height": 44
+      },
+      {
+        "label": "2026. 9. 8. 오전 11:43:56 · 관측량 기반 · 계산 완료 · f1b0f1c6",
+        "height": 44
+      },
+      {
+        "label": "양자 단계만 다시 계산",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × brics-8d4157767bb0: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "brics-8d4157767bb0 × brics-007ed18dee77: 0.970918",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 퀘르세틴: 0.993291",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 아스피린: 0.947291",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-8d4157767bb0: 0.970918",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-007ed18dee77: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "brics-007ed18dee77 × 퀘르세틴: 0.956931",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × 아스피린: 0.974386",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-8d4157767bb0: 0.993291",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-007ed18dee77: 0.956931",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × 퀘르세틴: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "퀘르세틴 × 아스피린: 0.947082",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-8d4157767bb0: 0.947291",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-007ed18dee77: 0.974386",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 퀘르세틴: 0.947082",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 아스피린: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "M1 · brics-8d4157767bb0M2 · brics-007ed18dee77M3 · 퀘르세틴M4 · 아스피린",
+        "height": 44
+      },
+      {
+        "label": "이전 큐빗",
+        "height": 44
+      },
+      {
+        "label": "다음 큐빗",
+        "height": 44
+      },
+      {
+        "label": "이전 대조 큐빗",
+        "height": 44
+      },
+      {
+        "label": "다음 대조 큐빗",
+        "height": 44
+      },
+      {
+        "label": "전체 결과 JSON",
+        "height": 44
+      }
+    ]
+  },
+  "plan_preview": {
+    "kernel_method": "projected",
+    "n_qubits": 156,
+    "backend": "ibm_fez",
+    "circuits": 17,
+    "shots": 17408,
+    "source_inputs_unchanged": true,
+    "execute_button_not_clicked": true
+  },
+  "mobile_layout": {
+    "width": 222,
+    "scrollWidth": 222,
+    "documentOverflow": false,
+    "controls": [
+      {
+        "label": "brics-8d4157767bb0 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-8d4157767bb0: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-007ed18dee77: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 퀘르세틴: 0",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 아스피린: 0",
+        "height": 44
+      },
+      {
+        "label": "전체 결과 JSON",
+        "height": 44
+      },
+      {
+        "label": "연결된 양자 기록 새로고침",
+        "height": 44
+      },
+      {
+        "label": "2026. 9. 8. 오전 11:43:56 · 관측량 기반 · 계산 완료 · f1b0f1c6",
+        "height": 44
+      },
+      {
+        "label": "양자 단계만 다시 계산",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × brics-8d4157767bb0: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "brics-8d4157767bb0 × brics-007ed18dee77: 0.970918",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 퀘르세틴: 0.993291",
+        "height": 44
+      },
+      {
+        "label": "brics-8d4157767bb0 × 아스피린: 0.947291",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-8d4157767bb0: 0.970918",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × brics-007ed18dee77: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "brics-007ed18dee77 × 퀘르세틴: 0.956931",
+        "height": 44
+      },
+      {
+        "label": "brics-007ed18dee77 × 아스피린: 0.974386",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-8d4157767bb0: 0.993291",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × brics-007ed18dee77: 0.956931",
+        "height": 44
+      },
+      {
+        "label": "퀘르세틴 × 퀘르세틴: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "퀘르세틴 × 아스피린: 0.947082",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-8d4157767bb0: 0.947291",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × brics-007ed18dee77: 0.974386",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 퀘르세틴: 0.947082",
+        "height": 44
+      },
+      {
+        "label": "아스피린 × 아스피린: 1, 정의상 대각값",
+        "height": 53
+      },
+      {
+        "label": "M1 · brics-8d4157767bb0M2 · brics-007ed18dee77M3 · 퀘르세틴M4 · 아스피린",
+        "height": 44
+      },
+      {
+        "label": "이전 큐빗",
+        "height": 44
+      },
+      {
+        "label": "다음 큐빗",
+        "height": 44
+      },
+      {
+        "label": "이전 대조 큐빗",
+        "height": 44
+      },
+      {
+        "label": "다음 대조 큐빗",
+        "height": 44
+      },
+      {
+        "label": "전체 결과 JSON",
+        "height": 44
+      }
+    ]
+  },
+  "analysis_and_result_restored_after_reload": true,
+  "archive_preserves_measured_method_and_values": true,
+  "source_kernel_unchanged_after_qa": true
+}

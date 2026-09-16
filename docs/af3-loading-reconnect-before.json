@@ -1,0 +1,64 @@
+{
+  "started_at": 1789355267.392388,
+  "jobid": "31dfd5615cb848c5a98c78dc657c3692",
+  "requests": [
+    {
+      "at": 0.83,
+      "path": "/api/molecular/predictions/31dfd5615cb848c5a98c78dc657c3692/scene",
+      "status": 401
+    },
+    {
+      "at": 0.83,
+      "path": "/api/molecular/predictions",
+      "status": 401
+    },
+    {
+      "at": 6.76,
+      "path": "/api/molecular/predictions",
+      "status": 200
+    },
+    {
+      "at": 6.78,
+      "path": "/api/molecular/predictions/31dfd5615cb848c5a98c78dc657c3692",
+      "status": 200
+    },
+    {
+      "at": 6.79,
+      "path": "/api/molecular/predictions/31dfd5615cb848c5a98c78dc657c3692/log",
+      "status": 200
+    },
+    {
+      "at": 7.45,
+      "path": "/api/molecular/predictions/31dfd5615cb848c5a98c78dc657c3692/scene",
+      "status": 200
+    },
+    {
+      "at": 7.63,
+      "path": "/api/molecular/predictions/31dfd5615cb848c5a98c78dc657c3692",
+      "status": 200
+    }
+  ],
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "before_login_error": "저장 작업을 불러오지 못했습니다. API authentication required",
+  "after_login_panel": "2. 실행과 결과\n\n저장 작업을 확인하지 못했습니다. 작업 새로고침으로 다시 조회하세요.",
+  "after_login_errors": [
+    "저장 작업을 불러오지 못했습니다. API authentication required"
+  ],
+  "after_login_status": "none",
+  "after_login_network": [
+    {
+      "at": 0.83,
+      "path": "/api/molecular/predictions/31dfd5615cb848c5a98c78dc657c3692/scene",
+      "status": 401
+    },
+    {
+      "at": 0.83,
+      "path": "/api/molecular/predictions",
+      "status": 401
+    }
+  ],
+  "manual_refresh_completed_and_structure_visible": true,
+  "after_manual_status": "completed",
+  "scope": "Read-only browser reproduction before the reconnect fix; manual refresh revealed the already completed job."
+}

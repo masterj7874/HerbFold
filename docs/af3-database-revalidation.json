@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "started_at": "2026-09-14T00:57:25.622377+00:00",
+  "verified_at": "2026-09-14T01:08:46.037894+00:00",
+  "database_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0",
+  "backup_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/alphafold3_databases/v3.0/.installation/revalidation-20260914T010834819791Z",
+  "previous_manifest_sha256": "64d95333d58915a1bcff93855c31f9314d12623cea23cf87680e996948a08ec5",
+  "files_sha256_verified": 195877,
+  "bytes_sha256_verified": 911267772209,
+  "verified_file_counts": {
+    "fasta": 8,
+    "archive": 9,
+    "inventory": 1,
+    "ancillary": 1,
+    "cif": 195858
+  },
+  "expanded_content_bytes": 672435030468,
+  "compressed_bytes": 238784443666,
+  "cif_files": 195858,
+  "content_modified": false,
+  "downloads_performed": 0,
+  "preserved_inputs": [
+    "bfd-first_non_consensus_sequences.fasta",
+    "mgy_clusters_2022_05.fa",
+    "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta",
+    "mmcif_files",
+    "pdb_seqres_2022_09_28.fasta",
+    "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta",
+    "rnacentral_active_seq_id_90_cov_80_linclust.fasta",
+    "uniprot_all_2021_04.fa",
+    "uniref90_2022_05.fa",
+    ".downloads/bfd-first_non_consensus_sequences.fasta.zst",
+    ".downloads/mgy_clusters_2022_05.fa.zst",
+    ".downloads/nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+    ".downloads/pdb_2022_09_28_mmcif_files.tar.zst",
+    ".downloads/pdb_seqres_2022_09_28.fasta.zst",
+    ".downloads/rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta.zst",
+    ".downloads/rnacentral_active_seq_id_90_cov_80_linclust.fasta.zst",
+    ".downloads/uniprot_all_2021_04.fa.zst",
+    ".downloads/uniref90_2022_05.fa.zst",
+    ".installation/ancillary/mmcif_files.tar.gz"
+  ],
+  "identity_transitions": [
+    {
+      "path": "bfd-first_non_consensus_sequences.fasta",
+      "previous_stat": {
+        "size": 18171626364,
+        "mtime_ns": 1788826654482782192,
+        "ctime_ns": 1788826655849795025,
+        "inode": 113377300,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 18171626364,
+        "mtime_ns": 1788826654482782192,
+        "ctime_ns": 1788826655849795025,
+        "inode": 113377300,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "mgy_clusters_2022_05.fa",
+      "previous_stat": {
+        "size": 128579703018,
+        "mtime_ns": 1788831299062482061,
+        "ctime_ns": 1788831308154398188,
+        "inode": 113377319,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 128579703018,
+        "mtime_ns": 1788831299062482061,
+        "ctime_ns": 1788831308154398188,
+        "inode": 113377319,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "nt_rna_2023_02_23_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "previous_stat": {
+        "size": 80977012680,
+        "mtime_ns": 1788829503991792272,
+        "ctime_ns": 1788829506448817215,
+        "inode": 113377311,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 80977012680,
+        "mtime_ns": 1788829503991792272,
+        "ctime_ns": 1788829506448817215,
+        "inode": 113377311,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "mmcif_files",
+      "previous_stat": {
+        "size": 4354048,
+        "mtime_ns": 1788831583598691719,
+        "ctime_ns": 1788831583756186272,
+        "inode": 113377314,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 4354048,
+        "mtime_ns": 1788831583598691719,
+        "ctime_ns": 1788831583756186272,
+        "inode": 113377314,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "pdb_seqres_2022_09_28.fasta",
+      "previous_stat": {
+        "size": 232899463,
+        "mtime_ns": 1788826203351549613,
+        "ctime_ns": 1788826203416550126,
+        "inode": 113377291,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 232899463,
+        "mtime_ns": 1788826203351549613,
+        "ctime_ns": 1788826203416550126,
+        "inode": 113377291,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "rfam_14_9_clust_seq_id_90_cov_80_rep_seq.fasta",
+      "previous_stat": {
+        "size": 228433680,
+        "mtime_ns": 1788826204254556744,
+        "ctime_ns": 1788826204300557107,
+        "inode": 113377295,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 228433680,
+        "mtime_ns": 1788826204254556744,
+        "ctime_ns": 1788826204300557107,
+        "inode": 113377295,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "rnacentral_active_seq_id_90_cov_80_linclust.fasta",
+      "previous_stat": {
+        "size": 13860314914,
+        "mtime_ns": 1788828328374576430,
+        "ctime_ns": 1788828328523577717,
+        "inode": 113377302,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 13860314914,
+        "mtime_ns": 1788828328374576430,
+        "ctime_ns": 1788828328523577717,
+        "inode": 113377302,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "uniprot_all_2021_04.fa",
+      "previous_stat": {
+        "size": 108447942931,
+        "mtime_ns": 1788829660446365680,
+        "ctime_ns": 1788829664685407932,
+        "inode": 113377315,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 108447942931,
+        "mtime_ns": 1788829660446365680,
+        "ctime_ns": 1788829664685407932,
+        "inode": 113377315,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    },
+    {
+      "path": "uniref90_2022_05.fa",
+      "previous_stat": {
+        "size": 71821260491,
+        "mtime_ns": 1788830138415044741,
+        "ctime_ns": 1788830140804067811,
+        "inode": 113377304,
+        "device": 66306
+      },
+      "current_numeric_device": 66307,
+      "revalidated_stat": {
+        "size": 71821260491,
+        "mtime_ns": 1788830138415044741,
+        "ctime_ns": 1788830140804067811,
+        "inode": 113377304,
+        "filesystem_uuid": "8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c"
+      }
+    }
+  ],
+  "method": "full_existing_content_sha256_and_pinned_source_receipts",
+  "checksum_scope": "SHA-256 rechecked for complete retained archives, FASTAs, inventory, CIFs and ancillary. Original verified CRC32C/MD5 evidence preserved and matched to pinned plan; no repeat decode.",
+  "completed_at": "2026-09-14T01:08:57.155349+00:00",
+  "manifest_sha256": "6b061f8547715b14e19e7873be1dbc96bd03b5fc0df48318a0133766b12eef42"
+}

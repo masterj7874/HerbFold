@@ -1,0 +1,118 @@
+[
+  {
+    "id": "quercetin",
+    "name": "Quercetin",
+    "name_ko": "퀘르세틴",
+    "category": "herbal",
+    "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+    "pubchem_cid": 5280343,
+    "iupac_name": "2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280343",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Natural-product structure example; botanical composition and concentration are not asserted.",
+    "botanical_examples": []
+  },
+  {
+    "id": "baicalein",
+    "name": "Baicalein",
+    "name_ko": "바이칼레인",
+    "category": "herbal",
+    "smiles": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O",
+    "pubchem_cid": 5281605,
+    "iupac_name": "5,6,7-trihydroxy-2-phenylchromen-4-one",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281605",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Natural-product structure example; botanical composition and concentration are not asserted.",
+    "botanical_examples": [
+      {
+        "taxon": "Scutellaria baicalensis",
+        "herb_name_ko": "황금",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281605",
+        "evidence": "PubChem Record Description; reported occurrence, not batch composition"
+      }
+    ]
+  },
+  {
+    "id": "luteolin",
+    "name": "Luteolin",
+    "name_ko": "루테올린",
+    "category": "herbal",
+    "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "pubchem_cid": 5280445,
+    "iupac_name": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromen-4-one",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280445",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Natural-product structure example; botanical composition and concentration are not asserted.",
+    "botanical_examples": [
+      {
+        "taxon": "Codonopsis lanceolata",
+        "herb_name_ko": "더덕",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280445",
+        "evidence": "PubChem Record Description (LOTUS); reported occurrence, not batch composition"
+      }
+    ]
+  },
+  {
+    "id": "berberine",
+    "name": "Berberine",
+    "name_ko": "베르베린",
+    "category": "herbal",
+    "smiles": "COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC",
+    "pubchem_cid": 2353,
+    "iupac_name": "16,17-dimethoxy-5,7-dioxa-13-azoniapentacyclo[11.8.0.02,10.04,8.015,20]henicosa-1(13),2,4(8),9,14,16,18,20-octaene",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2353",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Natural-product structure example; botanical composition and concentration are not asserted.",
+    "botanical_examples": [
+      {
+        "taxon": "Coptis chinensis",
+        "herb_name_ko": "황련",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8166882/",
+        "evidence": "Original genome and HPLC study; reported occurrence, not batch composition"
+      }
+    ]
+  },
+  {
+    "id": "aspirin",
+    "name": "Aspirin",
+    "name_ko": "아스피린",
+    "category": "drug",
+    "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "pubchem_cid": 2244,
+    "iupac_name": "2-acetyloxybenzoic acid",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Marketed-drug ingredient structure comparator; no shared efficacy or indication is implied."
+  },
+  {
+    "id": "ibuprofen",
+    "name": "Ibuprofen",
+    "name_ko": "이부프로펜",
+    "category": "drug",
+    "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+    "pubchem_cid": 3672,
+    "iupac_name": "2-[4-(2-methylpropyl)phenyl]propanoic acid",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/3672",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Marketed-drug ingredient structure comparator; no shared efficacy or indication is implied."
+  },
+  {
+    "id": "celecoxib",
+    "name": "Celecoxib",
+    "name_ko": "셀레콕시브",
+    "category": "drug",
+    "smiles": "CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F",
+    "pubchem_cid": 2662,
+    "iupac_name": "4-[5-(4-methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl]benzenesulfonamide",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2662",
+    "structure_source": "PubChem PUG REST IsomericSMILES (response key SMILES)",
+    "retrieved_at": "2026-09-07",
+    "note": "Marketed-drug ingredient structure comparator; no shared efficacy or indication is implied."
+  }
+]

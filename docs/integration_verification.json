@@ -1,0 +1,10 @@
+{
+  "api_status": "passed",
+  "measured_training_rows": 21,
+  "candidate_count": 8,
+  "model_job_id": "83b53604e29247cc8106c319e706146d",
+  "candidate_prediction_job_id": "2dd5198c245d44ac9c465fe4c64d49b2",
+  "kernel_experiment_job_id": "d35a636f52e341ea8654da1d29767f0e",
+  "scientific_validation": "not established; all baseline evaluation R2 negative",
+  "model_not_for_decision_making": true
+}

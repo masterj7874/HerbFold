@@ -1,0 +1,2314 @@
+{
+  "elapsed_seconds": 7.90137852501357,
+  "jobs": [
+    {
+      "job_id": "b868a97038e144f8a605a722d911338b",
+      "msa_mode": "search",
+      "models": [
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-2/studio_P35354_01914792ee1d_seed-1_sample-2_model.cif",
+          "structure_sha256": "d7328059bc516ae1570bad203c99d1b2318c5c5b4dd11fe886d6950436b3370f",
+          "sample": {
+            "seed": 1,
+            "sample": 2,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 9.34,
+              "mean": 90.89881303813038,
+              "max": 98.98
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.34,
+              "mean": 90.9467954779034,
+              "max": 98.98
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 61.5,
+              "mean": 72.9423076923077,
+              "max": 82.92
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 6.9785110680897,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.77337123371782,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 2.2,
+                "mean": 6.402585328578706,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 4.5,
+                "mean": 17.19782221090168,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.7621301775147926,
+                "max": 4.8,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-2/studio_P35354_01914792ee1d_seed-1_sample-2_confidences.json",
+            "sha256": "be75747b48216743a70da39ab5025ea108113f03d2f9be2300988ebb0d9131b4",
+            "size_bytes": 3173089,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_01914792ee1d/studio_P35354_01914792ee1d_model.cif",
+          "structure_sha256": "d7328059bc516ae1570bad203c99d1b2318c5c5b4dd11fe886d6950436b3370f",
+          "sample": {
+            "seed": null,
+            "sample": null,
+            "is_top_ranked_copy": true
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 9.34,
+              "mean": 90.89881303813038,
+              "max": 98.98
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.34,
+              "mean": 90.9467954779034,
+              "max": 98.98
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 61.5,
+              "mean": 72.9423076923077,
+              "max": 82.92
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 6.9785110680897,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.77337123371782,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 2.2,
+                "mean": 6.402585328578706,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 4.5,
+                "mean": 17.19782221090168,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.7621301775147926,
+                "max": 4.8,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_01914792ee1d/studio_P35354_01914792ee1d_confidences.json",
+            "sha256": "be75747b48216743a70da39ab5025ea108113f03d2f9be2300988ebb0d9131b4",
+            "size_bytes": 3173089,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-1/studio_P35354_01914792ee1d_seed-1_sample-1_model.cif",
+          "structure_sha256": "202d1bb232d7dd57fc0504d6ee07e7853abe08e4ad3fa288b5476fe63a86f317",
+          "sample": {
+            "seed": 1,
+            "sample": 1,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 10.08,
+              "mean": 90.88479704797048,
+              "max": 98.98
+            },
+            "protein": {
+              "count": 4865,
+              "min": 10.08,
+              "mean": 90.94473792394656,
+              "max": 98.98
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 59.59,
+              "mean": 68.45307692307692,
+              "max": 80.87
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 7.0224282813530206,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.77032997456252,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 2.2,
+                "mean": 6.605030565461028,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 4.9,
+                "mean": 19.26206062149771,
+                "max": 31.3,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.9414201183431954,
+                "max": 5.1,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-1/studio_P35354_01914792ee1d_seed-1_sample-1_confidences.json",
+            "sha256": "a7a12682cc0d466b8cdf667f2a8870fae6db322e703ddbfab2b1275191d678cd",
+            "size_bytes": 3173139,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-3/studio_P35354_01914792ee1d_seed-1_sample-3_model.cif",
+          "structure_sha256": "604b0bbd816f3ddae13c6ac042e071993a5de27149a76870939edce3d978a9c9",
+          "sample": {
+            "seed": 1,
+            "sample": 3,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 9.73,
+              "mean": 90.91605576055761,
+              "max": 98.98
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.73,
+              "mean": 90.97660842754368,
+              "max": 98.98
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 59.43,
+              "mean": 68.25538461538461,
+              "max": 81.64
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 7.013593773395081,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.759615532213499,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 2.3,
+                "mean": 6.630450840550178,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 5.1,
+                "mean": 19.306355068772287,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.9307692307692312,
+                "max": 5.4,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-3/studio_P35354_01914792ee1d_seed-1_sample-3_confidences.json",
+            "sha256": "90289b26b3013a0595ceda28733b0bd4b5dffa7903b608d57402abc0129b1333",
+            "size_bytes": 3173182,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-4/studio_P35354_01914792ee1d_seed-1_sample-4_model.cif",
+          "structure_sha256": "73786fcb8db4f079584bc68baa336a36b2feeea83c6fca5625c4c07879e43399",
+          "sample": {
+            "seed": 1,
+            "sample": 4,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 9.81,
+              "mean": 90.93839073390734,
+              "max": 98.98
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.81,
+              "mean": 91.00005138746145,
+              "max": 98.98
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 58.9,
+              "mean": 67.86307692307693,
+              "max": 81.05
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 6.995353162292579,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.738163622209552,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 2.3,
+                "mean": 6.598892002037697,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 4.9,
+                "mean": 19.449745287824758,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.9538461538461538,
+                "max": 5.2,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-4/studio_P35354_01914792ee1d_seed-1_sample-4_confidences.json",
+            "sha256": "e6005611e5d66bde48e06fd71184791c0a2c34a1021e4d9ecb7dd2d30bcd44fc",
+            "size_bytes": 3173131,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-0/studio_P35354_01914792ee1d_seed-1_sample-0_model.cif",
+          "structure_sha256": "ed8f3d6991b8ee94cab24bb66c330f7677db639aa0234ad6a49f4a8ff9442973",
+          "sample": {
+            "seed": 1,
+            "sample": 0,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 9.7,
+              "mean": 90.94232882328824,
+              "max": 98.98
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.7,
+              "mean": 91.00757451181912,
+              "max": 98.98
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 57.83,
+              "mean": 66.52538461538461,
+              "max": 78.22
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 7.0501054666670155,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.768768913644139,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 2.5,
+                "mean": 6.788104941416199,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 5.3,
+                "mean": 20.492638818135504,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.9763313609467457,
+                "max": 5.4,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_01914792ee1d/seed-1_sample-0/studio_P35354_01914792ee1d_seed-1_sample-0_confidences.json",
+            "sha256": "fe6e17d9478ffe7d05a90089fe9be6e7c8ab4249ac421a8d879e1f4fcfa96301",
+            "size_bytes": 3173287,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "d80fe6aa1e6945538da31833a471d6ed",
+      "msa_mode": "search",
+      "models": [
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-1/studio_P35354_5a2937a0f5ca_seed-1_sample-1_model.cif",
+          "structure_sha256": "daee83d0c5b8072527e08f37cc37641dfb7bc26c1d014f71b4d3f889c4b0433b",
+          "sample": {
+            "seed": 1,
+            "sample": 1,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 10.05,
+              "mean": 90.80640270104358,
+              "max": 98.97
+            },
+            "protein": {
+              "count": 4865,
+              "min": 10.05,
+              "mean": 90.91929496402878,
+              "max": 98.97
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 53.23,
+              "mean": 65.8418181818182,
+              "max": 78.75
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 7.114487746123774,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.767653008639972,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 2.3,
+                "mean": 6.844295605057194,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 4.7,
+                "mean": 17.103062913907284,
+                "max": 31.3,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.7280991735537192,
+                "max": 5.9,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-1/studio_P35354_5a2937a0f5ca_seed-1_sample-1_confidences.json",
+            "sha256": "01c40db7f91e85e9bbeeea058232b95a404e98cdfac70b6c8b161cece23cb852",
+            "size_bytes": 3269257,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-3/studio_P35354_5a2937a0f5ca_seed-1_sample-3_model.cif",
+          "structure_sha256": "c0854c6a0ea1751303300659b40bb462df2a4db40859d3caa84572dd969bc9c4",
+          "sample": {
+            "seed": 1,
+            "sample": 3,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 9.83,
+              "mean": 90.87410886024146,
+              "max": 98.97
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.83,
+              "mean": 90.98455087358685,
+              "max": 98.97
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 54.56,
+              "mean": 66.45136363636362,
+              "max": 80.15
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 7.0864995559819945,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.7477747686504985,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 2.2,
+                "mean": 6.798555087296809,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 4.7,
+                "mean": 16.86998043347381,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.7053719008264465,
+                "max": 5.8,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-3/studio_P35354_5a2937a0f5ca_seed-1_sample-3_confidences.json",
+            "sha256": "f33af1c50adf6ce34c473ababae017fe876272da61b95b5368b58859943de608",
+            "size_bytes": 3269277,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_5a2937a0f5ca/studio_P35354_5a2937a0f5ca_model.cif",
+          "structure_sha256": "daee83d0c5b8072527e08f37cc37641dfb7bc26c1d014f71b4d3f889c4b0433b",
+          "sample": {
+            "seed": null,
+            "sample": null,
+            "is_top_ranked_copy": true
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 10.05,
+              "mean": 90.80640270104358,
+              "max": 98.97
+            },
+            "protein": {
+              "count": 4865,
+              "min": 10.05,
+              "mean": 90.91929496402878,
+              "max": 98.97
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 53.23,
+              "mean": 65.8418181818182,
+              "max": 78.75
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 7.114487746123774,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.767653008639972,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 2.3,
+                "mean": 6.844295605057194,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 4.7,
+                "mean": 17.103062913907284,
+                "max": 31.3,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.7280991735537192,
+                "max": 5.9,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_5a2937a0f5ca/studio_P35354_5a2937a0f5ca_confidences.json",
+            "sha256": "01c40db7f91e85e9bbeeea058232b95a404e98cdfac70b6c8b161cece23cb852",
+            "size_bytes": 3269257,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-0/studio_P35354_5a2937a0f5ca_seed-1_sample-0_model.cif",
+          "structure_sha256": "b1af93e0099f192cc6eab673352ffeaa4ebc13d7566b533fae7148ceb9342997",
+          "sample": {
+            "seed": 1,
+            "sample": 0,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 9.82,
+              "mean": 90.84721301411909,
+              "max": 98.97
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.82,
+              "mean": 90.9881089414183,
+              "max": 98.97
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 47.8,
+              "mean": 59.68999999999999,
+              "max": 79.66
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 7.222752605415999,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.770202513047674,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 2.1,
+                "mean": 7.2912025888019265,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 4.9,
+                "mean": 19.77448073449729,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.8520661157024796,
+                "max": 6.3,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-0/studio_P35354_5a2937a0f5ca_seed-1_sample-0_confidences.json",
+            "sha256": "84a25826c7abc4420f49f79e21b38067e92d20fa174f45630abd6cd901dca3fd",
+            "size_bytes": 3269775,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-2/studio_P35354_5a2937a0f5ca_seed-1_sample-2_model.cif",
+          "structure_sha256": "40746c0825dcc289e95d79470cd3efb080453745c5dce914952d32f4d5dc0709",
+          "sample": {
+            "seed": 1,
+            "sample": 2,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 9.61,
+              "mean": 90.77476979742174,
+              "max": 98.97
+            },
+            "protein": {
+              "count": 4865,
+              "min": 9.61,
+              "mean": 90.91540184994862,
+              "max": 98.97
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 47.74,
+              "mean": 59.67590909090909,
+              "max": 78.54
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 7.2332526105196555,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.779972369632911,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 2.2,
+                "mean": 7.301362131246237,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 5.0,
+                "mean": 19.805885009030703,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.8483471074380164,
+                "max": 6.3,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-2/studio_P35354_5a2937a0f5ca_seed-1_sample-2_confidences.json",
+            "sha256": "b931ba7fc72fcdb1ea3ee36b1f8a47067edd81f3547d8015b154d298a0ab2730",
+            "size_bytes": 3269810,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-4/studio_P35354_5a2937a0f5ca_seed-1_sample-4_model.cif",
+          "structure_sha256": "9f8b1cf24a5ac2b27ec33867d0866c69a56dfd2c60db8734b5581029aa4307e3",
+          "sample": {
+            "seed": 1,
+            "sample": 4,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 10.15,
+              "mean": 90.83984243912421,
+              "max": 98.97
+            },
+            "protein": {
+              "count": 4865,
+              "min": 10.15,
+              "mean": 90.97758684480988,
+              "max": 98.97
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 48.24,
+              "mean": 60.37954545454545,
+              "max": 78.84
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 7.191205891659607,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 6.753828779439499,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 2.1,
+                "mean": 7.221079169175195,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 4.9,
+                "mean": 19.363892233594218,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.8493801652892563,
+                "max": 6.2,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_5a2937a0f5ca/seed-1_sample-4/studio_P35354_5a2937a0f5ca_seed-1_sample-4_confidences.json",
+            "sha256": "0cb9ad6b5376ffa8f454831875841d0f8be1d150b75351f700b0c8a1031d1c45",
+            "size_bytes": 3269673,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "88692f7955d94c50814f6e3121f963b6",
+      "msa_mode": "none",
+      "models": [
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_model.cif",
+          "structure_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+          "sample": {
+            "seed": 1,
+            "sample": 0,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 13.4,
+              "mean": 27.344350143501433,
+              "max": 77.61
+            },
+            "protein": {
+              "count": 4865,
+              "min": 13.4,
+              "mean": 27.37602877697842,
+              "max": 77.61
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 14.37,
+              "mean": 15.489230769230769,
+              "max": 17.12
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 27.53275902377006,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.554136605850623,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 15.1,
+                "mean": 27.26639072847682,
+                "max": 31.2,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 15.8,
+                "mean": 27.358762098828326,
+                "max": 30.8,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.8455621301775154,
+                "max": 5.1,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-0/studio_P35354_a2ed32347ddc_seed-1_sample-0_confidences.json",
+            "sha256": "98b24aeaf9fae6507e5fc0f6bf111953c91e07668d9f82b7f84677b555487300",
+            "size_bytes": 3628411,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+          "structure_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+          "sample": {
+            "seed": null,
+            "sample": null,
+            "is_top_ranked_copy": true
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 13.4,
+              "mean": 27.344350143501433,
+              "max": 77.61
+            },
+            "protein": {
+              "count": 4865,
+              "min": 13.4,
+              "mean": 27.37602877697842,
+              "max": 77.61
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 14.37,
+              "mean": 15.489230769230769,
+              "max": 17.12
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 27.53275902377006,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.554136605850623,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 15.1,
+                "mean": 27.26639072847682,
+                "max": 31.2,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 15.8,
+                "mean": 27.358762098828326,
+                "max": 30.8,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.8455621301775154,
+                "max": 5.1,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_confidences.json",
+            "sha256": "98b24aeaf9fae6507e5fc0f6bf111953c91e07668d9f82b7f84677b555487300",
+            "size_bytes": 3628411,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_model.cif",
+          "structure_sha256": "287ff8cd1f2b21614e5222840ae46210102005f124c373d30e465c4132956d4c",
+          "sample": {
+            "seed": 1,
+            "sample": 4,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 12.34,
+              "mean": 28.646119311193114,
+              "max": 77.95
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.34,
+              "mean": 28.681035971223018,
+              "max": 77.95
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 13.77,
+              "mean": 15.579230769230767,
+              "max": 17.38
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 27.5869061097116,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.596402570062715,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 14.8,
+                "mean": 27.589722363728985,
+                "max": 31.4,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 14.8,
+                "mean": 27.697172694854814,
+                "max": 31.3,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.8331360946745563,
+                "max": 4.9,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-4/studio_P35354_a2ed32347ddc_seed-1_sample-4_confidences.json",
+            "sha256": "3729934ccc418ccb05dc901a409b3270e717e950e0bb82dd0586e04f96b815fc",
+            "size_bytes": 3627951,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_model.cif",
+          "structure_sha256": "daf68c65da10a8b7c323dbbff3e00e290d0d12091f6c27a318cceeca8da0f2b6",
+          "sample": {
+            "seed": 1,
+            "sample": 1,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 12.83,
+              "mean": 28.218888888888888,
+              "max": 78.2
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.83,
+              "mean": 28.25006577595067,
+              "max": 78.2
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 15.28,
+              "mean": 16.551538461538463,
+              "max": 18.44
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 27.489901205445914,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.513738706635674,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 16.2,
+                "mean": 27.276197147223634,
+                "max": 31.3,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 16.3,
+                "mean": 27.147834946510443,
+                "max": 31.0,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.854437869822485,
+                "max": 4.8,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-1/studio_P35354_a2ed32347ddc_seed-1_sample-1_confidences.json",
+            "sha256": "b7ccd25ade5be1cf27abc87fee96f3424777858ba6af86a59bd980a5a2920b96",
+            "size_bytes": 3628439,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_model.cif",
+          "structure_sha256": "04425e62a53757e6e0ced0d52716882d8d193ded644e1724fe6bbf64dfefa620",
+          "sample": {
+            "seed": 1,
+            "sample": 2,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 12.39,
+              "mean": 28.355610906109057,
+              "max": 78.77
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.75,
+              "mean": 28.39511202466598,
+              "max": 78.77
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 12.39,
+              "mean": 13.573076923076927,
+              "max": 14.61
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 27.764730790750455,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.739606541379764,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 17.9,
+                "mean": 28.827980132450328,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 15.9,
+                "mean": 28.424974528782478,
+                "max": 31.4,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.9236686390532545,
+                "max": 4.7,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-2/studio_P35354_a2ed32347ddc_seed-1_sample-2_confidences.json",
+            "sha256": "d0cb9ef3fbfe442e0cb8635e3083f726037f23024d15ee183416426f5f0bca2e",
+            "size_bytes": 3628321,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_model.cif",
+          "structure_sha256": "16b1a62d6e8d37f5f2b679c005777392eac27db90e1521d74339e1f08572e089",
+          "sample": {
+            "seed": 1,
+            "sample": 3,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4878,
+              "min": 12.37,
+              "mean": 28.259665846658464,
+              "max": 77.33
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.37,
+              "mean": 28.295274409044197,
+              "max": 77.33
+            },
+            "selected_ligand": {
+              "count": 13,
+              "min": 13.51,
+              "mean": 14.933846153846153,
+              "max": 16.63
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 617,
+            "count": 380689,
+            "min": 0.8,
+            "mean": 27.55010783080152,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.551595872988027,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 7852,
+                "min": 21.0,
+                "mean": 27.87198166072338,
+                "max": 31.3,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 7852,
+                "min": 19.2,
+                "mean": 27.71239174732552,
+                "max": 31.2,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 169,
+                "min": 0.8,
+                "mean": 1.8431952662721893,
+                "max": 5.0,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_a2ed32347ddc/seed-1_sample-3/studio_P35354_a2ed32347ddc_seed-1_sample-3_confidences.json",
+            "sha256": "3a6de05b9f2d0774a4c93c1108a92ffe03af14db851e53186950e1ed857294a5",
+            "size_bytes": 3628483,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "3730181a45734f0dafa92a78917c48dd",
+      "msa_mode": "none",
+      "models": [
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_model.cif",
+          "structure_sha256": "a14cffd0eeb83cb877f60576bada57843b86d2088e99ab0c92a86de87865ef4b",
+          "sample": {
+            "seed": 1,
+            "sample": 1,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 12.87,
+              "mean": 28.44062410476775,
+              "max": 80.51
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.87,
+              "mean": 28.498758478931144,
+              "max": 80.51
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 14.07,
+              "mean": 15.585,
+              "max": 18.09
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 27.31046708652737,
+            "max": 31.5,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.38520569273277,
+                "max": 31.5,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 14.7,
+                "mean": 26.120063214930767,
+                "max": 31.2,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 16.5,
+                "mean": 27.362748344370857,
+                "max": 30.8,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 2.222727272727273,
+                "max": 7.4,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-1/studio_P35354_6abdb61491ab_seed-1_sample-1_confidences.json",
+            "sha256": "ca759c582b45607ff8d21cc1615e37844d465c7bc8a982d58d2639a8c9559c2d",
+            "size_bytes": 3723717,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_model.cif",
+          "structure_sha256": "ee08bc17bd09ecfe62e94e37b3d8eeb31ffefa4bd1ecf0795d3102cf5adf583f",
+          "sample": {
+            "seed": 1,
+            "sample": 3,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 12.32,
+              "mean": 28.3770349907919,
+              "max": 77.54
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.32,
+              "mean": 28.443636176772863,
+              "max": 77.54
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 12.6,
+              "mean": 13.649090909090914,
+              "max": 15.53
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 27.488178148189736,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.4310860817508,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 15.7,
+                "mean": 28.59899909692956,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 17.4,
+                "mean": 28.873863636363637,
+                "max": 31.5,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.98099173553719,
+                "max": 6.2,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-3/studio_P35354_6abdb61491ab_seed-1_sample-3_confidences.json",
+            "sha256": "40b4dc42ed79a8ace3b9b417f019975001943288ca4d9cda1951516d0f0a0fee",
+            "size_bytes": 3723805,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+          "structure_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+          "sample": {
+            "seed": null,
+            "sample": null,
+            "is_top_ranked_copy": true
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 12.32,
+              "mean": 28.3770349907919,
+              "max": 77.54
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.32,
+              "mean": 28.443636176772863,
+              "max": 77.54
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 12.6,
+              "mean": 13.649090909090914,
+              "max": 15.53
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 27.488178148189736,
+            "max": 31.7,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.4310860817508,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 15.7,
+                "mean": 28.59899909692956,
+                "max": 31.7,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 17.4,
+                "mean": 28.873863636363637,
+                "max": 31.5,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 1.98099173553719,
+                "max": 6.2,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_confidences.json",
+            "sha256": "40b4dc42ed79a8ace3b9b417f019975001943288ca4d9cda1951516d0f0a0fee",
+            "size_bytes": 3723805,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_model.cif",
+          "structure_sha256": "970195cff8385bc26e32a119f57b38992b59743a80f81ffd045978c9334569e6",
+          "sample": {
+            "seed": 1,
+            "sample": 2,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 11.58,
+              "mean": 28.5241006752609,
+              "max": 78.53
+            },
+            "protein": {
+              "count": 4865,
+              "min": 11.58,
+              "mean": 28.582951695786228,
+              "max": 78.53
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 14.44,
+              "mean": 15.509999999999996,
+              "max": 17.66
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 27.180209300901303,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.248098493487124,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 15.4,
+                "mean": 25.990999397953036,
+                "max": 31.0,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 16.5,
+                "mean": 27.415826309452136,
+                "max": 31.0,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 2.1890495867768593,
+                "max": 7.6,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-2/studio_P35354_6abdb61491ab_seed-1_sample-2_confidences.json",
+            "sha256": "5d41cc6eeedcabfbea38035cb8e281bd7e475b326ad0143e7951a04898ddc2fc",
+            "size_bytes": 3723788,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_model.cif",
+          "structure_sha256": "f24d78b8517b74764145162864832577e615dd6d8b9c7cd4c974728b20189d94",
+          "sample": {
+            "seed": 1,
+            "sample": 0,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 12.62,
+              "mean": 28.727190505422556,
+              "max": 77.61
+            },
+            "protein": {
+              "count": 4865,
+              "min": 13.89,
+              "mean": 28.79294347379239,
+              "max": 77.61
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 12.62,
+              "mean": 14.18681818181818,
+              "max": 16.22
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 27.12304530004389,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.147918402701634,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 16.4,
+                "mean": 26.897170379289584,
+                "max": 31.3,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 18.3,
+                "mean": 27.569250451535222,
+                "max": 31.3,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 2.325826446280992,
+                "max": 7.7,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-0/studio_P35354_6abdb61491ab_seed-1_sample-0_confidences.json",
+            "sha256": "cd604a8dff915ba1da3b531181ac6e3c2f9c34d4eb05722f18d4c4eb3b54880a",
+            "size_bytes": 3723543,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        },
+        {
+          "status": "available",
+          "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_model.cif",
+          "structure_sha256": "392d5188e4577cf20cd1942864df985c1a98c4e05f0209ac6eb7e778e65541ca",
+          "sample": {
+            "seed": 1,
+            "sample": 4,
+            "is_top_ranked_copy": false
+          },
+          "plddt": {
+            "all": {
+              "count": 4887,
+              "min": 12.15,
+              "mean": 28.853795784735013,
+              "max": 76.94
+            },
+            "protein": {
+              "count": 4865,
+              "min": 12.15,
+              "mean": 28.922998972250774,
+              "max": 76.94
+            },
+            "selected_ligand": {
+              "count": 22,
+              "min": 12.2,
+              "mean": 13.550454545454546,
+              "max": 15.22
+            }
+          },
+          "pae": {
+            "status": "available",
+            "reason": null,
+            "token_count": 626,
+            "count": 391876,
+            "min": 0.8,
+            "mean": 27.439271861507205,
+            "max": 31.6,
+            "units": "angstrom",
+            "aggregation": "Unweighted summaries of the serialized full PAE matrix (including diagonal cells); not contact-weighted interface scores",
+            "serialized_pae_precision_angstrom": 0.1,
+            "chain_pairs": [
+              {
+                "frame_chain": "A",
+                "target_chain": "A",
+                "count": 364816,
+                "min": 0.8,
+                "mean": 27.454154423051623,
+                "max": 31.6,
+                "frame_is_target": true,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "A",
+                "target_chain": "B",
+                "count": 13288,
+                "min": 20.2,
+                "mean": 27.175421432871765,
+                "max": 31.1,
+                "frame_is_target": true,
+                "target_is_ligand": true
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "A",
+                "count": 13288,
+                "min": 17.8,
+                "mean": 28.21237206502107,
+                "max": 31.2,
+                "frame_is_target": false,
+                "target_is_ligand": false
+              },
+              {
+                "frame_chain": "B",
+                "target_chain": "B",
+                "count": 484,
+                "min": 0.8,
+                "mean": 2.240289256198347,
+                "max": 7.7,
+                "frame_is_target": false,
+                "target_is_ligand": true
+              }
+            ],
+            "artifact": "output/studio_P35354_6abdb61491ab/seed-1_sample-4/studio_P35354_6abdb61491ab_seed-1_sample-4_confidences.json",
+            "sha256": "1126e2e6ccde699c0ad27cf8a0a33e16c0aa02d7d9457ab87c5b482568282c34",
+            "size_bytes": 3723339,
+            "identity_checks": {
+              "atom_chain_order": true,
+              "atom_plddt_matches_cif": true,
+              "token_chain_residue_counts": true,
+              "summary_chain_minima": true,
+              "registered_confidence_sha256": false
+            },
+            "integrity_scope": "Selected structure SHA verified against its registry; confidence bytes hashed on read, with same-sample filename, atom pLDDT and token mapping consistency checks. No acquisition-time confidence SHA was registered; these checks do not independently authenticate its origin."
+          }
+        }
+      ]
+    }
+  ],
+  "verified_at": "2026-09-08T05:21:59.885413+00:00",
+  "registered_file_count": 24,
+  "job_count": 4,
+  "source_report_sha256": "374ae14bd382ca15a0e5bfb4cd6db2038b661f2bdb5682dd9598bf7f0232369c",
+  "note": "24 registered files include 4 top-ranked copies; 20 samples, not 24 independent predictions. Read-only diagnostics, no AF3/QPU/LLM submissions."
+}

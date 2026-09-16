@@ -1,0 +1,727 @@
+{
+  "comparisons": [
+    {
+      "herbal_id": "baicalein",
+      "drug_id": "aspirin",
+      "herbal_name": "Baicalein",
+      "drug_name": "Aspirin",
+      "tanimoto": 0.166667,
+      "fingerprint": "Morgan radius=2, bits=2048, chirality=True",
+      "descriptor_delta_herbal_minus_drug": {
+        "molecular_weight": 90.081,
+        "logp": 1.2667,
+        "tpsa": 27.3,
+        "hbd": 2,
+        "hba": 2,
+        "qed": 0.040933
+      },
+      "sources": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/5281605",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/2244"
+      ],
+      "interpretation": "Structural similarity only; not common indication, binding affinity, efficacy, or interchangeability."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "brics-21717ed9d845",
+      "smiles": "CC(=O)Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+      "parents": [
+        "CC(=O)Oc1ccccc1C(=O)O",
+        "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12"
+      ],
+      "parent_fragments": [
+        {
+          "parent_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+          "contributing_fragments": [
+            "[1*]C(C)=O",
+            "[3*]Oc1ccccc1[16*]"
+          ]
+        },
+        {
+          "parent_smiles": "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12",
+          "contributing_fragments": [
+            "[14*]c1cc(=O)c2c(O)c(O)c(O)cc2o1"
+          ]
+        }
+      ],
+      "descriptors": {
+        "input_smiles": "CC(=O)Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+        "smiles": "CC(=O)Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+        "canonical_smiles": "CC(=O)Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+        "formula": "C17H12O7",
+        "molecular_weight": 328.276,
+        "logp": 2.5021,
+        "tpsa": 117.2,
+        "hbd": 3,
+        "hba": 7,
+        "rotatable_bonds": 2,
+        "heavy_atoms": 24,
+        "formal_charge": 0,
+        "qed": 0.375665,
+        "lipinski_violations": 0,
+        "scaffold": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "stereocenters": [],
+        "unassigned_stereocenters": 0,
+        "alerts": [
+          {
+            "catalog": "PAINS",
+            "description": "catechol_A(92)"
+          },
+          {
+            "catalog": "BRENK",
+            "description": "catechol"
+          },
+          {
+            "catalog": "BRENK",
+            "description": "phenol_ester"
+          }
+        ],
+        "standardization": "RDKit Cleanup + FragmentParent; charge/stereo retained; no tautomer or pH enumeration",
+        "rdkit_version": "2026.03.6",
+        "notes": [
+          "Descriptors and filter alerts are computational; they do not establish safety or efficacy."
+        ]
+      },
+      "max_parent_similarity": 0.574468,
+      "novel_relative_to_inputs": true,
+      "novelty_scope": "Exact standardized input structures only; no external database or patent search performed",
+      "method": "RDKit pairwise BRICS recombination; maxDepth=2; deterministic bounded enumeration",
+      "status": "unvalidated_computational_candidate",
+      "herbal_parent_id": "baicalein",
+      "drug_parent_id": "aspirin"
+    },
+    {
+      "id": "brics-1cb44e9da7aa",
+      "smiles": "CC(=O)Oc1ccccc1-c1ccccc1",
+      "parents": [
+        "CC(=O)Oc1ccccc1C(=O)O",
+        "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12"
+      ],
+      "parent_fragments": [
+        {
+          "parent_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+          "contributing_fragments": [
+            "[1*]C(C)=O",
+            "[3*]Oc1ccccc1[16*]"
+          ]
+        },
+        {
+          "parent_smiles": "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12",
+          "contributing_fragments": [
+            "[16*]c1ccccc1"
+          ]
+        }
+      ],
+      "descriptors": {
+        "input_smiles": "CC(=O)Oc1ccccc1-c1ccccc1",
+        "smiles": "CC(=O)Oc1ccccc1-c1ccccc1",
+        "canonical_smiles": "CC(=O)Oc1ccccc1-c1ccccc1",
+        "formula": "C14H12O2",
+        "molecular_weight": 212.248,
+        "logp": 3.2789,
+        "tpsa": 26.3,
+        "hbd": 0,
+        "hba": 2,
+        "rotatable_bonds": 2,
+        "heavy_atoms": 16,
+        "formal_charge": 0,
+        "qed": 0.563733,
+        "lipinski_violations": 0,
+        "scaffold": "c1ccc(-c2ccccc2)cc1",
+        "stereocenters": [],
+        "unassigned_stereocenters": 0,
+        "alerts": [
+          {
+            "catalog": "BRENK",
+            "description": "phenol_ester"
+          }
+        ],
+        "standardization": "RDKit Cleanup + FragmentParent; charge/stereo retained; no tautomer or pH enumeration",
+        "rdkit_version": "2026.03.6",
+        "notes": [
+          "Descriptors and filter alerts are computational; they do not establish safety or efficacy."
+        ]
+      },
+      "max_parent_similarity": 0.580645,
+      "novel_relative_to_inputs": true,
+      "novelty_scope": "Exact standardized input structures only; no external database or patent search performed",
+      "method": "RDKit pairwise BRICS recombination; maxDepth=2; deterministic bounded enumeration",
+      "status": "unvalidated_computational_candidate",
+      "herbal_parent_id": "baicalein",
+      "drug_parent_id": "aspirin"
+    },
+    {
+      "id": "brics-1869b7b03c2b",
+      "smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+      "parents": [
+        "CC(=O)Oc1ccccc1C(=O)O",
+        "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12"
+      ],
+      "parent_fragments": [
+        {
+          "parent_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+          "contributing_fragments": [
+            "[1*]C(C)=O",
+            "[3*]Oc1ccccc1[16*]"
+          ]
+        },
+        {
+          "parent_smiles": "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12",
+          "contributing_fragments": [
+            "[14*]c1cc(=O)c2c(O)c(O)c(O)cc2o1"
+          ]
+        }
+      ],
+      "descriptors": {
+        "input_smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+        "smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+        "canonical_smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1cc(=O)c2c(O)c(O)c(O)cc2o1",
+        "formula": "C23H16O8",
+        "molecular_weight": 420.373,
+        "logp": 4.2944,
+        "tpsa": 126.43,
+        "hbd": 3,
+        "hba": 8,
+        "rotatable_bonds": 4,
+        "heavy_atoms": 31,
+        "formal_charge": 0,
+        "qed": 0.253473,
+        "lipinski_violations": 0,
+        "scaffold": "O=c1cc(-c2ccccc2Oc2ccccc2)oc2ccccc12",
+        "stereocenters": [],
+        "unassigned_stereocenters": 0,
+        "alerts": [
+          {
+            "catalog": "PAINS",
+            "description": "catechol_A(92)"
+          },
+          {
+            "catalog": "BRENK",
+            "description": "catechol"
+          },
+          {
+            "catalog": "BRENK",
+            "description": "phenol_ester"
+          }
+        ],
+        "standardization": "RDKit Cleanup + FragmentParent; charge/stereo retained; no tautomer or pH enumeration",
+        "rdkit_version": "2026.03.6",
+        "notes": [
+          "Descriptors and filter alerts are computational; they do not establish safety or efficacy."
+        ]
+      },
+      "max_parent_similarity": 0.529412,
+      "novel_relative_to_inputs": true,
+      "novelty_scope": "Exact standardized input structures only; no external database or patent search performed",
+      "method": "RDKit pairwise BRICS recombination; maxDepth=2; deterministic bounded enumeration",
+      "status": "unvalidated_computational_candidate",
+      "herbal_parent_id": "baicalein",
+      "drug_parent_id": "aspirin"
+    },
+    {
+      "id": "brics-8858bd5076aa",
+      "smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1ccccc1",
+      "parents": [
+        "CC(=O)Oc1ccccc1C(=O)O",
+        "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12"
+      ],
+      "parent_fragments": [
+        {
+          "parent_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+          "contributing_fragments": [
+            "[1*]C(C)=O",
+            "[3*]Oc1ccccc1[16*]"
+          ]
+        },
+        {
+          "parent_smiles": "O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12",
+          "contributing_fragments": [
+            "[16*]c1ccccc1"
+          ]
+        }
+      ],
+      "descriptors": {
+        "input_smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1ccccc1",
+        "smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1ccccc1",
+        "canonical_smiles": "CC(=O)Oc1ccccc1Oc1ccccc1-c1ccccc1",
+        "formula": "C20H16O3",
+        "molecular_weight": 304.345,
+        "logp": 5.0712,
+        "tpsa": 35.53,
+        "hbd": 0,
+        "hba": 3,
+        "rotatable_bonds": 4,
+        "heavy_atoms": 23,
+        "formal_charge": 0,
+        "qed": 0.498349,
+        "lipinski_violations": 1,
+        "scaffold": "c1ccc(Oc2ccccc2-c2ccccc2)cc1",
+        "stereocenters": [],
+        "unassigned_stereocenters": 0,
+        "alerts": [
+          {
+            "catalog": "BRENK",
+            "description": "phenol_ester"
+          }
+        ],
+        "standardization": "RDKit Cleanup + FragmentParent; charge/stereo retained; no tautomer or pH enumeration",
+        "rdkit_version": "2026.03.6",
+        "notes": [
+          "Descriptors and filter alerts are computational; they do not establish safety or efficacy."
+        ]
+      },
+      "max_parent_similarity": 0.514286,
+      "novel_relative_to_inputs": true,
+      "novelty_scope": "Exact standardized input structures only; no external database or patent search performed",
+      "method": "RDKit pairwise BRICS recombination; maxDepth=2; deterministic bounded enumeration",
+      "status": "unvalidated_computational_candidate",
+      "herbal_parent_id": "baicalein",
+      "drug_parent_id": "aspirin"
+    }
+  ],
+  "af3_jobs": [
+    {
+      "job_id": "fc5892276559425fb369b291f73e7716",
+      "candidate_id": "brics-21717ed9d845",
+      "status": "prepared",
+      "execution_requested": false,
+      "sequence_scope": "Retrieved UniProt sequence",
+      "protein_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+      "result": {
+        "version": "3.0.4",
+        "schema_version": 4,
+        "ready": false,
+        "runnable": false,
+        "blockers": [
+          "AF3_DB_DIR needs the official genetic/template databases for MSA search",
+          "AF3_DB_DIR must be configured for MSA search"
+        ],
+        "warnings": [
+          "Readiness checks do not load model parameters, validate complete databases, or guarantee sufficient device memory"
+        ],
+        "provenance": {
+          "expected_version": "3.0.4",
+          "expected_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+          "verified_date": "2026-09-07",
+          "release_url": "https://github.com/google-deepmind/alphafold3/releases/tag/v3.0.4",
+          "runner": "native",
+          "device": "gpu",
+          "runtime_probed": true,
+          "source_commit": "85c4d20505fd5cef05eac22b534d4e793971ae69",
+          "source_modified": false,
+          "entrypoint_sha256": "a1dc5033fdd5473de06a1dfa02bdf3f53120ea83294f880198bcb26e64c2d075",
+          "runtime": {
+            "version": "3.0.4",
+            "module": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/src/alphafold3/__init__.py",
+            "jax_version": "0.10.2",
+            "jaxlib_version": "0.10.2",
+            "devices": [
+              "cuda:0"
+            ]
+          },
+          "cuda_environment": {
+            "LD_LIBRARY_PATH": null,
+            "CUDA_VISIBLE_DEVICES": "1",
+            "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+          }
+        },
+        "confidence_note": "AlphaFold 3 confidence describes predicted structure quality. It is not binding affinity (Kd/Ki/IC50), a validated binding probability, or efficacy.",
+        "command": [],
+        "cwd": null,
+        "input_path": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/runtime/fc5892276559425fb369b291f73e7716/fold_input.json",
+        "output_dir": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/runtime/fc5892276559425fb369b291f73e7716/output",
+        "input_sha256": "913635a25293e21bebe40c259bae0af0fbc28fac0162c08b08f41814a4ba3147",
+        "msa_mode": "search",
+        "model_seeds": [
+          1
+        ],
+        "samples_per_seed": 5,
+        "num_recycles": 10,
+        "max_template_date": "2021-09-30",
+        "status": "prepared"
+      },
+      "error": null,
+      "input_url": "/api/jobs/fc5892276559425fb369b291f73e7716/artifacts/fold_input.json"
+    }
+  ],
+  "quantum": {
+    "kernel": [
+      [
+        1.0,
+        0.5397025262930252,
+        0.856315454823872,
+        0.6389188333668491,
+        0.8715818189146551,
+        0.6735194500365115
+      ],
+      [
+        0.5397025262930252,
+        0.9999999999999982,
+        0.36346609917060385,
+        0.9136014687927653,
+        0.7626950019664702,
+        0.7919755476831968
+      ],
+      [
+        0.856315454823872,
+        0.36346609917060385,
+        0.9999999999999971,
+        0.5414058259890074,
+        0.6188667728183539,
+        0.3931806287832422
+      ],
+      [
+        0.6389188333668491,
+        0.9136014687927653,
+        0.5414058259890074,
+        0.9999999999999987,
+        0.77132428842512,
+        0.6534270779816025
+      ],
+      [
+        0.8715818189146554,
+        0.7626950019664702,
+        0.618866772818354,
+        0.77132428842512,
+        0.9999999999999984,
+        0.8589351154859325
+      ],
+      [
+        0.6735194500365115,
+        0.7919755476831968,
+        0.3931806287832424,
+        0.6534270779816025,
+        0.8589351154859325,
+        0.9999999999999984
+      ]
+    ],
+    "metadata": {
+      "schema_version": 1,
+      "status": "ready",
+      "mode": "local",
+      "n_samples": 6,
+      "n_features": 4,
+      "feature_sha256": "d2b88b8f31aaf7a7adeaff9bfb96f3472f3b6de0d6f058993877e5a7c341bd4c",
+      "encoding": "atan_fold_or_repeat_v1",
+      "feature_map": "ry_rz_cz_reupload_v1",
+      "layers": 2,
+      "selection_strategy": "fixed",
+      "n_qubits": 4,
+      "backend_name": "local_statevector",
+      "physical_qubits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "shots": 1024,
+      "circuit_count": 21,
+      "job_count": 0,
+      "circuits_per_job": 16,
+      "total_shots": 0,
+      "max_execution_time_per_job": 120,
+      "max_total_qpu_seconds": 0,
+      "budget": {
+        "max_circuits": 36,
+        "max_jobs": 4,
+        "max_total_shots": 65536
+      },
+      "quota_status": "not_applicable",
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "warnings": [
+        "Fidelity is a feature similarity, not a binding affinity or evidence of drug efficacy.",
+        "Increasing qubits can increase noise and kernel concentration; quantum advantage is unproven."
+      ],
+      "estimator": "exact_statevector_fidelity",
+      "shots_used": 0,
+      "hardware_executed": false,
+      "min_eigenvalue": 0.029617967464288856
+    },
+    "status": "completed",
+    "mode": "local",
+    "sample_ids": [
+      "brics-21717ed9d845",
+      "brics-1cb44e9da7aa",
+      "brics-1869b7b03c2b",
+      "brics-8858bd5076aa",
+      "baicalein",
+      "aspirin"
+    ],
+    "hardware_executed": false,
+    "summary": "4-qubit exact local fidelity kernel computed from molecular descriptors; no QPU execution or affinity inference."
+  },
+  "evidence": {
+    "records": [
+      {
+        "id": "catalog:baicalein",
+        "kind": "catalog_snapshot",
+        "compound_id": "baicalein",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281605",
+        "retrieved_at": "2026-09-07",
+        "claim_scope": "Chemical identity and supplied botanical occurrence only; no target affinity claim.",
+        "source_status": "catalog_snapshot"
+      },
+      {
+        "id": "catalog:aspirin",
+        "kind": "catalog_snapshot",
+        "compound_id": "aspirin",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+        "retrieved_at": "2026-09-07",
+        "claim_scope": "Chemical identity and supplied botanical occurrence only; no target affinity claim.",
+        "source_status": "catalog_snapshot"
+      },
+      {
+        "id": "target:P35354",
+        "kind": "live_database",
+        "tool": "uniprot_lookup",
+        "data": {
+          "accession": "P35354",
+          "name": "Prostaglandin G/H synthase 2",
+          "sequence": "MLARALLLCAVLALSHTANPCCSHPCQNRGVCMSVGFDQYKCDCTRTGFYGENCSTPEFLTRIKLFLKPTPNTVHYILTHFKGFWNVVNNIPFLRNAIMSYVLTSRSHLIDSPPTYNADYGYKSWEAFSNLSYYTRALPPVPDDCPTPLGVKGKKQLPDSNEIVEKLLLRRKFIPDPQGSNMMFAFFAQHFTHQFFKTDHKRGPAFTNGLGHGVDLNHIYGETLARQRKLRLFKDGKMKYQIIDGEMYPPTVKDTQAEMIYPPQVPEHLRFAVGQEVFGLVPGLMMYATIWLREHNRVCDVLKQEHPEWGDEQLFQTSRLILIGETIKIVIEDYVQHLSGYHFKLKFDPELLFNKQFQYQNRIAAEFNTLYHWHPLLPDTFQIHDQKYNYQQFIYNNSILLEHGITQFVESFTRQIAGRVAGGRNVPPAVQKVSQASIDQSRQMKYQSFNEYRKRFMLKPYESFEELTGEKEMSAELEALYGDIDAVELYPALLVEKPRPDAIFGETMVEVGAPFSLKGLMGNVICSPAYWKPSTFGGEVGFQIINTASIQSLICNNVKGCPFTSFSVPDPELIKTVTINASSSRSGLDDINPTVLLKERSTEL",
+          "organism": "Homo sapiens",
+          "source": "https://www.uniprot.org/uniprotkb/P35354/entry",
+          "retrieved_at": "2026-09-07T08:54:43.467326+00:00"
+        },
+        "url": "https://www.uniprot.org/uniprotkb/P35354/entry",
+        "retrieved_at": "2026-09-07T08:54:43.467326+00:00"
+      },
+      {
+        "id": "pubchem:baicalein",
+        "kind": "live_database",
+        "tool": "pubchem_lookup",
+        "data": {
+          "name": "5281605",
+          "cid": 5281605,
+          "smiles": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O",
+          "inchikey": "FXNFHKRTJBSTCS-UHFFFAOYSA-N",
+          "formula": "C15H10O5",
+          "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281605",
+          "retrieved_at": "2026-09-07T08:54:44.519158+00:00"
+        },
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281605",
+        "retrieved_at": "2026-09-07T08:54:44.519158+00:00",
+        "identity_matches_catalog": true
+      },
+      {
+        "id": "pubchem:aspirin",
+        "kind": "live_database",
+        "tool": "pubchem_lookup",
+        "data": {
+          "name": "2244",
+          "cid": 2244,
+          "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+          "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+          "formula": "C9H8O4",
+          "source": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+          "retrieved_at": "2026-09-07T08:54:45.529478+00:00"
+        },
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+        "retrieved_at": "2026-09-07T08:54:45.529478+00:00",
+        "identity_matches_catalog": true
+      }
+    ],
+    "target": {
+      "accession": "P35354",
+      "name": "Prostaglandin G/H synthase 2",
+      "sequence": "MLARALLLCAVLALSHTANPCCSHPCQNRGVCMSVGFDQYKCDCTRTGFYGENCSTPEFLTRIKLFLKPTPNTVHYILTHFKGFWNVVNNIPFLRNAIMSYVLTSRSHLIDSPPTYNADYGYKSWEAFSNLSYYTRALPPVPDDCPTPLGVKGKKQLPDSNEIVEKLLLRRKFIPDPQGSNMMFAFFAQHFTHQFFKTDHKRGPAFTNGLGHGVDLNHIYGETLARQRKLRLFKDGKMKYQIIDGEMYPPTVKDTQAEMIYPPQVPEHLRFAVGQEVFGLVPGLMMYATIWLREHNRVCDVLKQEHPEWGDEQLFQTSRLILIGETIKIVIEDYVQHLSGYHFKLKFDPELLFNKQFQYQNRIAAEFNTLYHWHPLLPDTFQIHDQKYNYQQFIYNNSILLEHGITQFVESFTRQIAGRVAGGRNVPPAVQKVSQASIDQSRQMKYQSFNEYRKRFMLKPYESFEELTGEKEMSAELEALYGDIDAVELYPALLVEKPRPDAIFGETMVEVGAPFSLKGLMGNVICSPAYWKPSTFGGEVGFQIINTASIQSLICNNVKGCPFTSFSVPDPELIKTVTINASSSRSGLDDINPTVLLKERSTEL",
+      "organism": "Homo sapiens",
+      "source": "https://www.uniprot.org/uniprotkb/P35354/entry",
+      "retrieved_at": "2026-09-07T08:54:43.467326+00:00"
+    },
+    "warnings": [],
+    "affinity_status": "No target-specific measured affinity has been established for generated candidates.",
+    "decision": {
+      "summary": "원천 기록 감사 완료. catalog:baicalein과 catalog:aspirin은 카탈로그 스냅샷이며, 별도의 PubChem 현재 조회 기록에는 CID·SMILES·InChIKey·분자식과 조회 시각이 제공되어 있습니다. 두 화합물 모두 카탈로그 동일성 일치가 표시되어 있고 제공 기록에서 충돌은 발견되지 않았습니다. UniProt 현재 조회는 P35354를 인간 Prostaglandin G/H synthase 2에 연결하며 표적 서열을 제공합니다. 다만 명시적인 PTGS2 유전자명 필드는 없어 명칭 매핑의 추적성을 보완할 수 있습니다. 원천 조회는 화학적 동일성과 표적 정보의 근거이며, 황금 내 존재나 표적 결합을 실측 입증한 문헌 근거는 아닙니다. 후보의 표적 특이적 실측 친화도는 확립되지 않았습니다. 이 단계에서는 후보 선택, AF3 입력 준비·실행 및 양자 실행을 수행하지 않았으며 후속 평가로 진행합니다.",
+      "decision": "continue",
+      "selected_ids": [],
+      "evidence_ids": [
+        "catalog:baicalein",
+        "catalog:aspirin",
+        "target:P35354",
+        "pubchem:baicalein",
+        "pubchem:aspirin"
+      ],
+      "requested_tools": [],
+      "candidate_policy": "balanced",
+      "risks": [
+        "황금 유래라는 식물학적 정보는 공급된 카탈로그 범위이며, 현재 조회 자료만으로 독립 검증되지 않았습니다.",
+        "URL만으로 문헌 결과나 결합 친화도를 추론할 수 없습니다.",
+        "후보의 합성 가능성·실제 합성과 PTGS2 결합은 별도 실험 검증이 필요합니다. 구조 유사도나 향후 양자 커널 결과는 친화도·효능의 증거가 아닙니다."
+      ],
+      "next_actions": [
+        "후속 담당자는 제공된 화학 동일성과 표적 서열을 바탕으로 최대 4개 후보 검토를 진행하고 실측 친화도 공백을 유지 기록하세요.",
+        "AF3는 실행하지 않고 입력 준비 여부를 후속 단계에서 명시하며, 로컬 양자 커널 실행 여부와 산출물은 실제 실행 근거로만 보고하세요."
+      ]
+    },
+    "summary": "원천 기록 감사 완료. catalog:baicalein과 catalog:aspirin은 카탈로그 스냅샷이며, 별도의 PubChem 현재 조회 기록에는 CID·SMILES·InChIKey·분자식과 조회 시각이 제공되어 있습니다. 두 화합물 모두 카탈로그 동일성 일치가 표시되어 있고 제공 기록에서 충돌은 발견되지 않았습니다. UniProt 현재 조회는 P35354를 인간 Prostaglandin G/H synthase 2에 연결하며 표적 서열을 제공합니다. 다만 명시적인 PTGS2 유전자명 필드는 없어 명칭 매핑의 추적성을 보완할 수 있습니다. 원천 조회는 화학적 동일성과 표적 정보의 근거이며, 황금 내 존재나 표적 결합을 실측 입증한 문헌 근거는 아닙니다. 후보의 표적 특이적 실측 친화도는 확립되지 않았습니다. 이 단계에서는 후보 선택, AF3 입력 준비·실행 및 양자 실행을 수행하지 않았으며 후속 평가로 진행합니다."
+  },
+  "review": {
+    "decision": {
+      "summary": "검토 완료: 제공된 산출물에서 실행 상태나 과학적 해석의 명백한 충돌은 없습니다. 바이칼레인–aspirin의 Morgan Tanimoto는 0.166667로 구조 유사성이 낮으며, 바이칼레인의 분자량·logP·TPSA가 더 큽니다. 원천 감사 기록은 PubChem 화합물 동일성과 UniProt P35354 표적 정보를 뒷받침하지만 결합 근거는 아닙니다. 후보 4개는 미검증 계산 구조로 유지합니다. QED와 경고를 고려하면 brics-1cb44e9da7aa를 우선 검토하고, 바이칼레인 골격을 유지한 brics-21717ed9d845를 함께 비교할 수 있습니다. 이는 친화도 순위가 아닙니다. AF3는 brics-21717ed9d845의 입력만 준비되었으며 실행되지 않았고 모델도 없습니다. 양자 계산은 6개 구조에 대한 4큐비트 정확 로컬 fidelity 커널로 완료되었으며, 양자 하드웨어 측정은 수행되지 않았습니다. 합성 가능성 및 PTGS2 결합·기능 검증이 필요합니다.",
+      "decision": "continue",
+      "selected_ids": [
+        "brics-1cb44e9da7aa",
+        "brics-21717ed9d845",
+        "brics-8858bd5076aa",
+        "brics-1869b7b03c2b"
+      ],
+      "evidence_ids": [
+        "catalog:baicalein",
+        "catalog:aspirin",
+        "pubchem:baicalein",
+        "pubchem:aspirin",
+        "target:P35354"
+      ],
+      "requested_tools": [],
+      "candidate_policy": "balanced",
+      "risks": [
+        "구조 유사도·QED·로컬 양자 커널은 PTGS2 친화도, 효능 또는 안전성을 입증하지 않습니다. 실측 후보 친화도는 없습니다.",
+        "모든 후보에 phenol_ester 경고가 있고, 두 플라본 후보에는 catechol 관련 경고가 있습니다. 경고는 독성 확정이 아니라 간섭·반응성 검토 신호입니다.",
+        "brics-8858bd5076aa는 logP 5.0712이며, brics-1869b7b03c2b는 QED 0.253473으로 용해도·물성 검토가 중요합니다.",
+        "신규성은 입력 구조와의 비동일성에 한정됩니다. 황금 내 존재, 외부 데이터베이스·특허 신규성 및 합성 가능성은 확립되지 않았습니다."
+      ],
+      "next_actions": [
+        "보고서에 원천 조회 응답·시각·식별자를 연결하고 P35354–PTGS2 유전자명 매핑을 보완하세요.",
+        "BRICS 조각의 반복 사용·연결점·원자 매핑을 재검증하고, 합성 경로 검토 후 NMR·LC-MS와 순도 분석으로 실제 생성물을 확인하세요.",
+        "용해도·에스터 가수분해·응집 및 산화환원 간섭을 평가하고 적절한 대조군을 포함하세요.",
+        "정제 인간 PTGS2의 농도–반응 기능시험과 직교 결합시험을 수행하고 PTGS1 비교로 선택성을 평가하세요.",
+        "AF3는 추가 실행 없이 입력 준비 상태를 유지하고, 로컬 커널의 설명자·정규화·회로 설정과 재현성 기록을 보존하세요."
+      ]
+    },
+    "summary": "검토 완료: 제공된 산출물에서 실행 상태나 과학적 해석의 명백한 충돌은 없습니다. 바이칼레인–aspirin의 Morgan Tanimoto는 0.166667로 구조 유사성이 낮으며, 바이칼레인의 분자량·logP·TPSA가 더 큽니다. 원천 감사 기록은 PubChem 화합물 동일성과 UniProt P35354 표적 정보를 뒷받침하지만 결합 근거는 아닙니다. 후보 4개는 미검증 계산 구조로 유지합니다. QED와 경고를 고려하면 brics-1cb44e9da7aa를 우선 검토하고, 바이칼레인 골격을 유지한 brics-21717ed9d845를 함께 비교할 수 있습니다. 이는 친화도 순위가 아닙니다. AF3는 brics-21717ed9d845의 입력만 준비되었으며 실행되지 않았고 모델도 없습니다. 양자 계산은 6개 구조에 대한 4큐비트 정확 로컬 fidelity 커널로 완료되었으며, 양자 하드웨어 측정은 수행되지 않았습니다. 합성 가능성 및 PTGS2 결합·기능 검증이 필요합니다.",
+    "verdict": "research_only",
+    "affinity_established": false,
+    "efficacy_established": false,
+    "external_novelty_verified": false,
+    "candidate_count": 4
+  },
+  "report": {
+    "summary": "원천 근거: 완료된 조회 감사에서 PubChem CID 5281605(바이칼레인)·2244(aspirin)의 화학적 동일성과 UniProt P35354의 인간 PTGS2 표적 정보를 확인했습니다. 이는 황금 내 함량이나 결합을 실측한 근거는 아닙니다.\n계산: 바이칼레인은 다중 수산기 플라본, aspirin은 아세틸화 살리실산 구조입니다. Morgan Tanimoto는 0.166667이며, 바이칼레인의 분자량은 90.081, logP는 1.2667, TPSA는 27.3 더 큽니다. 4개 후보와 두 모체의 설명자로 4큐비트 정확 로컬 fidelity 커널 계산이 완료되었습니다. QPU 실행이나 양자 우위 입증은 아닙니다.\n해석·후보목록: 독립 검토와 물성에 따라 brics-1cb44e9da7aa(QED 0.564)를 우선 검토하고, 플라본 골격의 brics-21717ed9d845(0.376)를 비교 후보로 권고합니다. brics-8858bd5076aa(0.498), brics-1869b7b03c2b(0.253)는 물성 제약을 고려한 보조 후보입니다. 이는 친화도 순위가 아닙니다.\n실측·미실행: 후보의 표적 특이적 실측 친화도는 없습니다. 합성·결합·기능 검증은 미완료입니다. AF3는 brics-21717ed9d845의 입력만 준비되었으며 실행되지 않았고 모델도 없습니다. 나머지 후보의 입력 준비 기록은 없습니다. 모두 연구용 미검증 계산 후보입니다.",
+    "decision": {
+      "summary": "원천 근거: 완료된 조회 감사에서 PubChem CID 5281605(바이칼레인)·2244(aspirin)의 화학적 동일성과 UniProt P35354의 인간 PTGS2 표적 정보를 확인했습니다. 이는 황금 내 함량이나 결합을 실측한 근거는 아닙니다.\n계산: 바이칼레인은 다중 수산기 플라본, aspirin은 아세틸화 살리실산 구조입니다. Morgan Tanimoto는 0.166667이며, 바이칼레인의 분자량은 90.081, logP는 1.2667, TPSA는 27.3 더 큽니다. 4개 후보와 두 모체의 설명자로 4큐비트 정확 로컬 fidelity 커널 계산이 완료되었습니다. QPU 실행이나 양자 우위 입증은 아닙니다.\n해석·후보목록: 독립 검토와 물성에 따라 brics-1cb44e9da7aa(QED 0.564)를 우선 검토하고, 플라본 골격의 brics-21717ed9d845(0.376)를 비교 후보로 권고합니다. brics-8858bd5076aa(0.498), brics-1869b7b03c2b(0.253)는 물성 제약을 고려한 보조 후보입니다. 이는 친화도 순위가 아닙니다.\n실측·미실행: 후보의 표적 특이적 실측 친화도는 없습니다. 합성·결합·기능 검증은 미완료입니다. AF3는 brics-21717ed9d845의 입력만 준비되었으며 실행되지 않았고 모델도 없습니다. 나머지 후보의 입력 준비 기록은 없습니다. 모두 연구용 미검증 계산 후보입니다.",
+      "decision": "continue",
+      "selected_ids": [
+        "brics-1cb44e9da7aa",
+        "brics-21717ed9d845",
+        "brics-8858bd5076aa",
+        "brics-1869b7b03c2b"
+      ],
+      "evidence_ids": [
+        "catalog:baicalein",
+        "catalog:aspirin",
+        "pubchem:baicalein",
+        "pubchem:aspirin",
+        "target:P35354"
+      ],
+      "requested_tools": [],
+      "candidate_policy": "balanced",
+      "risks": [
+        "구조 유사도·QED·양자 커널은 PTGS2 결합, 효능 또는 안전성을 입증하지 않습니다.",
+        "모든 후보에 phenol_ester 경고가 있고 두 플라본 후보에는 catechol 관련 경고도 있습니다. 이는 간섭·반응성 검토 신호이지 독성 확정이 아닙니다.",
+        "brics-8858bd5076aa의 logP 5.0712와 brics-1869b7b03c2b의 낮은 QED는 물성 검토가 필요한 요소입니다.",
+        "입력 구조와의 비동일성만 확인되었으며 외부 데이터베이스·특허 신규성과 합성 가능성은 검증되지 않았습니다."
+      ],
+      "next_actions": [
+        "원천 조회 응답·시각·식별자를 보고서에 연결하고 P35354–PTGS2 유전자명 매핑의 추적성을 보완하세요.",
+        "BRICS 연결점·조각 반복·원자 매핑과 합성 경로를 검토한 뒤, 합성물의 NMR·LC-MS 및 순도를 확인하세요.",
+        "용해도, 에스터 가수분해, 응집·산화환원 간섭을 대조군과 함께 평가하세요.",
+        "정제 인간 PTGS2의 농도–반응 기능시험과 직교 결합시험을 수행하고 PTGS1 비교로 선택성을 검증하세요.",
+        "AF3는 실행하지 않고 준비 상태를 보존하세요. 로컬 커널의 설명자·정규화·회로 설정과 재현성 기록을 보관하세요."
+      ]
+    },
+    "llm_used": true,
+    "model": "gpt-6-astra",
+    "research_status": "computational_hypotheses",
+    "generated_at": "2026-09-07T09:00:59.397964+00:00"
+  },
+  "affinity": null,
+  "affinity_status": "Requires target-specific measured training and external validation",
+  "model": "gpt-6-astra",
+  "llm_used": true
+}

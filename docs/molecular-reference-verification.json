@@ -1,0 +1,542 @@
+{
+  "verification": "Actual herbfold.molecular_selection.resolve execution against production runtime cache; no simulated resolver or synthesized pose",
+  "started_at": "2026-09-07T22:36:30.453825+00:00",
+  "completed_at": "2026-09-07T22:36:48.084420+00:00",
+  "source": "experimental_pdb",
+  "target_accession": "P35354",
+  "runtime_root": "runtime",
+  "code_and_registry_sha256": {
+    "src/herbfold/molecular_selection.py": "5c20223bb7c6bfe35f94533bbcc1f1e90dabbb11b9f9f52b8822c8db2cd05d27",
+    "src/herbfold/molecular_api.py": "2059a5c4c083a5d5955592f758088b8995a61abd48065c9c8178c62f59866c90",
+    "data/molecular_references.json": "e5bdac0378aa901fea626ebd8a53596f2891aecde9ba1c4fac131b6c9ca4445b"
+  },
+  "total": 6,
+  "matched": 6,
+  "passed": 6,
+  "all_passed": true,
+  "records": [
+    {
+      "selected_name": "Mefenamic acid",
+      "selected_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+      "selected_canonical_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+      "requested_target_accession": "P35354",
+      "expected_pdb_id": "5IKR",
+      "expected_ligand_component": "ID8",
+      "status": "matched",
+      "matched_pdb_ids": [
+        "5IKR"
+      ],
+      "reason": null,
+      "scene_pdb_id": "5IKR",
+      "scene_source": "experimental_pdb",
+      "source_url": "https://www.rcsb.org/structure/5IKR",
+      "selected_atom_count": 64,
+      "selected_heavy_atom_count": 36,
+      "observed_ligand_instances": [
+        {
+          "chain_id": "E",
+          "residue_id": "601",
+          "component": "ID8",
+          "atom_count": 32,
+          "heavy_atom_count": 18,
+          "element_counts": {
+            "O": 2,
+            "C": 15,
+            "N": 1,
+            "H": 14
+          }
+        },
+        {
+          "chain_id": "O",
+          "residue_id": "602",
+          "component": "ID8",
+          "atom_count": 32,
+          "heavy_atom_count": 18,
+          "element_counts": {
+            "O": 2,
+            "C": 15,
+            "N": 1,
+            "H": 14
+          }
+        }
+      ],
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+      "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "structure_sha256": "a4a20672b28f87d32a4cdff8ae7dbdbe4c94af40bc86d4b7caf0122d860cf472",
+      "reported_structure_sha256": "a4a20672b28f87d32a4cdff8ae7dbdbe4c94af40bc86d4b7caf0122d860cf472",
+      "ccd_sha256": "4752f554dc6dcb1b3a999cc08c1b7b48a4ab83c9f992ac7f27a5a6a6a29473ee",
+      "scene_atom_count": 18781,
+      "scene_bond_count": 18577,
+      "scene_warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "elapsed_seconds": 1.352,
+      "passed": true
+    },
+    {
+      "selected_name": "Tolfenamic acid",
+      "selected_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+      "selected_canonical_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+      "requested_target_accession": "P35354",
+      "expected_pdb_id": "5IKT",
+      "expected_ligand_component": "TLF",
+      "status": "matched",
+      "matched_pdb_ids": [
+        "5IKT"
+      ],
+      "reason": null,
+      "scene_pdb_id": "5IKT",
+      "scene_source": "experimental_pdb",
+      "source_url": "https://www.rcsb.org/structure/5IKT",
+      "selected_atom_count": 58,
+      "selected_heavy_atom_count": 36,
+      "observed_ligand_instances": [
+        {
+          "chain_id": "G",
+          "residue_id": "601",
+          "component": "TLF",
+          "atom_count": 29,
+          "heavy_atom_count": 18,
+          "element_counts": {
+            "C": 14,
+            "O": 2,
+            "N": 1,
+            "Cl": 1,
+            "H": 11
+          }
+        },
+        {
+          "chain_id": "L",
+          "residue_id": "601",
+          "component": "TLF",
+          "atom_count": 29,
+          "heavy_atom_count": 18,
+          "element_counts": {
+            "C": 14,
+            "O": 2,
+            "N": 1,
+            "Cl": 1,
+            "H": 11
+          }
+        }
+      ],
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+      "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "structure_sha256": "2d54641ef1d34cb0ea21445d40bf18ed1b1274b399654d560b0cb7e2c81610c8",
+      "reported_structure_sha256": "2d54641ef1d34cb0ea21445d40bf18ed1b1274b399654d560b0cb7e2c81610c8",
+      "ccd_sha256": "39ff947656e31a09fb9eccceb2de8eb47e43571c6fc394f59bb59cb683672d85",
+      "scene_atom_count": 18512,
+      "scene_bond_count": 18376,
+      "scene_warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "elapsed_seconds": 3.372,
+      "passed": true
+    },
+    {
+      "selected_name": "Meclofenamic acid",
+      "selected_smiles": "Cc1ccc(Cl)c(Nc2ccccc2C(=O)O)c1Cl",
+      "selected_canonical_smiles": "Cc1ccc(Cl)c(Nc2ccccc2C(=O)O)c1Cl",
+      "requested_target_accession": "P35354",
+      "expected_pdb_id": "5IKQ",
+      "expected_ligand_component": "JMS",
+      "status": "matched",
+      "matched_pdb_ids": [
+        "5IKQ"
+      ],
+      "reason": null,
+      "scene_pdb_id": "5IKQ",
+      "scene_source": "experimental_pdb",
+      "source_url": "https://www.rcsb.org/structure/5IKQ",
+      "selected_atom_count": 58,
+      "selected_heavy_atom_count": 38,
+      "observed_ligand_instances": [
+        {
+          "chain_id": "F",
+          "residue_id": "602",
+          "component": "JMS",
+          "atom_count": 29,
+          "heavy_atom_count": 19,
+          "element_counts": {
+            "O": 2,
+            "C": 14,
+            "N": 1,
+            "Cl": 2,
+            "H": 10
+          }
+        },
+        {
+          "chain_id": "L",
+          "residue_id": "602",
+          "component": "JMS",
+          "atom_count": 29,
+          "heavy_atom_count": 19,
+          "element_counts": {
+            "O": 2,
+            "C": 14,
+            "N": 1,
+            "Cl": 2,
+            "H": 10
+          }
+        }
+      ],
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+      "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "structure_sha256": "4764a3478de024444af5a63f6b5100dc6e7e275c80d08f1101dc50215c98693f",
+      "reported_structure_sha256": "4764a3478de024444af5a63f6b5100dc6e7e275c80d08f1101dc50215c98693f",
+      "ccd_sha256": "9d4c1b2dc16b8742b514185681fd1646fbeb92a3dc3b091434f699802310f517",
+      "scene_atom_count": 18632,
+      "scene_bond_count": 18507,
+      "scene_warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "elapsed_seconds": 3.605,
+      "passed": true
+    },
+    {
+      "selected_name": "Flufenamic acid",
+      "selected_smiles": "O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1",
+      "selected_canonical_smiles": "O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1",
+      "requested_target_accession": "P35354",
+      "expected_pdb_id": "5IKV",
+      "expected_ligand_component": "FLF",
+      "status": "matched",
+      "matched_pdb_ids": [
+        "5IKV"
+      ],
+      "reason": null,
+      "scene_pdb_id": "5IKV",
+      "scene_source": "experimental_pdb",
+      "source_url": "https://www.rcsb.org/structure/5IKV",
+      "selected_atom_count": 58,
+      "selected_heavy_atom_count": 40,
+      "observed_ligand_instances": [
+        {
+          "chain_id": "E",
+          "residue_id": "601",
+          "component": "FLF",
+          "atom_count": 29,
+          "heavy_atom_count": 20,
+          "element_counts": {
+            "C": 14,
+            "O": 2,
+            "N": 1,
+            "F": 3,
+            "H": 9
+          }
+        },
+        {
+          "chain_id": "N",
+          "residue_id": "601",
+          "component": "FLF",
+          "atom_count": 29,
+          "heavy_atom_count": 20,
+          "element_counts": {
+            "C": 14,
+            "O": 2,
+            "N": 1,
+            "F": 3,
+            "H": 9
+          }
+        }
+      ],
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+      "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "structure_sha256": "cc6ef22ba4afe475aff213cccd3ee840d13b24021c4cfcf7ee3662e1fe57a362",
+      "reported_structure_sha256": "cc6ef22ba4afe475aff213cccd3ee840d13b24021c4cfcf7ee3662e1fe57a362",
+      "ccd_sha256": "f0c3192f0c0caa38ac2027bf8479546aff475547f71891d0f138766dcaae50f7",
+      "scene_atom_count": 18566,
+      "scene_bond_count": 18430,
+      "scene_warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "elapsed_seconds": 2.978,
+      "passed": true
+    },
+    {
+      "selected_name": "Salicylic acid",
+      "selected_smiles": "O=C(O)c1ccccc1O",
+      "selected_canonical_smiles": "O=C(O)c1ccccc1O",
+      "requested_target_accession": "P35354",
+      "expected_pdb_id": "5F1A",
+      "expected_ligand_component": "SAL",
+      "status": "matched",
+      "matched_pdb_ids": [
+        "5F1A"
+      ],
+      "reason": null,
+      "scene_pdb_id": "5F1A",
+      "scene_source": "experimental_pdb",
+      "source_url": "https://www.rcsb.org/structure/5F1A",
+      "selected_atom_count": 20,
+      "selected_heavy_atom_count": 20,
+      "observed_ligand_instances": [
+        {
+          "chain_id": "E",
+          "residue_id": "601",
+          "component": "SAL",
+          "atom_count": 10,
+          "heavy_atom_count": 10,
+          "element_counts": {
+            "C": 7,
+            "O": 3
+          }
+        },
+        {
+          "chain_id": "L",
+          "residue_id": "601",
+          "component": "SAL",
+          "atom_count": 10,
+          "heavy_atom_count": 10,
+          "element_counts": {
+            "C": 7,
+            "O": 3
+          }
+        }
+      ],
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+      "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 553,
+        "canonical_construct_sequence_sha256": "59bd372dfa21eda4053cd8ec5aaf2d12c2c8fbddafa42bc43debc1fca2497700",
+        "reported_mutation": "N594A",
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 1,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 2,
+                "length": 552,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "structure_sha256": "093160269c4fe90474b85aa7f362dce9650ed8790dd31df82f90302ce2a93454",
+      "reported_structure_sha256": "093160269c4fe90474b85aa7f362dce9650ed8790dd31df82f90302ce2a93454",
+      "ccd_sha256": "898b4dcdbdba1fd3a054914d068c94c9a17688834c43f216ffd07ff2e30f81ca",
+      "scene_atom_count": 9576,
+      "scene_bond_count": 9465,
+      "scene_warnings": [
+        "One alternate location per residue selected by summed occupancy; original mmCIF retains all alternatives.",
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "elapsed_seconds": 3.167,
+      "passed": true
+    },
+    {
+      "selected_name": "Rofecoxib",
+      "selected_smiles": "CS(=O)(=O)c1ccc(C2=C(c3ccccc3)C(=O)OC2)cc1",
+      "selected_canonical_smiles": "CS(=O)(=O)c1ccc(C2=C(c3ccccc3)C(=O)OC2)cc1",
+      "requested_target_accession": "P35354",
+      "expected_pdb_id": "5KIR",
+      "expected_ligand_component": "RCX",
+      "status": "matched",
+      "matched_pdb_ids": [
+        "5KIR"
+      ],
+      "reason": null,
+      "scene_pdb_id": "5KIR",
+      "scene_source": "experimental_pdb",
+      "source_url": "https://www.rcsb.org/structure/5KIR",
+      "selected_atom_count": 44,
+      "selected_heavy_atom_count": 44,
+      "observed_ligand_instances": [
+        {
+          "chain_id": "E",
+          "residue_id": "601",
+          "component": "RCX",
+          "atom_count": 22,
+          "heavy_atom_count": 22,
+          "element_counts": {
+            "C": 17,
+            "O": 4,
+            "S": 1
+          }
+        },
+        {
+          "chain_id": "M",
+          "residue_id": "601",
+          "component": "RCX",
+          "atom_count": 22,
+          "heavy_atom_count": 22,
+          "element_counts": {
+            "C": 17,
+            "O": 4,
+            "S": 1
+          }
+        }
+      ],
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+      "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "55bc0287054b51baba68af6c80ef10fee6889a2d509e67ad90868e7f4c233fc6",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 1,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "structure_sha256": "927fb3eb69423db63849eb15842dc475172964f1bbdb63ac97eacf4867c54243",
+      "reported_structure_sha256": "927fb3eb69423db63849eb15842dc475172964f1bbdb63ac97eacf4867c54243",
+      "ccd_sha256": "f55dc4d412687abed0bc2375edb34532b2c0ff74b7ad189956f23427ee9ab6ed",
+      "scene_atom_count": 18167,
+      "scene_bond_count": 18298,
+      "scene_warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "elapsed_seconds": 3.157,
+      "passed": true
+    }
+  ]
+}

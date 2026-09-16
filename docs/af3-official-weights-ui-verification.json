@@ -1,0 +1,580 @@
+{
+  "before_bond_template_correction": {
+    "checked_at": "2026-09-07T23:48:05.789257+00:00",
+    "phase": "completed",
+    "mock_data_used": false,
+    "production_mutations": [],
+    "javascript_errors": [],
+    "jobs": {
+      "quercetin": {
+        "job_id": "3730181a45734f0dafa92a78917c48dd",
+        "default_job_id": "3730181a45734f0dafa92a78917c48dd",
+        "explicit_history_selection": false,
+        "api_status": "completed",
+        "ui_status": "completed",
+        "queue_position": null,
+        "weight_blockers": [],
+        "parameter_status": "unverified_parameters",
+        "msa_mode": "none",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "profile": {
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10
+        },
+        "quality_warning_visible": true,
+        "scene_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+        "coordinate_sha256": "6d8569a3358df123731f4d0db0d1b367452fd26728abf7246e96ac76f4a01ae0",
+        "atoms": 4887,
+        "bonds": 5024,
+        "selected_ligand_atoms": 22,
+        "geometry": {
+          "atom_count": 4887,
+          "bond_count": 5024,
+          "long_bond_count": 34,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 3.224159,
+          "coord_span_angstrom": [
+            72.834,
+            91.177,
+            75.39
+          ],
+          "center_angstrom": [
+            1.847605,
+            0.705399,
+            0.351156
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "warnings": [
+          "Coordinate geometry warning: 34 long and 0 short covalent bonds. Coordinates were retained verbatim; do not interpret a distorted model as a binding pose.",
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "output_validation": {
+          "status": "geometry_warning",
+          "identity_verified": true,
+          "quality_pass": false,
+          "geometry": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 34,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 3.224159,
+            "coord_span_angstrom": [
+              72.834,
+              91.177,
+              75.39
+            ],
+            "center_angstrom": [
+              1.847605,
+              0.705399,
+              0.351156
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "summary_metrics": {
+            "ptm": 0.21,
+            "iptm": 0.32,
+            "ranking_score": 0.34,
+            "fraction_disordered": 0.09,
+            "has_clash": false,
+            "chain_ptm": [
+              0.21,
+              0.24
+            ],
+            "chain_iptm": [
+              0.32,
+              0.32
+            ],
+            "chain_pair_iptm": [
+              [
+                0.21,
+                0.32
+              ],
+              [
+                0.32,
+                0.24
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.73
+              ],
+              [
+                17.41,
+                0.78
+              ]
+            ]
+          },
+          "artifact": "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+          "sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+          "selected_ligand_atom_count": 22,
+          "warnings": [
+            "Coordinate geometry warning: 34 long and 0 short covalent bonds. Coordinates were retained verbatim; do not interpret a distorted model as a binding pose.",
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+            "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+          ],
+          "affinity": null,
+          "efficacy": "not_assessed",
+          "safety": "not_assessed"
+        },
+        "ligand_focus_camera_distance": 28.205,
+        "full_camera_distance": 251.048,
+        "selected_atom": {
+          "index": 4865,
+          "element": "O",
+          "name": "O1",
+          "chain_id": "B",
+          "residue_id": "1",
+          "x": 22.241,
+          "y": -19.248,
+          "z": -3.095
+        },
+        "atom_focus_camera_distance": 4.2
+      },
+      "aspirin": {
+        "job_id": "88692f7955d94c50814f6e3121f963b6",
+        "default_job_id": "e58c9b7dbdb3489e9fbed7baeee44525",
+        "explicit_history_selection": true,
+        "api_status": "completed",
+        "ui_status": "completed",
+        "queue_position": null,
+        "weight_blockers": [],
+        "parameter_status": "unverified_parameters",
+        "msa_mode": "none",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "profile": {
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10
+        },
+        "quality_warning_visible": true,
+        "scene_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+        "coordinate_sha256": "e45a3b7a335590c267d48ce483d8e489607ab8fb2e542c93d4ab8c56ae92c24f",
+        "atoms": 4878,
+        "bonds": 5013,
+        "selected_ligand_atoms": 13,
+        "geometry": {
+          "atom_count": 4878,
+          "bond_count": 5013,
+          "long_bond_count": 34,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 3.198076,
+          "coord_span_angstrom": [
+            62.849,
+            65.788,
+            85.952
+          ],
+          "center_angstrom": [
+            -0.57756,
+            0.490228,
+            1.056201
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "warnings": [
+          "Coordinate geometry warning: 34 long and 0 short covalent bonds. Coordinates were retained verbatim; do not interpret a distorted model as a binding pose.",
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "output_validation": {
+          "status": "geometry_warning",
+          "identity_verified": true,
+          "quality_pass": false,
+          "geometry": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 34,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 3.198076,
+            "coord_span_angstrom": [
+              62.849,
+              65.788,
+              85.952
+            ],
+            "center_angstrom": [
+              -0.57756,
+              0.490228,
+              1.056201
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "summary_metrics": {
+            "ptm": 0.2,
+            "iptm": 0.37,
+            "ranking_score": 0.35,
+            "fraction_disordered": 0.04,
+            "has_clash": false,
+            "chain_ptm": [
+              0.2,
+              0.03
+            ],
+            "chain_iptm": [
+              0.37,
+              0.37
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.37
+              ],
+              [
+                0.37,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.14
+              ],
+              [
+                15.84,
+                0.77
+              ]
+            ]
+          },
+          "artifact": "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+          "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+          "selected_ligand_atom_count": 13,
+          "warnings": [
+            "Coordinate geometry warning: 34 long and 0 short covalent bonds. Coordinates were retained verbatim; do not interpret a distorted model as a binding pose.",
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+            "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+          ],
+          "affinity": null,
+          "efficacy": "not_assessed",
+          "safety": "not_assessed"
+        },
+        "ligand_focus_camera_distance": 19.5573,
+        "full_camera_distance": 226.0975,
+        "selected_atom": {
+          "index": 4865,
+          "element": "C",
+          "name": "C1",
+          "chain_id": "B",
+          "residue_id": "1",
+          "x": -13.71,
+          "y": -3.388,
+          "z": 0.508
+        },
+        "atom_focus_camera_distance": 4.2
+      }
+    },
+    "scene_responses": [
+      {
+        "url": "http://127.0.0.1:8873/api/molecular/predictions/3730181a45734f0dafa92a78917c48dd/scene",
+        "status": "matched",
+        "job_id": "3730181a45734f0dafa92a78917c48dd",
+        "sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61"
+      },
+      {
+        "url": "http://127.0.0.1:8873/api/molecular/predictions/88692f7955d94c50814f6e3121f963b6/scene",
+        "status": "matched",
+        "job_id": "88692f7955d94c50814f6e3121f963b6",
+        "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733"
+      },
+      {
+        "url": "http://127.0.0.1:8873/api/molecular/predictions/88692f7955d94c50814f6e3121f963b6/scene",
+        "status": "matched",
+        "job_id": "88692f7955d94c50814f6e3121f963b6",
+        "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733"
+      }
+    ],
+    "selected_job_restored_after_reload": true,
+    "distinct_coordinate_files_verified": true,
+    "passed": true,
+    "interpretation_note": "Observed before correction of an ILE named-bond template. The 34 long-bond warning must not be treated as a coordinate-quality finding; final validation will be refreshed without changing predicted coordinates."
+  },
+  "completed": {
+    "checked_at": "2026-09-07T23:53:54.835914+00:00",
+    "phase": "completed",
+    "mock_data_used": false,
+    "production_mutations": [],
+    "javascript_errors": [],
+    "jobs": {
+      "quercetin": {
+        "job_id": "3730181a45734f0dafa92a78917c48dd",
+        "default_job_id": "3730181a45734f0dafa92a78917c48dd",
+        "explicit_history_selection": false,
+        "api_status": "completed",
+        "ui_status": "completed",
+        "queue_position": null,
+        "weight_blockers": [],
+        "parameter_status": "unverified_parameters",
+        "msa_mode": "none",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "profile": {
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10
+        },
+        "quality_warning_visible": false,
+        "quality_unassessed_visible": true,
+        "scene_sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+        "coordinate_sha256": "6d8569a3358df123731f4d0db0d1b367452fd26728abf7246e96ac76f4a01ae0",
+        "atoms": 4887,
+        "bonds": 5024,
+        "selected_ligand_atoms": 22,
+        "geometry": {
+          "atom_count": 4887,
+          "bond_count": 5024,
+          "long_bond_count": 0,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 1.830096,
+          "coord_span_angstrom": [
+            72.834,
+            91.177,
+            75.39
+          ],
+          "center_angstrom": [
+            1.847605,
+            0.705399,
+            0.351156
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "warnings": [
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "output_validation": {
+          "status": "identity_verified_quality_unassessed",
+          "identity_verified": true,
+          "quality_pass": null,
+          "geometry": {
+            "atom_count": 4887,
+            "bond_count": 5024,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.830096,
+            "coord_span_angstrom": [
+              72.834,
+              91.177,
+              75.39
+            ],
+            "center_angstrom": [
+              1.847605,
+              0.705399,
+              0.351156
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "summary_metrics": {
+            "ptm": 0.21,
+            "iptm": 0.32,
+            "ranking_score": 0.34,
+            "fraction_disordered": 0.09,
+            "has_clash": false,
+            "chain_ptm": [
+              0.21,
+              0.24
+            ],
+            "chain_iptm": [
+              0.32,
+              0.32
+            ],
+            "chain_pair_iptm": [
+              [
+                0.21,
+                0.32
+              ],
+              [
+                0.32,
+                0.24
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.73
+              ],
+              [
+                17.41,
+                0.78
+              ]
+            ]
+          },
+          "artifact": "output/studio_P35354_6abdb61491ab/studio_P35354_6abdb61491ab_model.cif",
+          "sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61",
+          "selected_ligand_atom_count": 22,
+          "warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+            "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+          ],
+          "affinity": null,
+          "efficacy": "not_assessed",
+          "safety": "not_assessed"
+        },
+        "ligand_focus_camera_distance": 28.2002,
+        "full_camera_distance": 250.8204,
+        "selected_atom": {
+          "index": 4865,
+          "element": "O",
+          "name": "O1",
+          "chain_id": "B",
+          "residue_id": "1",
+          "x": 22.241,
+          "y": -19.248,
+          "z": -3.095
+        },
+        "atom_focus_camera_distance": 4.2,
+        "mobile_representation": "stick"
+      },
+      "aspirin": {
+        "job_id": "88692f7955d94c50814f6e3121f963b6",
+        "default_job_id": "e58c9b7dbdb3489e9fbed7baeee44525",
+        "explicit_history_selection": true,
+        "api_status": "completed",
+        "ui_status": "completed",
+        "queue_position": null,
+        "weight_blockers": [],
+        "parameter_status": "unverified_parameters",
+        "msa_mode": "none",
+        "target_sequence_sha256": "e68aee34450b6e76702b13eaa365d21b896beea374590ad39bfdd7e8d6c145a8",
+        "profile": {
+          "device": "gpu",
+          "num_diffusion_samples": 5,
+          "num_recycles": 10
+        },
+        "quality_warning_visible": false,
+        "quality_unassessed_visible": true,
+        "scene_sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+        "coordinate_sha256": "e45a3b7a335590c267d48ce483d8e489607ab8fb2e542c93d4ab8c56ae92c24f",
+        "atoms": 4878,
+        "bonds": 5013,
+        "selected_ligand_atoms": 13,
+        "geometry": {
+          "atom_count": 4878,
+          "bond_count": 5013,
+          "long_bond_count": 0,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 1.827065,
+          "coord_span_angstrom": [
+            62.849,
+            65.788,
+            85.952
+          ],
+          "center_angstrom": [
+            -0.57756,
+            0.490228,
+            1.056201
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "warnings": [
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+          "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+        ],
+        "output_validation": {
+          "status": "identity_verified_quality_unassessed",
+          "identity_verified": true,
+          "quality_pass": null,
+          "geometry": {
+            "atom_count": 4878,
+            "bond_count": 5013,
+            "long_bond_count": 0,
+            "short_bond_count": 0,
+            "max_bond_length_angstrom": 1.827065,
+            "coord_span_angstrom": [
+              62.849,
+              65.788,
+              85.952
+            ],
+            "center_angstrom": [
+              -0.57756,
+              0.490228,
+              1.056201
+            ],
+            "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+          },
+          "summary_metrics": {
+            "ptm": 0.2,
+            "iptm": 0.37,
+            "ranking_score": 0.35,
+            "fraction_disordered": 0.04,
+            "has_clash": false,
+            "chain_ptm": [
+              0.2,
+              0.03
+            ],
+            "chain_iptm": [
+              0.37,
+              0.37
+            ],
+            "chain_pair_iptm": [
+              [
+                0.2,
+                0.37
+              ],
+              [
+                0.37,
+                0.03
+              ]
+            ],
+            "chain_pair_pae_min": [
+              [
+                0.76,
+                15.14
+              ],
+              [
+                15.84,
+                0.77
+              ]
+            ]
+          },
+          "artifact": "output/studio_P35354_a2ed32347ddc/studio_P35354_a2ed32347ddc_model.cif",
+          "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733",
+          "selected_ligand_atom_count": 13,
+          "warnings": [
+            "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability.",
+            "MSA·template를 사용하지 않는 명시적 탐색 계산입니다. 표준 AF3 분석보다 정확도가 크게 낮아질 수 있으며, 구조 신뢰도는 결합 친화도·효능·안전성 검증이 아닙니다."
+          ],
+          "affinity": null,
+          "efficacy": "not_assessed",
+          "safety": "not_assessed"
+        },
+        "ligand_focus_camera_distance": 19.5544,
+        "full_camera_distance": 226.0075,
+        "selected_atom": {
+          "index": 4865,
+          "element": "C",
+          "name": "C1",
+          "chain_id": "B",
+          "residue_id": "1",
+          "x": -13.71,
+          "y": -3.388,
+          "z": 0.508
+        },
+        "atom_focus_camera_distance": 4.2,
+        "mobile_representation": "stick"
+      }
+    },
+    "scene_responses": [
+      {
+        "url": "http://127.0.0.1:8873/api/molecular/predictions/3730181a45734f0dafa92a78917c48dd/scene",
+        "status": "matched",
+        "job_id": "3730181a45734f0dafa92a78917c48dd",
+        "sha256": "f50de0626f05cf5f7fa79dd1c912efc837cfe0dc77154552c739dcfacd385d61"
+      },
+      {
+        "url": "http://127.0.0.1:8873/api/molecular/predictions/88692f7955d94c50814f6e3121f963b6/scene",
+        "status": "matched",
+        "job_id": "88692f7955d94c50814f6e3121f963b6",
+        "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733"
+      },
+      {
+        "url": "http://127.0.0.1:8873/api/molecular/predictions/88692f7955d94c50814f6e3121f963b6/scene",
+        "status": "matched",
+        "job_id": "88692f7955d94c50814f6e3121f963b6",
+        "sha256": "ad98f0839d9d08c51330b00a36068e6627d0834861f81f84a49bc5d598ab7733"
+      }
+    ],
+    "selected_job_restored_after_reload": true,
+    "distinct_coordinate_files_verified": true,
+    "bond_template_correction_preserved_cif_and_coordinates": true,
+    "passed": true
+  }
+}

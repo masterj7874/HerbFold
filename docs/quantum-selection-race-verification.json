@@ -1,0 +1,112 @@
+{
+  "created_at": "2026-09-08T03:04:23.227817+00:00",
+  "passed": true,
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "read_style_posts": [
+    "/api/molecular/conformer",
+    "/api/molecules/describe"
+  ],
+  "qpu_submissions": 0,
+  "source_analysis_id": "b3d261566fa14891925d3b1fd730f2d1",
+  "linked_job_id": "f1b0f1c6867b4d21b40193e65ab980bf",
+  "delayed": {
+    "actual_analysis_id": "df76731cb44046cfa5dd067133086b25",
+    "actual_status": "completed",
+    "delivered_after_new_selection": true
+  },
+  "selection_preserved": true,
+  "synthetic_data_used": false,
+  "mobile_layout": {
+    "viewport": 360,
+    "documentOverflow": false,
+    "ancestors": [
+      {
+        "className": "qp-workspace",
+        "width": 222,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "card agent-report",
+        "width": 262,
+        "paddingLeft": "19px",
+        "paddingRight": "19px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "analysis-bottom-grid",
+        "width": 262,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "analysis-main",
+        "width": 262,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "analysis-layout",
+        "width": 262,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "",
+        "width": 262,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "page-content",
+        "width": 288,
+        "paddingLeft": "13px",
+        "paddingRight": "13px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "main-shell",
+        "width": 288,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "72px"
+      },
+      {
+        "className": "app-shell page-agents",
+        "width": 360,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      },
+      {
+        "className": "",
+        "width": 360,
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+        "marginLeft": "0px"
+      }
+    ],
+    "panels": [
+      {
+        "method": "fidelity",
+        "top": 2837.890625,
+        "bottom": 4398.3125,
+        "width": 222
+      },
+      {
+        "method": "projected",
+        "top": 4837.171875,
+        "bottom": 7737.171875,
+        "width": 222
+      }
+    ],
+    "verticalOrder": true
+  },
+  "mobile_viewport_screenshot": "docs/images/quantum-projected-measured-mobile360-viewport.png"
+}

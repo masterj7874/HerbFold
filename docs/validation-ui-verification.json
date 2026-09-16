@@ -1,0 +1,69 @@
+{
+  "verified_at": "2026-09-07T21:51:53.400009+00:00",
+  "checks": [
+    "All six actual scale counters match the real report; fixed assessed cohort and unknown clinical efficacy/safety remain explicit",
+    "100-million-attempt extrapolation explicitly states the smaller finite input-space limit and infeasibility for current inputs",
+    "390px scale layout has no page-level horizontal overflow and keeps actual counters readable",
+    "Arrow-key tabs work; hERG model shows the competitive-binding assay scope and changes real held-out metrics between all-test and in-domain subsets",
+    "All Tox21 endpoints and actual cohort-specific applicability counts render; assessment tables scroll locally without mobile page overflow",
+    "Candidate evidence separates source measurements, assay predictions, abstentions and structural alerts; Tox21 details expand",
+    "Candidate pagination requests offset 30 and exports only the 30 currently returned records",
+    "Real unmatched candidate search returns a truthful empty state and clearing it restores current records",
+    "Measured-evidence filter resets pagination and returns only genuinely linked assay records; 390px candidate layout has no page overflow",
+    "An actually assessed candidate opens its genuine RDKit coordinate model in the atom-level 3D studio"
+  ],
+  "javascript_errors": [],
+  "validation_mutations": [],
+  "hardware_submitted": false,
+  "mock_data_used": false,
+  "observed_scale": {
+    "status": "completed",
+    "requested_attempts": 5000000,
+    "attempted": 5000000,
+    "retained_unique": 3701740,
+    "compatible_pair_slots_upper_bound": 85150669,
+    "database_bytes": 1602277376,
+    "generation_seconds": 304.33620087298914
+  },
+  "cohort": {
+    "created_at": "2026-09-07T21:49:39.592859+00:00",
+    "method": "Uniform reservoir sampling without replacement over SQLite rows; fixed seed; no QED or prediction selection",
+    "seed": 20260908,
+    "scale_population": 3701740,
+    "scale_sample_count": 10000,
+    "scale_attempts": 5000000,
+    "prior_unique_count": 5741,
+    "combined_unique_count": 15740,
+    "overlap": 1,
+    "scale_structure_digest": "b8641601549726781902371990e680fb8b0b7c6220aeae4af54627bde8eb4fbf",
+    "input_sha256": "3a0bca08099cfe490a0de506b0ba600dcb642d2af3f2fad10b488dad2014049b",
+    "scope": "All prior campaign candidates plus a uniform sample of the measured scale population. Remaining scale candidates are not bioassessed."
+  },
+  "qualified_model": {
+    "id": "KCNH2:IC50:CHEMBL1827362",
+    "assay_description": "Displacement of [3H]dofetilide from human recombinant ERG by Competitive binding assay",
+    "selected_model": "random_forest",
+    "test_mae": 0.4626474145513166,
+    "in_domain_test_mae": 0.4224275404670882
+  },
+  "candidate_total": 15740,
+  "measured_filter_total": 53,
+  "studio_candidate": {
+    "id": "campaign-0026890506bc5d2564373c8a2879db5d29e92a6f4a0380e2579e1b29f8784017",
+    "smiles": "c1ccc(C2CO2)cc1",
+    "name": "HF-0026890506BC"
+  },
+  "passed": true,
+  "targeted_scale_clarity_check": {
+    "verified_at": "2026-09-07T22:00:28.703215+00:00",
+    "javascript_errors": [],
+    "validation_mutations": [],
+    "passed": true,
+    "accounting": "시도 5,000,000 = 고유 보존 3,701,740 + 중복 18,358 + 제외 1,274,496 + 기존 부모 일치 5,406",
+    "accounting_sum_matches_actual_attempts": true,
+    "timing_label": "준비·생성 누적 실행 시간",
+    "timing_scope": "CPU preparation, chemical generation and storage; excludes pauses, audits, AlphaFold 3 and QPU execution",
+    "mobile_page_horizontal_overflow": false,
+    "observed_execution_seconds": 399.1026630779961
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-09-07T21:52:07.759839+00:00",
+  "checks": [
+    {
+      "path": "/api/validation/summary",
+      "status": 200,
+      "seconds": 0.0173,
+      "biology": "completed",
+      "safety": "completed"
+    },
+    {
+      "path": "/api/validation/candidates?limit=2",
+      "status": 200,
+      "seconds": 0.003,
+      "total": 15740,
+      "returned": 2
+    },
+    {
+      "path": "/api/validation/candidates?limit=2&status=measured",
+      "status": 200,
+      "seconds": 0.0194,
+      "total": 53,
+      "returned": 2
+    },
+    {
+      "path": "/api/validation/candidates?limit=2&status=predicted",
+      "status": 200,
+      "seconds": 0.0194,
+      "total": 3011,
+      "returned": 2
+    },
+    {
+      "path": "/api/validation/candidates?limit=2&offset=15739",
+      "status": 200,
+      "seconds": 0.0584,
+      "total": 15740,
+      "returned": 1
+    },
+    {
+      "path": "/api/validation/candidates?limit=201",
+      "status": 422,
+      "seconds": 0.0011
+    },
+    {
+      "path": "/api/validation/summary",
+      "status": 200,
+      "elapsed_equals_measured_components": true,
+      "attempt_accounting_reconciled": true,
+      "elapsed_seconds": 399.1026630779961,
+      "preparation_seconds": 94.76646220500697,
+      "generation_seconds": 304.33620087298914
+    }
+  ],
+  "candidate_count": 15740,
+  "population": 3701740,
+  "input_sha256": "3a0bca08099cfe490a0de506b0ba600dcb642d2af3f2fad10b488dad2014049b",
+  "passed": true
+}

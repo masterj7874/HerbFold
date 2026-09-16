@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-14T02:50:50.341469+00:00",
+  "scope": "Read-only observation of a job submitted outside this verification; no action taken on it.",
+  "job_id": "31dfd5615cb848c5a98c78dc657c3692",
+  "status": "running",
+  "stage": {
+    "name": "data_pipeline",
+    "label": "CPU MSA·템플릿 검색",
+    "started_at": "2026-09-14T02:47:26.960286+00:00",
+    "checked_at": "2026-09-14T02:50:47.484659+00:00",
+    "elapsed_seconds": 200.5193302410189
+  },
+  "target_accession": "P00533",
+  "sequence_length": 1210,
+  "input_matches_registered_sequence": true,
+  "registered_hash_matches_frozen_request": true,
+  "source": "https://www.uniprot.org/uniprotkb/P00533/entry",
+  "job_modified": false
+}

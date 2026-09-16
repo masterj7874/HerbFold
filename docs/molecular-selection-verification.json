@@ -1,0 +1,390 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-08T02:02:31.459412+00:00",
+  "url": "http://127.0.0.1:8873",
+  "checks": {
+    "frontend_assets": [
+      "http://127.0.0.1:8873/app/assets/index-Jj4sC99f.js"
+    ],
+    "quarantined_ibuprofen_is_not_a_prediction": {
+      "status": "unavailable",
+      "requested": {
+        "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+        "canonical_smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+        "target_accession": "P35354"
+      },
+      "sha256": null,
+      "job_id": null,
+      "pdb_id": null,
+      "selected_ligand_atom_count": 0,
+      "selected_ligand_heavy_atom_count": 0,
+      "selected_ligand_bond_count": 0,
+      "selection": null,
+      "reason": "선택한 분자와 표적에 모두 일치하고 실제 리간드 원자가 확인되는 저장된 AlphaFold 3 결과가 없습니다.",
+      "warnings": [],
+      "archive_job_id": "2e03b13d30d54f69b5582e24c6eceecb",
+      "archive_status": "quarantined",
+      "execution_record_preserved": true,
+      "parameter_audit": {
+        "audited_at": "2026-09-07T23:05:13.711674+00:00",
+        "classification": "synthetic_parameter_signature",
+        "prediction_eligible": false,
+        "reason": "64-byte zero identifier and all 404 parameter tensors match the uniform[-1,1] performance-test recipe; trained parameter provenance is unsupported.",
+        "source": "https://github.com/google-deepmind/alphafold3/blob/v3.0.4/docs/model_parameters.md",
+        "parameter_sha256": "cec2df7fb03948b277109b0ae0faf4ddd007501a896d2a6c5444a56221242dd6",
+        "prior_job_status": "completed",
+        "report": "docs/af3-parameter-audit.json"
+      }
+    },
+    "aspirin_own_eligible_prediction": {
+      "job_id": "b868a97038e144f8a605a722d911338b",
+      "output_validation": {
+        "status": "identity_verified_quality_unassessed",
+        "identity_verified": true,
+        "quality_pass": null,
+        "geometry": {
+          "atom_count": 4878,
+          "bond_count": 5013,
+          "long_bond_count": 0,
+          "short_bond_count": 0,
+          "max_bond_length_angstrom": 1.827921,
+          "coord_span_angstrom": [
+            131.771,
+            64.796,
+            86.486
+          ],
+          "center_angstrom": [
+            -0.233225,
+            -0.051915,
+            -0.770917
+          ],
+          "method": "Named covalent bonds flagged when length <0.65 or >2.4 Å; not a validated clash score"
+        },
+        "summary_metrics": {
+          "ptm": 0.9,
+          "iptm": 0.88,
+          "ranking_score": 0.92,
+          "fraction_disordered": 0.07,
+          "has_clash": false,
+          "chain_ptm": [
+            0.9,
+            0.04
+          ],
+          "chain_iptm": [
+            0.88,
+            0.88
+          ],
+          "chain_pair_iptm": [
+            [
+              0.9,
+              0.88
+            ],
+            [
+              0.88,
+              0.04
+            ]
+          ],
+          "chain_pair_pae_min": [
+            [
+              0.76,
+              2.2
+            ],
+            [
+              4.47,
+              0.77
+            ]
+          ]
+        },
+        "artifact": "output/studio_P35354_01914792ee1d/studio_P35354_01914792ee1d_model.cif",
+        "sha256": "d7328059bc516ae1570bad203c99d1b2318c5c5b4dd11fe886d6950436b3370f",
+        "selected_ligand_atom_count": 13,
+        "warnings": [
+          "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+        ],
+        "affinity": null,
+        "efficacy": "not_assessed",
+        "safety": "not_assessed"
+      },
+      "execution_completed_is_not_quality_pass": true
+    },
+    "aspirin_does_not_reuse_ibuprofen": {
+      "status": "matched",
+      "requested": {
+        "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "target_accession": "P35354"
+      },
+      "sha256": "d7328059bc516ae1570bad203c99d1b2318c5c5b4dd11fe886d6950436b3370f",
+      "job_id": "b868a97038e144f8a605a722d911338b",
+      "pdb_id": null,
+      "selected_ligand_atom_count": 13,
+      "selected_ligand_heavy_atom_count": 13,
+      "selected_ligand_bond_count": 13,
+      "selection": {
+        "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "target_accession": "P35354",
+        "target_chains": [
+          "A"
+        ],
+        "ligand_chains": [
+          "B"
+        ],
+        "ligand_residues": [
+          {
+            "chain_id": "B",
+            "residue_id": "1",
+            "component": "LIG_B"
+          }
+        ],
+        "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+        "target_identity": "Full observed protein sequence equals the pinned UniProt sequence"
+      },
+      "reason": null,
+      "warnings": [
+        "AlphaFold 3 pLDDT is structural confidence, not binding affinity, efficacy, or binding probability."
+      ]
+    },
+    "aspirin_experimental_missing": {
+      "status": "unavailable",
+      "requested": {
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "target_accession": "P35354"
+      },
+      "sha256": null,
+      "job_id": null,
+      "pdb_id": null,
+      "selected_ligand_atom_count": 0,
+      "selected_ligand_heavy_atom_count": 0,
+      "selected_ligand_bond_count": 0,
+      "selection": null,
+      "reason": "등록된 실험 구조에서 선택 분자의 입체화학·전하와 표적이 모두 일치하는 복합체를 찾지 못했습니다. 아래 참조 성분은 직접 선택할 수 있습니다.",
+      "warnings": []
+    },
+    "5IKR": {
+      "status": "matched",
+      "requested": {
+        "smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+        "canonical_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+        "target_accession": "P35354"
+      },
+      "sha256": "a4a20672b28f87d32a4cdff8ae7dbdbe4c94af40bc86d4b7caf0122d860cf472",
+      "job_id": null,
+      "pdb_id": "5IKR",
+      "selected_ligand_atom_count": 64,
+      "selected_ligand_heavy_atom_count": 36,
+      "selected_ligand_bond_count": 66,
+      "selection": {
+        "canonical_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+        "target_accession": "P35354",
+        "target_chains": [
+          "A",
+          "B"
+        ],
+        "ligand_chains": [
+          "E",
+          "O"
+        ],
+        "ligand_residues": [
+          {
+            "chain_id": "E",
+            "residue_id": "601",
+            "component": "ID8"
+          },
+          {
+            "chain_id": "O",
+            "residue_id": "602",
+            "component": "ID8"
+          }
+        ],
+        "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+        "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+        "construct": {
+          "full_length_canonical_sequence": false,
+          "sample_sequence_length": 551,
+          "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+          "reported_mutation": null,
+          "rcsb_mutation_count": 0,
+          "rcsb_conflict_count": 0,
+          "rcsb_artifact_monomer_count": 0,
+          "nonstandard_monomers": [],
+          "reference_alignments": [
+            {
+              "provenance_source": "SIFTS",
+              "reference_database_accession": "P35354",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "length": 551,
+                  "ref_beg_seq_id": 19
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "reason": null,
+      "warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "focus_camera_distance": 24.8415,
+      "full_camera_distance": 269.1141
+    },
+    "5IKT": {
+      "status": "matched",
+      "requested": {
+        "smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+        "canonical_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+        "target_accession": "P35354"
+      },
+      "sha256": "2d54641ef1d34cb0ea21445d40bf18ed1b1274b399654d560b0cb7e2c81610c8",
+      "job_id": null,
+      "pdb_id": "5IKT",
+      "selected_ligand_atom_count": 58,
+      "selected_ligand_heavy_atom_count": 36,
+      "selected_ligand_bond_count": 60,
+      "selection": {
+        "canonical_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+        "target_accession": "P35354",
+        "target_chains": [
+          "A",
+          "B"
+        ],
+        "ligand_chains": [
+          "G",
+          "L"
+        ],
+        "ligand_residues": [
+          {
+            "chain_id": "G",
+            "residue_id": "601",
+            "component": "TLF"
+          },
+          {
+            "chain_id": "L",
+            "residue_id": "601",
+            "component": "TLF"
+          }
+        ],
+        "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+        "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+        "construct": {
+          "full_length_canonical_sequence": false,
+          "sample_sequence_length": 551,
+          "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+          "reported_mutation": null,
+          "rcsb_mutation_count": 0,
+          "rcsb_conflict_count": 0,
+          "rcsb_artifact_monomer_count": 0,
+          "nonstandard_monomers": [],
+          "reference_alignments": [
+            {
+              "provenance_source": "SIFTS",
+              "reference_database_accession": "P35354",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "length": 551,
+                  "ref_beg_seq_id": 19
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "reason": null,
+      "warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ],
+      "focus_camera_distance": 25.2343,
+      "full_camera_distance": 274.09
+    },
+    "actual_experimental_coordinates_differ": true,
+    "late_previous_real_response_does_not_replace_current_selection": true,
+    "delayed_result": {
+      "status": "matched",
+      "requested": {
+        "smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+        "canonical_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+        "target_accession": "P35354"
+      },
+      "sha256": "a4a20672b28f87d32a4cdff8ae7dbdbe4c94af40bc86d4b7caf0122d860cf472",
+      "job_id": null,
+      "pdb_id": "5IKR",
+      "selected_ligand_atom_count": 64,
+      "selected_ligand_heavy_atom_count": 36,
+      "selected_ligand_bond_count": 66,
+      "selection": {
+        "canonical_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+        "target_accession": "P35354",
+        "target_chains": [
+          "A",
+          "B"
+        ],
+        "ligand_chains": [
+          "E",
+          "O"
+        ],
+        "ligand_residues": [
+          {
+            "chain_id": "E",
+            "residue_id": "601",
+            "component": "ID8"
+          },
+          {
+            "chain_id": "O",
+            "residue_id": "602",
+            "component": "ID8"
+          }
+        ],
+        "identity_policy": "Exact canonical isomeric SMILES; charge/stereo retained; observed full ligand atom/bond graph checked",
+        "target_identity": "RCSB UniProt entity mapping and pinned experimental construct sequence hash",
+        "construct": {
+          "full_length_canonical_sequence": false,
+          "sample_sequence_length": 551,
+          "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+          "reported_mutation": null,
+          "rcsb_mutation_count": 0,
+          "rcsb_conflict_count": 0,
+          "rcsb_artifact_monomer_count": 0,
+          "nonstandard_monomers": [],
+          "reference_alignments": [
+            {
+              "provenance_source": "SIFTS",
+              "reference_database_accession": "P35354",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "length": 551,
+                  "ref_beg_seq_id": 19
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "reason": null,
+      "warnings": [
+        "Experimental reference structure; this is not a prediction for a newly generated candidate. B factors are not pLDDT.",
+        "실험 단백질은 등록된 절단·변이·서열 차이를 포함한 구조체입니다. construct 메타데이터를 확인하세요."
+      ]
+    },
+    "free_conformer_fallback": {
+      "selected": "Aspirin",
+      "source": "rdkit_conformer",
+      "atoms": 21
+    },
+    "archive_file_is_separate_from_selection": true,
+    "target_change_never_reuses_another_species_structure": true,
+    "mobile_overflow": false,
+    "mobile_canvas_height": 648,
+    "mobile_controls_do_not_overlap": true,
+    "javascript_errors": [],
+    "execution_requests": []
+  }
+}

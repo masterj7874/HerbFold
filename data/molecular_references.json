@@ -1,0 +1,535 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-09-07T22:28:04.567714+00:00",
+  "scope": "Experimental human PTGS2 P35354 complexes; exact CCD molecular graph including stereochemistry and formal charge. Truncated constructs are explicitly reported. Reference metadata alone does not establish a candidate pose.",
+  "search": {
+    "target_accession": "P35354",
+    "total_experimental_entries": 7,
+    "entry_ids": [
+      "5F19",
+      "5F1A",
+      "5IKQ",
+      "5IKR",
+      "5IKT",
+      "5IKV",
+      "5KIR"
+    ],
+    "manifest_path": "runtime/molecular-selection-research/human-ptgs2-search.manifest.json"
+  },
+  "references": [
+    {
+      "pdb_id": "5IKR",
+      "target_accession": "P35354",
+      "target": "PTGS2",
+      "target_entity_id": "1",
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "target_author_chains": [
+        "A",
+        "B"
+      ],
+      "target_organism": "Homo sapiens",
+      "target_taxonomy_id": 9606,
+      "ligand_component": "ID8",
+      "ligand_entity_id": "3",
+      "ligand_chains": [
+        "E",
+        "O"
+      ],
+      "ligand_smiles": "Cc1cccc(Nc2ccccc2C(=O)O)c1C",
+      "ligand_ccd_smiles_stereo": "Cc1cccc(c1C)Nc2ccccc2C(=O)O",
+      "ligand_inchi_key": "HYYBABOKPJLUIN-UHFFFAOYSA-N",
+      "ligand_formal_charge": 0,
+      "ligand": "Mefenamic acid",
+      "label": "Human COX-2 / PTGS2 with mefenamic acid — experimental reference 5IKR",
+      "source_url": "https://www.rcsb.org/structure/5IKR",
+      "url": "https://files.rcsb.org/download/5IKR.cif",
+      "ccd_source_url": "https://www.rcsb.org/ligand/ID8",
+      "resolution_angstrom": 2.342,
+      "method": "X-RAY DIFFRACTION",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "api_sources": {
+        "entry": "https://data.rcsb.org/rest/v1/core/entry/5IKR",
+        "polymer": "https://data.rcsb.org/rest/v1/core/polymer_entity/5IKR/1",
+        "nonpolymer": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5IKR/3",
+        "ccd": "https://data.rcsb.org/rest/v1/core/chemcomp/ID8"
+      },
+      "observed_heavy_atom_validation": {
+        "expected_heavy_atoms": 18,
+        "instances": [
+          {
+            "label_asym_id": "E",
+            "author_chain": "A",
+            "author_residue": "601",
+            "observed_heavy_atoms": 18,
+            "names_and_elements_complete": true
+          },
+          {
+            "label_asym_id": "O",
+            "author_chain": "B",
+            "author_residue": "602",
+            "observed_heavy_atoms": 18,
+            "names_and_elements_complete": true
+          }
+        ]
+      }
+    },
+    {
+      "pdb_id": "5IKT",
+      "target_accession": "P35354",
+      "target": "PTGS2",
+      "target_entity_id": "1",
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "target_author_chains": [
+        "A",
+        "B"
+      ],
+      "target_organism": "Homo sapiens",
+      "target_taxonomy_id": 9606,
+      "ligand_component": "TLF",
+      "ligand_entity_id": "4",
+      "ligand_chains": [
+        "G",
+        "L"
+      ],
+      "ligand_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+      "ligand_ccd_smiles_stereo": "Cc1c(cccc1Cl)Nc2ccccc2C(=O)O",
+      "ligand_inchi_key": "YEZNLOUZAIOMLT-UHFFFAOYSA-N",
+      "ligand_formal_charge": 0,
+      "ligand": "Tolfenamic acid",
+      "label": "Human COX-2 / PTGS2 with tolfenamic acid — experimental reference 5IKT",
+      "source_url": "https://www.rcsb.org/structure/5IKT",
+      "url": "https://files.rcsb.org/download/5IKT.cif",
+      "ccd_source_url": "https://www.rcsb.org/ligand/TLF",
+      "resolution_angstrom": 2.451,
+      "method": "X-RAY DIFFRACTION",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "api_sources": {
+        "entry": "https://data.rcsb.org/rest/v1/core/entry/5IKT",
+        "polymer": "https://data.rcsb.org/rest/v1/core/polymer_entity/5IKT/1",
+        "nonpolymer": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5IKT/4",
+        "ccd": "https://data.rcsb.org/rest/v1/core/chemcomp/TLF"
+      },
+      "observed_heavy_atom_validation": {
+        "expected_heavy_atoms": 18,
+        "instances": [
+          {
+            "label_asym_id": "G",
+            "author_chain": "A",
+            "author_residue": "601",
+            "observed_heavy_atoms": 18,
+            "names_and_elements_complete": true
+          },
+          {
+            "label_asym_id": "L",
+            "author_chain": "B",
+            "author_residue": "601",
+            "observed_heavy_atoms": 18,
+            "names_and_elements_complete": true
+          }
+        ]
+      }
+    },
+    {
+      "pdb_id": "5IKQ",
+      "target_accession": "P35354",
+      "target": "PTGS2",
+      "target_entity_id": "1",
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "target_author_chains": [
+        "A",
+        "B"
+      ],
+      "target_organism": "Homo sapiens",
+      "target_taxonomy_id": 9606,
+      "ligand_component": "JMS",
+      "ligand_entity_id": "4",
+      "ligand_chains": [
+        "F",
+        "L"
+      ],
+      "ligand_smiles": "Cc1ccc(Cl)c(Nc2ccccc2C(=O)O)c1Cl",
+      "ligand_ccd_smiles_stereo": "Cc1ccc(c(c1Cl)Nc2ccccc2C(=O)O)Cl",
+      "ligand_inchi_key": "SBDNJUWAMKYJOX-UHFFFAOYSA-N",
+      "ligand_formal_charge": 0,
+      "ligand": "Meclofenamic acid",
+      "label": "Human COX-2 / PTGS2 with meclofenamic acid — experimental reference 5IKQ",
+      "source_url": "https://www.rcsb.org/structure/5IKQ",
+      "url": "https://files.rcsb.org/download/5IKQ.cif",
+      "ccd_source_url": "https://www.rcsb.org/ligand/JMS",
+      "resolution_angstrom": 2.41,
+      "method": "X-RAY DIFFRACTION",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "api_sources": {
+        "entry": "https://data.rcsb.org/rest/v1/core/entry/5IKQ",
+        "polymer": "https://data.rcsb.org/rest/v1/core/polymer_entity/5IKQ/1",
+        "nonpolymer": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5IKQ/4",
+        "ccd": "https://data.rcsb.org/rest/v1/core/chemcomp/JMS"
+      }
+    },
+    {
+      "pdb_id": "5IKV",
+      "target_accession": "P35354",
+      "target": "PTGS2",
+      "target_entity_id": "1",
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "target_author_chains": [
+        "A",
+        "B"
+      ],
+      "target_organism": "Homo sapiens",
+      "target_taxonomy_id": 9606,
+      "ligand_component": "FLF",
+      "ligand_entity_id": "3",
+      "ligand_chains": [
+        "E",
+        "N"
+      ],
+      "ligand_smiles": "O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1",
+      "ligand_ccd_smiles_stereo": "c1ccc(c(c1)C(=O)O)Nc2cccc(c2)C(F)(F)F",
+      "ligand_inchi_key": "LPEPZBJOKDYZAD-UHFFFAOYSA-N",
+      "ligand_formal_charge": 0,
+      "ligand": "Flufenamic acid",
+      "label": "Human COX-2 / PTGS2 with flufenamic acid — experimental reference 5IKV",
+      "source_url": "https://www.rcsb.org/structure/5IKV",
+      "url": "https://files.rcsb.org/download/5IKV.cif",
+      "ccd_source_url": "https://www.rcsb.org/ligand/FLF",
+      "resolution_angstrom": 2.508,
+      "method": "X-RAY DIFFRACTION",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "f59f2730ad079136cd7a00a2673ef0864fb8b0ed6d6816b1e95048d36c0848fc",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "api_sources": {
+        "entry": "https://data.rcsb.org/rest/v1/core/entry/5IKV",
+        "polymer": "https://data.rcsb.org/rest/v1/core/polymer_entity/5IKV/1",
+        "nonpolymer": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5IKV/3",
+        "ccd": "https://data.rcsb.org/rest/v1/core/chemcomp/FLF"
+      }
+    },
+    {
+      "pdb_id": "5F1A",
+      "target_accession": "P35354",
+      "target": "PTGS2",
+      "target_entity_id": "1",
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "target_author_chains": [
+        "A",
+        "B"
+      ],
+      "target_organism": "Homo sapiens",
+      "target_taxonomy_id": 9606,
+      "ligand_component": "SAL",
+      "ligand_entity_id": "4",
+      "ligand_chains": [
+        "E",
+        "L"
+      ],
+      "ligand_smiles": "O=C(O)c1ccccc1O",
+      "ligand_ccd_smiles_stereo": "c1ccc(c(c1)C(=O)O)O",
+      "ligand_inchi_key": "YGSDEFSMJLZEOE-UHFFFAOYSA-N",
+      "ligand_formal_charge": 0,
+      "ligand": "Salicylic acid",
+      "label": "Human COX-2 / PTGS2 with salicylic acid — experimental reference 5F1A",
+      "source_url": "https://www.rcsb.org/structure/5F1A",
+      "url": "https://files.rcsb.org/download/5F1A.cif",
+      "ccd_source_url": "https://www.rcsb.org/ligand/SAL",
+      "resolution_angstrom": 2.38,
+      "method": "X-RAY DIFFRACTION",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 553,
+        "canonical_construct_sequence_sha256": "59bd372dfa21eda4053cd8ec5aaf2d12c2c8fbddafa42bc43debc1fca2497700",
+        "reported_mutation": "N594A",
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 0,
+        "rcsb_artifact_monomer_count": 1,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 2,
+                "length": 552,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "api_sources": {
+        "entry": "https://data.rcsb.org/rest/v1/core/entry/5F1A",
+        "polymer": "https://data.rcsb.org/rest/v1/core/polymer_entity/5F1A/1",
+        "nonpolymer": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5F1A/4",
+        "ccd": "https://data.rcsb.org/rest/v1/core/chemcomp/SAL"
+      }
+    },
+    {
+      "pdb_id": "5KIR",
+      "target_accession": "P35354",
+      "target": "PTGS2",
+      "target_entity_id": "1",
+      "target_chains": [
+        "A",
+        "B"
+      ],
+      "target_author_chains": [
+        "A",
+        "B"
+      ],
+      "target_organism": "Homo sapiens",
+      "target_taxonomy_id": 9606,
+      "ligand_component": "RCX",
+      "ligand_entity_id": "3",
+      "ligand_chains": [
+        "E",
+        "M"
+      ],
+      "ligand_smiles": "CS(=O)(=O)c1ccc(C2=C(c3ccccc3)C(=O)OC2)cc1",
+      "ligand_ccd_smiles_stereo": "CS(=O)(=O)c1ccc(cc1)C2=C(C(=O)OC2)c3ccccc3",
+      "ligand_inchi_key": "RZJQGNCSTQAWON-UHFFFAOYSA-N",
+      "ligand_formal_charge": 0,
+      "ligand": "Rofecoxib",
+      "label": "Human COX-2 / PTGS2 with rofecoxib — experimental reference 5KIR",
+      "source_url": "https://www.rcsb.org/structure/5KIR",
+      "url": "https://files.rcsb.org/download/5KIR.cif",
+      "ccd_source_url": "https://www.rcsb.org/ligand/RCX",
+      "resolution_angstrom": 2.697,
+      "method": "X-RAY DIFFRACTION",
+      "construct": {
+        "full_length_canonical_sequence": false,
+        "sample_sequence_length": 551,
+        "canonical_construct_sequence_sha256": "55bc0287054b51baba68af6c80ef10fee6889a2d509e67ad90868e7f4c233fc6",
+        "reported_mutation": null,
+        "rcsb_mutation_count": 0,
+        "rcsb_conflict_count": 1,
+        "rcsb_artifact_monomer_count": 0,
+        "nonstandard_monomers": [],
+        "reference_alignments": [
+          {
+            "provenance_source": "SIFTS",
+            "reference_database_accession": "P35354",
+            "reference_database_name": "UniProt",
+            "aligned_regions": [
+              {
+                "entity_beg_seq_id": 1,
+                "length": 551,
+                "ref_beg_seq_id": 19
+              }
+            ]
+          }
+        ]
+      },
+      "api_sources": {
+        "entry": "https://data.rcsb.org/rest/v1/core/entry/5KIR",
+        "polymer": "https://data.rcsb.org/rest/v1/core/polymer_entity/5KIR/1",
+        "nonpolymer": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5KIR/3",
+        "ccd": "https://data.rcsb.org/rest/v1/core/chemcomp/RCX"
+      }
+    }
+  ],
+  "excluded_entries": [
+    {
+      "pdb_id": "5F19",
+      "reason": "Aspirin-acetylated protein contains modified serine OAS; no intact aspirin nonpolymer. It must not be displayed as a bound intact aspirin structure.",
+      "source_url": "https://www.rcsb.org/structure/5F19"
+    }
+  ],
+  "evidence_policy": {
+    "identity": "Canonical isomeric SMILES equality after CCD parsing, preserving stereochemistry, formal charge and connected components. No neutralization, tautomer or salt stripping for exact-match claims.",
+    "target": "P35354 UniProt accession mapped to the displayed polymer entity and chains; retain species and construct modifications.",
+    "coordinates": "Use deposited observed ligand heavy atoms only; require the complete expected ligand graph before claiming an exact observed ligand instance.",
+    "no_match": "Return unavailable unless a separately validated selected-ligand/selected-target prediction artifact exists. Do not substitute another ligand or a mouse homolog."
+  },
+  "catalog_exact_query_results": [
+    {
+      "catalog_id": "quercetin",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:52.078525+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-quercetin.manifest.json"
+    },
+    {
+      "catalog_id": "baicalein",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:53.385429+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-baicalein.manifest.json"
+    },
+    {
+      "catalog_id": "luteolin",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:54.573018+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-luteolin.manifest.json"
+    },
+    {
+      "catalog_id": "berberine",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:55.861765+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-berberine.manifest.json"
+    },
+    {
+      "catalog_id": "aspirin",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:57.031865+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-aspirin.manifest.json"
+    },
+    {
+      "catalog_id": "ibuprofen",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:58.216008+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-ibuprofen.manifest.json"
+    },
+    {
+      "catalog_id": "celecoxib",
+      "target_accession": "P35354",
+      "match_type": "graph-exact",
+      "http_status": 204,
+      "matched_entry_ids": [],
+      "retrieved_at": "2026-09-07T22:28:59.488755+00:00",
+      "manifest_path": "runtime/molecular-selection-research/exact-query-celecoxib.manifest.json"
+    }
+  ],
+  "excluded_homolog_examples": [
+    {
+      "pdb_id": "4PH9",
+      "target_accession": "Q05769",
+      "target_organism": "Mus musculus",
+      "target_taxonomy_id": 10090,
+      "ligand": "Ibuprofen",
+      "reason": "Target accession and species do not match human P35354.",
+      "source_url": "https://www.rcsb.org/structure/4PH9"
+    },
+    {
+      "pdb_id": "3LN1",
+      "target_accession": "Q05769",
+      "target_organism": "Mus musculus",
+      "target_taxonomy_id": 10090,
+      "ligand": "Celecoxib",
+      "reason": "Target accession and species do not match human P35354.",
+      "source_url": "https://www.rcsb.org/structure/3LN1"
+    }
+  ]
+}

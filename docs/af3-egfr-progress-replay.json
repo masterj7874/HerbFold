@@ -1,0 +1,171 @@
+{
+  "checked_at": "2026-09-14T03:16:04.524650+00:00",
+  "status": "passed",
+  "scope": "Read-only sequential replay of the original completed EGFR job log into a temporary file. Observation times are replay times, not original phase start times.",
+  "job_id": "31dfd5615cb848c5a98c78dc657c3692",
+  "events": {
+    "data_pipeline": [
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "UniProt 검색 시작",
+        "completed_databases": []
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "MGnify 검색 시작",
+        "completed_databases": []
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "BFD 검색 시작",
+        "completed_databases": []
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "UniRef90 검색 시작",
+        "completed_databases": []
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "BFD 검색 완료",
+        "duration_seconds": 95.538,
+        "completed_databases": [
+          "BFD"
+        ]
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "MGnify 검색 완료",
+        "duration_seconds": 584.575,
+        "completed_databases": [
+          "BFD",
+          "MGnify"
+        ]
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "UniRef90 검색 완료",
+        "duration_seconds": 617.244,
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90"
+        ]
+      },
+      {
+        "name": "msa_search",
+        "label": "단백질 서열 검색",
+        "activity": "UniProt 검색 완료",
+        "duration_seconds": 863.605,
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      },
+      {
+        "name": "template_search",
+        "label": "템플릿 검색",
+        "activity": "hmmbuild 검색 시작",
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      },
+      {
+        "name": "template_search",
+        "label": "템플릿 검색",
+        "activity": "hmmbuild 검색 완료",
+        "duration_seconds": 1.989,
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      },
+      {
+        "name": "template_search",
+        "label": "템플릿 검색",
+        "activity": "pdb_seqres_2022_09_28.fasta 검색 시작",
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      },
+      {
+        "name": "template_search",
+        "label": "템플릿 검색",
+        "activity": "pdb_seqres_2022_09_28.fasta 검색 완료",
+        "duration_seconds": 23.027,
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      },
+      {
+        "name": "writing_outputs",
+        "label": "검색 결과 저장",
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      },
+      {
+        "name": "job_finished",
+        "label": "검색 결과 파일 저장 완료",
+        "completed_databases": [
+          "BFD",
+          "MGnify",
+          "UniRef90",
+          "UniProt"
+        ]
+      }
+    ],
+    "inference": [
+      {
+        "name": "feature_preparation",
+        "label": "모델 입력 특징 생성"
+      },
+      {
+        "name": "model_inference",
+        "label": "AF3 모델 추론"
+      },
+      {
+        "name": "model_inference",
+        "label": "AF3 모델 추론",
+        "seed": 1
+      },
+      {
+        "name": "result_extraction",
+        "label": "예측 구조 추출",
+        "seed": 1
+      },
+      {
+        "name": "writing_outputs",
+        "label": "예측 구조 파일 저장"
+      },
+      {
+        "name": "job_finished",
+        "label": "구조 출력 저장 완료"
+      }
+    ]
+  },
+  "processes_started_or_stopped": 0
+}

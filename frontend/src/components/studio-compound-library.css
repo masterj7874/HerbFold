@@ -1,0 +1,67 @@
+.compound-library .studio-compound-heading { flex-shrink: 0; margin-bottom: 3px; }
+.studio-compound-heading h3 { font-size: 17px; }
+.studio-compound-total { display: flex; align-items: center; gap: 5px; flex-shrink: 0; min-width: 0; color: var(--muted); font-size: 11px; min-height: 24px; }
+.studio-compound-total > span { flex: 1; min-width: 0; }
+.studio-compound-total > button { display: grid; place-items: center; padding: 5px; border-radius: 5px; color: var(--brand); }
+.studio-compound-summary-error { flex-shrink: 0; color: #8b4729; font-size: 10px; line-height: 1.45; margin: 3px 0; }
+.studio-compound-views { display: flex; flex-shrink: 0; gap: 3px; padding: 3px; margin-top: 5px; background: var(--soft); border: 1px solid var(--border); border-radius: 8px; }
+.studio-compound-views button { flex: 1; min-width: 0; border-radius: 5px; padding: 6px 2px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.studio-compound-views button.active { background: var(--paper); color: var(--brand); font-weight: 650; box-shadow: 0 1px 4px #294d7215; }
+.compound-library .studio-compound-search { flex-shrink: 0; margin: 8px 0 7px; padding: 0 8px; gap: 6px; }
+.studio-compound-search svg { flex-shrink: 0; }
+.compound-library .studio-compound-search input { padding: 8px 0; width: 100%; font-size: 11px; }
+.studio-compound-categories { flex-shrink: 0; }
+.compound-library .studio-compound-categories button { min-height: 28px; font-size: 11px; padding: 5px 2px; }
+.compound-library .studio-compound-source { flex-shrink: 0; min-width: 0; width: 100%; min-height: 29px; padding: 5px 7px; margin-top: 6px; border: 1px solid var(--border); border-radius: 7px; font-size: 11px; color: var(--muted); background: var(--paper); }
+.studio-compound-personal-note { flex-shrink: 0; margin: 7px 0 0; color: var(--muted); font-size: 10px; }
+.studio-compound-selected { flex-shrink: 0; margin-top: 7px; min-width: 0; }
+.studio-compound-selection-label { font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+.studio-compound-chips { display: flex; flex-wrap: nowrap; gap: 4px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 3px; }
+.studio-compound-chips > span { display: inline-flex; flex-shrink: 0; min-width: 0; max-width: 155px; border: 1px solid #cbdbf6; border-radius: 6px; background: #f1f6ff; color: #27549f; }
+.studio-compound-chips > span.active { border-color: #6598ec; background: #e3eeff; }
+.studio-compound-chips button { min-width: 0; padding: 4px 5px; font-size: 10px; }
+.studio-compound-chips button:first-child { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.studio-compound-chips button:last-child { display: grid; place-items: center; flex-shrink: 0; border-left: 1px solid #d9e4f5; }
+.studio-compound-results-label { flex-shrink: 0; min-height: 21px; padding-top: 6px; color: var(--muted); font-size: 10px; }
+.studio-compound-resolution { flex-shrink: 0; color: #27605c; font-size: 10px; margin-top: 3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.compound-library .studio-compound-list { flex: 1 1 100px; min-height: 85px; margin-top: 5px; }
+.studio-compound-list .compound-row { min-height: 53px; padding: 5px 3px; }
+.studio-compound-list .compound-main { gap: 6px; }
+.studio-compound-list-structure .compound-row { padding: 5px 6px; }
+.studio-compound-list-structure .compound-main { padding: 5px 0; gap: 9px; }
+.studio-compound-list-structure .compound-main:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 5px; }
+.studio-compound-list .compound-main strong { font-size: 12px; }
+.studio-compound-list .compound-main small { font-size: 10px; margin-top: 3px; }
+.studio-compound-list .compound-glyph { width: 26px; height: 30px; }
+.studio-compound-list .compound-glyph.candidate { background: #eef0f5; color: #68748b; }
+.studio-compound-list .selection-check:disabled::before { background: #e8edf5; }
+.studio-compound-message { min-height: 90px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 12px 7px; color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+.studio-compound-message small { font-size: 10px; line-height: 1.55; }
+.studio-compound-message .text-button { font-size: 11px; }
+.studio-compound-spinner { animation: studio-compound-spin 1s linear infinite; }
+@keyframes studio-compound-spin { to { transform: rotate(360deg); } }
+.studio-compound-pagination { display: flex; align-items: center; justify-content: space-between; gap: 3px; flex-shrink: 0; min-height: 31px; border-top: 1px solid var(--border); margin-top: 5px; color: var(--muted); }
+.studio-compound-pagination > span { font-size: 10px; text-align: center; }
+.studio-compound-pagination button { display: grid; place-items: center; width: 26px; height: 27px; border-radius: 5px; color: var(--brand); }
+.compound-library .studio-compound-footer { flex-shrink: 0; padding: 9px 0; margin-top: 0; gap: 4px; font-size: 11px; }
+.studio-compound-footer .text-button { font-size: 11px; gap: 3px; }
+.compound-library .studio-compound-structure-footer { flex-direction: column; align-items: flex-start; gap: 9px; line-height: 1.6; }
+.studio-compound-structure-footer > span { color: var(--muted); font-size: 10px; }
+@media (min-width: 701px) {
+  .page-comparison .studio-grid:not(.is-wide) { --studio-height: 900px; }
+  .compound-library .studio-compound-list-comparison { min-height: 210px; }
+}
+@media (max-width: 700px) {
+  .compound-library .studio-compound-heading { margin-bottom: 4px; }
+  .studio-compound-views button, .compound-library .studio-compound-categories button { min-height: 35px; font-size: 12px; }
+  .compound-library .studio-compound-search input { padding: 10px 0; font-size: 12px; }
+  .compound-library .studio-compound-source { min-height: 35px; font-size: 12px; }
+  .compound-library .studio-compound-list { display: block; flex: unset; min-height: 100px; max-height: 235px; }
+  .studio-compound-list .compound-row { min-height: 57px; }
+  .studio-compound-list .compound-main strong { font-size: 13px; }
+  .studio-compound-list .compound-main small { font-size: 11px; }
+  .studio-compound-chips button { padding: 6px; font-size: 11px; }
+  .studio-compound-pagination { min-height: 37px; }
+  .studio-compound-pagination button { width: 35px; height: 34px; }
+}
+@media (prefers-reduced-motion: reduce) { .studio-compound-spinner { animation: none; } }

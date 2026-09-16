@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-09-14T02:49:29.808669+00:00",
+  "checks": {
+    "real_egfr_registration_metadata_and_applied_target": {
+      "accession": "P00533",
+      "name": "Epidermal growth factor receptor",
+      "gene": "EGFR",
+      "organism": "Homo sapiens",
+      "length": 1210,
+      "sequence_sha256": "dbb4583267ad40a7dfd854ee3c44ce4be38e137d0570e3eb76cf1854a74e7246",
+      "compound_unchanged": true,
+      "mobile_no_horizontal_overflow": true
+    },
+    "target_restored_after_reload_and_token_reconnection": true,
+    "saved_target_selection_requires_apply_and_restores_default": true,
+    "malformed_input_does_not_register_or_replace_target": true,
+    "missing_uniprot_replay_preserves_applied_target": true,
+    "late_registration_replay_cannot_overwrite_new_draft_or_applied_target": true,
+    "registration_timeout_replay_releases_busy_without_auto_resubmit": true,
+    "no_af3_jobs_prepared_executed_or_changed": true,
+    "test_sent_no_af3_prepare_execute_or_job_mutations": true
+  },
+  "screenshots": [
+    "docs/images/target-registration-egfr-desktop.png",
+    "docs/images/target-registration-egfr-mobile.png",
+    "docs/images/target-registration-replay-missing-target.png"
+  ],
+  "javascript_errors": [],
+  "blocked_mutations": [],
+  "registration_requests": [
+    {
+      "accession": "P00533",
+      "replay": null
+    },
+    {
+      "accession": "P35354",
+      "replay": null
+    },
+    {
+      "accession": "P99999",
+      "replay": "missing"
+    },
+    {
+      "accession": "P00533",
+      "replay": "late"
+    },
+    {
+      "accession": "P00533",
+      "replay": "timeout"
+    }
+  ],
+  "status": "passed",
+  "p00533_registered_before_test": true,
+  "p00533_registration_evidence": {
+    "registered_at": "2026-09-14T02:47:01.513254+00:00",
+    "checked_at": "2026-09-14T02:49:29.808669+00:00",
+    "observation": "Existing UniProt target registration was reused by this browser test."
+  },
+  "observed_external_job_changes": []
+}

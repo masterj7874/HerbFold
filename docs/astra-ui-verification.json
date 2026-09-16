@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": {
+    "catalog": 7,
+    "atom_inspection": true,
+    "distance_label": "#0 ↔ #1 · 1.398 Å",
+    "representations_zoom_reset": true,
+    "generated_candidates": 8,
+    "modal_focus_trap_restore": true,
+    "local_analysis_stages": 8,
+    "local_analysis_llm_calls": 0,
+    "audit_rendered": true,
+    "measured_evaluation": true,
+    "archive_structure_rows": 2,
+    "experimental_pdb_no_plddt": true,
+    "mobile_overflow": false
+  },
+  "javascript_errors": [],
+  "llm_submitted": false,
+  "hardware_submitted": false
+}

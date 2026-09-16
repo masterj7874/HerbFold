@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-09-14T01:10:46.554898+00:00",
+  "status": "passed",
+  "original_job_id": "fae4e383cce246378cc271b6e9ff2898",
+  "prepared_job_id": "1bf7e67cd1a34bb2b0dd0415a592db21",
+  "prepared_status": "prepared",
+  "request": {
+    "smiles": "CC(=CC(=O)O)/C=C/[C@@]1(O)C(C)=CC(=O)CC1(C)C",
+    "target_accession": "P35354",
+    "msa_mode": "search",
+    "seeds": [
+      1
+    ],
+    "exploratory_ack": false
+  },
+  "runtime_ready": true,
+  "runnable": true,
+  "blockers": [],
+  "database_status": "ready",
+  "runtime_probe": {
+    "version": "3.0.4",
+    "module": "/media/jerisuh/8ddd80eb-6ff2-439e-bc5f-fa97b55fa26c/Quantum-Alphafold/external/alphafold3/src/alphafold3/__init__.py",
+    "jax_version": "0.10.2",
+    "jaxlib_version": "0.10.2",
+    "devices": [
+      "cuda:0"
+    ]
+  },
+  "inference_submitted": false
+}

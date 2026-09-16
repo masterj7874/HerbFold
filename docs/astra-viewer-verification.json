@@ -1,0 +1,14 @@
+{
+  "hardware_submitted": false,
+  "checks": [
+    "Atom 0 search exposes exact source coordinates, charge and neighbor inspector",
+    "Two-atom ruler agrees with Euclidean JSON coordinate distance to 0.001 Å",
+    "Representation switching, hydrogen visibility and unavailable RDKit pLDDT controls behave correctly",
+    "Actual canvas raycast click selects focused atom 1",
+    "Focus and full-structure camera reset complete without JavaScript errors",
+    "Composer initial focus, Shift+Tab/Tab wrapping, inert background, Escape, focus restoration and scroll restoration pass"
+  ],
+  "javascript_errors": [],
+  "ruler_angstrom": 1.3977254614530663,
+  "passed": true
+}

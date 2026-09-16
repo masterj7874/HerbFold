@@ -1,0 +1,5030 @@
+{
+  "accessible_backend_inventory": {
+    "backends": [
+      {
+        "faulty_qubits": [],
+        "name": "ibm_marrakesh",
+        "num_qubits": 156,
+        "operational": true,
+        "pending_jobs": 0,
+        "simulator": false,
+        "usable_qubits": 156
+      },
+      {
+        "faulty_qubits": [],
+        "name": "ibm_fez",
+        "num_qubits": 156,
+        "operational": true,
+        "pending_jobs": 1,
+        "simulator": false,
+        "usable_qubits": 156
+      },
+      {
+        "faulty_qubits": [],
+        "name": "ibm_kingston",
+        "num_qubits": 156,
+        "operational": true,
+        "pending_jobs": 54,
+        "simulator": false,
+        "usable_qubits": 156
+      }
+    ],
+    "selected_max_backend": "ibm_marrakesh",
+    "selection_contract": "Largest currently accessible operational non-simulator usable-qubit count; ties ordered by pending jobs then backend name; scoped to pinned Open/free instance, not worldwide hardware maximum.",
+    "status": "ready"
+  },
+  "audit_case": "initial_maximal_width_verification_2x2",
+  "checked_at": "2026-09-08T02:32:10.439210+00:00",
+  "compiled_evidence": {
+    "connected_components": 1,
+    "depth": 45,
+    "logical_qubits": 156,
+    "operation_counts": {
+      "barrier": 2,
+      "cz": 620,
+      "measure": 156,
+      "rz": 2184,
+      "sx": 1248
+    }
+  },
+  "completed_at": "2026-09-08T02:32:30.217274+00:00",
+  "conclusion": {
+    "binding_affinity_efficacy_safety_or_quantum_advantage": "not_assessed",
+    "existing_outputs_preserved": true,
+    "global_zero_cause_directly_observed": "No complete 156-zero outcome occurred in any of three 1024-shot measurements. All measured diagonals are also zero, although their ideal noiseless compute-uncompute value is one. This invalidates use of these raw values as a useful fidelity kernel.",
+    "local_diagnostics_scope": "Marginal p0 and Z expectations describe the output of each pairwise overlap circuit. They are not single-state molecular feature expectations.",
+    "not_recoverable_from_old_counts": "Single-state U(x)|0> X/Y/Z projected features, or X/Y expectations, cannot be inferred from these pairwise Z-basis overlap counts. A projected-state kernel requires separately specified circuits and new measurements; old data are not relabelled or substituted.",
+    "physical_cause_status": "Noise/readout/circuit execution errors are consistent with distorted diagonals and many measured ones, but this result alone cannot isolate their contributions or prove an implementation error absent. Finite-shot global-event rarity is observed; the true probability is not proven exactly zero."
+  },
+  "diagonal_comparison": {
+    "diagonal_mean_hamming_weights": [
+      22.1591796875,
+      22.44140625
+    ],
+    "interpretation": "Descriptive differences from one 1024-shot result per pair; no uncertainty-adjusted efficacy, separability or quantum-advantage claim.",
+    "off_diagonal_mean_hamming_weight": 23.5791015625,
+    "off_diagonal_minus_diagonal_average_per_bit_p0": -0.008197490985576983,
+    "off_diagonal_minus_mean_diagonal_hamming_weight": 1.27880859375
+  },
+  "executed_backend_name": "ibm_fez",
+  "existing_job_quantum_seconds": 3.0,
+  "existing_quantum_manifest_modified": false,
+  "free_plan_evidence": {
+    "checked_at": "2026-09-08T02:32:16.201423+00:00",
+    "eligible_for_free_validation": true,
+    "instance_pinned": true,
+    "instance_plan": "open",
+    "required_maximum_qpu_seconds": 30,
+    "sources": [
+      "https://quantum.cloud.ibm.com/docs/en/guides/instances",
+      "https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/qiskit-runtime-service",
+      "https://quantum.cloud.ibm.com/docs/en/api/qiskit-runtime-rest/tags/instances"
+    ],
+    "usage_consumed_seconds": 31.0,
+    "usage_limit_reached": false,
+    "usage_limit_seconds": 600.0,
+    "usage_period": {
+      "end_time": "2026-09-08T02:32:15.968Z",
+      "start_time": "2026-08-11T02:32:15.968Z"
+    },
+    "usage_remaining_seconds": 569.0
+  },
+  "independent_sidecar_validation": {
+    "actual_measurement_map_covers_all_156_classical_bits": true,
+    "all_marginal_probabilities_and_hamming_means_recomputed_using_integer_bits": true,
+    "every_count_bitwidth_and_shot_total_verified": true,
+    "raw_counts_sha256_matches": true,
+    "source_manifest_sha256_unchanged": true,
+    "zero_probability_95_interval": "Two-sided Wilson interval, finite-shot estimate; not a proof of exact-zero true probability."
+  },
+  "measurement_circuit": "ry_rz_cz_reupload_v1",
+  "measurement_contract": "Z-basis measurement after compute-uncompute U(y)^dagger U(x); all-zero bitstring estimate of global overlap probability.",
+  "new_qpu_jobs_submitted": 0,
+  "pairs": [
+    {
+      "actual_pub_measurement_mapping": [
+        {
+          "classical_bit": 0,
+          "physical_circuit_qubit": 0
+        },
+        {
+          "classical_bit": 1,
+          "physical_circuit_qubit": 1
+        },
+        {
+          "classical_bit": 2,
+          "physical_circuit_qubit": 2
+        },
+        {
+          "classical_bit": 3,
+          "physical_circuit_qubit": 3
+        },
+        {
+          "classical_bit": 4,
+          "physical_circuit_qubit": 4
+        },
+        {
+          "classical_bit": 5,
+          "physical_circuit_qubit": 5
+        },
+        {
+          "classical_bit": 6,
+          "physical_circuit_qubit": 6
+        },
+        {
+          "classical_bit": 7,
+          "physical_circuit_qubit": 7
+        },
+        {
+          "classical_bit": 8,
+          "physical_circuit_qubit": 8
+        },
+        {
+          "classical_bit": 9,
+          "physical_circuit_qubit": 9
+        },
+        {
+          "classical_bit": 10,
+          "physical_circuit_qubit": 10
+        },
+        {
+          "classical_bit": 11,
+          "physical_circuit_qubit": 11
+        },
+        {
+          "classical_bit": 12,
+          "physical_circuit_qubit": 12
+        },
+        {
+          "classical_bit": 13,
+          "physical_circuit_qubit": 13
+        },
+        {
+          "classical_bit": 14,
+          "physical_circuit_qubit": 14
+        },
+        {
+          "classical_bit": 15,
+          "physical_circuit_qubit": 15
+        },
+        {
+          "classical_bit": 16,
+          "physical_circuit_qubit": 16
+        },
+        {
+          "classical_bit": 17,
+          "physical_circuit_qubit": 17
+        },
+        {
+          "classical_bit": 18,
+          "physical_circuit_qubit": 18
+        },
+        {
+          "classical_bit": 19,
+          "physical_circuit_qubit": 19
+        },
+        {
+          "classical_bit": 20,
+          "physical_circuit_qubit": 20
+        },
+        {
+          "classical_bit": 21,
+          "physical_circuit_qubit": 21
+        },
+        {
+          "classical_bit": 22,
+          "physical_circuit_qubit": 22
+        },
+        {
+          "classical_bit": 23,
+          "physical_circuit_qubit": 23
+        },
+        {
+          "classical_bit": 24,
+          "physical_circuit_qubit": 24
+        },
+        {
+          "classical_bit": 25,
+          "physical_circuit_qubit": 25
+        },
+        {
+          "classical_bit": 26,
+          "physical_circuit_qubit": 26
+        },
+        {
+          "classical_bit": 27,
+          "physical_circuit_qubit": 27
+        },
+        {
+          "classical_bit": 28,
+          "physical_circuit_qubit": 28
+        },
+        {
+          "classical_bit": 29,
+          "physical_circuit_qubit": 29
+        },
+        {
+          "classical_bit": 30,
+          "physical_circuit_qubit": 30
+        },
+        {
+          "classical_bit": 31,
+          "physical_circuit_qubit": 31
+        },
+        {
+          "classical_bit": 32,
+          "physical_circuit_qubit": 32
+        },
+        {
+          "classical_bit": 33,
+          "physical_circuit_qubit": 33
+        },
+        {
+          "classical_bit": 34,
+          "physical_circuit_qubit": 34
+        },
+        {
+          "classical_bit": 35,
+          "physical_circuit_qubit": 35
+        },
+        {
+          "classical_bit": 36,
+          "physical_circuit_qubit": 36
+        },
+        {
+          "classical_bit": 37,
+          "physical_circuit_qubit": 37
+        },
+        {
+          "classical_bit": 38,
+          "physical_circuit_qubit": 38
+        },
+        {
+          "classical_bit": 39,
+          "physical_circuit_qubit": 39
+        },
+        {
+          "classical_bit": 40,
+          "physical_circuit_qubit": 40
+        },
+        {
+          "classical_bit": 41,
+          "physical_circuit_qubit": 41
+        },
+        {
+          "classical_bit": 42,
+          "physical_circuit_qubit": 42
+        },
+        {
+          "classical_bit": 43,
+          "physical_circuit_qubit": 43
+        },
+        {
+          "classical_bit": 44,
+          "physical_circuit_qubit": 44
+        },
+        {
+          "classical_bit": 45,
+          "physical_circuit_qubit": 45
+        },
+        {
+          "classical_bit": 46,
+          "physical_circuit_qubit": 46
+        },
+        {
+          "classical_bit": 47,
+          "physical_circuit_qubit": 47
+        },
+        {
+          "classical_bit": 48,
+          "physical_circuit_qubit": 48
+        },
+        {
+          "classical_bit": 49,
+          "physical_circuit_qubit": 49
+        },
+        {
+          "classical_bit": 50,
+          "physical_circuit_qubit": 50
+        },
+        {
+          "classical_bit": 51,
+          "physical_circuit_qubit": 51
+        },
+        {
+          "classical_bit": 52,
+          "physical_circuit_qubit": 52
+        },
+        {
+          "classical_bit": 53,
+          "physical_circuit_qubit": 53
+        },
+        {
+          "classical_bit": 54,
+          "physical_circuit_qubit": 54
+        },
+        {
+          "classical_bit": 55,
+          "physical_circuit_qubit": 55
+        },
+        {
+          "classical_bit": 56,
+          "physical_circuit_qubit": 56
+        },
+        {
+          "classical_bit": 57,
+          "physical_circuit_qubit": 57
+        },
+        {
+          "classical_bit": 58,
+          "physical_circuit_qubit": 58
+        },
+        {
+          "classical_bit": 59,
+          "physical_circuit_qubit": 59
+        },
+        {
+          "classical_bit": 60,
+          "physical_circuit_qubit": 60
+        },
+        {
+          "classical_bit": 61,
+          "physical_circuit_qubit": 61
+        },
+        {
+          "classical_bit": 62,
+          "physical_circuit_qubit": 62
+        },
+        {
+          "classical_bit": 63,
+          "physical_circuit_qubit": 63
+        },
+        {
+          "classical_bit": 64,
+          "physical_circuit_qubit": 64
+        },
+        {
+          "classical_bit": 65,
+          "physical_circuit_qubit": 65
+        },
+        {
+          "classical_bit": 66,
+          "physical_circuit_qubit": 66
+        },
+        {
+          "classical_bit": 67,
+          "physical_circuit_qubit": 67
+        },
+        {
+          "classical_bit": 68,
+          "physical_circuit_qubit": 68
+        },
+        {
+          "classical_bit": 69,
+          "physical_circuit_qubit": 69
+        },
+        {
+          "classical_bit": 70,
+          "physical_circuit_qubit": 70
+        },
+        {
+          "classical_bit": 71,
+          "physical_circuit_qubit": 71
+        },
+        {
+          "classical_bit": 72,
+          "physical_circuit_qubit": 72
+        },
+        {
+          "classical_bit": 73,
+          "physical_circuit_qubit": 73
+        },
+        {
+          "classical_bit": 74,
+          "physical_circuit_qubit": 74
+        },
+        {
+          "classical_bit": 75,
+          "physical_circuit_qubit": 75
+        },
+        {
+          "classical_bit": 76,
+          "physical_circuit_qubit": 76
+        },
+        {
+          "classical_bit": 77,
+          "physical_circuit_qubit": 77
+        },
+        {
+          "classical_bit": 78,
+          "physical_circuit_qubit": 78
+        },
+        {
+          "classical_bit": 79,
+          "physical_circuit_qubit": 79
+        },
+        {
+          "classical_bit": 80,
+          "physical_circuit_qubit": 80
+        },
+        {
+          "classical_bit": 81,
+          "physical_circuit_qubit": 81
+        },
+        {
+          "classical_bit": 82,
+          "physical_circuit_qubit": 82
+        },
+        {
+          "classical_bit": 83,
+          "physical_circuit_qubit": 83
+        },
+        {
+          "classical_bit": 84,
+          "physical_circuit_qubit": 84
+        },
+        {
+          "classical_bit": 85,
+          "physical_circuit_qubit": 85
+        },
+        {
+          "classical_bit": 86,
+          "physical_circuit_qubit": 86
+        },
+        {
+          "classical_bit": 87,
+          "physical_circuit_qubit": 87
+        },
+        {
+          "classical_bit": 88,
+          "physical_circuit_qubit": 88
+        },
+        {
+          "classical_bit": 89,
+          "physical_circuit_qubit": 89
+        },
+        {
+          "classical_bit": 90,
+          "physical_circuit_qubit": 90
+        },
+        {
+          "classical_bit": 91,
+          "physical_circuit_qubit": 91
+        },
+        {
+          "classical_bit": 92,
+          "physical_circuit_qubit": 92
+        },
+        {
+          "classical_bit": 93,
+          "physical_circuit_qubit": 93
+        },
+        {
+          "classical_bit": 94,
+          "physical_circuit_qubit": 94
+        },
+        {
+          "classical_bit": 95,
+          "physical_circuit_qubit": 95
+        },
+        {
+          "classical_bit": 96,
+          "physical_circuit_qubit": 96
+        },
+        {
+          "classical_bit": 97,
+          "physical_circuit_qubit": 97
+        },
+        {
+          "classical_bit": 98,
+          "physical_circuit_qubit": 98
+        },
+        {
+          "classical_bit": 99,
+          "physical_circuit_qubit": 99
+        },
+        {
+          "classical_bit": 100,
+          "physical_circuit_qubit": 100
+        },
+        {
+          "classical_bit": 101,
+          "physical_circuit_qubit": 101
+        },
+        {
+          "classical_bit": 102,
+          "physical_circuit_qubit": 102
+        },
+        {
+          "classical_bit": 103,
+          "physical_circuit_qubit": 103
+        },
+        {
+          "classical_bit": 104,
+          "physical_circuit_qubit": 104
+        },
+        {
+          "classical_bit": 105,
+          "physical_circuit_qubit": 105
+        },
+        {
+          "classical_bit": 106,
+          "physical_circuit_qubit": 106
+        },
+        {
+          "classical_bit": 107,
+          "physical_circuit_qubit": 107
+        },
+        {
+          "classical_bit": 108,
+          "physical_circuit_qubit": 108
+        },
+        {
+          "classical_bit": 109,
+          "physical_circuit_qubit": 109
+        },
+        {
+          "classical_bit": 110,
+          "physical_circuit_qubit": 110
+        },
+        {
+          "classical_bit": 111,
+          "physical_circuit_qubit": 111
+        },
+        {
+          "classical_bit": 112,
+          "physical_circuit_qubit": 112
+        },
+        {
+          "classical_bit": 113,
+          "physical_circuit_qubit": 113
+        },
+        {
+          "classical_bit": 114,
+          "physical_circuit_qubit": 114
+        },
+        {
+          "classical_bit": 115,
+          "physical_circuit_qubit": 115
+        },
+        {
+          "classical_bit": 116,
+          "physical_circuit_qubit": 116
+        },
+        {
+          "classical_bit": 117,
+          "physical_circuit_qubit": 117
+        },
+        {
+          "classical_bit": 118,
+          "physical_circuit_qubit": 118
+        },
+        {
+          "classical_bit": 119,
+          "physical_circuit_qubit": 119
+        },
+        {
+          "classical_bit": 120,
+          "physical_circuit_qubit": 120
+        },
+        {
+          "classical_bit": 121,
+          "physical_circuit_qubit": 121
+        },
+        {
+          "classical_bit": 122,
+          "physical_circuit_qubit": 122
+        },
+        {
+          "classical_bit": 123,
+          "physical_circuit_qubit": 123
+        },
+        {
+          "classical_bit": 124,
+          "physical_circuit_qubit": 124
+        },
+        {
+          "classical_bit": 125,
+          "physical_circuit_qubit": 125
+        },
+        {
+          "classical_bit": 126,
+          "physical_circuit_qubit": 126
+        },
+        {
+          "classical_bit": 127,
+          "physical_circuit_qubit": 127
+        },
+        {
+          "classical_bit": 128,
+          "physical_circuit_qubit": 128
+        },
+        {
+          "classical_bit": 129,
+          "physical_circuit_qubit": 129
+        },
+        {
+          "classical_bit": 130,
+          "physical_circuit_qubit": 130
+        },
+        {
+          "classical_bit": 131,
+          "physical_circuit_qubit": 131
+        },
+        {
+          "classical_bit": 132,
+          "physical_circuit_qubit": 132
+        },
+        {
+          "classical_bit": 133,
+          "physical_circuit_qubit": 133
+        },
+        {
+          "classical_bit": 134,
+          "physical_circuit_qubit": 134
+        },
+        {
+          "classical_bit": 135,
+          "physical_circuit_qubit": 135
+        },
+        {
+          "classical_bit": 136,
+          "physical_circuit_qubit": 136
+        },
+        {
+          "classical_bit": 137,
+          "physical_circuit_qubit": 137
+        },
+        {
+          "classical_bit": 138,
+          "physical_circuit_qubit": 138
+        },
+        {
+          "classical_bit": 139,
+          "physical_circuit_qubit": 139
+        },
+        {
+          "classical_bit": 140,
+          "physical_circuit_qubit": 140
+        },
+        {
+          "classical_bit": 141,
+          "physical_circuit_qubit": 141
+        },
+        {
+          "classical_bit": 142,
+          "physical_circuit_qubit": 142
+        },
+        {
+          "classical_bit": 143,
+          "physical_circuit_qubit": 143
+        },
+        {
+          "classical_bit": 144,
+          "physical_circuit_qubit": 144
+        },
+        {
+          "classical_bit": 145,
+          "physical_circuit_qubit": 145
+        },
+        {
+          "classical_bit": 146,
+          "physical_circuit_qubit": 146
+        },
+        {
+          "classical_bit": 147,
+          "physical_circuit_qubit": 147
+        },
+        {
+          "classical_bit": 148,
+          "physical_circuit_qubit": 148
+        },
+        {
+          "classical_bit": 149,
+          "physical_circuit_qubit": 149
+        },
+        {
+          "classical_bit": 150,
+          "physical_circuit_qubit": 150
+        },
+        {
+          "classical_bit": 151,
+          "physical_circuit_qubit": 151
+        },
+        {
+          "classical_bit": 152,
+          "physical_circuit_qubit": 152
+        },
+        {
+          "classical_bit": 153,
+          "physical_circuit_qubit": 153
+        },
+        {
+          "classical_bit": 154,
+          "physical_circuit_qubit": 154
+        },
+        {
+          "classical_bit": 155,
+          "physical_circuit_qubit": 155
+        }
+      ],
+      "actual_pub_measurement_mapping_recovered": true,
+      "all_zero_counts": 0,
+      "all_zero_probability": 0.0,
+      "all_zero_wilson_95_from_prior_manifest": [
+        0,
+        0.0037374040400176777
+      ],
+      "all_zero_wilson_95_independent": [
+        0.0,
+        0.0037374040400176777
+      ],
+      "bitstring_width": 156,
+      "distinct_outcomes": 1024,
+      "hamming_and_each_marginal_verified_against_integer_bit_representation": true,
+      "hamming_weight_histogram": {
+        "10": 7,
+        "11": 9,
+        "12": 13,
+        "13": 15,
+        "14": 21,
+        "15": 33,
+        "16": 36,
+        "17": 52,
+        "18": 51,
+        "19": 65,
+        "20": 78,
+        "21": 80,
+        "22": 76,
+        "23": 94,
+        "24": 74,
+        "25": 60,
+        "26": 54,
+        "27": 46,
+        "28": 51,
+        "29": 33,
+        "30": 15,
+        "31": 15,
+        "32": 17,
+        "33": 11,
+        "34": 4,
+        "35": 3,
+        "36": 3,
+        "37": 2,
+        "39": 1,
+        "40": 1,
+        "41": 1,
+        "7": 1,
+        "8": 2
+      },
+      "ideal_noiseless_diagonal_probability": 1.0,
+      "is_diagonal": true,
+      "maximum_hamming_weight": 41,
+      "mean_hamming_weight": 22.1591796875,
+      "minimum_hamming_weight": 7,
+      "observed_diagonal_probability_minus_noiseless_ideal": -1.0,
+      "p0_summary": {
+        "max": 0.978515625,
+        "mean": 0.8579539763621795,
+        "median": 0.91259765625,
+        "min": 0.353515625
+      },
+      "pair": [
+        0,
+        0
+      ],
+      "per_classical_bit_p0": [
+        {
+          "bit_index": 0,
+          "p0": 0.849609375,
+          "z_expectation_of_overlap_output": 0.69921875,
+          "zero_counts": 870
+        },
+        {
+          "bit_index": 1,
+          "p0": 0.8515625,
+          "z_expectation_of_overlap_output": 0.703125,
+          "zero_counts": 872
+        },
+        {
+          "bit_index": 2,
+          "p0": 0.9384765625,
+          "z_expectation_of_overlap_output": 0.876953125,
+          "zero_counts": 961
+        },
+        {
+          "bit_index": 3,
+          "p0": 0.8876953125,
+          "z_expectation_of_overlap_output": 0.775390625,
+          "zero_counts": 909
+        },
+        {
+          "bit_index": 4,
+          "p0": 0.94140625,
+          "z_expectation_of_overlap_output": 0.8828125,
+          "zero_counts": 964
+        },
+        {
+          "bit_index": 5,
+          "p0": 0.8359375,
+          "z_expectation_of_overlap_output": 0.671875,
+          "zero_counts": 856
+        },
+        {
+          "bit_index": 6,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 7,
+          "p0": 0.794921875,
+          "z_expectation_of_overlap_output": 0.58984375,
+          "zero_counts": 814
+        },
+        {
+          "bit_index": 8,
+          "p0": 0.9111328125,
+          "z_expectation_of_overlap_output": 0.822265625,
+          "zero_counts": 933
+        },
+        {
+          "bit_index": 9,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 10,
+          "p0": 0.92578125,
+          "z_expectation_of_overlap_output": 0.8515625,
+          "zero_counts": 948
+        },
+        {
+          "bit_index": 11,
+          "p0": 0.7890625,
+          "z_expectation_of_overlap_output": 0.578125,
+          "zero_counts": 808
+        },
+        {
+          "bit_index": 12,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 13,
+          "p0": 0.892578125,
+          "z_expectation_of_overlap_output": 0.78515625,
+          "zero_counts": 914
+        },
+        {
+          "bit_index": 14,
+          "p0": 0.9228515625,
+          "z_expectation_of_overlap_output": 0.845703125,
+          "zero_counts": 945
+        },
+        {
+          "bit_index": 15,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 16,
+          "p0": 0.9453125,
+          "z_expectation_of_overlap_output": 0.890625,
+          "zero_counts": 968
+        },
+        {
+          "bit_index": 17,
+          "p0": 0.6572265625,
+          "z_expectation_of_overlap_output": 0.314453125,
+          "zero_counts": 673
+        },
+        {
+          "bit_index": 18,
+          "p0": 0.8212890625,
+          "z_expectation_of_overlap_output": 0.642578125,
+          "zero_counts": 841
+        },
+        {
+          "bit_index": 19,
+          "p0": 0.9267578125,
+          "z_expectation_of_overlap_output": 0.853515625,
+          "zero_counts": 949
+        },
+        {
+          "bit_index": 20,
+          "p0": 0.9189453125,
+          "z_expectation_of_overlap_output": 0.837890625,
+          "zero_counts": 941
+        },
+        {
+          "bit_index": 21,
+          "p0": 0.83984375,
+          "z_expectation_of_overlap_output": 0.6796875,
+          "zero_counts": 860
+        },
+        {
+          "bit_index": 22,
+          "p0": 0.9052734375,
+          "z_expectation_of_overlap_output": 0.810546875,
+          "zero_counts": 927
+        },
+        {
+          "bit_index": 23,
+          "p0": 0.71484375,
+          "z_expectation_of_overlap_output": 0.4296875,
+          "zero_counts": 732
+        },
+        {
+          "bit_index": 24,
+          "p0": 0.556640625,
+          "z_expectation_of_overlap_output": 0.11328125,
+          "zero_counts": 570
+        },
+        {
+          "bit_index": 25,
+          "p0": 0.5986328125,
+          "z_expectation_of_overlap_output": 0.197265625,
+          "zero_counts": 613
+        },
+        {
+          "bit_index": 26,
+          "p0": 0.95703125,
+          "z_expectation_of_overlap_output": 0.9140625,
+          "zero_counts": 980
+        },
+        {
+          "bit_index": 27,
+          "p0": 0.353515625,
+          "z_expectation_of_overlap_output": -0.29296875,
+          "zero_counts": 362
+        },
+        {
+          "bit_index": 28,
+          "p0": 0.50390625,
+          "z_expectation_of_overlap_output": 0.0078125,
+          "zero_counts": 516
+        },
+        {
+          "bit_index": 29,
+          "p0": 0.6806640625,
+          "z_expectation_of_overlap_output": 0.361328125,
+          "zero_counts": 697
+        },
+        {
+          "bit_index": 30,
+          "p0": 0.9423828125,
+          "z_expectation_of_overlap_output": 0.884765625,
+          "zero_counts": 965
+        },
+        {
+          "bit_index": 31,
+          "p0": 0.55859375,
+          "z_expectation_of_overlap_output": 0.1171875,
+          "zero_counts": 572
+        },
+        {
+          "bit_index": 32,
+          "p0": 0.626953125,
+          "z_expectation_of_overlap_output": 0.25390625,
+          "zero_counts": 642
+        },
+        {
+          "bit_index": 33,
+          "p0": 0.54296875,
+          "z_expectation_of_overlap_output": 0.0859375,
+          "zero_counts": 556
+        },
+        {
+          "bit_index": 34,
+          "p0": 0.8271484375,
+          "z_expectation_of_overlap_output": 0.654296875,
+          "zero_counts": 847
+        },
+        {
+          "bit_index": 35,
+          "p0": 0.9404296875,
+          "z_expectation_of_overlap_output": 0.880859375,
+          "zero_counts": 963
+        },
+        {
+          "bit_index": 36,
+          "p0": 0.8759765625,
+          "z_expectation_of_overlap_output": 0.751953125,
+          "zero_counts": 897
+        },
+        {
+          "bit_index": 37,
+          "p0": 0.7529296875,
+          "z_expectation_of_overlap_output": 0.505859375,
+          "zero_counts": 771
+        },
+        {
+          "bit_index": 38,
+          "p0": 0.935546875,
+          "z_expectation_of_overlap_output": 0.87109375,
+          "zero_counts": 958
+        },
+        {
+          "bit_index": 39,
+          "p0": 0.7412109375,
+          "z_expectation_of_overlap_output": 0.482421875,
+          "zero_counts": 759
+        },
+        {
+          "bit_index": 40,
+          "p0": 0.9384765625,
+          "z_expectation_of_overlap_output": 0.876953125,
+          "zero_counts": 961
+        },
+        {
+          "bit_index": 41,
+          "p0": 0.5205078125,
+          "z_expectation_of_overlap_output": 0.041015625,
+          "zero_counts": 533
+        },
+        {
+          "bit_index": 42,
+          "p0": 0.87890625,
+          "z_expectation_of_overlap_output": 0.7578125,
+          "zero_counts": 900
+        },
+        {
+          "bit_index": 43,
+          "p0": 0.822265625,
+          "z_expectation_of_overlap_output": 0.64453125,
+          "zero_counts": 842
+        },
+        {
+          "bit_index": 44,
+          "p0": 0.9541015625,
+          "z_expectation_of_overlap_output": 0.908203125,
+          "zero_counts": 977
+        },
+        {
+          "bit_index": 45,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 46,
+          "p0": 0.9365234375,
+          "z_expectation_of_overlap_output": 0.873046875,
+          "zero_counts": 959
+        },
+        {
+          "bit_index": 47,
+          "p0": 0.8759765625,
+          "z_expectation_of_overlap_output": 0.751953125,
+          "zero_counts": 897
+        },
+        {
+          "bit_index": 48,
+          "p0": 0.9267578125,
+          "z_expectation_of_overlap_output": 0.853515625,
+          "zero_counts": 949
+        },
+        {
+          "bit_index": 49,
+          "p0": 0.7197265625,
+          "z_expectation_of_overlap_output": 0.439453125,
+          "zero_counts": 737
+        },
+        {
+          "bit_index": 50,
+          "p0": 0.8203125,
+          "z_expectation_of_overlap_output": 0.640625,
+          "zero_counts": 840
+        },
+        {
+          "bit_index": 51,
+          "p0": 0.88671875,
+          "z_expectation_of_overlap_output": 0.7734375,
+          "zero_counts": 908
+        },
+        {
+          "bit_index": 52,
+          "p0": 0.9365234375,
+          "z_expectation_of_overlap_output": 0.873046875,
+          "zero_counts": 959
+        },
+        {
+          "bit_index": 53,
+          "p0": 0.8056640625,
+          "z_expectation_of_overlap_output": 0.611328125,
+          "zero_counts": 825
+        },
+        {
+          "bit_index": 54,
+          "p0": 0.939453125,
+          "z_expectation_of_overlap_output": 0.87890625,
+          "zero_counts": 962
+        },
+        {
+          "bit_index": 55,
+          "p0": 0.8955078125,
+          "z_expectation_of_overlap_output": 0.791015625,
+          "zero_counts": 917
+        },
+        {
+          "bit_index": 56,
+          "p0": 0.908203125,
+          "z_expectation_of_overlap_output": 0.81640625,
+          "zero_counts": 930
+        },
+        {
+          "bit_index": 57,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 58,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 59,
+          "p0": 0.9326171875,
+          "z_expectation_of_overlap_output": 0.865234375,
+          "zero_counts": 955
+        },
+        {
+          "bit_index": 60,
+          "p0": 0.8935546875,
+          "z_expectation_of_overlap_output": 0.787109375,
+          "zero_counts": 915
+        },
+        {
+          "bit_index": 61,
+          "p0": 0.748046875,
+          "z_expectation_of_overlap_output": 0.49609375,
+          "zero_counts": 766
+        },
+        {
+          "bit_index": 62,
+          "p0": 0.8515625,
+          "z_expectation_of_overlap_output": 0.703125,
+          "zero_counts": 872
+        },
+        {
+          "bit_index": 63,
+          "p0": 0.69921875,
+          "z_expectation_of_overlap_output": 0.3984375,
+          "zero_counts": 716
+        },
+        {
+          "bit_index": 64,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        },
+        {
+          "bit_index": 65,
+          "p0": 0.8662109375,
+          "z_expectation_of_overlap_output": 0.732421875,
+          "zero_counts": 887
+        },
+        {
+          "bit_index": 66,
+          "p0": 0.955078125,
+          "z_expectation_of_overlap_output": 0.91015625,
+          "zero_counts": 978
+        },
+        {
+          "bit_index": 67,
+          "p0": 0.833984375,
+          "z_expectation_of_overlap_output": 0.66796875,
+          "zero_counts": 854
+        },
+        {
+          "bit_index": 68,
+          "p0": 0.8876953125,
+          "z_expectation_of_overlap_output": 0.775390625,
+          "zero_counts": 909
+        },
+        {
+          "bit_index": 69,
+          "p0": 0.859375,
+          "z_expectation_of_overlap_output": 0.71875,
+          "zero_counts": 880
+        },
+        {
+          "bit_index": 70,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 71,
+          "p0": 0.7431640625,
+          "z_expectation_of_overlap_output": 0.486328125,
+          "zero_counts": 761
+        },
+        {
+          "bit_index": 72,
+          "p0": 0.3583984375,
+          "z_expectation_of_overlap_output": -0.283203125,
+          "zero_counts": 367
+        },
+        {
+          "bit_index": 73,
+          "p0": 0.5546875,
+          "z_expectation_of_overlap_output": 0.109375,
+          "zero_counts": 568
+        },
+        {
+          "bit_index": 74,
+          "p0": 0.9599609375,
+          "z_expectation_of_overlap_output": 0.919921875,
+          "zero_counts": 983
+        },
+        {
+          "bit_index": 75,
+          "p0": 0.935546875,
+          "z_expectation_of_overlap_output": 0.87109375,
+          "zero_counts": 958
+        },
+        {
+          "bit_index": 76,
+          "p0": 0.912109375,
+          "z_expectation_of_overlap_output": 0.82421875,
+          "zero_counts": 934
+        },
+        {
+          "bit_index": 77,
+          "p0": 0.931640625,
+          "z_expectation_of_overlap_output": 0.86328125,
+          "zero_counts": 954
+        },
+        {
+          "bit_index": 78,
+          "p0": 0.8935546875,
+          "z_expectation_of_overlap_output": 0.787109375,
+          "zero_counts": 915
+        },
+        {
+          "bit_index": 79,
+          "p0": 0.7470703125,
+          "z_expectation_of_overlap_output": 0.494140625,
+          "zero_counts": 765
+        },
+        {
+          "bit_index": 80,
+          "p0": 0.955078125,
+          "z_expectation_of_overlap_output": 0.91015625,
+          "zero_counts": 978
+        },
+        {
+          "bit_index": 81,
+          "p0": 0.900390625,
+          "z_expectation_of_overlap_output": 0.80078125,
+          "zero_counts": 922
+        },
+        {
+          "bit_index": 82,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 83,
+          "p0": 0.76953125,
+          "z_expectation_of_overlap_output": 0.5390625,
+          "zero_counts": 788
+        },
+        {
+          "bit_index": 84,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 85,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        },
+        {
+          "bit_index": 86,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 87,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 88,
+          "p0": 0.95703125,
+          "z_expectation_of_overlap_output": 0.9140625,
+          "zero_counts": 980
+        },
+        {
+          "bit_index": 89,
+          "p0": 0.8603515625,
+          "z_expectation_of_overlap_output": 0.720703125,
+          "zero_counts": 881
+        },
+        {
+          "bit_index": 90,
+          "p0": 0.9287109375,
+          "z_expectation_of_overlap_output": 0.857421875,
+          "zero_counts": 951
+        },
+        {
+          "bit_index": 91,
+          "p0": 0.85546875,
+          "z_expectation_of_overlap_output": 0.7109375,
+          "zero_counts": 876
+        },
+        {
+          "bit_index": 92,
+          "p0": 0.951171875,
+          "z_expectation_of_overlap_output": 0.90234375,
+          "zero_counts": 974
+        },
+        {
+          "bit_index": 93,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 94,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 95,
+          "p0": 0.9375,
+          "z_expectation_of_overlap_output": 0.875,
+          "zero_counts": 960
+        },
+        {
+          "bit_index": 96,
+          "p0": 0.8056640625,
+          "z_expectation_of_overlap_output": 0.611328125,
+          "zero_counts": 825
+        },
+        {
+          "bit_index": 97,
+          "p0": 0.931640625,
+          "z_expectation_of_overlap_output": 0.86328125,
+          "zero_counts": 954
+        },
+        {
+          "bit_index": 98,
+          "p0": 0.9326171875,
+          "z_expectation_of_overlap_output": 0.865234375,
+          "zero_counts": 955
+        },
+        {
+          "bit_index": 99,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 100,
+          "p0": 0.9423828125,
+          "z_expectation_of_overlap_output": 0.884765625,
+          "zero_counts": 965
+        },
+        {
+          "bit_index": 101,
+          "p0": 0.7421875,
+          "z_expectation_of_overlap_output": 0.484375,
+          "zero_counts": 760
+        },
+        {
+          "bit_index": 102,
+          "p0": 0.5146484375,
+          "z_expectation_of_overlap_output": 0.029296875,
+          "zero_counts": 527
+        },
+        {
+          "bit_index": 103,
+          "p0": 0.4736328125,
+          "z_expectation_of_overlap_output": -0.052734375,
+          "zero_counts": 485
+        },
+        {
+          "bit_index": 104,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 105,
+          "p0": 0.8359375,
+          "z_expectation_of_overlap_output": 0.671875,
+          "zero_counts": 856
+        },
+        {
+          "bit_index": 106,
+          "p0": 0.6142578125,
+          "z_expectation_of_overlap_output": 0.228515625,
+          "zero_counts": 629
+        },
+        {
+          "bit_index": 107,
+          "p0": 0.927734375,
+          "z_expectation_of_overlap_output": 0.85546875,
+          "zero_counts": 950
+        },
+        {
+          "bit_index": 108,
+          "p0": 0.912109375,
+          "z_expectation_of_overlap_output": 0.82421875,
+          "zero_counts": 934
+        },
+        {
+          "bit_index": 109,
+          "p0": 0.857421875,
+          "z_expectation_of_overlap_output": 0.71484375,
+          "zero_counts": 878
+        },
+        {
+          "bit_index": 110,
+          "p0": 0.9619140625,
+          "z_expectation_of_overlap_output": 0.923828125,
+          "zero_counts": 985
+        },
+        {
+          "bit_index": 111,
+          "p0": 0.9111328125,
+          "z_expectation_of_overlap_output": 0.822265625,
+          "zero_counts": 933
+        },
+        {
+          "bit_index": 112,
+          "p0": 0.9248046875,
+          "z_expectation_of_overlap_output": 0.849609375,
+          "zero_counts": 947
+        },
+        {
+          "bit_index": 113,
+          "p0": 0.7138671875,
+          "z_expectation_of_overlap_output": 0.427734375,
+          "zero_counts": 731
+        },
+        {
+          "bit_index": 114,
+          "p0": 0.9150390625,
+          "z_expectation_of_overlap_output": 0.830078125,
+          "zero_counts": 937
+        },
+        {
+          "bit_index": 115,
+          "p0": 0.9462890625,
+          "z_expectation_of_overlap_output": 0.892578125,
+          "zero_counts": 969
+        },
+        {
+          "bit_index": 116,
+          "p0": 0.91015625,
+          "z_expectation_of_overlap_output": 0.8203125,
+          "zero_counts": 932
+        },
+        {
+          "bit_index": 117,
+          "p0": 0.935546875,
+          "z_expectation_of_overlap_output": 0.87109375,
+          "zero_counts": 958
+        },
+        {
+          "bit_index": 118,
+          "p0": 0.953125,
+          "z_expectation_of_overlap_output": 0.90625,
+          "zero_counts": 976
+        },
+        {
+          "bit_index": 119,
+          "p0": 0.892578125,
+          "z_expectation_of_overlap_output": 0.78515625,
+          "zero_counts": 914
+        },
+        {
+          "bit_index": 120,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 121,
+          "p0": 0.892578125,
+          "z_expectation_of_overlap_output": 0.78515625,
+          "zero_counts": 914
+        },
+        {
+          "bit_index": 122,
+          "p0": 0.935546875,
+          "z_expectation_of_overlap_output": 0.87109375,
+          "zero_counts": 958
+        },
+        {
+          "bit_index": 123,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 124,
+          "p0": 0.9482421875,
+          "z_expectation_of_overlap_output": 0.896484375,
+          "zero_counts": 971
+        },
+        {
+          "bit_index": 125,
+          "p0": 0.87109375,
+          "z_expectation_of_overlap_output": 0.7421875,
+          "zero_counts": 892
+        },
+        {
+          "bit_index": 126,
+          "p0": 0.861328125,
+          "z_expectation_of_overlap_output": 0.72265625,
+          "zero_counts": 882
+        },
+        {
+          "bit_index": 127,
+          "p0": 0.7373046875,
+          "z_expectation_of_overlap_output": 0.474609375,
+          "zero_counts": 755
+        },
+        {
+          "bit_index": 128,
+          "p0": 0.8857421875,
+          "z_expectation_of_overlap_output": 0.771484375,
+          "zero_counts": 907
+        },
+        {
+          "bit_index": 129,
+          "p0": 0.9150390625,
+          "z_expectation_of_overlap_output": 0.830078125,
+          "zero_counts": 937
+        },
+        {
+          "bit_index": 130,
+          "p0": 0.9423828125,
+          "z_expectation_of_overlap_output": 0.884765625,
+          "zero_counts": 965
+        },
+        {
+          "bit_index": 131,
+          "p0": 0.8212890625,
+          "z_expectation_of_overlap_output": 0.642578125,
+          "zero_counts": 841
+        },
+        {
+          "bit_index": 132,
+          "p0": 0.94140625,
+          "z_expectation_of_overlap_output": 0.8828125,
+          "zero_counts": 964
+        },
+        {
+          "bit_index": 133,
+          "p0": 0.90234375,
+          "z_expectation_of_overlap_output": 0.8046875,
+          "zero_counts": 924
+        },
+        {
+          "bit_index": 134,
+          "p0": 0.9560546875,
+          "z_expectation_of_overlap_output": 0.912109375,
+          "zero_counts": 979
+        },
+        {
+          "bit_index": 135,
+          "p0": 0.9072265625,
+          "z_expectation_of_overlap_output": 0.814453125,
+          "zero_counts": 929
+        },
+        {
+          "bit_index": 136,
+          "p0": 0.9541015625,
+          "z_expectation_of_overlap_output": 0.908203125,
+          "zero_counts": 977
+        },
+        {
+          "bit_index": 137,
+          "p0": 0.9189453125,
+          "z_expectation_of_overlap_output": 0.837890625,
+          "zero_counts": 941
+        },
+        {
+          "bit_index": 138,
+          "p0": 0.931640625,
+          "z_expectation_of_overlap_output": 0.86328125,
+          "zero_counts": 954
+        },
+        {
+          "bit_index": 139,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 140,
+          "p0": 0.9775390625,
+          "z_expectation_of_overlap_output": 0.955078125,
+          "zero_counts": 1001
+        },
+        {
+          "bit_index": 141,
+          "p0": 0.962890625,
+          "z_expectation_of_overlap_output": 0.92578125,
+          "zero_counts": 986
+        },
+        {
+          "bit_index": 142,
+          "p0": 0.955078125,
+          "z_expectation_of_overlap_output": 0.91015625,
+          "zero_counts": 978
+        },
+        {
+          "bit_index": 143,
+          "p0": 0.9267578125,
+          "z_expectation_of_overlap_output": 0.853515625,
+          "zero_counts": 949
+        },
+        {
+          "bit_index": 144,
+          "p0": 0.95703125,
+          "z_expectation_of_overlap_output": 0.9140625,
+          "zero_counts": 980
+        },
+        {
+          "bit_index": 145,
+          "p0": 0.9287109375,
+          "z_expectation_of_overlap_output": 0.857421875,
+          "zero_counts": 951
+        },
+        {
+          "bit_index": 146,
+          "p0": 0.95703125,
+          "z_expectation_of_overlap_output": 0.9140625,
+          "zero_counts": 980
+        },
+        {
+          "bit_index": 147,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 148,
+          "p0": 0.837890625,
+          "z_expectation_of_overlap_output": 0.67578125,
+          "zero_counts": 858
+        },
+        {
+          "bit_index": 149,
+          "p0": 0.607421875,
+          "z_expectation_of_overlap_output": 0.21484375,
+          "zero_counts": 622
+        },
+        {
+          "bit_index": 150,
+          "p0": 0.7421875,
+          "z_expectation_of_overlap_output": 0.484375,
+          "zero_counts": 760
+        },
+        {
+          "bit_index": 151,
+          "p0": 0.890625,
+          "z_expectation_of_overlap_output": 0.78125,
+          "zero_counts": 912
+        },
+        {
+          "bit_index": 152,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 153,
+          "p0": 0.95703125,
+          "z_expectation_of_overlap_output": 0.9140625,
+          "zero_counts": 980
+        },
+        {
+          "bit_index": 154,
+          "p0": 0.978515625,
+          "z_expectation_of_overlap_output": 0.95703125,
+          "zero_counts": 1002
+        },
+        {
+          "bit_index": 155,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        }
+      ],
+      "product_marginals_interpretation": "Diagnostic only: assumes independent output bits, which are not established; not the measured all-zero probability.",
+      "product_of_measured_marginal_p0": 4.7088720025842534e-12,
+      "pub_index": 0,
+      "sd_hamming_weight": 5.158716617491932,
+      "shots": 1024
+    },
+    {
+      "actual_pub_measurement_mapping": [
+        {
+          "classical_bit": 0,
+          "physical_circuit_qubit": 0
+        },
+        {
+          "classical_bit": 1,
+          "physical_circuit_qubit": 1
+        },
+        {
+          "classical_bit": 2,
+          "physical_circuit_qubit": 2
+        },
+        {
+          "classical_bit": 3,
+          "physical_circuit_qubit": 3
+        },
+        {
+          "classical_bit": 4,
+          "physical_circuit_qubit": 4
+        },
+        {
+          "classical_bit": 5,
+          "physical_circuit_qubit": 5
+        },
+        {
+          "classical_bit": 6,
+          "physical_circuit_qubit": 6
+        },
+        {
+          "classical_bit": 7,
+          "physical_circuit_qubit": 7
+        },
+        {
+          "classical_bit": 8,
+          "physical_circuit_qubit": 8
+        },
+        {
+          "classical_bit": 9,
+          "physical_circuit_qubit": 9
+        },
+        {
+          "classical_bit": 10,
+          "physical_circuit_qubit": 10
+        },
+        {
+          "classical_bit": 11,
+          "physical_circuit_qubit": 11
+        },
+        {
+          "classical_bit": 12,
+          "physical_circuit_qubit": 12
+        },
+        {
+          "classical_bit": 13,
+          "physical_circuit_qubit": 13
+        },
+        {
+          "classical_bit": 14,
+          "physical_circuit_qubit": 14
+        },
+        {
+          "classical_bit": 15,
+          "physical_circuit_qubit": 15
+        },
+        {
+          "classical_bit": 16,
+          "physical_circuit_qubit": 16
+        },
+        {
+          "classical_bit": 17,
+          "physical_circuit_qubit": 17
+        },
+        {
+          "classical_bit": 18,
+          "physical_circuit_qubit": 18
+        },
+        {
+          "classical_bit": 19,
+          "physical_circuit_qubit": 19
+        },
+        {
+          "classical_bit": 20,
+          "physical_circuit_qubit": 20
+        },
+        {
+          "classical_bit": 21,
+          "physical_circuit_qubit": 21
+        },
+        {
+          "classical_bit": 22,
+          "physical_circuit_qubit": 22
+        },
+        {
+          "classical_bit": 23,
+          "physical_circuit_qubit": 23
+        },
+        {
+          "classical_bit": 24,
+          "physical_circuit_qubit": 24
+        },
+        {
+          "classical_bit": 25,
+          "physical_circuit_qubit": 25
+        },
+        {
+          "classical_bit": 26,
+          "physical_circuit_qubit": 26
+        },
+        {
+          "classical_bit": 27,
+          "physical_circuit_qubit": 27
+        },
+        {
+          "classical_bit": 28,
+          "physical_circuit_qubit": 28
+        },
+        {
+          "classical_bit": 29,
+          "physical_circuit_qubit": 29
+        },
+        {
+          "classical_bit": 30,
+          "physical_circuit_qubit": 30
+        },
+        {
+          "classical_bit": 31,
+          "physical_circuit_qubit": 31
+        },
+        {
+          "classical_bit": 32,
+          "physical_circuit_qubit": 32
+        },
+        {
+          "classical_bit": 33,
+          "physical_circuit_qubit": 33
+        },
+        {
+          "classical_bit": 34,
+          "physical_circuit_qubit": 34
+        },
+        {
+          "classical_bit": 35,
+          "physical_circuit_qubit": 35
+        },
+        {
+          "classical_bit": 36,
+          "physical_circuit_qubit": 36
+        },
+        {
+          "classical_bit": 37,
+          "physical_circuit_qubit": 37
+        },
+        {
+          "classical_bit": 38,
+          "physical_circuit_qubit": 38
+        },
+        {
+          "classical_bit": 39,
+          "physical_circuit_qubit": 39
+        },
+        {
+          "classical_bit": 40,
+          "physical_circuit_qubit": 40
+        },
+        {
+          "classical_bit": 41,
+          "physical_circuit_qubit": 41
+        },
+        {
+          "classical_bit": 42,
+          "physical_circuit_qubit": 42
+        },
+        {
+          "classical_bit": 43,
+          "physical_circuit_qubit": 43
+        },
+        {
+          "classical_bit": 44,
+          "physical_circuit_qubit": 44
+        },
+        {
+          "classical_bit": 45,
+          "physical_circuit_qubit": 45
+        },
+        {
+          "classical_bit": 46,
+          "physical_circuit_qubit": 46
+        },
+        {
+          "classical_bit": 47,
+          "physical_circuit_qubit": 47
+        },
+        {
+          "classical_bit": 48,
+          "physical_circuit_qubit": 48
+        },
+        {
+          "classical_bit": 49,
+          "physical_circuit_qubit": 49
+        },
+        {
+          "classical_bit": 50,
+          "physical_circuit_qubit": 50
+        },
+        {
+          "classical_bit": 51,
+          "physical_circuit_qubit": 51
+        },
+        {
+          "classical_bit": 52,
+          "physical_circuit_qubit": 52
+        },
+        {
+          "classical_bit": 53,
+          "physical_circuit_qubit": 53
+        },
+        {
+          "classical_bit": 54,
+          "physical_circuit_qubit": 54
+        },
+        {
+          "classical_bit": 55,
+          "physical_circuit_qubit": 55
+        },
+        {
+          "classical_bit": 56,
+          "physical_circuit_qubit": 56
+        },
+        {
+          "classical_bit": 57,
+          "physical_circuit_qubit": 57
+        },
+        {
+          "classical_bit": 58,
+          "physical_circuit_qubit": 58
+        },
+        {
+          "classical_bit": 59,
+          "physical_circuit_qubit": 59
+        },
+        {
+          "classical_bit": 60,
+          "physical_circuit_qubit": 60
+        },
+        {
+          "classical_bit": 61,
+          "physical_circuit_qubit": 61
+        },
+        {
+          "classical_bit": 62,
+          "physical_circuit_qubit": 62
+        },
+        {
+          "classical_bit": 63,
+          "physical_circuit_qubit": 63
+        },
+        {
+          "classical_bit": 64,
+          "physical_circuit_qubit": 64
+        },
+        {
+          "classical_bit": 65,
+          "physical_circuit_qubit": 65
+        },
+        {
+          "classical_bit": 66,
+          "physical_circuit_qubit": 66
+        },
+        {
+          "classical_bit": 67,
+          "physical_circuit_qubit": 67
+        },
+        {
+          "classical_bit": 68,
+          "physical_circuit_qubit": 68
+        },
+        {
+          "classical_bit": 69,
+          "physical_circuit_qubit": 69
+        },
+        {
+          "classical_bit": 70,
+          "physical_circuit_qubit": 70
+        },
+        {
+          "classical_bit": 71,
+          "physical_circuit_qubit": 71
+        },
+        {
+          "classical_bit": 72,
+          "physical_circuit_qubit": 72
+        },
+        {
+          "classical_bit": 73,
+          "physical_circuit_qubit": 73
+        },
+        {
+          "classical_bit": 74,
+          "physical_circuit_qubit": 74
+        },
+        {
+          "classical_bit": 75,
+          "physical_circuit_qubit": 75
+        },
+        {
+          "classical_bit": 76,
+          "physical_circuit_qubit": 76
+        },
+        {
+          "classical_bit": 77,
+          "physical_circuit_qubit": 77
+        },
+        {
+          "classical_bit": 78,
+          "physical_circuit_qubit": 78
+        },
+        {
+          "classical_bit": 79,
+          "physical_circuit_qubit": 79
+        },
+        {
+          "classical_bit": 80,
+          "physical_circuit_qubit": 80
+        },
+        {
+          "classical_bit": 81,
+          "physical_circuit_qubit": 81
+        },
+        {
+          "classical_bit": 82,
+          "physical_circuit_qubit": 82
+        },
+        {
+          "classical_bit": 83,
+          "physical_circuit_qubit": 83
+        },
+        {
+          "classical_bit": 84,
+          "physical_circuit_qubit": 84
+        },
+        {
+          "classical_bit": 85,
+          "physical_circuit_qubit": 85
+        },
+        {
+          "classical_bit": 86,
+          "physical_circuit_qubit": 86
+        },
+        {
+          "classical_bit": 87,
+          "physical_circuit_qubit": 87
+        },
+        {
+          "classical_bit": 88,
+          "physical_circuit_qubit": 88
+        },
+        {
+          "classical_bit": 89,
+          "physical_circuit_qubit": 89
+        },
+        {
+          "classical_bit": 90,
+          "physical_circuit_qubit": 90
+        },
+        {
+          "classical_bit": 91,
+          "physical_circuit_qubit": 91
+        },
+        {
+          "classical_bit": 92,
+          "physical_circuit_qubit": 92
+        },
+        {
+          "classical_bit": 93,
+          "physical_circuit_qubit": 93
+        },
+        {
+          "classical_bit": 94,
+          "physical_circuit_qubit": 94
+        },
+        {
+          "classical_bit": 95,
+          "physical_circuit_qubit": 95
+        },
+        {
+          "classical_bit": 96,
+          "physical_circuit_qubit": 96
+        },
+        {
+          "classical_bit": 97,
+          "physical_circuit_qubit": 97
+        },
+        {
+          "classical_bit": 98,
+          "physical_circuit_qubit": 98
+        },
+        {
+          "classical_bit": 99,
+          "physical_circuit_qubit": 99
+        },
+        {
+          "classical_bit": 100,
+          "physical_circuit_qubit": 100
+        },
+        {
+          "classical_bit": 101,
+          "physical_circuit_qubit": 101
+        },
+        {
+          "classical_bit": 102,
+          "physical_circuit_qubit": 102
+        },
+        {
+          "classical_bit": 103,
+          "physical_circuit_qubit": 103
+        },
+        {
+          "classical_bit": 104,
+          "physical_circuit_qubit": 104
+        },
+        {
+          "classical_bit": 105,
+          "physical_circuit_qubit": 105
+        },
+        {
+          "classical_bit": 106,
+          "physical_circuit_qubit": 106
+        },
+        {
+          "classical_bit": 107,
+          "physical_circuit_qubit": 107
+        },
+        {
+          "classical_bit": 108,
+          "physical_circuit_qubit": 108
+        },
+        {
+          "classical_bit": 109,
+          "physical_circuit_qubit": 109
+        },
+        {
+          "classical_bit": 110,
+          "physical_circuit_qubit": 110
+        },
+        {
+          "classical_bit": 111,
+          "physical_circuit_qubit": 111
+        },
+        {
+          "classical_bit": 112,
+          "physical_circuit_qubit": 112
+        },
+        {
+          "classical_bit": 113,
+          "physical_circuit_qubit": 113
+        },
+        {
+          "classical_bit": 114,
+          "physical_circuit_qubit": 114
+        },
+        {
+          "classical_bit": 115,
+          "physical_circuit_qubit": 115
+        },
+        {
+          "classical_bit": 116,
+          "physical_circuit_qubit": 116
+        },
+        {
+          "classical_bit": 117,
+          "physical_circuit_qubit": 117
+        },
+        {
+          "classical_bit": 118,
+          "physical_circuit_qubit": 118
+        },
+        {
+          "classical_bit": 119,
+          "physical_circuit_qubit": 119
+        },
+        {
+          "classical_bit": 120,
+          "physical_circuit_qubit": 120
+        },
+        {
+          "classical_bit": 121,
+          "physical_circuit_qubit": 121
+        },
+        {
+          "classical_bit": 122,
+          "physical_circuit_qubit": 122
+        },
+        {
+          "classical_bit": 123,
+          "physical_circuit_qubit": 123
+        },
+        {
+          "classical_bit": 124,
+          "physical_circuit_qubit": 124
+        },
+        {
+          "classical_bit": 125,
+          "physical_circuit_qubit": 125
+        },
+        {
+          "classical_bit": 126,
+          "physical_circuit_qubit": 126
+        },
+        {
+          "classical_bit": 127,
+          "physical_circuit_qubit": 127
+        },
+        {
+          "classical_bit": 128,
+          "physical_circuit_qubit": 128
+        },
+        {
+          "classical_bit": 129,
+          "physical_circuit_qubit": 129
+        },
+        {
+          "classical_bit": 130,
+          "physical_circuit_qubit": 130
+        },
+        {
+          "classical_bit": 131,
+          "physical_circuit_qubit": 131
+        },
+        {
+          "classical_bit": 132,
+          "physical_circuit_qubit": 132
+        },
+        {
+          "classical_bit": 133,
+          "physical_circuit_qubit": 133
+        },
+        {
+          "classical_bit": 134,
+          "physical_circuit_qubit": 134
+        },
+        {
+          "classical_bit": 135,
+          "physical_circuit_qubit": 135
+        },
+        {
+          "classical_bit": 136,
+          "physical_circuit_qubit": 136
+        },
+        {
+          "classical_bit": 137,
+          "physical_circuit_qubit": 137
+        },
+        {
+          "classical_bit": 138,
+          "physical_circuit_qubit": 138
+        },
+        {
+          "classical_bit": 139,
+          "physical_circuit_qubit": 139
+        },
+        {
+          "classical_bit": 140,
+          "physical_circuit_qubit": 140
+        },
+        {
+          "classical_bit": 141,
+          "physical_circuit_qubit": 141
+        },
+        {
+          "classical_bit": 142,
+          "physical_circuit_qubit": 142
+        },
+        {
+          "classical_bit": 143,
+          "physical_circuit_qubit": 143
+        },
+        {
+          "classical_bit": 144,
+          "physical_circuit_qubit": 144
+        },
+        {
+          "classical_bit": 145,
+          "physical_circuit_qubit": 145
+        },
+        {
+          "classical_bit": 146,
+          "physical_circuit_qubit": 146
+        },
+        {
+          "classical_bit": 147,
+          "physical_circuit_qubit": 147
+        },
+        {
+          "classical_bit": 148,
+          "physical_circuit_qubit": 148
+        },
+        {
+          "classical_bit": 149,
+          "physical_circuit_qubit": 149
+        },
+        {
+          "classical_bit": 150,
+          "physical_circuit_qubit": 150
+        },
+        {
+          "classical_bit": 151,
+          "physical_circuit_qubit": 151
+        },
+        {
+          "classical_bit": 152,
+          "physical_circuit_qubit": 152
+        },
+        {
+          "classical_bit": 153,
+          "physical_circuit_qubit": 153
+        },
+        {
+          "classical_bit": 154,
+          "physical_circuit_qubit": 154
+        },
+        {
+          "classical_bit": 155,
+          "physical_circuit_qubit": 155
+        }
+      ],
+      "actual_pub_measurement_mapping_recovered": true,
+      "all_zero_counts": 0,
+      "all_zero_probability": 0.0,
+      "all_zero_wilson_95_from_prior_manifest": [
+        0,
+        0.0037374040400176777
+      ],
+      "all_zero_wilson_95_independent": [
+        0.0,
+        0.0037374040400176777
+      ],
+      "bitstring_width": 156,
+      "distinct_outcomes": 1024,
+      "hamming_and_each_marginal_verified_against_integer_bit_representation": true,
+      "hamming_weight_histogram": {
+        "10": 1,
+        "11": 4,
+        "12": 6,
+        "13": 9,
+        "14": 15,
+        "15": 18,
+        "16": 33,
+        "17": 44,
+        "18": 44,
+        "19": 72,
+        "20": 65,
+        "21": 74,
+        "22": 65,
+        "23": 78,
+        "24": 84,
+        "25": 59,
+        "26": 66,
+        "27": 50,
+        "28": 42,
+        "29": 55,
+        "30": 32,
+        "31": 25,
+        "32": 23,
+        "33": 11,
+        "34": 14,
+        "35": 7,
+        "36": 10,
+        "37": 5,
+        "38": 5,
+        "39": 3,
+        "40": 1,
+        "41": 2,
+        "42": 1,
+        "9": 1
+      },
+      "ideal_noiseless_diagonal_probability": null,
+      "is_diagonal": false,
+      "maximum_hamming_weight": 42,
+      "mean_hamming_weight": 23.5791015625,
+      "minimum_hamming_weight": 9,
+      "observed_diagonal_probability_minus_noiseless_ideal": null,
+      "p0_summary": {
+        "max": 0.96875,
+        "mean": 0.8488519130608975,
+        "median": 0.8994140625,
+        "min": 0.3330078125
+      },
+      "pair": [
+        0,
+        1
+      ],
+      "per_classical_bit_p0": [
+        {
+          "bit_index": 0,
+          "p0": 0.841796875,
+          "z_expectation_of_overlap_output": 0.68359375,
+          "zero_counts": 862
+        },
+        {
+          "bit_index": 1,
+          "p0": 0.861328125,
+          "z_expectation_of_overlap_output": 0.72265625,
+          "zero_counts": 882
+        },
+        {
+          "bit_index": 2,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        },
+        {
+          "bit_index": 3,
+          "p0": 0.90625,
+          "z_expectation_of_overlap_output": 0.8125,
+          "zero_counts": 928
+        },
+        {
+          "bit_index": 4,
+          "p0": 0.9267578125,
+          "z_expectation_of_overlap_output": 0.853515625,
+          "zero_counts": 949
+        },
+        {
+          "bit_index": 5,
+          "p0": 0.8486328125,
+          "z_expectation_of_overlap_output": 0.697265625,
+          "zero_counts": 869
+        },
+        {
+          "bit_index": 6,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 7,
+          "p0": 0.76953125,
+          "z_expectation_of_overlap_output": 0.5390625,
+          "zero_counts": 788
+        },
+        {
+          "bit_index": 8,
+          "p0": 0.8701171875,
+          "z_expectation_of_overlap_output": 0.740234375,
+          "zero_counts": 891
+        },
+        {
+          "bit_index": 9,
+          "p0": 0.8974609375,
+          "z_expectation_of_overlap_output": 0.794921875,
+          "zero_counts": 919
+        },
+        {
+          "bit_index": 10,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        },
+        {
+          "bit_index": 11,
+          "p0": 0.8173828125,
+          "z_expectation_of_overlap_output": 0.634765625,
+          "zero_counts": 837
+        },
+        {
+          "bit_index": 12,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        },
+        {
+          "bit_index": 13,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 14,
+          "p0": 0.904296875,
+          "z_expectation_of_overlap_output": 0.80859375,
+          "zero_counts": 926
+        },
+        {
+          "bit_index": 15,
+          "p0": 0.8818359375,
+          "z_expectation_of_overlap_output": 0.763671875,
+          "zero_counts": 903
+        },
+        {
+          "bit_index": 16,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 17,
+          "p0": 0.689453125,
+          "z_expectation_of_overlap_output": 0.37890625,
+          "zero_counts": 706
+        },
+        {
+          "bit_index": 18,
+          "p0": 0.80078125,
+          "z_expectation_of_overlap_output": 0.6015625,
+          "zero_counts": 820
+        },
+        {
+          "bit_index": 19,
+          "p0": 0.9296875,
+          "z_expectation_of_overlap_output": 0.859375,
+          "zero_counts": 952
+        },
+        {
+          "bit_index": 20,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 21,
+          "p0": 0.845703125,
+          "z_expectation_of_overlap_output": 0.69140625,
+          "zero_counts": 866
+        },
+        {
+          "bit_index": 22,
+          "p0": 0.8955078125,
+          "z_expectation_of_overlap_output": 0.791015625,
+          "zero_counts": 917
+        },
+        {
+          "bit_index": 23,
+          "p0": 0.7041015625,
+          "z_expectation_of_overlap_output": 0.408203125,
+          "zero_counts": 721
+        },
+        {
+          "bit_index": 24,
+          "p0": 0.6083984375,
+          "z_expectation_of_overlap_output": 0.216796875,
+          "zero_counts": 623
+        },
+        {
+          "bit_index": 25,
+          "p0": 0.609375,
+          "z_expectation_of_overlap_output": 0.21875,
+          "zero_counts": 624
+        },
+        {
+          "bit_index": 26,
+          "p0": 0.94140625,
+          "z_expectation_of_overlap_output": 0.8828125,
+          "zero_counts": 964
+        },
+        {
+          "bit_index": 27,
+          "p0": 0.3330078125,
+          "z_expectation_of_overlap_output": -0.333984375,
+          "zero_counts": 341
+        },
+        {
+          "bit_index": 28,
+          "p0": 0.54296875,
+          "z_expectation_of_overlap_output": 0.0859375,
+          "zero_counts": 556
+        },
+        {
+          "bit_index": 29,
+          "p0": 0.69921875,
+          "z_expectation_of_overlap_output": 0.3984375,
+          "zero_counts": 716
+        },
+        {
+          "bit_index": 30,
+          "p0": 0.9482421875,
+          "z_expectation_of_overlap_output": 0.896484375,
+          "zero_counts": 971
+        },
+        {
+          "bit_index": 31,
+          "p0": 0.533203125,
+          "z_expectation_of_overlap_output": 0.06640625,
+          "zero_counts": 546
+        },
+        {
+          "bit_index": 32,
+          "p0": 0.6240234375,
+          "z_expectation_of_overlap_output": 0.248046875,
+          "zero_counts": 639
+        },
+        {
+          "bit_index": 33,
+          "p0": 0.552734375,
+          "z_expectation_of_overlap_output": 0.10546875,
+          "zero_counts": 566
+        },
+        {
+          "bit_index": 34,
+          "p0": 0.8232421875,
+          "z_expectation_of_overlap_output": 0.646484375,
+          "zero_counts": 843
+        },
+        {
+          "bit_index": 35,
+          "p0": 0.939453125,
+          "z_expectation_of_overlap_output": 0.87890625,
+          "zero_counts": 962
+        },
+        {
+          "bit_index": 36,
+          "p0": 0.8740234375,
+          "z_expectation_of_overlap_output": 0.748046875,
+          "zero_counts": 895
+        },
+        {
+          "bit_index": 37,
+          "p0": 0.8076171875,
+          "z_expectation_of_overlap_output": 0.615234375,
+          "zero_counts": 827
+        },
+        {
+          "bit_index": 38,
+          "p0": 0.908203125,
+          "z_expectation_of_overlap_output": 0.81640625,
+          "zero_counts": 930
+        },
+        {
+          "bit_index": 39,
+          "p0": 0.7294921875,
+          "z_expectation_of_overlap_output": 0.458984375,
+          "zero_counts": 747
+        },
+        {
+          "bit_index": 40,
+          "p0": 0.9296875,
+          "z_expectation_of_overlap_output": 0.859375,
+          "zero_counts": 952
+        },
+        {
+          "bit_index": 41,
+          "p0": 0.5546875,
+          "z_expectation_of_overlap_output": 0.109375,
+          "zero_counts": 568
+        },
+        {
+          "bit_index": 42,
+          "p0": 0.8798828125,
+          "z_expectation_of_overlap_output": 0.759765625,
+          "zero_counts": 901
+        },
+        {
+          "bit_index": 43,
+          "p0": 0.7900390625,
+          "z_expectation_of_overlap_output": 0.580078125,
+          "zero_counts": 809
+        },
+        {
+          "bit_index": 44,
+          "p0": 0.927734375,
+          "z_expectation_of_overlap_output": 0.85546875,
+          "zero_counts": 950
+        },
+        {
+          "bit_index": 45,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 46,
+          "p0": 0.927734375,
+          "z_expectation_of_overlap_output": 0.85546875,
+          "zero_counts": 950
+        },
+        {
+          "bit_index": 47,
+          "p0": 0.8603515625,
+          "z_expectation_of_overlap_output": 0.720703125,
+          "zero_counts": 881
+        },
+        {
+          "bit_index": 48,
+          "p0": 0.912109375,
+          "z_expectation_of_overlap_output": 0.82421875,
+          "zero_counts": 934
+        },
+        {
+          "bit_index": 49,
+          "p0": 0.71875,
+          "z_expectation_of_overlap_output": 0.4375,
+          "zero_counts": 736
+        },
+        {
+          "bit_index": 50,
+          "p0": 0.8193359375,
+          "z_expectation_of_overlap_output": 0.638671875,
+          "zero_counts": 839
+        },
+        {
+          "bit_index": 51,
+          "p0": 0.8505859375,
+          "z_expectation_of_overlap_output": 0.701171875,
+          "zero_counts": 871
+        },
+        {
+          "bit_index": 52,
+          "p0": 0.921875,
+          "z_expectation_of_overlap_output": 0.84375,
+          "zero_counts": 944
+        },
+        {
+          "bit_index": 53,
+          "p0": 0.8115234375,
+          "z_expectation_of_overlap_output": 0.623046875,
+          "zero_counts": 831
+        },
+        {
+          "bit_index": 54,
+          "p0": 0.9443359375,
+          "z_expectation_of_overlap_output": 0.888671875,
+          "zero_counts": 967
+        },
+        {
+          "bit_index": 55,
+          "p0": 0.8916015625,
+          "z_expectation_of_overlap_output": 0.783203125,
+          "zero_counts": 913
+        },
+        {
+          "bit_index": 56,
+          "p0": 0.869140625,
+          "z_expectation_of_overlap_output": 0.73828125,
+          "zero_counts": 890
+        },
+        {
+          "bit_index": 57,
+          "p0": 0.8955078125,
+          "z_expectation_of_overlap_output": 0.791015625,
+          "zero_counts": 917
+        },
+        {
+          "bit_index": 58,
+          "p0": 0.9189453125,
+          "z_expectation_of_overlap_output": 0.837890625,
+          "zero_counts": 941
+        },
+        {
+          "bit_index": 59,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 60,
+          "p0": 0.8916015625,
+          "z_expectation_of_overlap_output": 0.783203125,
+          "zero_counts": 913
+        },
+        {
+          "bit_index": 61,
+          "p0": 0.7744140625,
+          "z_expectation_of_overlap_output": 0.548828125,
+          "zero_counts": 793
+        },
+        {
+          "bit_index": 62,
+          "p0": 0.818359375,
+          "z_expectation_of_overlap_output": 0.63671875,
+          "zero_counts": 838
+        },
+        {
+          "bit_index": 63,
+          "p0": 0.693359375,
+          "z_expectation_of_overlap_output": 0.38671875,
+          "zero_counts": 710
+        },
+        {
+          "bit_index": 64,
+          "p0": 0.8994140625,
+          "z_expectation_of_overlap_output": 0.798828125,
+          "zero_counts": 921
+        },
+        {
+          "bit_index": 65,
+          "p0": 0.8232421875,
+          "z_expectation_of_overlap_output": 0.646484375,
+          "zero_counts": 843
+        },
+        {
+          "bit_index": 66,
+          "p0": 0.9384765625,
+          "z_expectation_of_overlap_output": 0.876953125,
+          "zero_counts": 961
+        },
+        {
+          "bit_index": 67,
+          "p0": 0.84375,
+          "z_expectation_of_overlap_output": 0.6875,
+          "zero_counts": 864
+        },
+        {
+          "bit_index": 68,
+          "p0": 0.8720703125,
+          "z_expectation_of_overlap_output": 0.744140625,
+          "zero_counts": 893
+        },
+        {
+          "bit_index": 69,
+          "p0": 0.876953125,
+          "z_expectation_of_overlap_output": 0.75390625,
+          "zero_counts": 898
+        },
+        {
+          "bit_index": 70,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 71,
+          "p0": 0.7255859375,
+          "z_expectation_of_overlap_output": 0.451171875,
+          "zero_counts": 743
+        },
+        {
+          "bit_index": 72,
+          "p0": 0.34765625,
+          "z_expectation_of_overlap_output": -0.3046875,
+          "zero_counts": 356
+        },
+        {
+          "bit_index": 73,
+          "p0": 0.587890625,
+          "z_expectation_of_overlap_output": 0.17578125,
+          "zero_counts": 602
+        },
+        {
+          "bit_index": 74,
+          "p0": 0.9228515625,
+          "z_expectation_of_overlap_output": 0.845703125,
+          "zero_counts": 945
+        },
+        {
+          "bit_index": 75,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 76,
+          "p0": 0.892578125,
+          "z_expectation_of_overlap_output": 0.78515625,
+          "zero_counts": 914
+        },
+        {
+          "bit_index": 77,
+          "p0": 0.92578125,
+          "z_expectation_of_overlap_output": 0.8515625,
+          "zero_counts": 948
+        },
+        {
+          "bit_index": 78,
+          "p0": 0.900390625,
+          "z_expectation_of_overlap_output": 0.80078125,
+          "zero_counts": 922
+        },
+        {
+          "bit_index": 79,
+          "p0": 0.8212890625,
+          "z_expectation_of_overlap_output": 0.642578125,
+          "zero_counts": 841
+        },
+        {
+          "bit_index": 80,
+          "p0": 0.9521484375,
+          "z_expectation_of_overlap_output": 0.904296875,
+          "zero_counts": 975
+        },
+        {
+          "bit_index": 81,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 82,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 83,
+          "p0": 0.7880859375,
+          "z_expectation_of_overlap_output": 0.576171875,
+          "zero_counts": 807
+        },
+        {
+          "bit_index": 84,
+          "p0": 0.958984375,
+          "z_expectation_of_overlap_output": 0.91796875,
+          "zero_counts": 982
+        },
+        {
+          "bit_index": 85,
+          "p0": 0.9248046875,
+          "z_expectation_of_overlap_output": 0.849609375,
+          "zero_counts": 947
+        },
+        {
+          "bit_index": 86,
+          "p0": 0.9189453125,
+          "z_expectation_of_overlap_output": 0.837890625,
+          "zero_counts": 941
+        },
+        {
+          "bit_index": 87,
+          "p0": 0.9189453125,
+          "z_expectation_of_overlap_output": 0.837890625,
+          "zero_counts": 941
+        },
+        {
+          "bit_index": 88,
+          "p0": 0.9375,
+          "z_expectation_of_overlap_output": 0.875,
+          "zero_counts": 960
+        },
+        {
+          "bit_index": 89,
+          "p0": 0.8720703125,
+          "z_expectation_of_overlap_output": 0.744140625,
+          "zero_counts": 893
+        },
+        {
+          "bit_index": 90,
+          "p0": 0.9140625,
+          "z_expectation_of_overlap_output": 0.828125,
+          "zero_counts": 936
+        },
+        {
+          "bit_index": 91,
+          "p0": 0.79296875,
+          "z_expectation_of_overlap_output": 0.5859375,
+          "zero_counts": 812
+        },
+        {
+          "bit_index": 92,
+          "p0": 0.9345703125,
+          "z_expectation_of_overlap_output": 0.869140625,
+          "zero_counts": 957
+        },
+        {
+          "bit_index": 93,
+          "p0": 0.8681640625,
+          "z_expectation_of_overlap_output": 0.736328125,
+          "zero_counts": 889
+        },
+        {
+          "bit_index": 94,
+          "p0": 0.9404296875,
+          "z_expectation_of_overlap_output": 0.880859375,
+          "zero_counts": 963
+        },
+        {
+          "bit_index": 95,
+          "p0": 0.93359375,
+          "z_expectation_of_overlap_output": 0.8671875,
+          "zero_counts": 956
+        },
+        {
+          "bit_index": 96,
+          "p0": 0.767578125,
+          "z_expectation_of_overlap_output": 0.53515625,
+          "zero_counts": 786
+        },
+        {
+          "bit_index": 97,
+          "p0": 0.943359375,
+          "z_expectation_of_overlap_output": 0.88671875,
+          "zero_counts": 966
+        },
+        {
+          "bit_index": 98,
+          "p0": 0.908203125,
+          "z_expectation_of_overlap_output": 0.81640625,
+          "zero_counts": 930
+        },
+        {
+          "bit_index": 99,
+          "p0": 0.908203125,
+          "z_expectation_of_overlap_output": 0.81640625,
+          "zero_counts": 930
+        },
+        {
+          "bit_index": 100,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 101,
+          "p0": 0.7451171875,
+          "z_expectation_of_overlap_output": 0.490234375,
+          "zero_counts": 763
+        },
+        {
+          "bit_index": 102,
+          "p0": 0.5126953125,
+          "z_expectation_of_overlap_output": 0.025390625,
+          "zero_counts": 525
+        },
+        {
+          "bit_index": 103,
+          "p0": 0.4755859375,
+          "z_expectation_of_overlap_output": -0.048828125,
+          "zero_counts": 487
+        },
+        {
+          "bit_index": 104,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 105,
+          "p0": 0.828125,
+          "z_expectation_of_overlap_output": 0.65625,
+          "zero_counts": 848
+        },
+        {
+          "bit_index": 106,
+          "p0": 0.599609375,
+          "z_expectation_of_overlap_output": 0.19921875,
+          "zero_counts": 614
+        },
+        {
+          "bit_index": 107,
+          "p0": 0.9384765625,
+          "z_expectation_of_overlap_output": 0.876953125,
+          "zero_counts": 961
+        },
+        {
+          "bit_index": 108,
+          "p0": 0.9287109375,
+          "z_expectation_of_overlap_output": 0.857421875,
+          "zero_counts": 951
+        },
+        {
+          "bit_index": 109,
+          "p0": 0.8271484375,
+          "z_expectation_of_overlap_output": 0.654296875,
+          "zero_counts": 847
+        },
+        {
+          "bit_index": 110,
+          "p0": 0.9599609375,
+          "z_expectation_of_overlap_output": 0.919921875,
+          "zero_counts": 983
+        },
+        {
+          "bit_index": 111,
+          "p0": 0.888671875,
+          "z_expectation_of_overlap_output": 0.77734375,
+          "zero_counts": 910
+        },
+        {
+          "bit_index": 112,
+          "p0": 0.8974609375,
+          "z_expectation_of_overlap_output": 0.794921875,
+          "zero_counts": 919
+        },
+        {
+          "bit_index": 113,
+          "p0": 0.6806640625,
+          "z_expectation_of_overlap_output": 0.361328125,
+          "zero_counts": 697
+        },
+        {
+          "bit_index": 114,
+          "p0": 0.92578125,
+          "z_expectation_of_overlap_output": 0.8515625,
+          "zero_counts": 948
+        },
+        {
+          "bit_index": 115,
+          "p0": 0.896484375,
+          "z_expectation_of_overlap_output": 0.79296875,
+          "zero_counts": 918
+        },
+        {
+          "bit_index": 116,
+          "p0": 0.904296875,
+          "z_expectation_of_overlap_output": 0.80859375,
+          "zero_counts": 926
+        },
+        {
+          "bit_index": 117,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 118,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 119,
+          "p0": 0.8779296875,
+          "z_expectation_of_overlap_output": 0.755859375,
+          "zero_counts": 899
+        },
+        {
+          "bit_index": 120,
+          "p0": 0.92578125,
+          "z_expectation_of_overlap_output": 0.8515625,
+          "zero_counts": 948
+        },
+        {
+          "bit_index": 121,
+          "p0": 0.8662109375,
+          "z_expectation_of_overlap_output": 0.732421875,
+          "zero_counts": 887
+        },
+        {
+          "bit_index": 122,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 123,
+          "p0": 0.9033203125,
+          "z_expectation_of_overlap_output": 0.806640625,
+          "zero_counts": 925
+        },
+        {
+          "bit_index": 124,
+          "p0": 0.935546875,
+          "z_expectation_of_overlap_output": 0.87109375,
+          "zero_counts": 958
+        },
+        {
+          "bit_index": 125,
+          "p0": 0.884765625,
+          "z_expectation_of_overlap_output": 0.76953125,
+          "zero_counts": 906
+        },
+        {
+          "bit_index": 126,
+          "p0": 0.8466796875,
+          "z_expectation_of_overlap_output": 0.693359375,
+          "zero_counts": 867
+        },
+        {
+          "bit_index": 127,
+          "p0": 0.662109375,
+          "z_expectation_of_overlap_output": 0.32421875,
+          "zero_counts": 678
+        },
+        {
+          "bit_index": 128,
+          "p0": 0.865234375,
+          "z_expectation_of_overlap_output": 0.73046875,
+          "zero_counts": 886
+        },
+        {
+          "bit_index": 129,
+          "p0": 0.880859375,
+          "z_expectation_of_overlap_output": 0.76171875,
+          "zero_counts": 902
+        },
+        {
+          "bit_index": 130,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 131,
+          "p0": 0.80859375,
+          "z_expectation_of_overlap_output": 0.6171875,
+          "zero_counts": 828
+        },
+        {
+          "bit_index": 132,
+          "p0": 0.9345703125,
+          "z_expectation_of_overlap_output": 0.869140625,
+          "zero_counts": 957
+        },
+        {
+          "bit_index": 133,
+          "p0": 0.9111328125,
+          "z_expectation_of_overlap_output": 0.822265625,
+          "zero_counts": 933
+        },
+        {
+          "bit_index": 134,
+          "p0": 0.95703125,
+          "z_expectation_of_overlap_output": 0.9140625,
+          "zero_counts": 980
+        },
+        {
+          "bit_index": 135,
+          "p0": 0.8896484375,
+          "z_expectation_of_overlap_output": 0.779296875,
+          "zero_counts": 911
+        },
+        {
+          "bit_index": 136,
+          "p0": 0.9453125,
+          "z_expectation_of_overlap_output": 0.890625,
+          "zero_counts": 968
+        },
+        {
+          "bit_index": 137,
+          "p0": 0.896484375,
+          "z_expectation_of_overlap_output": 0.79296875,
+          "zero_counts": 918
+        },
+        {
+          "bit_index": 138,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 139,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 140,
+          "p0": 0.96875,
+          "z_expectation_of_overlap_output": 0.9375,
+          "zero_counts": 992
+        },
+        {
+          "bit_index": 141,
+          "p0": 0.9326171875,
+          "z_expectation_of_overlap_output": 0.865234375,
+          "zero_counts": 955
+        },
+        {
+          "bit_index": 142,
+          "p0": 0.9560546875,
+          "z_expectation_of_overlap_output": 0.912109375,
+          "zero_counts": 979
+        },
+        {
+          "bit_index": 143,
+          "p0": 0.9306640625,
+          "z_expectation_of_overlap_output": 0.861328125,
+          "zero_counts": 953
+        },
+        {
+          "bit_index": 144,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 145,
+          "p0": 0.8994140625,
+          "z_expectation_of_overlap_output": 0.798828125,
+          "zero_counts": 921
+        },
+        {
+          "bit_index": 146,
+          "p0": 0.908203125,
+          "z_expectation_of_overlap_output": 0.81640625,
+          "zero_counts": 930
+        },
+        {
+          "bit_index": 147,
+          "p0": 0.904296875,
+          "z_expectation_of_overlap_output": 0.80859375,
+          "zero_counts": 926
+        },
+        {
+          "bit_index": 148,
+          "p0": 0.806640625,
+          "z_expectation_of_overlap_output": 0.61328125,
+          "zero_counts": 826
+        },
+        {
+          "bit_index": 149,
+          "p0": 0.609375,
+          "z_expectation_of_overlap_output": 0.21875,
+          "zero_counts": 624
+        },
+        {
+          "bit_index": 150,
+          "p0": 0.7353515625,
+          "z_expectation_of_overlap_output": 0.470703125,
+          "zero_counts": 753
+        },
+        {
+          "bit_index": 151,
+          "p0": 0.8994140625,
+          "z_expectation_of_overlap_output": 0.798828125,
+          "zero_counts": 921
+        },
+        {
+          "bit_index": 152,
+          "p0": 0.9033203125,
+          "z_expectation_of_overlap_output": 0.806640625,
+          "zero_counts": 925
+        },
+        {
+          "bit_index": 153,
+          "p0": 0.9111328125,
+          "z_expectation_of_overlap_output": 0.822265625,
+          "zero_counts": 933
+        },
+        {
+          "bit_index": 154,
+          "p0": 0.9609375,
+          "z_expectation_of_overlap_output": 0.921875,
+          "zero_counts": 984
+        },
+        {
+          "bit_index": 155,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        }
+      ],
+      "product_marginals_interpretation": "Diagnostic only: assumes independent output bits, which are not established; not the measured all-zero probability.",
+      "product_of_measured_marginal_p0": 1.0092017349877145e-12,
+      "pub_index": 1,
+      "sd_hamming_weight": 5.451095859348839,
+      "shots": 1024
+    },
+    {
+      "actual_pub_measurement_mapping": [
+        {
+          "classical_bit": 0,
+          "physical_circuit_qubit": 0
+        },
+        {
+          "classical_bit": 1,
+          "physical_circuit_qubit": 1
+        },
+        {
+          "classical_bit": 2,
+          "physical_circuit_qubit": 2
+        },
+        {
+          "classical_bit": 3,
+          "physical_circuit_qubit": 3
+        },
+        {
+          "classical_bit": 4,
+          "physical_circuit_qubit": 4
+        },
+        {
+          "classical_bit": 5,
+          "physical_circuit_qubit": 5
+        },
+        {
+          "classical_bit": 6,
+          "physical_circuit_qubit": 6
+        },
+        {
+          "classical_bit": 7,
+          "physical_circuit_qubit": 7
+        },
+        {
+          "classical_bit": 8,
+          "physical_circuit_qubit": 8
+        },
+        {
+          "classical_bit": 9,
+          "physical_circuit_qubit": 9
+        },
+        {
+          "classical_bit": 10,
+          "physical_circuit_qubit": 10
+        },
+        {
+          "classical_bit": 11,
+          "physical_circuit_qubit": 11
+        },
+        {
+          "classical_bit": 12,
+          "physical_circuit_qubit": 12
+        },
+        {
+          "classical_bit": 13,
+          "physical_circuit_qubit": 13
+        },
+        {
+          "classical_bit": 14,
+          "physical_circuit_qubit": 14
+        },
+        {
+          "classical_bit": 15,
+          "physical_circuit_qubit": 15
+        },
+        {
+          "classical_bit": 16,
+          "physical_circuit_qubit": 16
+        },
+        {
+          "classical_bit": 17,
+          "physical_circuit_qubit": 17
+        },
+        {
+          "classical_bit": 18,
+          "physical_circuit_qubit": 18
+        },
+        {
+          "classical_bit": 19,
+          "physical_circuit_qubit": 19
+        },
+        {
+          "classical_bit": 20,
+          "physical_circuit_qubit": 20
+        },
+        {
+          "classical_bit": 21,
+          "physical_circuit_qubit": 21
+        },
+        {
+          "classical_bit": 22,
+          "physical_circuit_qubit": 22
+        },
+        {
+          "classical_bit": 23,
+          "physical_circuit_qubit": 23
+        },
+        {
+          "classical_bit": 24,
+          "physical_circuit_qubit": 24
+        },
+        {
+          "classical_bit": 25,
+          "physical_circuit_qubit": 25
+        },
+        {
+          "classical_bit": 26,
+          "physical_circuit_qubit": 26
+        },
+        {
+          "classical_bit": 27,
+          "physical_circuit_qubit": 27
+        },
+        {
+          "classical_bit": 28,
+          "physical_circuit_qubit": 28
+        },
+        {
+          "classical_bit": 29,
+          "physical_circuit_qubit": 29
+        },
+        {
+          "classical_bit": 30,
+          "physical_circuit_qubit": 30
+        },
+        {
+          "classical_bit": 31,
+          "physical_circuit_qubit": 31
+        },
+        {
+          "classical_bit": 32,
+          "physical_circuit_qubit": 32
+        },
+        {
+          "classical_bit": 33,
+          "physical_circuit_qubit": 33
+        },
+        {
+          "classical_bit": 34,
+          "physical_circuit_qubit": 34
+        },
+        {
+          "classical_bit": 35,
+          "physical_circuit_qubit": 35
+        },
+        {
+          "classical_bit": 36,
+          "physical_circuit_qubit": 36
+        },
+        {
+          "classical_bit": 37,
+          "physical_circuit_qubit": 37
+        },
+        {
+          "classical_bit": 38,
+          "physical_circuit_qubit": 38
+        },
+        {
+          "classical_bit": 39,
+          "physical_circuit_qubit": 39
+        },
+        {
+          "classical_bit": 40,
+          "physical_circuit_qubit": 40
+        },
+        {
+          "classical_bit": 41,
+          "physical_circuit_qubit": 41
+        },
+        {
+          "classical_bit": 42,
+          "physical_circuit_qubit": 42
+        },
+        {
+          "classical_bit": 43,
+          "physical_circuit_qubit": 43
+        },
+        {
+          "classical_bit": 44,
+          "physical_circuit_qubit": 44
+        },
+        {
+          "classical_bit": 45,
+          "physical_circuit_qubit": 45
+        },
+        {
+          "classical_bit": 46,
+          "physical_circuit_qubit": 46
+        },
+        {
+          "classical_bit": 47,
+          "physical_circuit_qubit": 47
+        },
+        {
+          "classical_bit": 48,
+          "physical_circuit_qubit": 48
+        },
+        {
+          "classical_bit": 49,
+          "physical_circuit_qubit": 49
+        },
+        {
+          "classical_bit": 50,
+          "physical_circuit_qubit": 50
+        },
+        {
+          "classical_bit": 51,
+          "physical_circuit_qubit": 51
+        },
+        {
+          "classical_bit": 52,
+          "physical_circuit_qubit": 52
+        },
+        {
+          "classical_bit": 53,
+          "physical_circuit_qubit": 53
+        },
+        {
+          "classical_bit": 54,
+          "physical_circuit_qubit": 54
+        },
+        {
+          "classical_bit": 55,
+          "physical_circuit_qubit": 55
+        },
+        {
+          "classical_bit": 56,
+          "physical_circuit_qubit": 56
+        },
+        {
+          "classical_bit": 57,
+          "physical_circuit_qubit": 57
+        },
+        {
+          "classical_bit": 58,
+          "physical_circuit_qubit": 58
+        },
+        {
+          "classical_bit": 59,
+          "physical_circuit_qubit": 59
+        },
+        {
+          "classical_bit": 60,
+          "physical_circuit_qubit": 60
+        },
+        {
+          "classical_bit": 61,
+          "physical_circuit_qubit": 61
+        },
+        {
+          "classical_bit": 62,
+          "physical_circuit_qubit": 62
+        },
+        {
+          "classical_bit": 63,
+          "physical_circuit_qubit": 63
+        },
+        {
+          "classical_bit": 64,
+          "physical_circuit_qubit": 64
+        },
+        {
+          "classical_bit": 65,
+          "physical_circuit_qubit": 65
+        },
+        {
+          "classical_bit": 66,
+          "physical_circuit_qubit": 66
+        },
+        {
+          "classical_bit": 67,
+          "physical_circuit_qubit": 67
+        },
+        {
+          "classical_bit": 68,
+          "physical_circuit_qubit": 68
+        },
+        {
+          "classical_bit": 69,
+          "physical_circuit_qubit": 69
+        },
+        {
+          "classical_bit": 70,
+          "physical_circuit_qubit": 70
+        },
+        {
+          "classical_bit": 71,
+          "physical_circuit_qubit": 71
+        },
+        {
+          "classical_bit": 72,
+          "physical_circuit_qubit": 72
+        },
+        {
+          "classical_bit": 73,
+          "physical_circuit_qubit": 73
+        },
+        {
+          "classical_bit": 74,
+          "physical_circuit_qubit": 74
+        },
+        {
+          "classical_bit": 75,
+          "physical_circuit_qubit": 75
+        },
+        {
+          "classical_bit": 76,
+          "physical_circuit_qubit": 76
+        },
+        {
+          "classical_bit": 77,
+          "physical_circuit_qubit": 77
+        },
+        {
+          "classical_bit": 78,
+          "physical_circuit_qubit": 78
+        },
+        {
+          "classical_bit": 79,
+          "physical_circuit_qubit": 79
+        },
+        {
+          "classical_bit": 80,
+          "physical_circuit_qubit": 80
+        },
+        {
+          "classical_bit": 81,
+          "physical_circuit_qubit": 81
+        },
+        {
+          "classical_bit": 82,
+          "physical_circuit_qubit": 82
+        },
+        {
+          "classical_bit": 83,
+          "physical_circuit_qubit": 83
+        },
+        {
+          "classical_bit": 84,
+          "physical_circuit_qubit": 84
+        },
+        {
+          "classical_bit": 85,
+          "physical_circuit_qubit": 85
+        },
+        {
+          "classical_bit": 86,
+          "physical_circuit_qubit": 86
+        },
+        {
+          "classical_bit": 87,
+          "physical_circuit_qubit": 87
+        },
+        {
+          "classical_bit": 88,
+          "physical_circuit_qubit": 88
+        },
+        {
+          "classical_bit": 89,
+          "physical_circuit_qubit": 89
+        },
+        {
+          "classical_bit": 90,
+          "physical_circuit_qubit": 90
+        },
+        {
+          "classical_bit": 91,
+          "physical_circuit_qubit": 91
+        },
+        {
+          "classical_bit": 92,
+          "physical_circuit_qubit": 92
+        },
+        {
+          "classical_bit": 93,
+          "physical_circuit_qubit": 93
+        },
+        {
+          "classical_bit": 94,
+          "physical_circuit_qubit": 94
+        },
+        {
+          "classical_bit": 95,
+          "physical_circuit_qubit": 95
+        },
+        {
+          "classical_bit": 96,
+          "physical_circuit_qubit": 96
+        },
+        {
+          "classical_bit": 97,
+          "physical_circuit_qubit": 97
+        },
+        {
+          "classical_bit": 98,
+          "physical_circuit_qubit": 98
+        },
+        {
+          "classical_bit": 99,
+          "physical_circuit_qubit": 99
+        },
+        {
+          "classical_bit": 100,
+          "physical_circuit_qubit": 100
+        },
+        {
+          "classical_bit": 101,
+          "physical_circuit_qubit": 101
+        },
+        {
+          "classical_bit": 102,
+          "physical_circuit_qubit": 102
+        },
+        {
+          "classical_bit": 103,
+          "physical_circuit_qubit": 103
+        },
+        {
+          "classical_bit": 104,
+          "physical_circuit_qubit": 104
+        },
+        {
+          "classical_bit": 105,
+          "physical_circuit_qubit": 105
+        },
+        {
+          "classical_bit": 106,
+          "physical_circuit_qubit": 106
+        },
+        {
+          "classical_bit": 107,
+          "physical_circuit_qubit": 107
+        },
+        {
+          "classical_bit": 108,
+          "physical_circuit_qubit": 108
+        },
+        {
+          "classical_bit": 109,
+          "physical_circuit_qubit": 109
+        },
+        {
+          "classical_bit": 110,
+          "physical_circuit_qubit": 110
+        },
+        {
+          "classical_bit": 111,
+          "physical_circuit_qubit": 111
+        },
+        {
+          "classical_bit": 112,
+          "physical_circuit_qubit": 112
+        },
+        {
+          "classical_bit": 113,
+          "physical_circuit_qubit": 113
+        },
+        {
+          "classical_bit": 114,
+          "physical_circuit_qubit": 114
+        },
+        {
+          "classical_bit": 115,
+          "physical_circuit_qubit": 115
+        },
+        {
+          "classical_bit": 116,
+          "physical_circuit_qubit": 116
+        },
+        {
+          "classical_bit": 117,
+          "physical_circuit_qubit": 117
+        },
+        {
+          "classical_bit": 118,
+          "physical_circuit_qubit": 118
+        },
+        {
+          "classical_bit": 119,
+          "physical_circuit_qubit": 119
+        },
+        {
+          "classical_bit": 120,
+          "physical_circuit_qubit": 120
+        },
+        {
+          "classical_bit": 121,
+          "physical_circuit_qubit": 121
+        },
+        {
+          "classical_bit": 122,
+          "physical_circuit_qubit": 122
+        },
+        {
+          "classical_bit": 123,
+          "physical_circuit_qubit": 123
+        },
+        {
+          "classical_bit": 124,
+          "physical_circuit_qubit": 124
+        },
+        {
+          "classical_bit": 125,
+          "physical_circuit_qubit": 125
+        },
+        {
+          "classical_bit": 126,
+          "physical_circuit_qubit": 126
+        },
+        {
+          "classical_bit": 127,
+          "physical_circuit_qubit": 127
+        },
+        {
+          "classical_bit": 128,
+          "physical_circuit_qubit": 128
+        },
+        {
+          "classical_bit": 129,
+          "physical_circuit_qubit": 129
+        },
+        {
+          "classical_bit": 130,
+          "physical_circuit_qubit": 130
+        },
+        {
+          "classical_bit": 131,
+          "physical_circuit_qubit": 131
+        },
+        {
+          "classical_bit": 132,
+          "physical_circuit_qubit": 132
+        },
+        {
+          "classical_bit": 133,
+          "physical_circuit_qubit": 133
+        },
+        {
+          "classical_bit": 134,
+          "physical_circuit_qubit": 134
+        },
+        {
+          "classical_bit": 135,
+          "physical_circuit_qubit": 135
+        },
+        {
+          "classical_bit": 136,
+          "physical_circuit_qubit": 136
+        },
+        {
+          "classical_bit": 137,
+          "physical_circuit_qubit": 137
+        },
+        {
+          "classical_bit": 138,
+          "physical_circuit_qubit": 138
+        },
+        {
+          "classical_bit": 139,
+          "physical_circuit_qubit": 139
+        },
+        {
+          "classical_bit": 140,
+          "physical_circuit_qubit": 140
+        },
+        {
+          "classical_bit": 141,
+          "physical_circuit_qubit": 141
+        },
+        {
+          "classical_bit": 142,
+          "physical_circuit_qubit": 142
+        },
+        {
+          "classical_bit": 143,
+          "physical_circuit_qubit": 143
+        },
+        {
+          "classical_bit": 144,
+          "physical_circuit_qubit": 144
+        },
+        {
+          "classical_bit": 145,
+          "physical_circuit_qubit": 145
+        },
+        {
+          "classical_bit": 146,
+          "physical_circuit_qubit": 146
+        },
+        {
+          "classical_bit": 147,
+          "physical_circuit_qubit": 147
+        },
+        {
+          "classical_bit": 148,
+          "physical_circuit_qubit": 148
+        },
+        {
+          "classical_bit": 149,
+          "physical_circuit_qubit": 149
+        },
+        {
+          "classical_bit": 150,
+          "physical_circuit_qubit": 150
+        },
+        {
+          "classical_bit": 151,
+          "physical_circuit_qubit": 151
+        },
+        {
+          "classical_bit": 152,
+          "physical_circuit_qubit": 152
+        },
+        {
+          "classical_bit": 153,
+          "physical_circuit_qubit": 153
+        },
+        {
+          "classical_bit": 154,
+          "physical_circuit_qubit": 154
+        },
+        {
+          "classical_bit": 155,
+          "physical_circuit_qubit": 155
+        }
+      ],
+      "actual_pub_measurement_mapping_recovered": true,
+      "all_zero_counts": 0,
+      "all_zero_probability": 0.0,
+      "all_zero_wilson_95_from_prior_manifest": [
+        0,
+        0.0037374040400176777
+      ],
+      "all_zero_wilson_95_independent": [
+        0.0,
+        0.0037374040400176777
+      ],
+      "bitstring_width": 156,
+      "distinct_outcomes": 1024,
+      "hamming_and_each_marginal_verified_against_integer_bit_representation": true,
+      "hamming_weight_histogram": {
+        "10": 1,
+        "11": 7,
+        "12": 5,
+        "13": 9,
+        "14": 25,
+        "15": 23,
+        "16": 43,
+        "17": 64,
+        "18": 66,
+        "19": 68,
+        "20": 92,
+        "21": 67,
+        "22": 74,
+        "23": 55,
+        "24": 66,
+        "25": 56,
+        "26": 68,
+        "27": 58,
+        "28": 37,
+        "29": 43,
+        "30": 29,
+        "31": 15,
+        "32": 13,
+        "33": 14,
+        "34": 5,
+        "35": 1,
+        "36": 6,
+        "37": 6,
+        "38": 1,
+        "39": 1,
+        "48": 1,
+        "7": 1,
+        "9": 4
+      },
+      "ideal_noiseless_diagonal_probability": 1.0,
+      "is_diagonal": true,
+      "maximum_hamming_weight": 48,
+      "mean_hamming_weight": 22.44140625,
+      "minimum_hamming_weight": 7,
+      "observed_diagonal_probability_minus_noiseless_ideal": -1.0,
+      "p0_summary": {
+        "max": 0.9775390625,
+        "mean": 0.8561448317307693,
+        "median": 0.90966796875,
+        "min": 0.294921875
+      },
+      "pair": [
+        1,
+        1
+      ],
+      "per_classical_bit_p0": [
+        {
+          "bit_index": 0,
+          "p0": 0.8125,
+          "z_expectation_of_overlap_output": 0.625,
+          "zero_counts": 832
+        },
+        {
+          "bit_index": 1,
+          "p0": 0.8466796875,
+          "z_expectation_of_overlap_output": 0.693359375,
+          "zero_counts": 867
+        },
+        {
+          "bit_index": 2,
+          "p0": 0.935546875,
+          "z_expectation_of_overlap_output": 0.87109375,
+          "zero_counts": 958
+        },
+        {
+          "bit_index": 3,
+          "p0": 0.88671875,
+          "z_expectation_of_overlap_output": 0.7734375,
+          "zero_counts": 908
+        },
+        {
+          "bit_index": 4,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        },
+        {
+          "bit_index": 5,
+          "p0": 0.861328125,
+          "z_expectation_of_overlap_output": 0.72265625,
+          "zero_counts": 882
+        },
+        {
+          "bit_index": 6,
+          "p0": 0.9169921875,
+          "z_expectation_of_overlap_output": 0.833984375,
+          "zero_counts": 939
+        },
+        {
+          "bit_index": 7,
+          "p0": 0.8193359375,
+          "z_expectation_of_overlap_output": 0.638671875,
+          "zero_counts": 839
+        },
+        {
+          "bit_index": 8,
+          "p0": 0.9130859375,
+          "z_expectation_of_overlap_output": 0.826171875,
+          "zero_counts": 935
+        },
+        {
+          "bit_index": 9,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        },
+        {
+          "bit_index": 10,
+          "p0": 0.900390625,
+          "z_expectation_of_overlap_output": 0.80078125,
+          "zero_counts": 922
+        },
+        {
+          "bit_index": 11,
+          "p0": 0.8173828125,
+          "z_expectation_of_overlap_output": 0.634765625,
+          "zero_counts": 837
+        },
+        {
+          "bit_index": 12,
+          "p0": 0.9091796875,
+          "z_expectation_of_overlap_output": 0.818359375,
+          "zero_counts": 931
+        },
+        {
+          "bit_index": 13,
+          "p0": 0.9072265625,
+          "z_expectation_of_overlap_output": 0.814453125,
+          "zero_counts": 929
+        },
+        {
+          "bit_index": 14,
+          "p0": 0.9345703125,
+          "z_expectation_of_overlap_output": 0.869140625,
+          "zero_counts": 957
+        },
+        {
+          "bit_index": 15,
+          "p0": 0.9228515625,
+          "z_expectation_of_overlap_output": 0.845703125,
+          "zero_counts": 945
+        },
+        {
+          "bit_index": 16,
+          "p0": 0.9345703125,
+          "z_expectation_of_overlap_output": 0.869140625,
+          "zero_counts": 957
+        },
+        {
+          "bit_index": 17,
+          "p0": 0.716796875,
+          "z_expectation_of_overlap_output": 0.43359375,
+          "zero_counts": 734
+        },
+        {
+          "bit_index": 18,
+          "p0": 0.7998046875,
+          "z_expectation_of_overlap_output": 0.599609375,
+          "zero_counts": 819
+        },
+        {
+          "bit_index": 19,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 20,
+          "p0": 0.904296875,
+          "z_expectation_of_overlap_output": 0.80859375,
+          "zero_counts": 926
+        },
+        {
+          "bit_index": 21,
+          "p0": 0.830078125,
+          "z_expectation_of_overlap_output": 0.66015625,
+          "zero_counts": 850
+        },
+        {
+          "bit_index": 22,
+          "p0": 0.859375,
+          "z_expectation_of_overlap_output": 0.71875,
+          "zero_counts": 880
+        },
+        {
+          "bit_index": 23,
+          "p0": 0.73046875,
+          "z_expectation_of_overlap_output": 0.4609375,
+          "zero_counts": 748
+        },
+        {
+          "bit_index": 24,
+          "p0": 0.587890625,
+          "z_expectation_of_overlap_output": 0.17578125,
+          "zero_counts": 602
+        },
+        {
+          "bit_index": 25,
+          "p0": 0.6123046875,
+          "z_expectation_of_overlap_output": 0.224609375,
+          "zero_counts": 627
+        },
+        {
+          "bit_index": 26,
+          "p0": 0.943359375,
+          "z_expectation_of_overlap_output": 0.88671875,
+          "zero_counts": 966
+        },
+        {
+          "bit_index": 27,
+          "p0": 0.294921875,
+          "z_expectation_of_overlap_output": -0.41015625,
+          "zero_counts": 302
+        },
+        {
+          "bit_index": 28,
+          "p0": 0.50390625,
+          "z_expectation_of_overlap_output": 0.0078125,
+          "zero_counts": 516
+        },
+        {
+          "bit_index": 29,
+          "p0": 0.759765625,
+          "z_expectation_of_overlap_output": 0.51953125,
+          "zero_counts": 778
+        },
+        {
+          "bit_index": 30,
+          "p0": 0.94140625,
+          "z_expectation_of_overlap_output": 0.8828125,
+          "zero_counts": 964
+        },
+        {
+          "bit_index": 31,
+          "p0": 0.576171875,
+          "z_expectation_of_overlap_output": 0.15234375,
+          "zero_counts": 590
+        },
+        {
+          "bit_index": 32,
+          "p0": 0.5791015625,
+          "z_expectation_of_overlap_output": 0.158203125,
+          "zero_counts": 593
+        },
+        {
+          "bit_index": 33,
+          "p0": 0.5712890625,
+          "z_expectation_of_overlap_output": 0.142578125,
+          "zero_counts": 585
+        },
+        {
+          "bit_index": 34,
+          "p0": 0.8046875,
+          "z_expectation_of_overlap_output": 0.609375,
+          "zero_counts": 824
+        },
+        {
+          "bit_index": 35,
+          "p0": 0.9365234375,
+          "z_expectation_of_overlap_output": 0.873046875,
+          "zero_counts": 959
+        },
+        {
+          "bit_index": 36,
+          "p0": 0.861328125,
+          "z_expectation_of_overlap_output": 0.72265625,
+          "zero_counts": 882
+        },
+        {
+          "bit_index": 37,
+          "p0": 0.8076171875,
+          "z_expectation_of_overlap_output": 0.615234375,
+          "zero_counts": 827
+        },
+        {
+          "bit_index": 38,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        },
+        {
+          "bit_index": 39,
+          "p0": 0.7822265625,
+          "z_expectation_of_overlap_output": 0.564453125,
+          "zero_counts": 801
+        },
+        {
+          "bit_index": 40,
+          "p0": 0.9140625,
+          "z_expectation_of_overlap_output": 0.828125,
+          "zero_counts": 936
+        },
+        {
+          "bit_index": 41,
+          "p0": 0.564453125,
+          "z_expectation_of_overlap_output": 0.12890625,
+          "zero_counts": 578
+        },
+        {
+          "bit_index": 42,
+          "p0": 0.87109375,
+          "z_expectation_of_overlap_output": 0.7421875,
+          "zero_counts": 892
+        },
+        {
+          "bit_index": 43,
+          "p0": 0.8134765625,
+          "z_expectation_of_overlap_output": 0.626953125,
+          "zero_counts": 833
+        },
+        {
+          "bit_index": 44,
+          "p0": 0.9462890625,
+          "z_expectation_of_overlap_output": 0.892578125,
+          "zero_counts": 969
+        },
+        {
+          "bit_index": 45,
+          "p0": 0.9140625,
+          "z_expectation_of_overlap_output": 0.828125,
+          "zero_counts": 936
+        },
+        {
+          "bit_index": 46,
+          "p0": 0.9296875,
+          "z_expectation_of_overlap_output": 0.859375,
+          "zero_counts": 952
+        },
+        {
+          "bit_index": 47,
+          "p0": 0.9013671875,
+          "z_expectation_of_overlap_output": 0.802734375,
+          "zero_counts": 923
+        },
+        {
+          "bit_index": 48,
+          "p0": 0.9248046875,
+          "z_expectation_of_overlap_output": 0.849609375,
+          "zero_counts": 947
+        },
+        {
+          "bit_index": 49,
+          "p0": 0.7236328125,
+          "z_expectation_of_overlap_output": 0.447265625,
+          "zero_counts": 741
+        },
+        {
+          "bit_index": 50,
+          "p0": 0.83984375,
+          "z_expectation_of_overlap_output": 0.6796875,
+          "zero_counts": 860
+        },
+        {
+          "bit_index": 51,
+          "p0": 0.8798828125,
+          "z_expectation_of_overlap_output": 0.759765625,
+          "zero_counts": 901
+        },
+        {
+          "bit_index": 52,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 53,
+          "p0": 0.83203125,
+          "z_expectation_of_overlap_output": 0.6640625,
+          "zero_counts": 852
+        },
+        {
+          "bit_index": 54,
+          "p0": 0.9384765625,
+          "z_expectation_of_overlap_output": 0.876953125,
+          "zero_counts": 961
+        },
+        {
+          "bit_index": 55,
+          "p0": 0.9033203125,
+          "z_expectation_of_overlap_output": 0.806640625,
+          "zero_counts": 925
+        },
+        {
+          "bit_index": 56,
+          "p0": 0.8701171875,
+          "z_expectation_of_overlap_output": 0.740234375,
+          "zero_counts": 891
+        },
+        {
+          "bit_index": 57,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        },
+        {
+          "bit_index": 58,
+          "p0": 0.9296875,
+          "z_expectation_of_overlap_output": 0.859375,
+          "zero_counts": 952
+        },
+        {
+          "bit_index": 59,
+          "p0": 0.943359375,
+          "z_expectation_of_overlap_output": 0.88671875,
+          "zero_counts": 966
+        },
+        {
+          "bit_index": 60,
+          "p0": 0.876953125,
+          "z_expectation_of_overlap_output": 0.75390625,
+          "zero_counts": 898
+        },
+        {
+          "bit_index": 61,
+          "p0": 0.7646484375,
+          "z_expectation_of_overlap_output": 0.529296875,
+          "zero_counts": 783
+        },
+        {
+          "bit_index": 62,
+          "p0": 0.841796875,
+          "z_expectation_of_overlap_output": 0.68359375,
+          "zero_counts": 862
+        },
+        {
+          "bit_index": 63,
+          "p0": 0.69140625,
+          "z_expectation_of_overlap_output": 0.3828125,
+          "zero_counts": 708
+        },
+        {
+          "bit_index": 64,
+          "p0": 0.869140625,
+          "z_expectation_of_overlap_output": 0.73828125,
+          "zero_counts": 890
+        },
+        {
+          "bit_index": 65,
+          "p0": 0.8349609375,
+          "z_expectation_of_overlap_output": 0.669921875,
+          "zero_counts": 855
+        },
+        {
+          "bit_index": 66,
+          "p0": 0.947265625,
+          "z_expectation_of_overlap_output": 0.89453125,
+          "zero_counts": 970
+        },
+        {
+          "bit_index": 67,
+          "p0": 0.8583984375,
+          "z_expectation_of_overlap_output": 0.716796875,
+          "zero_counts": 879
+        },
+        {
+          "bit_index": 68,
+          "p0": 0.880859375,
+          "z_expectation_of_overlap_output": 0.76171875,
+          "zero_counts": 902
+        },
+        {
+          "bit_index": 69,
+          "p0": 0.828125,
+          "z_expectation_of_overlap_output": 0.65625,
+          "zero_counts": 848
+        },
+        {
+          "bit_index": 70,
+          "p0": 0.873046875,
+          "z_expectation_of_overlap_output": 0.74609375,
+          "zero_counts": 894
+        },
+        {
+          "bit_index": 71,
+          "p0": 0.7705078125,
+          "z_expectation_of_overlap_output": 0.541015625,
+          "zero_counts": 789
+        },
+        {
+          "bit_index": 72,
+          "p0": 0.3310546875,
+          "z_expectation_of_overlap_output": -0.337890625,
+          "zero_counts": 339
+        },
+        {
+          "bit_index": 73,
+          "p0": 0.6025390625,
+          "z_expectation_of_overlap_output": 0.205078125,
+          "zero_counts": 617
+        },
+        {
+          "bit_index": 74,
+          "p0": 0.9345703125,
+          "z_expectation_of_overlap_output": 0.869140625,
+          "zero_counts": 957
+        },
+        {
+          "bit_index": 75,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        },
+        {
+          "bit_index": 76,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 77,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 78,
+          "p0": 0.86328125,
+          "z_expectation_of_overlap_output": 0.7265625,
+          "zero_counts": 884
+        },
+        {
+          "bit_index": 79,
+          "p0": 0.8037109375,
+          "z_expectation_of_overlap_output": 0.607421875,
+          "zero_counts": 823
+        },
+        {
+          "bit_index": 80,
+          "p0": 0.9443359375,
+          "z_expectation_of_overlap_output": 0.888671875,
+          "zero_counts": 967
+        },
+        {
+          "bit_index": 81,
+          "p0": 0.9140625,
+          "z_expectation_of_overlap_output": 0.828125,
+          "zero_counts": 936
+        },
+        {
+          "bit_index": 82,
+          "p0": 0.8759765625,
+          "z_expectation_of_overlap_output": 0.751953125,
+          "zero_counts": 897
+        },
+        {
+          "bit_index": 83,
+          "p0": 0.7978515625,
+          "z_expectation_of_overlap_output": 0.595703125,
+          "zero_counts": 817
+        },
+        {
+          "bit_index": 84,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 85,
+          "p0": 0.93359375,
+          "z_expectation_of_overlap_output": 0.8671875,
+          "zero_counts": 956
+        },
+        {
+          "bit_index": 86,
+          "p0": 0.9560546875,
+          "z_expectation_of_overlap_output": 0.912109375,
+          "zero_counts": 979
+        },
+        {
+          "bit_index": 87,
+          "p0": 0.9228515625,
+          "z_expectation_of_overlap_output": 0.845703125,
+          "zero_counts": 945
+        },
+        {
+          "bit_index": 88,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 89,
+          "p0": 0.85546875,
+          "z_expectation_of_overlap_output": 0.7109375,
+          "zero_counts": 876
+        },
+        {
+          "bit_index": 90,
+          "p0": 0.904296875,
+          "z_expectation_of_overlap_output": 0.80859375,
+          "zero_counts": 926
+        },
+        {
+          "bit_index": 91,
+          "p0": 0.8525390625,
+          "z_expectation_of_overlap_output": 0.705078125,
+          "zero_counts": 873
+        },
+        {
+          "bit_index": 92,
+          "p0": 0.9189453125,
+          "z_expectation_of_overlap_output": 0.837890625,
+          "zero_counts": 941
+        },
+        {
+          "bit_index": 93,
+          "p0": 0.9111328125,
+          "z_expectation_of_overlap_output": 0.822265625,
+          "zero_counts": 933
+        },
+        {
+          "bit_index": 94,
+          "p0": 0.9560546875,
+          "z_expectation_of_overlap_output": 0.912109375,
+          "zero_counts": 979
+        },
+        {
+          "bit_index": 95,
+          "p0": 0.94140625,
+          "z_expectation_of_overlap_output": 0.8828125,
+          "zero_counts": 964
+        },
+        {
+          "bit_index": 96,
+          "p0": 0.8046875,
+          "z_expectation_of_overlap_output": 0.609375,
+          "zero_counts": 824
+        },
+        {
+          "bit_index": 97,
+          "p0": 0.9296875,
+          "z_expectation_of_overlap_output": 0.859375,
+          "zero_counts": 952
+        },
+        {
+          "bit_index": 98,
+          "p0": 0.9248046875,
+          "z_expectation_of_overlap_output": 0.849609375,
+          "zero_counts": 947
+        },
+        {
+          "bit_index": 99,
+          "p0": 0.91015625,
+          "z_expectation_of_overlap_output": 0.8203125,
+          "zero_counts": 932
+        },
+        {
+          "bit_index": 100,
+          "p0": 0.9375,
+          "z_expectation_of_overlap_output": 0.875,
+          "zero_counts": 960
+        },
+        {
+          "bit_index": 101,
+          "p0": 0.7919921875,
+          "z_expectation_of_overlap_output": 0.583984375,
+          "zero_counts": 811
+        },
+        {
+          "bit_index": 102,
+          "p0": 0.5,
+          "z_expectation_of_overlap_output": 0.0,
+          "zero_counts": 512
+        },
+        {
+          "bit_index": 103,
+          "p0": 0.4560546875,
+          "z_expectation_of_overlap_output": -0.087890625,
+          "zero_counts": 467
+        },
+        {
+          "bit_index": 104,
+          "p0": 0.8798828125,
+          "z_expectation_of_overlap_output": 0.759765625,
+          "zero_counts": 901
+        },
+        {
+          "bit_index": 105,
+          "p0": 0.841796875,
+          "z_expectation_of_overlap_output": 0.68359375,
+          "zero_counts": 862
+        },
+        {
+          "bit_index": 106,
+          "p0": 0.615234375,
+          "z_expectation_of_overlap_output": 0.23046875,
+          "zero_counts": 630
+        },
+        {
+          "bit_index": 107,
+          "p0": 0.943359375,
+          "z_expectation_of_overlap_output": 0.88671875,
+          "zero_counts": 966
+        },
+        {
+          "bit_index": 108,
+          "p0": 0.9326171875,
+          "z_expectation_of_overlap_output": 0.865234375,
+          "zero_counts": 955
+        },
+        {
+          "bit_index": 109,
+          "p0": 0.8935546875,
+          "z_expectation_of_overlap_output": 0.787109375,
+          "zero_counts": 915
+        },
+        {
+          "bit_index": 110,
+          "p0": 0.9609375,
+          "z_expectation_of_overlap_output": 0.921875,
+          "zero_counts": 984
+        },
+        {
+          "bit_index": 111,
+          "p0": 0.921875,
+          "z_expectation_of_overlap_output": 0.84375,
+          "zero_counts": 944
+        },
+        {
+          "bit_index": 112,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 113,
+          "p0": 0.71875,
+          "z_expectation_of_overlap_output": 0.4375,
+          "zero_counts": 736
+        },
+        {
+          "bit_index": 114,
+          "p0": 0.94921875,
+          "z_expectation_of_overlap_output": 0.8984375,
+          "zero_counts": 972
+        },
+        {
+          "bit_index": 115,
+          "p0": 0.9453125,
+          "z_expectation_of_overlap_output": 0.890625,
+          "zero_counts": 968
+        },
+        {
+          "bit_index": 116,
+          "p0": 0.9150390625,
+          "z_expectation_of_overlap_output": 0.830078125,
+          "zero_counts": 937
+        },
+        {
+          "bit_index": 117,
+          "p0": 0.9453125,
+          "z_expectation_of_overlap_output": 0.890625,
+          "zero_counts": 968
+        },
+        {
+          "bit_index": 118,
+          "p0": 0.9462890625,
+          "z_expectation_of_overlap_output": 0.892578125,
+          "zero_counts": 969
+        },
+        {
+          "bit_index": 119,
+          "p0": 0.9033203125,
+          "z_expectation_of_overlap_output": 0.806640625,
+          "zero_counts": 925
+        },
+        {
+          "bit_index": 120,
+          "p0": 0.931640625,
+          "z_expectation_of_overlap_output": 0.86328125,
+          "zero_counts": 954
+        },
+        {
+          "bit_index": 121,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 122,
+          "p0": 0.9365234375,
+          "z_expectation_of_overlap_output": 0.873046875,
+          "zero_counts": 959
+        },
+        {
+          "bit_index": 123,
+          "p0": 0.919921875,
+          "z_expectation_of_overlap_output": 0.83984375,
+          "zero_counts": 942
+        },
+        {
+          "bit_index": 124,
+          "p0": 0.951171875,
+          "z_expectation_of_overlap_output": 0.90234375,
+          "zero_counts": 974
+        },
+        {
+          "bit_index": 125,
+          "p0": 0.8837890625,
+          "z_expectation_of_overlap_output": 0.767578125,
+          "zero_counts": 905
+        },
+        {
+          "bit_index": 126,
+          "p0": 0.8310546875,
+          "z_expectation_of_overlap_output": 0.662109375,
+          "zero_counts": 851
+        },
+        {
+          "bit_index": 127,
+          "p0": 0.7197265625,
+          "z_expectation_of_overlap_output": 0.439453125,
+          "zero_counts": 737
+        },
+        {
+          "bit_index": 128,
+          "p0": 0.87890625,
+          "z_expectation_of_overlap_output": 0.7578125,
+          "zero_counts": 900
+        },
+        {
+          "bit_index": 129,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        },
+        {
+          "bit_index": 130,
+          "p0": 0.921875,
+          "z_expectation_of_overlap_output": 0.84375,
+          "zero_counts": 944
+        },
+        {
+          "bit_index": 131,
+          "p0": 0.806640625,
+          "z_expectation_of_overlap_output": 0.61328125,
+          "zero_counts": 826
+        },
+        {
+          "bit_index": 132,
+          "p0": 0.9326171875,
+          "z_expectation_of_overlap_output": 0.865234375,
+          "zero_counts": 955
+        },
+        {
+          "bit_index": 133,
+          "p0": 0.8974609375,
+          "z_expectation_of_overlap_output": 0.794921875,
+          "zero_counts": 919
+        },
+        {
+          "bit_index": 134,
+          "p0": 0.9521484375,
+          "z_expectation_of_overlap_output": 0.904296875,
+          "zero_counts": 975
+        },
+        {
+          "bit_index": 135,
+          "p0": 0.880859375,
+          "z_expectation_of_overlap_output": 0.76171875,
+          "zero_counts": 902
+        },
+        {
+          "bit_index": 136,
+          "p0": 0.9453125,
+          "z_expectation_of_overlap_output": 0.890625,
+          "zero_counts": 968
+        },
+        {
+          "bit_index": 137,
+          "p0": 0.9208984375,
+          "z_expectation_of_overlap_output": 0.841796875,
+          "zero_counts": 943
+        },
+        {
+          "bit_index": 138,
+          "p0": 0.916015625,
+          "z_expectation_of_overlap_output": 0.83203125,
+          "zero_counts": 938
+        },
+        {
+          "bit_index": 139,
+          "p0": 0.921875,
+          "z_expectation_of_overlap_output": 0.84375,
+          "zero_counts": 944
+        },
+        {
+          "bit_index": 140,
+          "p0": 0.9775390625,
+          "z_expectation_of_overlap_output": 0.955078125,
+          "zero_counts": 1001
+        },
+        {
+          "bit_index": 141,
+          "p0": 0.9658203125,
+          "z_expectation_of_overlap_output": 0.931640625,
+          "zero_counts": 989
+        },
+        {
+          "bit_index": 142,
+          "p0": 0.9638671875,
+          "z_expectation_of_overlap_output": 0.927734375,
+          "zero_counts": 987
+        },
+        {
+          "bit_index": 143,
+          "p0": 0.923828125,
+          "z_expectation_of_overlap_output": 0.84765625,
+          "zero_counts": 946
+        },
+        {
+          "bit_index": 144,
+          "p0": 0.9482421875,
+          "z_expectation_of_overlap_output": 0.896484375,
+          "zero_counts": 971
+        },
+        {
+          "bit_index": 145,
+          "p0": 0.931640625,
+          "z_expectation_of_overlap_output": 0.86328125,
+          "zero_counts": 954
+        },
+        {
+          "bit_index": 146,
+          "p0": 0.953125,
+          "z_expectation_of_overlap_output": 0.90625,
+          "zero_counts": 976
+        },
+        {
+          "bit_index": 147,
+          "p0": 0.9150390625,
+          "z_expectation_of_overlap_output": 0.830078125,
+          "zero_counts": 937
+        },
+        {
+          "bit_index": 148,
+          "p0": 0.7734375,
+          "z_expectation_of_overlap_output": 0.546875,
+          "zero_counts": 792
+        },
+        {
+          "bit_index": 149,
+          "p0": 0.5693359375,
+          "z_expectation_of_overlap_output": 0.138671875,
+          "zero_counts": 583
+        },
+        {
+          "bit_index": 150,
+          "p0": 0.728515625,
+          "z_expectation_of_overlap_output": 0.45703125,
+          "zero_counts": 746
+        },
+        {
+          "bit_index": 151,
+          "p0": 0.88671875,
+          "z_expectation_of_overlap_output": 0.7734375,
+          "zero_counts": 908
+        },
+        {
+          "bit_index": 152,
+          "p0": 0.9111328125,
+          "z_expectation_of_overlap_output": 0.822265625,
+          "zero_counts": 933
+        },
+        {
+          "bit_index": 153,
+          "p0": 0.9384765625,
+          "z_expectation_of_overlap_output": 0.876953125,
+          "zero_counts": 961
+        },
+        {
+          "bit_index": 154,
+          "p0": 0.9736328125,
+          "z_expectation_of_overlap_output": 0.947265625,
+          "zero_counts": 997
+        },
+        {
+          "bit_index": 155,
+          "p0": 0.91796875,
+          "z_expectation_of_overlap_output": 0.8359375,
+          "zero_counts": 940
+        }
+      ],
+      "product_marginals_interpretation": "Diagnostic only: assumes independent output bits, which are not established; not the measured all-zero probability.",
+      "product_of_measured_marginal_p0": 3.3087996372179076e-12,
+      "pub_index": 2,
+      "sd_hamming_weight": 5.26638851799418,
+      "shots": 1024
+    }
+  ],
+  "provider_status": "DONE",
+  "raw_counts_artifact": "runtime/quantum-audits/daf6tvm42tqs73avi9u0/raw-bitcounts.json",
+  "raw_counts_sha256": "a6f5d775383ff9d63a8b1dccd5523ab8aaf4d5ed78b36a6fa1c4e9ea15c9da76",
+  "related_audits": [
+    "docs/quantum-zero-kernel-latest-analysis-audit.json"
+  ],
+  "runtime_job_id": "daf6tvm42tqs73avi9u0",
+  "schema_version": 1,
+  "source_manifest": "runtime/ad63801d6a444fe08452bcacc7dfbf53/quantum.json",
+  "source_manifest_sha256": "b6a2876afb3dcc6cc173c2e44b3dd7ff4418272f87f0093350ec2739ff4e2b38",
+  "sources": {
+    "bit_order": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+    "free_instance": "https://quantum.cloud.ibm.com/docs/en/guides/instances",
+    "runtime_job_result_and_usage": "https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/runtime-job-v2"
+  },
+  "status": "completed"
+}
