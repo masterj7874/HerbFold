@@ -1,3 +1,4 @@
+import { tr, msg } from "../lib/i18n";
 import { useId, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
 import { motion } from "motion/react";
 import { Move, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
@@ -87,54 +88,55 @@ export default function QuantumBlochSphere({ vector, label, logical, physical, r
     drag.current = null; setDragging(false);
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
   };
+  const physicalDescription = physical === null ? tr(", 물리 큐빗 미기록") : msg(", 물리 큐빗 {0}", physical);
   const description = data
-    ? `${label}, 논리 큐빗 ${logical}${physical === null ? ", 물리 큐빗 미기록" : `, 물리 큐빗 ${physical}`}. 원시 기대값 X ${display(data.x)}, Y ${display(data.y)}, Z ${display(data.z)}. 벡터 길이 ${display(norm!)}. 단위 구는 길이 1의 참고 경계이며 전체 양자 상태를 나타내지 않습니다.`
-    : `${label}, 논리 큐빗 ${logical}. 원시 X, Y, Z 기대값이 기록되지 않아 벡터를 표시하지 않습니다.`;
+    ? msg("{0}, 논리 큐빗 {1}{2}. 원시 기대값 X {3}, Y {4}, Z {5}. 벡터 길이 {6}. 단위 구는 길이 1의 참고 경계이며 전체 양자 상태를 나타내지 않습니다.", tr(label), logical, physicalDescription, display(data.x), display(data.y), display(data.z), display(norm!))
+    : msg("{0}, 논리 큐빗 {1}. 원시 X, Y, Z 기대값이 기록되지 않아 벡터를 표시하지 않습니다.", tr(label), logical);
   return <figure className="qbs-figure" data-testid="quantum-bloch-sphere" data-has-vector={!!data} data-vector-norm={norm ?? ""}>
-    <figcaption className="qbs-heading"><div><span>LOCAL OBSERVABLES</span><strong id={titleId}>큐빗의 X · Y · Z 기대값</strong></div><span className="qbs-qubit">q{logical}<small>{physical === null ? "물리 번호 미기록" : `물리 q${physical}`}</small></span></figcaption>
+    <figcaption className="qbs-heading"><div><span>LOCAL OBSERVABLES</span><strong id={titleId}>{tr("큐빗의 X · Y · Z 기대값")}</strong></div><span className="qbs-qubit">q{tr(logical)}<small>{physical === null ? tr("물리 번호 미기록") : msg("물리 q{0}", physical)}</small></span></figcaption>
     <div className="qbs-canvas-wrap">
       <svg className={`qbs-canvas${dragging ? " is-dragging" : ""}`} viewBox="0 0 320 300" role="group" tabIndex={0}
-        aria-label="기대값 벡터 회전·확대 보기" aria-describedby={detailId} aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown + - 0 Home"
+        aria-label={tr("기대값 벡터 회전·확대 보기")} aria-describedby={detailId} aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown + - 0 Home"
         onKeyDown={keyboard} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerEnd} onPointerCancel={pointerEnd}
         onLostPointerCapture={() => { drag.current = null; setDragging(false); }}
         data-testid="quantum-bloch-canvas" data-yaw={view.yaw.toFixed(3)} data-pitch={view.pitch.toFixed(3)} data-zoom={view.zoom.toFixed(2)}>
-        <title>{description}</title>
+        <title>{tr(description)}</title>
         <defs>
           <radialGradient id={`${namespace}-surface`} cx="35%" cy="28%"><stop offset="0%" stopColor="#ffffff" /><stop offset="68%" stopColor="#e7f6fa" stopOpacity=".55" /><stop offset="100%" stopColor="#d7e9f3" stopOpacity=".75" /></radialGradient>
           <linearGradient id={`${namespace}-vector`} x1="0" y1="1" x2="1" y2="0"><stop stopColor="#086d88" /><stop offset="1" stopColor="#24a58b" /></linearGradient>
           <marker id={`${namespace}-arrow`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#087e83" /></marker>
         </defs>
         <circle cx={center.x} cy={center.y} r={radius} fill={`url(#${namespace}-surface)`} stroke="#a9c3d8" strokeWidth="1.1" />
-        {circles.flatMap((points, circle) => points.slice(0, -1).map((point, i) => {
+        {tr(circles.flatMap((points, circle) => points.slice(0, -1).map((point, i) => {
           const a = project(point), b = project(points[i + 1]);
           return <line key={`${circle}-${i}`} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="#698dad" strokeWidth=".9" opacity={(a.depth + b.depth) / 2 >= 0 ? .44 : .18} />;
-        }))}
-        {axes.map(({ axis, negative, positive, text }) => <g key={axis}>
+        })))}
+        {tr(axes.map(({ axis, negative, positive, text }) => <g key={axis}>
           <line x1={negative.x} y1={negative.y} x2={center.x} y2={center.y} stroke={colors[axis]} strokeWidth="1" strokeDasharray="3 4" opacity=".5" />
           <line x1={center.x} y1={center.y} x2={positive.x} y2={positive.y} stroke={colors[axis]} strokeWidth="1.4" opacity=".85" />
           <circle cx={positive.x} cy={positive.y} r="2.1" fill={colors[axis]} />
-          <text x={text.x} y={text.y} textAnchor="middle" dominantBaseline="central" fill={colors[axis]} fontSize="12" fontWeight="700">{axis}</text>
-        </g>)}
+          <text x={text.x} y={text.y} textAnchor="middle" dominantBaseline="central" fill={colors[axis]} fontSize="12" fontWeight="700">{tr(axis)}</text>
+        </g>))}
         <circle cx={center.x} cy={center.y} r="3" fill="#315f7e" />
-        {tip && data && <motion.g key={`${logical}-${data.x}-${data.y}-${data.z}`} initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: still ? 0 : .28 }} data-testid="quantum-bloch-raw-vector">
+        {tr(tip && data && <motion.g key={`${logical}-${data.x}-${data.y}-${data.z}`} initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: still ? 0 : .28 }} data-testid="quantum-bloch-raw-vector">
           <line x1={center.x} y1={center.y} x2={tip.x} y2={tip.y} stroke={`url(#${namespace}-vector)`} strokeWidth="3.2" strokeLinecap="round" markerEnd={norm! > .035 ? `url(#${namespace}-arrow)` : undefined} />
           <circle cx={tip.x} cy={tip.y} r="7" fill="#1d9d91" opacity=".12" />
           <circle cx={tip.x} cy={tip.y} r="3.6" fill="#007f83" stroke="#fff" strokeWidth="1.3" />
-        </motion.g>}
-        {!data && <g><rect x="65" y="122" width="190" height="38" rx="8" fill="#ffffff" fillOpacity=".95" stroke="#d6e1eb" /><text x="160" y="145" textAnchor="middle" fill="#607489" fontSize="12">기대값 미기록 · 벡터 없음</text></g>}
-        <text x="160" y="276" textAnchor="middle" fill="#6a8196" fontSize="10">단위 구: |r| = 1 · 원시 좌표 유지</text>
+        </motion.g>)}
+        {tr(!data && <g><rect x="65" y="122" width="190" height="38" rx="8" fill="#ffffff" fillOpacity=".95" stroke="#d6e1eb" /><text x="160" y="145" textAnchor="middle" fill="#607489" fontSize="12">{tr("기대값 미기록 · 벡터 없음")}</text></g>)}
+        <text x="160" y="276" textAnchor="middle" fill="#6a8196" fontSize="10">{tr("단위 구: |r| = 1 · 원시 좌표 유지")}</text>
       </svg>
-      <div className="qbs-toolbar" aria-label="기대값 벡터 보기 조절"><span><Move size={13} aria-hidden="true" />드래그하여 회전</span><div>
-        <button type="button" onClick={() => changeZoom(-.15)} disabled={view.zoom <= .551} aria-label="기대값 구 축소" title="축소 (−)"><ZoomOut size={17} aria-hidden="true" /></button>
-        <output aria-label="확대 배율">{Math.round(view.zoom * 100)}%</output>
-        <button type="button" onClick={() => changeZoom(.15)} disabled={view.zoom >= 1.649} aria-label="기대값 구 확대" title="확대 (+)"><ZoomIn size={17} aria-hidden="true" /></button>
-        <button type="button" onClick={reset} aria-label="기대값 구 시점 초기화" title="시점 초기화 (0)"><RotateCcw size={16} aria-hidden="true" /></button>
+      <div className="qbs-toolbar" aria-label={tr("기대값 벡터 보기 조절")}><span><Move size={13} aria-hidden="true" />{tr("드래그하여 회전")}</span><div>
+        <button type="button" onClick={() => changeZoom(-.15)} disabled={view.zoom <= .551} aria-label={tr("기대값 구 축소")} title={tr("축소 (−)")}><ZoomOut size={17} aria-hidden="true" /></button>
+        <output aria-label={tr("확대 배율")}>{tr(Math.round(view.zoom * 100))}%</output>
+        <button type="button" onClick={() => changeZoom(.15)} disabled={view.zoom >= 1.649} aria-label={tr("기대값 구 확대")} title={tr("확대 (+)")}><ZoomIn size={17} aria-hidden="true" /></button>
+        <button type="button" onClick={reset} aria-label={tr("기대값 구 시점 초기화")} title={tr("시점 초기화 (0)")}><RotateCcw size={16} aria-hidden="true" /></button>
       </div></div>
     </div>
-    <p className="qbs-sample" title={label}>{label}</p>
-    <dl className="qbs-values" aria-label="원시 기대값"><div style={{ color: colors.X }}><dt>⟨X⟩</dt><dd>{data ? display(data.x) : "—"}</dd></div><div style={{ color: colors.Y }}><dt>⟨Y⟩</dt><dd>{data ? display(data.y) : "—"}</dd></div><div style={{ color: colors.Z }}><dt>⟨Z⟩</dt><dd>{data ? display(data.z) : "—"}</dd></div><div><dt>|r|</dt><dd>{norm === null ? "—" : display(norm)}</dd></div></dl>
-    <p id={detailId} className="qbs-explanation">{data ? "저장된 축별 기대값으로 구성한 벡터입니다. 이 구는 한 큐빗의 참고 좌표계이며 전체 얽힌 상태나 분자 궤도를 나타내지 않습니다." : "이 기록에는 해당 큐빗의 X·Y·Z 기대값이 없습니다. 참고 좌표계만 표시합니다."}</p>
-    {outside && <p className="qbs-inconsistent" role="status">|r| &gt; 1: 유한 shots나 장비 오류로 축별 추정값이 단위 구와 일치하지 않을 수 있습니다. 벡터를 정규화하거나 잘라내지 않았습니다.</p>}
-    <p className="qbs-keyboard">키보드: 그림에 초점을 맞춘 뒤 방향키로 회전, + / −로 확대·축소, 0으로 초기화합니다.</p>
+    <p className="qbs-sample" title={tr(label)}>{tr(label)}</p>
+    <dl className="qbs-values" aria-label={tr("원시 기대값")}><div style={{ color: colors.X }}><dt>⟨X⟩</dt><dd>{tr(data ? display(data.x) : "—")}</dd></div><div style={{ color: colors.Y }}><dt>⟨Y⟩</dt><dd>{tr(data ? display(data.y) : "—")}</dd></div><div style={{ color: colors.Z }}><dt>⟨Z⟩</dt><dd>{tr(data ? display(data.z) : "—")}</dd></div><div><dt>|r|</dt><dd>{tr(norm === null ? "—" : display(norm))}</dd></div></dl>
+    <p id={detailId} className="qbs-explanation">{tr(data ? "저장된 축별 기대값으로 구성한 벡터입니다. 이 구는 한 큐빗의 참고 좌표계이며 전체 얽힌 상태나 분자 궤도를 나타내지 않습니다." : "이 기록에는 해당 큐빗의 X·Y·Z 기대값이 없습니다. 참고 좌표계만 표시합니다.")}</p>
+    {tr(outside && <p className="qbs-inconsistent" role="status">{tr("|r| > 1: 유한 shots나 장비 오류로 축별 추정값이 단위 구와 일치하지 않을 수 있습니다. 벡터를 정규화하거나 잘라내지 않았습니다.")}</p>)}
+    <p className="qbs-keyboard">{tr("키보드: 그림에 초점을 맞춘 뒤 방향키로 회전, + / −로 확대·축소, 0으로 초기화합니다.")}</p>
   </figure>;
 }

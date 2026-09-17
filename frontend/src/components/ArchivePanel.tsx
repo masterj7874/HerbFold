@@ -1,3 +1,4 @@
+import { tr, localeCode, msg } from "../lib/i18n";
 import {
   ArrowDownToLine,
   Box,
@@ -87,12 +88,12 @@ export default function ArchivePanel({
       <div className="section-heading">
         <div>
           <span className="eyebrow">REPRODUCIBLE RESEARCH</span>
-          <h3>입력에서 결과까지, 이어지는 기록</h3>
+          <h3>{tr("입력에서 결과까지, 이어지는 기록")}</h3>
         </div>
         <div className="inline-actions">
           <label className="secondary-button import-button">
-            <FileUp size={15} />{" "}
-            {importing ? "가져오는 중…" : "AF3 결과 가져오기"}
+            <FileUp size={15} />{tr(" ")}
+            {tr(importing ? "가져오는 중…" : "AF3 결과 가져오기")}
             <input
               type="file"
               accept=".json,.cif"
@@ -107,14 +108,14 @@ export default function ArchivePanel({
           <button
             className="icon-button"
             onClick={refreshJobs}
-            aria-label="실행 기록 새로고침"
+            aria-label={tr("실행 기록 새로고침")}
           >
             <RefreshCw size={17} />
           </button>
         </div>
       </div>
       <div className="filter-tabs">
-        {[
+        {tr([
           ["all", "전체 기록"],
           ["structure", "단백질 구조"],
           ["quantum", "양자 실행"],
@@ -125,9 +126,9 @@ export default function ArchivePanel({
             className={filter === key ? "active" : ""}
             onClick={() => setFilter(key)}
           >
-            {label}
+            {tr(label)}
           </button>
-        ))}
+        )))}
       </div>
       <div className="archive-table">
         <div className="archive-row table-head">
@@ -136,7 +137,7 @@ export default function ArchivePanel({
           <span>CREATED</span>
           <span>ACTIONS</span>
         </div>
-        {visible.map((job) => (
+        {tr(visible.map((job) => (
           <div key={job.id}>
             <div className="archive-row">
               <div className="archive-name">
@@ -144,12 +145,12 @@ export default function ArchivePanel({
                   <FolderOpen size={19} />
                 </span>
                 <div>
-                  <strong>{job.kind.replaceAll("_", " ")}</strong>
-                  <small>{job.id.slice(0, 16)}</small>
+                  <strong>{tr(job.kind.replaceAll("_", " "))}</strong>
+                  <small>{tr(job.id.slice(0, 16))}</small>
                 </div>
               </div>
-              <span className={`status-pill ${job.status}`}>{job.status}</span>
-              <time>{new Date(job.created).toLocaleString("ko-KR")}</time>
+              <span className={`status-pill ${job.status}`}>{tr(job.status)}</span>
+              <time>{tr(new Date(job.created).toLocaleString(localeCode()))}</time>
               <div className="inline-actions">
                 <button
                   className="text-button"
@@ -157,31 +158,31 @@ export default function ArchivePanel({
                     setExpanded(expanded === job.id ? null : job.id)
                   }
                 >
-                  결과 보기 <ExternalLink size={13} />
+                  {tr("결과 보기 ")}<ExternalLink size={13} />
                 </button>
                 <button
                   className="icon-button"
-                  aria-label={`${job.id} 내보내기`}
+                  aria-label={tr(msg("{0} 내보내기", job.id))}
                   onClick={() => download(job, `${job.kind}-${job.id}.json`)}
                 >
                   <ArrowDownToLine size={15} />
                 </button>
               </div>
             </div>
-            {expanded === job.id && (
+            {tr(expanded === job.id && (
               <div className="archive-detail">
-                {job.error && <p className="field-warning">{job.error}</p>}
-                {job.result?.models?.map((model: any, i: number) => (
+                {tr(job.error && <p className="field-warning">{tr(job.error)}</p>)}
+                {tr(job.result?.models?.map((model: any, i: number) => (
                   <div key={i} className="structure-file">
                     <div>
                       <Box size={18} />
                       <span>
-                        <strong>{model.name || model.structure_path}</strong>
+                        <strong>{tr(model.name || model.structure_path)}</strong>
                         <small>
-                          ipTM {model.metrics?.iptm ?? "—"} ·{" "}
-                          {model.metrics?.has_clash
+                          ipTM {tr(model.metrics?.iptm ?? "—")} ·{tr(" ")}
+                          {tr(model.metrics?.has_clash
                             ? "충돌 감지"
-                            : "구조 신뢰도"}
+                            : "구조 신뢰도")}
                         </small>
                       </span>
                     </div>
@@ -189,11 +190,11 @@ export default function ArchivePanel({
                       className="secondary-button"
                       onClick={() => viewStructure(job, model)}
                     >
-                      3D 구조 열기 <ExternalLink size={13} />
+                      {tr("3D 구조 열기 ")}<ExternalLink size={13} />
                     </button>
                     <button
                       className="icon-button"
-                      aria-label="mmCIF 다운로드"
+                      aria-label={tr("mmCIF 다운로드")}
                       onClick={async () => {
                         try {
                           download(
@@ -212,20 +213,21 @@ export default function ArchivePanel({
                       <ArrowDownToLine size={15} />
                     </button>
                   </div>
-                ))}
-                {job.kind === "quantum" && <QuantumPanel value={{ ...job.result, mode: job.result?.mode || job.payload.mode, status: job.result?.status || job.status, sample_ids: job.result?.sample_ids || job.payload.sample_ids, sample_labels: job.result?.sample_labels || job.payload.sample_labels }} />}
-                {job.kind === "quantum" ? <details><summary>전체 저장 JSON</summary><pre>{JSON.stringify(job.result, null, 2)}</pre></details> : <pre>{JSON.stringify(job.result, null, 2)}</pre>}
+                )))}
+                {tr(job.kind === "quantum" && <QuantumPanel value={{ ...job.result, mode: job.result?.mode || job.payload.mode, status: job.result?.status || job.status, sample_ids: job.result?.sample_ids || job.payload.sample_ids, sample_labels: job.result?.sample_labels || job.payload.sample_labels }} />)}
+                {tr(job.kind === "quantum" ? <details><summary>{tr("전체 저장 JSON")}</summary><pre>{JSON.stringify(job.result, null, 2)}</pre></details> : <pre>{JSON.stringify(job.result, null, 2)}</pre>)}
               </div>
-            )}
+            ))}
           </div>
-        ))}
+        )))}
       </div>
-      {!visible.length && (
+      {tr(!visible.length && (
         <div className="empty-large">
           <FolderOpen size={35} />
-          <p>이 유형의 실행 기록이 없습니다.</p>
+          <p>{tr("이 유형의 실행 기록이 없습니다.")}</p>
         </div>
-      )}
+      ))}
     </div>
   );
 }
+

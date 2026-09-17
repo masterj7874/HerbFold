@@ -1,3 +1,7 @@
+export class ApiError extends Error {
+  constructor(message: string, public readonly status: number) { super(message); this.name = "ApiError"; }
+}
+
 let apiToken = "";
 export function setApiToken(value: string) {
   apiToken = value;
@@ -25,10 +29,11 @@ export async function api<T = any>(
     } catch {
       detail = response.statusText;
     }
-    throw new Error(
+    throw new ApiError(
       typeof detail === "string"
         ? detail
         : JSON.stringify(detail ?? `HTTP ${response.status}`),
+      response.status,
     );
   }
   return response.json() as Promise<T>;

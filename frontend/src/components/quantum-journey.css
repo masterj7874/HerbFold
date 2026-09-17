@@ -16,3 +16,5 @@
 
 .qj .qbs-values dd{white-space:nowrap;overflow-wrap:normal}@media(max-width:680px){.qj .qbs-values{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.qj .qbs-values dd{font-size:12px}.qj .qbs-values>div{padding:10px 5px}}
 .qs-hero-records{display:inline-flex;align-items:center;gap:7px;margin-top:15px;min-height:36px;border:1px solid #79bbb75e;background:#90d5c90d;color:#b6e3de;border-radius:6px;padding:7px 10px;font:11px/1.6 inherit;cursor:pointer}.qs-hero-records:hover{background:#90d5c91c}.qs-hero-records:focus-visible{outline:3px solid #a2dcd6;outline-offset:3px}
+
+html[lang="en"] .qj-steps strong{white-space:normal;line-height:1.35;overflow-wrap:normal}html[lang="en"] .qj-steps>button{align-items:start}html[lang="en"] .qj-descriptor{grid-template-columns:minmax(83px,1.2fr) minmax(30px,1fr) auto}html[lang="en"] .qj-descriptor>span{line-height:1.45}

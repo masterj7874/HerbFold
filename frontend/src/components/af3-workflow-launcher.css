@@ -1,0 +1,21 @@
+.af3-workflow-launcher { scroll-margin-top: 30px; }
+.afw-launch-flow { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); list-style: none; padding: 0; margin: 22px 0; gap: 10px; }
+.afw-launch-flow li { background: #eff5fc; border: 1px solid #d9e5f2; border-radius: 10px; padding: 13px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
+.afw-launch-flow span { color: #2762ca; font-weight: 700; }
+.afw-launch-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 28px; }
+.afw-launch-form { min-width: 0; border: 0; margin: 0; padding: 0; }
+.afw-launch-form legend { font-size: 16px; font-weight: 650; padding: 0; margin-bottom: 5px; }
+.afw-launch-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.afw-launch-form > button { width: 100%; margin: 8px 0 14px; }
+.afw-launch-existing { min-width: 0; padding: 20px; background: #f7fafe; border: 1px solid #dce6f1; border-radius: 13px; }
+.afw-launch-existing-title { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 15px; }
+.afw-launch-existing .afc-muted { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 16px; }
+.afw-launch-note { border-top: 1px solid #dce6f1; padding-top: 18px; margin-top: 24px; font-size: 12px; color: #566c83; display: flex; gap: 9px; }
+.afw-launch-note svg { flex-shrink: 0; margin-top: 3px; }
+.afw-pending { border: 1px solid #c4d7ee; background: #f0f7ff; padding: 18px; border-radius: 12px; margin-bottom: 24px; }
+.afw-pending code { display: block; overflow-wrap: anywhere; font-size: 12px; margin: 10px 0; }
+.afw-pending > div { display: flex; gap: 12px; flex-wrap: wrap; }
+.agent-workspace-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.agent-workspace-tabs button { display: flex; align-items: center; gap: 8px; padding: 12px 18px; border: 1px solid #d9e3ee; border-radius: 10px; background: #fff; font-weight: 600; font-size: 13px; }
+.agent-workspace-tabs button[aria-pressed=true] { background: #eaf2ff; color: #215acd; border-color: #9bbbea; }
+@media(max-width:720px) { .afw-launch-layout { grid-template-columns: 1fr; gap: 20px; } .afw-launch-flow { grid-template-columns: repeat(2,minmax(0,1fr)); } .afw-launch-flow li { font-size: 11px; } .agent-workspace-tabs button { padding: 10px 12px; } }

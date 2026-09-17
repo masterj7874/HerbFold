@@ -1,3 +1,4 @@
+import { tr, msg } from "../lib/i18n";
 import {
   Component,
   Suspense,
@@ -59,6 +60,7 @@ export type {
 
 export interface MoleculeViewerProps {
   scene: MolecularScene | null;
+  displayLabel?: string;
   loading?: boolean;
   onAtomSelect?: (atom: MolecularAtom | null) => void;
   className?: string;
@@ -637,11 +639,9 @@ class ViewerErrorBoundary extends Component<
         data-testid="webgl-fallback"
       >
         <AlertTriangle size={25} />
-        <strong>3D 렌더러를 시작하지 못했습니다</strong>
+        <strong>{tr("3D 렌더러를 시작하지 못했습니다")}</strong>
         <span>
-          브라우저의 하드웨어 가속과 WebGL 2 지원을 확인하세요. 원자 검색과 구조
-          정보는 계속 사용할 수 있습니다.
-        </span>
+          {tr("브라우저의 하드웨어 가속과 WebGL 2 지원을 확인하세요. 원자 검색과 구조 정보는 계속 사용할 수 있습니다.")}</span>
       </div>
     ) : (
       this.props.children
@@ -652,20 +652,20 @@ class ViewerErrorBoundary extends Component<
 function EmptyViewer({ loading }: { loading: boolean }) {
   return (
     <div className="mv-state" role="status">
-      {loading ? (
+      {tr(loading ? (
         <LoaderCircle className="mv-loading-icon" size={30} />
       ) : (
         <Atom size={34} strokeWidth={1.25} />
-      )}
+      ))}
       <strong>
-        {loading
+        {tr(loading
           ? "분자 좌표를 불러오는 중"
-          : "분자를 선택하면 구조가 나타납니다"}
+          : "분자를 선택하면 구조가 나타납니다")}
       </strong>
       <span>
-        {loading
+        {tr(loading
           ? "원자 좌표와 결합 정보를 준비하고 있습니다."
-          : "성분, 설계 후보 또는 AlphaFold 3 결과를 열어 원자 단위로 탐색하세요."}
+          : "성분, 설계 후보 또는 AlphaFold 3 결과를 열어 원자 단위로 탐색하세요.")}
       </span>
     </div>
   );
@@ -676,32 +676,36 @@ export function MoleculeViewer({
   loading = false,
   onAtomSelect,
   className = "",
+  displayLabel,
 }: MoleculeViewerProps) {
   return (
     <div
       className={`molecular-viewer ${className}`}
       data-testid="molecule-viewer"
     >
-      {scene?.atoms?.length ? (
+      {tr(scene?.atoms?.length ? (
         <ViewerSession
           key={`${scene.source}:${scene.metadata?.sha256 ?? scene.metadata?.smiles ?? ""}:${scene.label}:${scene.atoms.length}`}
           scene={scene}
+          displayLabel={displayLabel}
           loading={loading}
           onAtomSelect={onAtomSelect}
         />
       ) : (
         <EmptyViewer loading={loading} />
-      )}
+      ))}
     </div>
   );
 }
 
 function ViewerSession({
   scene,
+  displayLabel,
   loading,
   onAtomSelect,
 }: Required<Pick<MoleculeViewerProps, "loading">> & {
   scene: MolecularScene;
+  displayLabel?: string;
   onAtomSelect?: MoleculeViewerProps["onAtomSelect"];
 }) {
   const hasProtein = scene.atoms.some((atom) => atom.is_protein);
@@ -939,7 +943,7 @@ function ViewerSession({
         data-structure-sha256={typeof scene.metadata?.sha256 === "string" ? scene.metadata.sha256 : undefined}
         tabIndex={0}
         role="group"
-        aria-label="3D 분자 구조. 마우스 휠이나 두 손가락으로 확대·축소. 키보드 더하기·빼기로 줌, 숫자 0으로 전체 보기."
+        aria-label={tr("3D 분자 구조. 마우스 휠이나 두 손가락으로 확대·축소. 키보드 더하기·빼기로 줌, 숫자 0으로 전체 보기.")}
         aria-keyshortcuts="+ - 0"
         onPointerDown={(event) => event.currentTarget.focus({ preventScroll: true })}
         onKeyDown={(event) => {
@@ -952,14 +956,12 @@ function ViewerSession({
           }
         }}
       >
-        {invalidCoordinates ? (
+        {tr(invalidCoordinates ? (
           <div className="mv-state" role="alert">
             <AlertTriangle />
-            <strong>유효하지 않은 원자 좌표</strong>
+            <strong>{tr("유효하지 않은 원자 좌표")}</strong>
             <span>
-              중복 원자 번호 또는 유한하지 않은 좌표가 있어 구조를 표시할 수
-              없습니다.
-            </span>
+              {tr("중복 원자 번호 또는 유한하지 않은 좌표가 있어 구조를 표시할 수 없습니다.")}</span>
           </div>
         ) : (
           <ViewerErrorBoundary>
@@ -980,8 +982,8 @@ function ViewerSession({
               fallback={
                 <div className="mv-state" role="alert">
                   <AlertTriangle />
-                  <strong>WebGL 2를 사용할 수 없습니다</strong>
-                  <span>하드웨어 가속을 지원하는 브라우저에서 열어주세요.</span>
+                  <strong>{tr("WebGL 2를 사용할 수 없습니다")}</strong>
+                  <span>{tr("하드웨어 가속을 지원하는 브라우저에서 열어주세요.")}</span>
                 </div>
               }
               onPointerMissed={() => setHovered(null)}
@@ -1012,7 +1014,7 @@ function ViewerSession({
                   key={`bonds:${segments.length}`}
                   segments={segments}
                 />
-                {paths.map((path, index) => (
+                {tr(paths.map((path, index) => (
                   <Backbone
                     key={index}
                     path={path}
@@ -1021,8 +1023,8 @@ function ViewerSession({
                     onSelect={chooseAtom}
                     onFocus={focusAtom}
                   />
-                ))}
-                {selected && (
+                )))}
+                {tr(selected && (
                   <mesh
                     position={[selected.x, selected.y, selected.z]}
                     raycast={() => {}}
@@ -1042,8 +1044,8 @@ function ViewerSession({
                       depthWrite={false}
                     />
                   </mesh>
-                )}
-                {labelAtom && (
+                ))}
+                {tr(labelAtom && (
                   <Html
                     position={[
                       labelAtom.x,
@@ -1055,11 +1057,11 @@ function ViewerSession({
                     style={{ pointerEvents: "none" }}
                   >
                     <span className="mv-atom-label">
-                      {atomLabel(labelAtom)}
+                      {tr(atomLabel(labelAtom))}
                     </span>
                   </Html>
-                )}
-                {measured.length === 2 && (
+                ))}
+                {tr(measured.length === 2 && (
                   <>
                     <Line
                       points={measured.map(
@@ -1083,11 +1085,11 @@ function ViewerSession({
                       style={{ pointerEvents: "none" }}
                     >
                       <span className="mv-distance-label">
-                        {distance?.toFixed(2)} Å
+                        {tr(distance?.toFixed(2))} Å
                       </span>
                     </Html>
                   </>
-                )}
+                ))}
                 <CameraRig
                   center={bounds.center}
                   radius={bounds.radius}
@@ -1099,13 +1101,13 @@ function ViewerSession({
               </Suspense>
             </Canvas>
           </ViewerErrorBoundary>
-        )}
+        ))}
       </div>
 
       <div className="mv-topbar">
         <div className="mv-source">
           <span className="mv-source-dot" />
-          <span>{SOURCE_LABELS[scene.source] ?? scene.source}</span>
+          <span>{tr(SOURCE_LABELS[scene.source] ?? scene.source)}</span>
         </div>
         <span className="mv-coordinate-badge">
           3D STRUCTURE <span>Å</span>
@@ -1113,96 +1115,96 @@ function ViewerSession({
       </div>
       <div className="mv-title-block">
         <span className="mv-eyebrow">MOLECULAR EXPLORER</span>
-        <h3>{scene.label}</h3>
+        <h3>{displayLabel || scene.label}</h3>
         <p>
-          {scene.atoms.length.toLocaleString()} atoms <span>·</span>{" "}
-          {scene.bonds.length.toLocaleString()} bonds
-          {chainIds.some(Boolean) && (
+          {tr(scene.atoms.length.toLocaleString())} atoms <span>·</span>{tr(" ")}
+          {tr(scene.bonds.length.toLocaleString())} bonds
+          {tr(chainIds.some(Boolean) && (
             <>
-              <span>·</span> {chainIds.length} chains
+              <span>·</span> {tr(chainIds.length)} chains
             </>
-          )}
+          ))}
         </p>
       </div>
 
       <div
         className="mv-representations"
         role="group"
-        aria-label="분자 표현 방식"
+        aria-label={tr("분자 표현 방식")}
       >
-        {REPRESENTATIONS.filter(
+        {tr(REPRESENTATIONS.filter(
           (item) => item.value !== "cartoon" || hasProtein,
         ).map((item) => (
           <button
             key={item.value}
             data-testid={`representation-${item.value}`}
             aria-pressed={representation === item.value}
-            title={item.title}
+            title={tr(item.title)}
             className={representation === item.value ? "is-active" : ""}
             onClick={() => {
               setRepresentation(item.value);
               setHovered(null);
             }}
           >
-            {item.label}
+            {tr(item.label)}
           </button>
-        ))}
+        )))}
       </div>
 
-      <div className="mv-zoom-bar" role="group" aria-label="분자 확대 및 축소">
+      <div className="mv-zoom-bar" role="group" aria-label={tr("분자 확대 및 축소")}>
         <button
-          title="축소 (−)"
-          aria-label="축소"
+          title={tr("축소 (−)")}
+          aria-label={tr("축소")}
           data-testid="viewer-zoom-out"
           onClick={() => act("zoom", undefined, 1.25)}
         >
-          <Minus size={18} /><span>축소</span>
+          <Minus size={18} /><span>{tr("축소")}</span>
         </button>
         <output
           className="mv-zoom-level"
           data-testid="viewer-zoom-level"
           data-camera-distance={scale.distance.toFixed(4)}
-          aria-label="전체 구조 맞춤 대비 확대 배율"
-          title="전체 구조에 맞춘 거리를 100%로 표시합니다."
+          aria-label={tr("전체 구조 맞춤 대비 확대 배율")}
+          title={tr("전체 구조에 맞춘 거리를 100%로 표시합니다.")}
         >
-          <strong>{scale.zoomPercent.toLocaleString()}<small>%</small></strong>
-          <span>확대 배율</span>
+          <strong>{tr(scale.zoomPercent.toLocaleString())}<small>%</small></strong>
+          <span>{tr("확대 배율")}</span>
         </output>
         <button
-          title="확대 (+)"
-          aria-label="확대"
+          title={tr("확대 (+)")}
+          aria-label={tr("확대")}
           data-testid="viewer-zoom-in"
           onClick={() => act("zoom", undefined, 0.8)}
         >
-          <Plus size={18} /><span>확대</span>
+          <Plus size={18} /><span>{tr("확대")}</span>
         </button>
         <span className="mv-zoom-divider" />
         <button
-          title="전체 구조 맞춤 (0)"
-          aria-label="전체 구조 맞춤"
+          title={tr("전체 구조 맞춤 (0)")}
+          aria-label={tr("전체 구조 맞춤")}
           data-testid="viewer-reset"
           onClick={() => {
             setSpinning(false);
             act("fit");
           }}
         >
-          <Maximize2 size={17} /><span>전체 보기</span>
+          <Maximize2 size={17} /><span>{tr("전체 보기")}</span>
         </button>
       </div>
-      <div className="mv-tools" role="toolbar" aria-label="3D 구조 조작">
-        {selectedLigandBounds && (
+      <div className="mv-tools" role="toolbar" aria-label={tr("3D 구조 조작")}>
+        {tr(selectedLigandBounds && (
           <button
-            title="선택한 물질의 실제 결합 위치에 초점"
-            aria-label="선택 물질에 초점"
+            title={tr("선택한 물질의 실제 결합 위치에 초점")}
+            aria-label={tr("선택 물질에 초점")}
             data-testid="viewer-focus-ligand"
             onClick={focusSelectedLigand}
           >
             <Atom size={17} />
           </button>
-        )}
+        ))}
         <button
-          title="선택 원자로 이동"
-          aria-label="선택 원자로 이동"
+          title={tr("선택 원자로 이동")}
+          aria-label={tr("선택 원자로 이동")}
           disabled={!selected}
           data-testid="viewer-focus"
           onClick={() => selected && focusAtom(selected)}
@@ -1212,24 +1214,24 @@ function ViewerSession({
         <span className="mv-tool-divider" />
         <button
           title={
-            spinning
+            tr(spinning
               ? "회전 정지"
               : reducedMotion
                 ? "동작 줄이기 설정으로 자동 회전이 꺼져 있습니다"
-                : "자동 회전"
+                : "자동 회전")
           }
-          aria-label="자동 회전"
+          aria-label={tr("자동 회전")}
           aria-pressed={spinning}
           className={spinning ? "is-active" : ""}
           disabled={reducedMotion}
           data-testid="viewer-spin"
           onClick={() => setSpinning(!spinning)}
         >
-          {spinning ? <Pause size={15} /> : <Play size={15} />}
+          {tr(spinning ? <Pause size={15} /> : <Play size={15} />)}
         </button>
         <button
-          title="두 원자 사이 거리 측정"
-          aria-label="거리 측정"
+          title={tr("두 원자 사이 거리 측정")}
+          aria-label={tr("거리 측정")}
           aria-pressed={ruler}
           data-testid="viewer-ruler"
           className={ruler ? "is-active" : ""}
@@ -1241,8 +1243,8 @@ function ViewerSession({
           <Ruler size={17} />
         </button>
         <button
-          title="표시 설정"
-          aria-label="표시 설정"
+          title={tr("표시 설정")}
+          aria-label={tr("표시 설정")}
           aria-expanded={showSettings}
           data-testid="viewer-settings"
           className={showSettings ? "is-active" : ""}
@@ -1253,7 +1255,7 @@ function ViewerSession({
       </div>
 
       <AnimatePresence>
-        {showSettings && (
+        {tr(showSettings && (
           <motion.div
             className="mv-settings mv-panel"
             initial={{ opacity: 0, x: 6 }}
@@ -1262,17 +1264,16 @@ function ViewerSession({
             transition={transition}
           >
             <div className="mv-panel-heading">
-              <strong>표시 설정</strong>
+              <strong>{tr("표시 설정")}</strong>
               <button
-                aria-label="표시 설정 닫기"
+                aria-label={tr("표시 설정 닫기")}
                 onClick={() => setShowSettings(false)}
               >
                 <X size={14} />
               </button>
             </div>
             <label className="mv-field-label" htmlFor="molecular-color-mode">
-              색상 기준
-            </label>
+              {tr("색상 기준")}</label>
             <select
               id="molecular-color-mode"
               data-testid="viewer-color-mode"
@@ -1281,10 +1282,10 @@ function ViewerSession({
                 setColorMode(event.target.value as MolecularColorMode)
               }
             >
-              <option value="element">원소별 색상</option>
-              <option value="chain">체인별 색상</option>
+              <option value="element">{tr("원소별 색상")}</option>
+              <option value="chain">{tr("체인별 색상")}</option>
               <option value="confidence" disabled={!hasConfidence}>
-                pLDDT 신뢰도{!hasConfidence ? " · 데이터 없음" : ""}
+                {tr("pLDDT 신뢰도")}{tr(!hasConfidence ? " · 데이터 없음" : "")}
               </option>
             </select>
             <label className="mv-toggle">
@@ -1294,69 +1295,68 @@ function ViewerSession({
                 checked={showHydrogens}
                 onChange={(event) => setShowHydrogens(event.target.checked)}
               />
-              <span>수소 원자 표시</span>
+              <span>{tr("수소 원자 표시")}</span>
               <span className="mv-toggle-track">
                 <Check size={9} />
               </span>
             </label>
             <p className="mv-setting-note">
-              {representation === "cartoon"
+              {tr(representation === "cartoon"
                 ? "Cα 좌표의 백본 궤적. 원자 연결은 Ball & stick에서 확인하세요."
-                : "원자 클릭: 정보 · 더블 클릭: 확대"}
+                : "원자 클릭: 정보 · 더블 클릭: 확대")}
               <br />
-              휠 · 두 손가락: 줌 · 드래그: 회전 · 우클릭: 이동
-            </p>
+              {tr("휠 · 두 손가락: 줌 · 드래그: 회전 · 우클릭: 이동")}</p>
           </motion.div>
-        )}
+        ))}
       </AnimatePresence>
 
       <form className="mv-search" onSubmit={search}>
         <Search size={13} />
         <input
-          aria-label="원자 번호 또는 이름 검색"
+          aria-label={tr("원자 번호 또는 이름 검색")}
           data-testid="atom-search"
           value={query}
           onChange={(event) => {
             setQuery(event.target.value);
             setSearchError("");
           }}
-          placeholder="원자 번호 / 이름"
+          placeholder={tr("원자 번호 / 이름")}
         />
         <button
           type="submit"
-          aria-label="원자 찾기"
+          aria-label={tr("원자 찾기")}
           data-testid="atom-search-submit"
         >
           <Crosshair size={13} />
         </button>
       </form>
-      {searchError && (
+      {tr(searchError && (
         <div className="mv-search-error" role="status">
-          {searchError}
+          {tr(searchError)}
         </div>
-      )}
-      {ruler && (
+      ))}
+      {tr(ruler && (
         <div className="mv-ruler-instruction" role="status">
           <Ruler size={13} />
-          {distance != null
+          {tr(distance != null
             ? `#${measured[0].index} ↔ #${measured[1].index} · ${distance.toFixed(3)} Å`
-            : `${measured.length ? "두 번째" : "첫 번째"} 원자를 선택하세요`}
+            : msg("{0} 원자를 선택하세요", tr(measured.length ? "두 번째" : "첫 번째")))}
           <button
-            title="측정 초기화"
-            aria-label="측정 초기화"
+            title={tr("측정 초기화")}
+            aria-label={tr("측정 초기화")}
             onClick={() => setMeasured([])}
           >
             <RotateCcw size={12} />
           </button>
         </div>
-      )}
+      ))}
 
       <AnimatePresence>
-        {selected && (
+        {tr(selected && (
           <motion.aside
             className="mv-atom-panel mv-panel"
             data-testid="atom-inspector"
-            aria-label="선택 원자 정보"
+            aria-label={tr("선택 원자 정보")}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
@@ -1372,15 +1372,15 @@ function ViewerSession({
                       "#c4a8ca",
                   }}
                 >
-                  {selected.element}
+                  {tr(selected.element)}
                 </span>
                 <span>
                   <strong>{selected.name || selected.element}</strong>
-                  <small>ATOM #{selected.index}</small>
+                  <small>ATOM #{tr(selected.index)}</small>
                 </span>
               </span>
               <button
-                aria-label="원자 정보 닫기"
+                aria-label={tr("원자 정보 닫기")}
                 onClick={() => {
                   setSelected(null);
                   onAtomSelect?.(null);
@@ -1391,55 +1391,55 @@ function ViewerSession({
             </div>
             <dl className="mv-atom-facts">
               <div>
-                <dt>형식 전하</dt>
+                <dt>{tr("형식 전하")}</dt>
                 <dd>
-                  {selected.formal_charge == null
+                  {tr(selected.formal_charge == null
                     ? "—"
                     : selected.formal_charge > 0
                       ? `+${selected.formal_charge}`
-                      : selected.formal_charge}
+                      : selected.formal_charge)}
                 </dd>
               </div>
               <div>
-                <dt>결합 수</dt>
-                <dd>{neighbors.length}</dd>
+                <dt>{tr("결합 수")}</dt>
+                <dd>{tr(neighbors.length)}</dd>
               </div>
               <div>
-                <dt>체인 / 잔기</dt>
+                <dt>{tr("체인 / 잔기")}</dt>
                 <dd>
-                  {selected.chain_id || "—"} /{" "}
-                  {selected.residue_name
+                  {tr(selected.chain_id || "—")} /{tr(" ")}
+                  {tr(selected.residue_name
                     ? `${selected.residue_name} ${selected.residue_id ?? ""}`
-                    : "—"}
+                    : "—")}
                 </dd>
               </div>
               <div>
                 <dt>
-                  {scene.source === "experimental_pdb" ? "B factor" : "pLDDT"}
+                  {tr(scene.source === "experimental_pdb" ? "B factor" : "pLDDT")}
                 </dt>
                 <dd>
-                  {scene.source === "experimental_pdb"
+                  {tr(scene.source === "experimental_pdb"
                     ? (selected.b_factor?.toFixed(2) ?? "—")
-                    : (selected.confidence?.toFixed(1) ?? "—")}
+                    : (selected.confidence?.toFixed(1) ?? "—"))}
                 </dd>
               </div>
             </dl>
             <div className="mv-coordinates">
-              <span>X {selected.x.toFixed(3)}</span>
-              <span>Y {selected.y.toFixed(3)}</span>
-              <span>Z {selected.z.toFixed(3)}</span>
+              <span>X {tr(selected.x.toFixed(3))}</span>
+              <span>Y {tr(selected.y.toFixed(3))}</span>
+              <span>Z {tr(selected.z.toFixed(3))}</span>
               <small>Å</small>
             </div>
-            {neighbors.length > 0 && (
+            {tr(neighbors.length > 0 && (
               <div className="mv-neighbors">
-                <span className="mv-field-label">연결된 원자</span>
+                <span className="mv-field-label">{tr("연결된 원자")}</span>
                 <div>
-                  {neighbors
+                  {tr(neighbors
                     .slice(0, 8)
                     .map(({ atom, bond, distance: bondDistance }) => (
                       <button
                         key={atom.index}
-                        title={`원자 #${atom.index} · 결합 차수 ${bond.order}${bond.provenance ? ` · ${bond.provenance}` : ""}`}
+                        title={tr(msg("원자 #{0} · 결합 차수 {1}{2}", atom.index, bond.order, bond.provenance ? ` · ${bond.provenance}` : ""))}
                         onClick={() => chooseAtom(atom)}
                       >
                         <span
@@ -1451,20 +1451,20 @@ function ViewerSession({
                           {atom.name || `${atom.element}${atom.index}`}
                         </span>
                         <span>
-                          {bond.aromatic || bond.order === 1.5
+                          {tr(bond.aromatic || bond.order === 1.5
                             ? "ar"
                             : bond.order === 2
                               ? "="
                               : bond.order === 3
                                 ? "≡"
-                                : "—"}
+                                : "—")}
                         </span>
-                        <small>{bondDistance.toFixed(2)} Å</small>
+                        <small>{tr(bondDistance.toFixed(2))} Å</small>
                       </button>
-                    ))}
+                    )))}
                 </div>
               </div>
-            )}
+            ))}
             <button
               className="mv-focus-button"
               onClick={() => {
@@ -1472,23 +1472,22 @@ function ViewerSession({
                 focusAtom(selected);
               }}
             >
-              <Focus size={13} /> 원자 수준으로 확대
-            </button>
+              <Focus size={13} /> {tr(" 원자 수준으로 확대")}</button>
           </motion.aside>
-        )}
+        ))}
       </AnimatePresence>
 
       <div className="mv-bottom-left">
-        <div className="mv-scale" title="현재 카메라 중심 평면의 길이 기준">
+        <div className="mv-scale" title={tr("현재 카메라 중심 평면의 길이 기준")}>
           <span style={{ width: Math.max(15, Math.min(100, scale.width)) }} />
-          <small>{Number(scale.angstrom.toPrecision(3))} Å</small>
+          <small>{tr(Number(scale.angstrom.toPrecision(3)))} Å</small>
         </div>
         <div className="mv-legend">
-          {colorMode === "confidence" ? (
+          {tr(colorMode === "confidence" ? (
             <>
               <span className="mv-confidence-strip" />
               <span>pLDDT 0–100</span>
-              <span className="mv-muted">회색: 없음</span>
+              <span className="mv-muted">{tr("회색: 없음")}</span>
             </>
           ) : colorMode === "chain" ? (
             chainIds.slice(0, 5).map((chain, index) => (
@@ -1498,7 +1497,7 @@ function ViewerSession({
                     backgroundColor: CHAIN_COLORS[index % CHAIN_COLORS.length],
                   }}
                 />
-                {chain || "리간드"}
+                {tr(chain || "리간드")}
               </span>
             ))
           ) : (
@@ -1511,15 +1510,13 @@ function ViewerSession({
               .map((element) => (
                 <span key={element}>
                   <i style={{ backgroundColor: ELEMENT_COLORS[element] }} />
-                  {element}
+                  {tr(element)}
                 </span>
               ))
-          )}
+          ))}
         </div>
         <div className="mv-interaction-hint">
-          <MousePointer2 size={14} /> 휠로 확대·축소 <span>·</span> 드래그로 회전
-          <span>·</span> 더블 클릭으로 원자 확대
-        </div>
+          <MousePointer2 size={14} /> {tr(" 휠로 확대·축소 ")}<span>·</span> {tr(" 드래그로 회전")}<span>·</span> {tr(" 더블 클릭으로 원자 확대")}</div>
       </div>
 
       <div className="mv-provenance">
@@ -1528,11 +1525,11 @@ function ViewerSession({
           aria-expanded={showWarnings}
           onClick={() => setShowWarnings(!showWarnings)}
         >
-          {longBondCount + shortBondCount > 0 ? (
+          {tr(longBondCount + shortBondCount > 0 ? (
             <AlertTriangle className="mv-quality-alert" size={12} />
           ) : (
             <Info size={12} />
-          )}
+          ))}
           <span
             className={
               longBondCount + shortBondCount > 0
@@ -1540,18 +1537,18 @@ function ViewerSession({
                 : undefined
             }
           >
-            {longBondCount + shortBondCount > 0
-              ? `구조 품질 주의 · 비정상 결합 길이 ${(longBondCount + shortBondCount).toLocaleString()}개`
+            {tr(longBondCount + shortBondCount > 0
+              ? msg("구조 품질 주의 · 비정상 결합 길이 {0}개", (longBondCount + shortBondCount).toLocaleString())
               : scene.source === "rdkit_conformer"
                 ? "계산 배좌 · 결합 예측 전"
                 : scene.source === "alphafold3_prediction"
                   ? "예측 구조 · 해석 시 주의"
-                  : "실험 구조 · 참조 모델"}
+                  : "실험 구조 · 참조 모델")}
           </span>
           <ChevronDown size={12} className={showWarnings ? "is-open" : ""} />
         </button>
         <AnimatePresence>
-          {showWarnings && (
+          {tr(showWarnings && (
             <motion.div
               className="mv-provenance-details"
               initial={{ opacity: 0, y: 4 }}
@@ -1559,36 +1556,36 @@ function ViewerSession({
               exit={{ opacity: 0, y: 4 }}
               transition={transition}
             >
-              {warnings.map((warning, index) => (
-                <p key={index}>{warning}</p>
-              ))}
-              {scene.energy && (
+              {tr(warnings.map((warning, index) => (
+                <p key={index}>{tr(warning)}</p>
+              )))}
+              {tr(scene.energy && (
                 <p>
-                  배좌 최적화: {scene.energy.method} ·{" "}
-                  {scene.energy.converged ? "수렴" : "미수렴"}
-                  {scene.energy.value_kcal_mol != null
+                  {tr("배좌 최적화: ")}{tr(scene.energy.method)} ·{tr(" ")}
+                  {tr(scene.energy.converged ? "수렴" : "미수렴")}
+                  {tr(scene.energy.value_kcal_mol != null
                     ? ` · ${scene.energy.value_kcal_mol.toFixed(2)} kcal/mol`
-                    : ""}
+                    : "")}
                 </p>
-              )}
-              {metadataSmiles && (
+              ))}
+              {tr(metadataSmiles && (
                 <details>
-                  <summary>SMILES 확인</summary>
+                  <summary>{tr("SMILES 확인")}</summary>
                   <code>{metadataSmiles}</code>
                 </details>
-              )}
+              ))}
             </motion.div>
-          )}
+          ))}
         </AnimatePresence>
       </div>
-      {loading && (
+      {tr(loading && (
         <div className="mv-loading-badge" role="status">
           <LoaderCircle className="mv-loading-icon" size={12} />
-          구조 업데이트 중
-        </div>
-      )}
+          {tr("구조 업데이트 중")}</div>
+      ))}
     </>
   );
 }
 
 export default MoleculeViewer;
+

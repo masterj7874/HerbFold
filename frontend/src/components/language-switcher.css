@@ -1,0 +1,8 @@
+.language-switcher{display:inline-flex;align-items:center;gap:3px;flex-shrink:0;border:1px solid #cfdcec;border-radius:9px;background:#f6f9fe;padding:4px;color:#536e8d}
+.language-switcher>svg{margin:0 5px;flex-shrink:0}.language-switcher button{border:0;background:transparent;border-radius:6px;min-width:36px;min-height:30px;padding:5px 8px;color:#597189;font-size:11px;font-weight:650;white-space:nowrap;cursor:pointer}
+.language-switcher button[aria-pressed=true]{color:#fff;background:#285fdb;box-shadow:0 2px 4px #285fdb22}.language-switcher button:focus-visible{outline:3px solid #75aaff;outline-offset:2px}
+html[lang=en] .sidebar .nav-item span{letter-spacing:0;line-height:1.4;font-size:10px}html[lang=en] .workspace-footer>span:last-child{max-width:58%;text-align:right}html[lang=en] .afw-stage-heading{align-items:flex-start}html[lang=en] .afw-stage-heading h4{line-height:1.6}html[lang=en] .afw-stage-heading>span{white-space:normal;text-align:right}
+@media(max-width:700px){.topbar-actions{gap:7px!important}.topbar .language-switcher{gap:1px;padding:3px}.language-switcher>svg{display:none}.language-switcher button{padding:5px 6px;font-size:10px;min-width:31px}.topbar .primary-button{display:none!important}html[lang=en] .workspace-footer>span:last-child{max-width:100%;text-align:left}}
+
+/* Keep the language preference reachable while inspecting long result pages. */
+.topbar{position:sticky;top:0;z-index:80}

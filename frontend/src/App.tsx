@@ -1,3 +1,4 @@
+import { tr, msg } from "./lib/i18n";
 import {
   lazy,
   Suspense,
@@ -35,10 +36,15 @@ import {
 } from "lucide-react";
 import { AnalysisComposer, AnalysisPanel } from "./components/AnalysisPanel";
 import DataPanel from "./components/DataPanel";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+import { useLanguage } from "./lib/useLanguage";
 import ArchivePanel from "./components/ArchivePanel";
 import DiscoveryPanel from "./components/DiscoveryPanel";
 import ValidationPanel from "./components/ValidationPanel";
-import AF3CalculationPanel from "./components/AF3CalculationPanel";
+import AF3WorkflowLauncher from "./components/AF3WorkflowLauncher";
+import AF3WorkflowWorkspace from "./components/AF3WorkflowWorkspace";
+import { rememberedAF3Workflow, rememberAF3Workflow, trustedAF3WorkflowResult } from "./lib/af3WorkflowSelection";
+import type { AF3Workflow } from "./types/af3Workflow";
 import AlphaFoldDiagnostics from "./components/AlphaFoldDiagnostics";
 import QuantumStudio from "./components/QuantumStudio";
 import StudioWorkspaceHeader from "./components/StudioWorkspaceHeader";
@@ -55,11 +61,12 @@ import { readQuantumSelection, saveQuantumSelection } from "./lib/quantumEvidenc
 import { readWorkspace, workspaceFromHash, type WorkspaceTab } from "./lib/workspaceNavigation";
 import type { Analysis, Compound, Job } from "./types/app";
 import type { ExperimentalLigandReference, MolecularAtom, MolecularScene, StructureMatch, StructureMode, StructureResolution } from "./types/molecular";
-import type { PredictionSelection } from "./types/prediction";
 import type { ProteinTarget } from "./lib/proteinTargets";
 const MoleculeViewer = lazy(() => import("./components/MoleculeViewer"));
+const DrugDesignPipeline = lazy(() => import("./components/DrugDesignPipeline"));
 const navigation = [
   { id: "alphafold", icon: Atom, label: "AlphaFold 스튜디오" },
+  { id: "design-pipeline", icon: FlaskConical, label: "신약 설계 파이프라인" },
   { id: "comparison", icon: GitCompareArrows, label: "성분 비교" },
   { id: "quantum", icon: Cpu, label: "양자 스튜디오" },
   { id: "discovery", icon: Layers3, label: "대규모 탐색" },
@@ -70,11 +77,12 @@ const navigation = [
 ] as const;
 const subtitles: Record<string, string> = {
   alphafold: "성분 하나를 선택해 분자를 분석하고, AF3 계산으로 표적과 함께 구조를 확인하세요.",
+  "design-pipeline": "한약재 성분과 기존 의약품으로 후보를 설계하고, 구조 변화와 검증 근거를 함께 살펴보세요.",
   comparison: "비교할 성분을 고르고 구조 유사도와 비교 분석 결과를 확인하세요.",
   quantum: "분자 특징을 측정하고, 커널의 차이와 하드웨어 오차를 확인하세요.",
   discovery: "출처가 있는 자료를 모으고, 실제 생성 수치를 추적하세요.",
   validation: "실제 처리 성능과 후보별 생물학적 근거를 확인하세요.",
-  agents: "각 단계의 근거를 연결하는 연구 흐름.",
+  agents: "AlphaFold의 준비·실행·출력 검증을 추적하고, 저장된 작업을 이어서 확인하세요.",
   evidence: "측정한 데이터로 예측의 범위를 검증합니다.",
   archive: "구조, 계산, 모델의 기록을 다시 탐색합니다.",
 };
@@ -85,6 +93,7 @@ const sourceLabels = {
 };
 
 export default function App() {
+  const language = useLanguage();
   const [restoredSelection] = useState(readStudioSelection);
   const [tab, setTabState] = useState<WorkspaceTab>(readWorkspace);
   const setTab = useCallback((next: WorkspaceTab) => {
@@ -129,6 +138,12 @@ export default function App() {
   const [importOpen, setImportOpen] = useState(false);
   const [health, setHealth] = useState<any>(null);
   const [llmStatus, setLlmStatus] = useState<any>(null);
+  const [af3WorkflowId, setAF3WorkflowId] = useState(rememberedAF3Workflow);
+  const [agentsView, setAgentsView] = useState<"af3" | "research">("af3");
+  const selectAF3Workflow = useCallback((id: string) => { rememberAF3Workflow(id); setAF3WorkflowId(id); }, []);
+  const openAF3Workflow = useCallback((id: string) => {
+    selectAF3Workflow(id); setAgentsView("af3"); setTab("agents");
+  }, [selectAF3Workflow, setTab]);
   const [analyses, setAnalyses] = useState<Analysis[]>([]);
   const [activeAnalysis, setActiveAnalysis] = useState<Analysis | null>(null);
   const activeAnalysisSelection = useRef<string | null>(readQuantumSelection("analysis"));
@@ -265,15 +280,22 @@ export default function App() {
     setTargetId(reference.target_accession);
     inspectMolecule(molecule);
   }
-  const showPredictionResult = useCallback((jobId: string, selection: PredictionSelection) => {
-    const current = currentStructureSelection.current;
-    if (current.compound?.smiles !== selection.smiles || current.target !== selection.targetAccession || current.mode !== "alphafold3_prediction") return;
-    clearStructureRequest();
-    setPredictionResultJobId(jobId);
-    setArchiveStructure(null);
+  function showAF3WorkflowResult(workflow: AF3Workflow) {
+    if (!trustedAF3WorkflowResult(workflow)) {
+      notify("선택한 분자·표적과 일치하는 검증된 완료 결과가 필요합니다.", true);
+      return;
+    }
+    const saved = workflow.request.compound;
+    const molecule: Compound = {
+      ...saved, smiles: workflow.request.canonical_smiles, category: saved.category || "candidate", generated: saved.category === "candidate",
+    };
+    inspectMolecule(molecule);
+    setTargetId(workflow.request.target_accession);
     setStructureMode("alphafold3_prediction");
-    setStructureRevision((revision) => revision + 1);
-  }, []);
+    setPredictionResultJobId(workflow.job_id);
+    setTab("alphafold");
+    void refreshJobs();
+  }
   function openSelectedCalculation() {
     chooseStructureMode("alphafold3_prediction");
     setCalculationFocusRevision((revision) => revision + 1);
@@ -468,6 +490,7 @@ export default function App() {
     const run = await api<Analysis>("/analyses", request);
     activeAnalysisSelection.current = run.id;
     updateAnalysis(run);
+    setAgentsView("research");
     setTab("agents");
     notify(
       "분석을 시작했습니다. 각 단계의 실행 상태가 자동으로 업데이트됩니다.",
@@ -477,13 +500,16 @@ export default function App() {
     atom && scene
       ? scene.bonds.filter((b) => b.source === atom.id || b.target === atom.id)
       : [];
+  const activeMoleculeDisplayName = language === "en"
+    ? activeMolecule?.name || activeMolecule?.name_ko
+    : activeMolecule?.name_ko || activeMolecule?.name;
   return (
-    <div className={`app-shell page-${tab}`}>
+    <div className={`app-shell page-${tab}`} data-language={language}>
       <aside className="sidebar">
         <a
           className="brand-symbol"
           href="#"
-          aria-label="HerbFold 홈"
+          aria-label={tr("HerbFold 홈")}
           onClick={(event) => {
             event.preventDefault();
             setTab("alphafold");
@@ -492,31 +518,31 @@ export default function App() {
           <Leaf size={25} />
         </a>
         <nav>
-          {navigation.map((item) => (
+          {tr(navigation.map((item) => (
             <button
               key={item.id}
               className={`nav-item ${tab === item.id ? "active" : ""}`}
               onClick={() => setTab(item.id)}
-              title={item.label}
+              title={tr(item.label)}
               data-workspace={item.id}
               aria-current={tab === item.id ? "page" : undefined}
             >
               <item.icon size={22} />
-              <span>{item.label}</span>
-              {tab === item.id && (
+              <span>{tr(item.label)}</span>
+              {tr(tab === item.id && (
                 <motion.span layoutId="nav-active" className="nav-active" />
-              )}
+              ))}
             </button>
-          ))}
+          )))}
         </nav>
         <div className="sidebar-bottom">
           <button
             className="nav-item"
-            title="연산 엔진 설정"
+            title={tr("연산 엔진 설정")}
             onClick={() => setSettings(true)}
           >
             <Settings2 size={21} />
-            <span>엔진 설정</span>
+            <span>{tr("엔진 설정")}</span>
           </button>
           <span className="sidebar-version">HF / 02</span>
         </div>
@@ -525,38 +551,39 @@ export default function App() {
         <header className="topbar">
           <div className="wordmark">
             HerbFold<span>Astra</span>
-            <span className="research-badge">분자 연구 워크스페이스</span>
+            <span className="research-badge">{tr("분자 연구 워크스페이스")}</span>
           </div>
           <div className="topbar-actions">
+            <LanguageSwitcher />
             <button className="model-status" onClick={() => setSettings(true)}>
               <span
                 className={`status-dot ${llmStatus?.available ? "completed" : "pending"}`}
               />
               GPT-6 Astra
-              <small>{llmStatus?.available ? "연결됨" : "연결 확인 중"}</small>
+              <small>{tr(llmStatus?.available ? "연결됨" : "연결 확인 중")}</small>
               <ChevronRight size={13} />
             </button>
             <span className="topbar-divider" />
-            <button className="icon-button studio-mobile-settings" aria-label="연산 엔진 설정" onClick={() => setSettings(true)}><Settings2 size={18} /></button>
-            {tab !== "alphafold" && <button className="primary-button"
+            <button className="icon-button studio-mobile-settings" aria-label={tr("연산 엔진 설정")} onClick={() => setSettings(true)}><Settings2 size={18} /></button>
+            {tr(tab !== "alphafold" && tab !== "design-pipeline" && <button className="primary-button"
               onClick={() => tab === "comparison" ? setComposer(true) : setTab("comparison")}
               disabled={tab === "comparison" && selected.length < 2}>
-              <GitCompareArrows size={16} /> {tab === "comparison" ? "비교 분석 설정" : "성분 비교"}
-            </button>}
+              <GitCompareArrows size={16} /> {tr(tab === "comparison" ? "비교 분석 설정" : "성분 비교")}
+            </button>)}
           </div>
         </header>
         <div className="page-content">
           <div className="page-heading">
             <div>
-              <div className="eyebrow">DISCOVERY / {tab.toUpperCase()}</div>
-              <h1>{navigation.find((n) => n.id === tab)?.label}</h1>
-              <p>{subtitles[tab]}</p>
+              <div className="eyebrow">DISCOVERY / {tr(tab.toUpperCase())}</div>
+              <h1>{tr(navigation.find((n) => n.id === tab)?.label)}</h1>
+              <p>{tr(subtitles[tab])}</p>
             </div>
             <div className="workspace-status">
               <span
                 className={`status-dot ${health ? "completed" : "pending"}`}
               />
-              {health ? "로컬 연구 환경 연결됨" : "연구 환경 확인 중"}
+              {tr(health ? "로컬 연구 환경 연결됨" : "연구 환경 확인 중")}
               <small>AlphaFold 3 · IBM Quantum</small>
             </div>
           </div>
@@ -569,15 +596,15 @@ export default function App() {
               exit={{ opacity: 0, y: -5 }}
               transition={{ duration: 0.22 }}
             >
-              {tab === "alphafold" && (
+              {tr(tab === "alphafold" && (
                 <>
                   <StudioWorkspaceHeader compound={activeMolecule} target={targetId.trim().toUpperCase()} version={health?.alphafold?.version}
                     refreshKey={libraryRevision} onTargetDetails={setTargetDetails}
                     onTarget={changeStructureTarget} onQuantum={() => setTab("quantum")} onCalculate={openSelectedCalculation} />
                   <div className="studio-toolbar">
                     <div className="studio-single-summary">
-                      <h2><Atom size={18} /> 분자 구조 분석</h2>
-                      <p>선택한 성분의 분자식·물성과 구조를 확인하세요.</p>
+                      <h2><Atom size={18} /> {tr(" 분자 구조 분석")}</h2>
+                      <p>{tr("선택한 성분의 분자식·물성과 구조를 확인하세요.")}</p>
                     </div>
                     <motion.button
                       className="secondary-button studio-expand"
@@ -586,12 +613,12 @@ export default function App() {
                       data-testid="studio-expand"
                       onClick={() => setWideStudio(!wideStudio)}
                     >
-                      {wideStudio ? (
+                      {tr(wideStudio ? (
                         <PanelsTopLeft size={16} />
                       ) : (
                         <Maximize2 size={16} />
-                      )}
-                      {wideStudio ? "패널 펼치기" : "분자 화면 넓게"}
+                      ))}
+                      {tr(wideStudio ? "패널 펼치기" : "분자 화면 넓게")}
                     </motion.button>
                   </div>
                   <div className={`studio-grid ${wideStudio ? "is-wide" : ""}`}>
@@ -603,34 +630,34 @@ export default function App() {
                         onAdd={() => setImportOpen(true)} onCompose={() => setTab("comparison")}
                       />
                       <StructureModeControls
-                        mode={structureMode} name={activeMolecule?.name_ko || activeMolecule?.name}
+                        mode={structureMode} name={activeMoleculeDisplayName}
                         target={targetId.trim().toUpperCase()} archive={!!archiveStructure}
                         references={structureReferences} selectedId={activeMolecule?.id}
                         onChange={chooseStructureMode} onReference={inspectExperimentalReference}
                       />
                     </section>
                     <section className="molecule-workbench">
-                      <StructureContext mode={structureMode} name={activeMolecule?.name_ko || activeMolecule?.name}
+                      <StructureContext mode={structureMode} name={activeMoleculeDisplayName}
                         target={targetId.trim().toUpperCase()} archive={archiveStructure} loading={sceneLoading}
                         matches={structureMatches} onChange={chooseStructureMode} />
-                      {structureIssue && !sceneLoading ? (
-                        <StructureUnavailable name={activeMolecule?.name_ko || activeMolecule?.name}
+                      {tr(structureIssue && !sceneLoading ? (
+                        <StructureUnavailable name={activeMoleculeDisplayName}
                           mode={structureMode} error={structureIssue.error} reason={structureIssue.reason}
                           onFreeMolecule={() => chooseStructureMode("rdkit_conformer")}
                           onCalculateAF3={openSelectedCalculation}
                           onRetry={() => { clearStructureRequest(); setStructureRevision((revision) => revision + 1); }}
                           />
                       ) : (
-                        <Suspense fallback={<div className="viewer-placeholder"><LoaderCircle className="spin" />3D 엔진 불러오는 중</div>}>
-                          <MoleculeViewer scene={scene} loading={sceneLoading} onAtomSelect={setAtom} className="studio-viewer" />
+                        <Suspense fallback={<div className="viewer-placeholder"><LoaderCircle className="spin" />{tr("3D 엔진 불러오는 중")}</div>}>
+                          <MoleculeViewer scene={scene} loading={sceneLoading} onAtomSelect={setAtom} className="studio-viewer" displayLabel={archiveStructure ? undefined : activeMoleculeDisplayName ? `${activeMoleculeDisplayName}${structureMode === "rdkit_conformer" ? "" : ` · ${targetId.trim().toUpperCase()}`}` : undefined} />
                         </Suspense>
-                      )}
+                      ))}
                       <div className="viewer-bottomline">
                         <span>
-                          <Atom size={13} />{" "}
-                          {scene?.atoms.length.toLocaleString() || "—"} atoms{" "}
+                          <Atom size={13} />{tr(" ")}
+                          {tr(scene?.atoms.length.toLocaleString() || "—")} atoms{tr(" ")}
                           <i />
-                          {scene?.bonds.length.toLocaleString() || "—"} bonds
+                          {tr(scene?.bonds.length.toLocaleString() || "—")} bonds
                         </span>
                         <button
                           className="text-button"
@@ -639,80 +666,80 @@ export default function App() {
                             scene && download(scene, "molecular-scene.json")
                           }
                         >
-                          구조 JSON <ArrowDownToLine size={13} />
+                          {tr("구조 JSON ")}<ArrowDownToLine size={13} />
                         </button>
                       </div>
                     </section>
                     <aside className="card molecule-inspector" data-testid="single-compound-analysis" data-compound-id={activeMolecule?.id || ""}>
-                      {descriptorError && <p className="single-analysis-error" role="alert">분자 분석을 완료하지 못했습니다. {descriptorError}</p>}
+                      {tr(descriptorError && <p className="single-analysis-error" role="alert">{tr("분자 분석을 완료하지 못했습니다. ")}{tr(descriptorError)}</p>)}
                       <div className="section-heading">
                         <div>
                           <span className="eyebrow">MOLECULAR PROFILE</span>
                           <h3>
-                            {atom
-                              ? `선택 원자 · ${atom.name || atom.element}`
-                              : "구조의 특성"}
+                            {tr(atom
+                              ? msg("선택 원자 · {0}", atom.name || atom.element)
+                              : "구조의 특성")}
                           </h3>
                         </div>
-                        {atom ? (
+                        {tr(atom ? (
                           <button
                             className="icon-button"
-                            title="원자 선택 해제"
+                            title={tr("원자 선택 해제")}
                             onClick={() => setAtom(null)}
                           >
                             <X size={16} />
                           </button>
                         ) : (
                           <FlaskConical size={21} />
-                        )}
+                        ))}
                       </div>
-                      {atom ? (
+                      {tr(atom ? (
                         <>
                           <div className="atom-symbol-card">
-                            <strong>{atom.element}</strong>
+                            <strong>{tr(atom.element)}</strong>
                             <span>
-                              Atom {atom.id}
+                              Atom {tr(atom.id)}
                               <small>
-                                {atom.residue_name} {atom.residue_id}{" "}
-                                {atom.chain_id
+                                {atom.residue_name} {atom.residue_id}{tr(" ")}
+                                {tr(atom.chain_id
                                   ? `· Chain ${atom.chain_id}`
-                                  : ""}
+                                  : "")}
                               </small>
                             </span>
                           </div>
                           <dl className="property-list">
                             <div>
-                              <dt>전하</dt>
-                              <dd>{atom.formal_charge ?? "—"}</dd>
+                              <dt>{tr("전하")}</dt>
+                              <dd>{tr(atom.formal_charge ?? "—")}</dd>
                             </div>
-                            {["x", "y", "z"].map((key) => (
+                            {tr(["x", "y", "z"].map((key) => (
                               <div key={key}>
-                                <dt>{key.toUpperCase()}</dt>
-                                <dd>{formatNumber((atom as any)[key], 3)} Å</dd>
+                                <dt>{tr(key.toUpperCase())}</dt>
+                                <dd>{tr(formatNumber((atom as any)[key], 3))} Å</dd>
                               </div>
-                            ))}
+                            )))}
                             <div>
                               <dt>
-                                {scene?.source === "experimental_pdb"
+                                {tr(scene?.source === "experimental_pdb"
                                   ? "B factor"
-                                  : "pLDDT"}
+                                  : "pLDDT")}
                               </dt>
                               <dd>
-                                {formatNumber(
+                                {tr(formatNumber(
                                   scene?.source === "experimental_pdb"
                                     ? atom.b_factor
                                     : atom.confidence,
                                   2,
-                                )}
-                                {scene?.source === "experimental_pdb"
+                                ))}
+                                {tr(scene?.source === "experimental_pdb"
                                   ? " Å²"
-                                  : ""}
+                                  : "")}
                               </dd>
                             </div>
                           </dl>
-                          <h4>공유 결합 연결</h4>
+                          <h4>{tr("공유 결합 연결")}</h4>
                           <div className="bond-details">
-                            {selectedBonds.map((bond, i) => {
+                            {tr(selectedBonds.map((bond, i) => {
                               const neighbor = scene?.atoms.find(
                                 (a) =>
                                   a.id ===
@@ -723,25 +750,24 @@ export default function App() {
                               return (
                                 <div key={i}>
                                   <span>
-                                    {neighbor?.name || neighbor?.element}{" "}
-                                    <small>#{neighbor?.id}</small>
+                                    {neighbor?.name || neighbor?.element}{tr(" ")}
+                                    <small>#{tr(neighbor?.id)}</small>
                                   </span>
                                   <span>
-                                    {bond.aromatic
+                                    {tr(bond.aromatic
                                       ? "방향족"
-                                      : `${bond.order}차`}
+                                      : msg("{0}차", bond.order))}
                                     <small>
-                                      {formatNumber(bond.length_angstrom, 3)} Å
+                                      {tr(formatNumber(bond.length_angstrom, 3))} Å
                                     </small>
                                   </span>
                                 </div>
                               );
-                            })}
-                            {!selectedBonds.length && (
+                            }))}
+                            {tr(!selectedBonds.length && (
                               <p className="muted">
-                                확인된 공유 결합이 없습니다.
-                              </p>
-                            )}
+                                {tr("확인된 공유 결합이 없습니다.")}</p>
+                            ))}
                           </div>
                         </>
                       ) : descriptors ? (
@@ -751,7 +777,7 @@ export default function App() {
                             <span>MOLECULAR FORMULA</span>
                           </div>
                           <dl className="property-list">
-                            {[
+                            {tr([
                               ["분자량", "molecular_weight", "g/mol"],
                               ["LogP", "logp", ""],
                               ["극성 표면적", "tpsa", "Å²"],
@@ -760,9 +786,9 @@ export default function App() {
                               ["형식 전하", "formal_charge", ""],
                             ].map(([label, key, unit]) => (
                               <div key={key}>
-                                <dt>{label}</dt>
+                                <dt>{tr(label)}</dt>
                                 <dd>
-                                  {key === "hbond"
+                                  {tr(key === "hbond"
                                     ? `${descriptors.hbd} / ${descriptors.hba}`
                                     : formatNumber(
                                         descriptors[key],
@@ -772,17 +798,17 @@ export default function App() {
                                         ].includes(key)
                                           ? 0
                                           : 2,
-                                      )}{" "}
-                                  <small>{unit}</small>
+                                      ))}{tr(" ")}
+                                  <small>{tr(unit)}</small>
                                 </dd>
                               </div>
-                            ))}
+                            )))}
                           </dl>
                           <div className="qed-indicator">
                             <div>
-                              <span>QED · 화학적 적합도</span>
+                              <span>{tr("QED · 화학적 적합도")}</span>
                               <strong>
-                                {formatNumber(descriptors.qed, 3)}
+                                {tr(formatNumber(descriptors.qed, 3))}
                               </strong>
                             </div>
                             <div className="indicator-track">
@@ -790,33 +816,32 @@ export default function App() {
                                 animate={{ width: `${descriptors.qed * 100}%` }}
                               />
                             </div>
-                            <small>분자 특성 지표 · 결합 친화도 아님</small>
+                            <small>{tr("분자 특성 지표 · 결합 친화도 아님")}</small>
                           </div>
-                          {descriptors.alerts?.length > 0 && (
+                          {tr(descriptors.alerts?.length > 0 && (
                             <div className="alert-box">
                               <strong>
-                                {descriptors.alerts.length}개 구조 경고
-                              </strong>
+                                {tr(descriptors.alerts.length)}{language === "en" ? " " : ""}{tr("개 구조 경고")}</strong>
                               <span>
-                                {descriptors.alerts
+                                {tr(descriptors.alerts
                                   .map((a: any) => a.description)
-                                  .join(" · ")}
+                                  .join(" · "))}
                               </span>
                             </div>
-                          )}
-                          {activeMolecule?.source_url && (
+                          ))}
+                          {tr(activeMolecule?.source_url && (
                             <a
                               className="source-link"
                               href={activeMolecule.source_url}
                               target="_blank"
                               rel="noreferrer"
                             >
-                              원본 자료 출처 <ExternalLink size={13} />
+                              {tr("원본 자료 출처 ")}<ExternalLink size={13} />
                             </a>
-                          )}
+                          ))}
                           <details className="smiles-details">
                             <summary>Canonical SMILES</summary>
-                            <code>{descriptors.canonical_smiles}</code>
+                            <code>{tr(descriptors.canonical_smiles)}</code>
                           </details>
                           <button
                             className="secondary-button wide"
@@ -835,76 +860,72 @@ export default function App() {
                               }
                             }}
                           >
-                            <ArrowDownToLine size={14} /> 단독 분자 3D SDF
-                          </button>
+                            <ArrowDownToLine size={14} /> {tr(" 단독 분자 3D SDF")}</button>
                         </>
                       ) : (
                         <>
                           <div className="empty-small">
                             <Atom size={33} />
                             <p>
-                              원자를 클릭하면 좌표와
-                              <br />
-                              실제 결합 연결을 확인합니다.
-                            </p>
+                              {tr("원자를 클릭하면 좌표와")}<br />
+                              {tr("실제 결합 연결을 확인합니다.")}</p>
                           </div>
-                          {scene && (
+                          {tr(scene && (
                             <dl className="property-list">
                               <div>
-                                <dt>출처</dt>
-                                <dd>{sourceLabels[scene.source]}</dd>
+                                <dt>{tr("출처")}</dt>
+                                <dd>{tr(sourceLabels[scene.source])}</dd>
                               </div>
                               <div>
-                                <dt>체인</dt>
-                                <dd>{scene.chains?.length || "—"}</dd>
+                                <dt>{tr("체인")}</dt>
+                                <dd>{tr(scene.chains?.length || "—")}</dd>
                               </div>
                               <div>
-                                <dt>잔기</dt>
-                                <dd>{scene.residues?.length || "—"}</dd>
+                                <dt>{tr("잔기")}</dt>
+                                <dd>{tr(scene.residues?.length || "—")}</dd>
                               </div>
                             </dl>
-                          )}
+                          ))}
                         </>
-                      )}
-                      {scene?.energy && (
+                      ))}
+                      {tr(scene?.energy && (
                         <div className="energy-note">
                           <span>
-                            {scene.energy.method} ·{" "}
-                            {scene.energy.converged ? "최적화 수렴" : "미수렴"}
+                            {tr(scene.energy.method)} ·{tr(" ")}
+                            {tr(scene.energy.converged ? "최적화 수렴" : "미수렴")}
                           </span>
                           <strong>
-                            {formatNumber(scene.energy.value_kcal_mol)} kcal/mol
+                            {tr(formatNumber(scene.energy.value_kcal_mol))} kcal/mol
                           </strong>
                           <small>
-                            Conformer 내부 에너지 · 단백질 결합 에너지 아님
-                          </small>
+                            {tr("Conformer 내부 에너지 · 단백질 결합 에너지 아님")}</small>
                         </div>
-                      )}
-                      {scene?.warnings?.length ? (
+                      ))}
+                      {tr(scene?.warnings?.length ? (
                         <details className="geometry-warnings">
                           <summary>
-                            구조·해석 주의사항 {scene.warnings.length}개
-                          </summary>
-                          {scene.warnings.map((warning, i) => (
-                            <p key={i}>{warning}</p>
-                          ))}
+                            {tr("구조·해석 주의사항 ")}{tr(scene.warnings.length)}{language === "en" ? " " : ""}{tr("개")}</summary>
+                          {tr(scene.warnings.map((warning, i) => (
+                            <p key={i}>{tr(warning)}</p>
+                          )))}
                         </details>
-                      ) : null}
+                      ) : null)}
                     </aside>
                   </div>
+                  {tr(activeMolecule && structureMode === "alphafold3_prediction" && !archiveStructure && <div ref={calculationPanel} className="afc-anchor">
+                    <AF3WorkflowLauncher key={`${activeMolecule.smiles}\u001f${targetId.trim().toUpperCase()}`}
+                      compound={activeMolecule} targetAccession={targetId.trim().toUpperCase()} preferredJobId={predictionResultJobId} refreshKey={libraryRevision}
+                      targetName={targetDetails?.accession === targetId.trim().toUpperCase() ? targetDetails.name : undefined}
+                      onWorkflow={openAF3Workflow} onOpenAgents={() => { setAgentsView("af3"); setTab("agents"); }} />
+                  </div>)}
                   <AlphaFoldDiagnostics key={`${activeMolecule?.smiles || archiveStructure?.jobId || ""}|${targetId.trim().toUpperCase()}|${structureMode}`}
                     compound={activeMolecule} targetAccession={targetId.trim().toUpperCase()} structureMode={structureMode}
                     scene={scene} loading={sceneLoading} refreshKey={libraryRevision} health={health} issue={structureIssue?.reason || null} />
-                  {activeMolecule && structureMode === "alphafold3_prediction" && !archiveStructure && <div ref={calculationPanel} className="afc-anchor">
-                    <AF3CalculationPanel key={`${activeMolecule.smiles}\u001f${targetId.trim().toUpperCase()}`}
-                      compound={activeMolecule} targetAccession={targetId.trim().toUpperCase()} preferredJobId={predictionResultJobId} refreshKey={libraryRevision}
-                      targetName={targetDetails?.accession === targetId.trim().toUpperCase() ? targetDetails.name : undefined}
-                      onResult={showPredictionResult} onJobsChanged={() => void refreshJobs()} onArchive={() => setTab("archive")} />
-                  </div>}
+
 
                 </>
-              )}
-              {tab === "comparison" && <ComparisonWorkspace
+              ))}
+              {tr(tab === "comparison" && <ComparisonWorkspace
                 selected={selected} comparison={structureComparison} busy={comparing}
                 comparisonCurrent={!!comparedInputKey && comparedInputKey === currentComparisonKey}
                 onCompare={() => void compareStructures()} onCompose={() => setComposer(true)}
@@ -918,7 +939,7 @@ export default function App() {
                     onCompose={() => setComposer(true)} />
                 </section>}>
                 <details className="comparison-advanced">
-                  <summary>비교 성분으로 후보 설계 · 조각 재조합</summary>
+                  <summary>{tr("비교 성분으로 후보 설계 · 조각 재조합")}</summary>
                   <section className="candidate-section">
                     <div className="section-heading">
                       <div>
@@ -926,15 +947,13 @@ export default function App() {
                           FROM STRUCTURE TO POSSIBILITY
                         </span>
                         <h2>
-                          다음 후보를 탐색하세요{" "}
+                          {tr("다음 후보를 탐색하세요")}{tr(" ")}
                           <span className="count-badge">
-                            {candidates.length}
+                            {tr(candidates.length)}
                           </span>
                         </h2>
                         <p className="muted">
-                          천연물과 기존 약물의 조각을 재조합한 계산 후보입니다.
-                          신규성·합성 가능성은 후속 검증이 필요합니다.
-                        </p>
+                          {tr("천연물과 기존 약물의 조각을 재조합한 계산 후보입니다. 신규성·합성 가능성은 후속 검증이 필요합니다.")}</p>
                       </div>
                       <div className="inline-actions">
                         <button
@@ -942,25 +961,24 @@ export default function App() {
                           disabled={busy || !canGenerate}
                           onClick={() => void generate()}
                         >
-                          {busy ? (
+                          {tr(busy ? (
                             <LoaderCircle className="spin" size={16} />
                           ) : (
                             <FlaskConical size={16} />
-                          )}{" "}
-                          조각 재조합
-                        </button>
+                          ))}{tr(" ")}
+                          {tr("조각 재조합")}</button>
                         <button
                           className="primary-button"
                           disabled={selected.length < 2} onClick={() => setComposer(true)}
                         >
-                          <Sparkles size={16} /> Astra와 탐색{" "}
+                          <Sparkles size={16} /> {tr(" Astra와 탐색")}{tr(" ")}
                           <ArrowRight size={15} />
                         </button>
                       </div>
                     </div>
-                    {candidates.length ? (
+                    {tr(candidates.length ? (
                       <div className="candidate-grid">
-                        {candidates.map((candidate, index) => (
+                        {tr(candidates.map((candidate, index) => (
                           <motion.button
                             layout
                             key={candidate.id}
@@ -974,7 +992,7 @@ export default function App() {
                           >
                             <div className="candidate-card-top">
                               <span>
-                                계산 후보 {String(index + 1).padStart(2, "0")}
+                                {tr("계산 후보 ")}{tr(String(index + 1).padStart(2, "0"))}
                               </span>
                               <ArrowRight size={16} />
                             </div>
@@ -987,34 +1005,33 @@ export default function App() {
                                 value={candidate.descriptors?.formula}
                               />
                               <small className="candidate-identifier">
-                                {candidate.id}
+                                {tr(candidate.id)}
                               </small>
                             </p>
                             <div className="candidate-stats">
                               <span>
                                 MW
                                 <strong>
-                                  {formatNumber(
+                                  {tr(formatNumber(
                                     candidate.descriptors?.molecular_weight,
                                     1,
-                                  )}
+                                  ))}
                                 </strong>
                               </span>
                               <span>
                                 QED
                                 <strong>
-                                  {formatNumber(candidate.descriptors?.qed, 3)}
+                                  {tr(formatNumber(candidate.descriptors?.qed, 3))}
                                 </strong>
                               </span>
                               <span>
-                                경고
-                                <strong>
-                                  {candidate.descriptors?.alerts?.length ?? "—"}
+                                {tr("경고")}<strong>
+                                  {tr(candidate.descriptors?.alerts?.length ?? "—")}
                                 </strong>
                               </span>
                             </div>
                           </motion.button>
-                        ))}
+                        )))}
                       </div>
                     ) : (
                       <div className="candidate-empty">
@@ -1023,37 +1040,44 @@ export default function App() {
                           <Plus size={12} />
                         </div>
                         <div>
-                          <h3>입력 분자에서 시작하는 후보 설계</h3>
+                          <h3>{tr("입력 분자에서 시작하는 후보 설계")}</h3>
                           <p>
-                            라이브러리에서 천연물과 기존 약물을 선택하고, 조각
-                            재조합 또는 에이전트 분석을 실행하세요.
-                          </p>
+                            {tr("라이브러리에서 천연물과 기존 약물을 선택하고, 조각 재조합 또는 에이전트 분석을 실행하세요.")}</p>
                         </div>
                         <span className="micro-label">
                           SOURCE → COMPARE → DESIGN
                         </span>
                       </div>
-                    )}
-                    {comparison.length > 0 && (
+                    ))}
+                    {tr(comparison.length > 0 && (
                       <div className="comparison-strip">
-                        {comparison.slice(0, 6).map((row, i) => (
+                        {tr(comparison.slice(0, 6).map((row, i) => (
                           <div key={i}>
                             <span>
-                              {row.herbal_name} <span className="muted">×</span>{" "}
+                              {row.herbal_name} <span className="muted">×</span>{tr(" ")}
                               {row.drug_name}
                             </span>
-                            <strong>{formatNumber(row.tanimoto, 3)}</strong>
-                            <small>Morgan Tanimoto · 구조 유사도</small>
+                            <strong>{tr(formatNumber(row.tanimoto, 3))}</strong>
+                            <small>{tr("Morgan Tanimoto · 구조 유사도")}</small>
                           </div>
-                        ))}
+                        )))}
                       </div>
-                    )}
+                    ))}
                   </section>
                 </details>
-              </ComparisonWorkspace>}
-              {tab === "quantum" && <QuantumStudio analyses={analyses} activeAnalysis={activeAnalysis} jobs={jobs}
-                onSelectAnalysis={selectAnalysis} onRefreshJobs={refreshJobs} onNotify={notify} />}
-              {tab === "discovery" && (
+              </ComparisonWorkspace>)}
+              {tr(tab === "quantum" && <QuantumStudio analyses={analyses} activeAnalysis={activeAnalysis} jobs={jobs}
+                onSelectAnalysis={selectAnalysis} onRefreshJobs={refreshJobs} onNotify={notify} />)}
+              {tr(tab === "design-pipeline" && <Suspense fallback={<div className="card" role="status">{tr("신약 설계 도구를 불러오는 중…")}</div>}>
+                <DrugDesignPipeline catalog={catalog} refreshKey={libraryRevision} notify={notify} onInspect={(compound, accession) => {
+                  if (accession) setTargetId(accession);
+                  if (compound.generated) setCandidates((previous) => [compound, ...previous.filter((item) => item.id !== compound.id)]);
+                  setStructureMode("rdkit_conformer");
+                  setTab("alphafold");
+                  inspectMolecule(compound);
+                }} />
+              </Suspense>)}
+              {tr(tab === "discovery" && (
                 <DiscoveryPanel
                   references={catalog.filter((item) => item.category === "drug" && !item.id.startsWith("discovery_") && !item.id.startsWith("custom_"))}
                   onInspect={(compound) => {
@@ -1064,16 +1088,21 @@ export default function App() {
                   }}
                   notify={notify}
                 />
-              )}
-              {tab === "validation" && (
+              ))}
+              {tr(tab === "validation" && (
                 <ValidationPanel onInspect={(compound) => {
                   setCandidates((previous) => [compound, ...previous.filter((item) => item.id !== compound.id)]);
                   setTab("alphafold");
                   void inspectMolecule(compound);
                 }} />
-              )}
-              {tab === "agents" && (
-                <AnalysisPanel
+              ))}
+              {tr(tab === "agents" && <>
+                <div className="agent-workspace-tabs" role="group" aria-label={tr("에이전트 분석 종류")}>
+                  <button aria-pressed={agentsView === "af3"} onClick={() => setAgentsView("af3")}><Atom size={16} />{tr("AlphaFold 워크플로우")}</button>
+                  <button aria-pressed={agentsView === "research"} onClick={() => setAgentsView("research")}><GitBranch size={16} />{tr("기존 연구·양자 분석")}</button>
+                </div>
+                {tr(agentsView === "af3" ? <AF3WorkflowWorkspace workflowId={af3WorkflowId} refreshKey={libraryRevision}
+                  onSelectWorkflow={selectAF3Workflow} onViewResult={showAF3WorkflowResult} notify={notify} /> : <AnalysisPanel
                   analyses={analyses}
                   active={activeAnalysis}
                   onSelect={selectAnalysis}
@@ -1086,19 +1115,19 @@ export default function App() {
                       void inspectMolecule(normalizeCandidates(items)[0]);
                   }}
                   notify={notify}
-                />
-              )}
-              {tab === "evidence" && (
+                />)}
+              </>)}
+              {tr(tab === "evidence" && (
                 <DataPanel candidates={candidates} notify={notify} />
-              )}
-              {tab === "archive" && (
+              ))}
+              {tr(tab === "archive" && (
                 <ArchivePanel
                   jobs={jobs}
                   refresh={refreshJobs}
                   onViewStructure={showArchivedStructure}
                   notify={notify}
                 />
-              )}
+              ))}
             </motion.div>
           </AnimatePresence>
           <footer className="workspace-footer">
@@ -1106,12 +1135,12 @@ export default function App() {
               <Leaf size={13} /> HerbFold Astra <i /> Evidence-led molecular
               research
             </span>
-            <span>성분 선택 → 분자 분석 → AF3 구조 확인</span>
+            <span>{tr("스튜디오 조건 선택 → 에이전트 준비·실행·검증 → 구조 결과")}</span>
           </footer>
         </div>
       </main>
       <AnimatePresence>
-        {composer && (
+        {tr(composer && (
           <AnalysisComposer
             selected={selected}
             onClose={() => setComposer(false)}
@@ -1123,8 +1152,8 @@ export default function App() {
             llmStatus={llmStatus}
             notify={notify}
           />
-        )}
-        {settings && (
+        ))}
+        {tr(settings && (
           <EngineSettings
             health={health}
             llm={llmStatus}
@@ -1132,8 +1161,8 @@ export default function App() {
             onRefresh={refreshAll}
             notify={notify}
           />
-        )}
-        {importOpen && (
+        ))}
+        {tr(importOpen && (
           <ImportMolecule
             onClose={() => setImportOpen(false)}
             onImport={(m) => {
@@ -1146,8 +1175,8 @@ export default function App() {
             }}
             notify={notify}
           />
-        )}
-        {toast && (
+        ))}
+        {tr(toast && (
           <motion.div
             className={`toast ${toast.error ? "error" : ""}`}
             role={toast.error ? "alert" : "status"}
@@ -1155,13 +1184,13 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 18 }}
           >
-            {toast.error ? <CircleHelp size={18} /> : <Check size={18} />}
-            <span>{toast.text}</span>
-            <button onClick={() => setToast(null)} aria-label="알림 닫기">
+            {tr(toast.error ? <CircleHelp size={18} /> : <Check size={18} />)}
+            <span>{tr(toast.text)}</span>
+            <button onClick={() => setToast(null)} aria-label={tr("알림 닫기")}>
               <X size={16} />
             </button>
           </motion.div>
-        )}
+        ))}
       </AnimatePresence>
     </div>
   );
@@ -1169,16 +1198,16 @@ export default function App() {
 function ChemicalFormula({ value }: { value?: string }) {
   if (!value) return null;
   return (
-    <span aria-label={value}>
-      {value
+    <span aria-label={tr(value)}>
+      {tr(value
         .split(/(\d+)/)
         .map((part, i) =>
           /^\d+$/.test(part) ? (
-            <sub key={i}>{part}</sub>
+            <sub key={i}>{tr(part)}</sub>
           ) : (
-            <span key={i}>{part}</span>
+            <span key={i}>{tr(part)}</span>
           ),
-        )}
+        ))}
     </span>
   );
 }
@@ -1209,7 +1238,7 @@ function MoleculeSketch({ smiles }: { smiles: string }) {
     };
   }, [smiles]);
   return src ? (
-    <img src={src} alt="RDKit 2D 분자 연결 구조" />
+    <img src={src} alt={tr("RDKit 2D 분자 연결 구조")} />
   ) : (
     <Atom size={40} />
   );
@@ -1224,7 +1253,7 @@ function EngineSettings({ health, llm, onClose, onRefresh, notify }: any) {
       <motion.section
         role="dialog"
         aria-modal="true"
-        aria-label="연산 엔진 설정"
+        aria-label={tr("연산 엔진 설정")}
         ref={dialogRef}
         tabIndex={-1}
         className="settings-dialog"
@@ -1235,12 +1264,12 @@ function EngineSettings({ health, llm, onClose, onRefresh, notify }: any) {
         <div className="section-heading">
           <div>
             <span className="eyebrow">CONNECTED ENGINES</span>
-            <h2>연산 환경</h2>
+            <h2>{tr("연산 환경")}</h2>
           </div>
           <button
             className="icon-button"
             onClick={onClose}
-            aria-label="엔진 설정 닫기"
+            aria-label={tr("엔진 설정 닫기")}
           >
             <X size={19} />
           </button>
@@ -1249,22 +1278,22 @@ function EngineSettings({ health, llm, onClose, onRefresh, notify }: any) {
           <Bot size={23} />
           <div>
             <h3>GPT-6 Astra</h3>
-            <p>{llm?.message || "모델 연결 상태를 확인 중입니다."}</p>
+            <p>{tr(llm?.message || "모델 연결 상태를 확인 중입니다.")}</p>
             <span
               className={`status-pill ${llm?.available ? "completed" : "blocked"}`}
             >
-              {llm?.available ? "모델 접근 확인됨" : "모델 접근 미확인"}
+              {tr(llm?.available ? "모델 접근 확인됨" : "모델 접근 미확인")}
             </span>
-            <small>OpenAI Responses API · 정확한 모델 ID gpt-6-astra</small>
+            <small>{tr("OpenAI Responses API · 정확한 모델 ID gpt-6-astra")}</small>
           </div>
         </div>
         <div className="engine-block">
           <Atom size={23} />
           <div>
             <h3>AlphaFold 3</h3>
-            <p>공식 v3.0.4 실행 환경과 모델 파라미터를 사용합니다.</p>
+            <p>{tr("공식 v3.0.4 실행 환경과 모델 파라미터를 사용합니다.")}</p>
             <details>
-              <summary>설치·GPU·데이터베이스 상태</summary>
+              <summary>{tr("설치·GPU·데이터베이스 상태")}</summary>
               <pre>{JSON.stringify(health?.alphafold || {}, null, 2)}</pre>
             </details>
           </div>
@@ -1274,9 +1303,7 @@ function EngineSettings({ health, llm, onClose, onRefresh, notify }: any) {
           <div>
             <h3>IBM Quantum</h3>
             <p>
-              접근 가능한 실제 장비 중 가장 많은 큐빗을 가진 백엔드를
-              선택합니다. 회로 깊이와 QPU 사용 한도를 함께 적용합니다.
-            </p>
+              {tr("접근 가능한 실제 장비 중 가장 많은 큐빗을 가진 백엔드를 선택합니다. 회로 깊이와 QPU 사용 한도를 함께 적용합니다.")}</p>
             <button
               className="secondary-button"
               disabled={checking}
@@ -1291,19 +1318,18 @@ function EngineSettings({ health, llm, onClose, onRefresh, notify }: any) {
                 }
               }}
             >
-              {checking ? (
+              {tr(checking ? (
                 <LoaderCircle size={15} className="spin" />
               ) : (
                 <Activity size={15} />
-              )}{" "}
-              가용 장비 조회
-            </button>
-            {backends && <pre>{JSON.stringify(backends, null, 2)}</pre>}
+              ))}{tr(" ")}
+              {tr("가용 장비 조회")}</button>
+            {tr(backends && <pre>{JSON.stringify(backends, null, 2)}</pre>)}
           </div>
         </div>
         <label>
-          로컬 API 인증 토큰{" "}
-          <small>필요한 환경에서만 입력 · 메모리에만 보관</small>
+          {tr("로컬 API 인증 토큰")}{tr(" ")}
+          <small>{tr("필요한 환경에서만 입력 · 메모리에만 보관")}</small>
           <input
             type="password"
             autoComplete="off"
@@ -1319,12 +1345,9 @@ function EngineSettings({ health, llm, onClose, onRefresh, notify }: any) {
             notify("연결 상태를 다시 확인합니다.");
           }}
         >
-          연결 상태 새로 고침
-        </button>
+          {tr("연결 상태 새로 고침")}</button>
         <p className="field-help">
-          OpenAI·IBM 비밀 키는 서버 환경에서 읽으며 브라우저로 전송하지
-          않습니다.
-        </p>
+          {tr("OpenAI·IBM 비밀 키는 서버 환경에서 읽으며 브라우저로 전송하지 않습니다.")}</p>
       </motion.section>
     </div>
   );
@@ -1349,25 +1372,24 @@ function ImportMolecule({
       <section
         role="dialog"
         aria-modal="true"
-        aria-label="분자 추가"
+        aria-label={tr("분자 추가")}
         ref={dialogRef}
         tabIndex={-1}
         className="settings-dialog compact-dialog"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="section-heading">
-          <h2>분자를 추가하세요</h2>
+          <h2>{tr("분자를 추가하세요")}</h2>
           <button
             className="icon-button"
             onClick={onClose}
-            aria-label="분자 추가 닫기"
+            aria-label={tr("분자 추가 닫기")}
           >
             <X size={19} />
           </button>
         </div>
         <label>
-          분자 이름 / PubChem CID
-          <input
+          {tr("분자 이름 / PubChem CID")}<input
             value={name}
             onChange={(event) => setName(event.target.value)}
           />
@@ -1391,8 +1413,7 @@ function ImportMolecule({
             }
           }}
         >
-          <Search size={15} /> PubChem 구조 확인
-        </button>
+          <Search size={15} /> {tr(" PubChem 구조 확인")}</button>
         <label>
           SMILES
           <textarea
@@ -1405,21 +1426,18 @@ function ImportMolecule({
           />
         </label>
         <label>
-          연구 입력 분류
-          <select
+          {tr("연구 입력 분류")}<select
             value={category}
             onChange={(event) =>
               setCategory(event.target.value as "herbal" | "drug")
             }
           >
-            <option value="herbal">천연물</option>
-            <option value="drug">기존 약물 비교군</option>
+            <option value="herbal">{tr("천연물")}</option>
+            <option value="drug">{tr("기존 약물 비교군")}</option>
           </select>
         </label>
         <p className="field-help">
-          분류는 연구자가 지정합니다. PubChem 조회가 한약재 내 함유나 효능을
-          입증하지는 않습니다.
-        </p>
+          {tr("분류는 연구자가 지정합니다. PubChem 조회가 한약재 내 함유나 효능을 입증하지는 않습니다.")}</p>
         <button
           className="primary-button wide"
           disabled={busy || !smiles || !name}
@@ -1442,9 +1460,9 @@ function ImportMolecule({
             }
           }}
         >
-          <Plus size={16} /> 분자 추가
-        </button>
+          <Plus size={16} /> {tr(" 분자 추가")}</button>
       </section>
     </div>
   );
 }
+

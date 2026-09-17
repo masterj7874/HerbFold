@@ -7,6 +7,7 @@ export type QuantumProgressStage = {
   label: string;
   state: "available" | "pending" | "unavailable" | "error";
   detail: string;
+  inputCount?: number;
 };
 
 const record = (value: unknown): Record<string, unknown> | null =>
@@ -118,6 +119,7 @@ export function quantumProgress(value: QuantumResult | null | undefined): Quantu
   const compared = complete && (hardware || local) && validOutput;
   return [
     { id: "descriptors", label: "분자 특징", state: hasRows ? "available" : missing,
+      inputCount: hasRows ? rawFeatures.length : undefined,
       detail: hasRows ? `${rawFeatures.length}개 입력의 저장된 특징 행렬` : "입력 특징 행렬을 확인할 수 없습니다." },
     { id: "encoding", label: "각도 인코딩", state: hasEncoding ? "available" : missing,
       detail: hasEncoding ? "저장된 입력과 atan 인코딩 규칙으로 각도를 확인합니다." : "입력·큐빗 수·인코딩 규칙이 모두 필요합니다." },

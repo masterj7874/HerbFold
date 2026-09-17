@@ -1,3 +1,4 @@
+import { tr, msg } from "../lib/i18n";
 import {
   ArrowDownToLine,
   ArrowRight,
@@ -90,7 +91,7 @@ export default function DataPanel({
           <Database size={21} />
           <span>IMPORTED RECORDS</span>
           <strong>
-            {count}
+            {tr(count)}
             <small> records</small>
           </strong>
         </div>
@@ -98,7 +99,7 @@ export default function DataPanel({
           <FlaskConical size={21} />
           <span>MEASURED ENDPOINT</span>
           <strong>
-            {endpoint}
+            {tr(endpoint)}
             <small> separate labels</small>
           </strong>
         </div>
@@ -106,7 +107,7 @@ export default function DataPanel({
           <ScanLine size={21} />
           <span>EVALUATION SPLIT</span>
           <strong>
-            {split === "scaffold_target" ? "Scaffold + target" : split}
+            {tr(split === "scaffold_target" ? "Scaffold + target" : split)}
             <small> seed 42</small>
           </strong>
         </div>
@@ -116,7 +117,7 @@ export default function DataPanel({
           <div className="section-heading">
             <div>
               <span className="eyebrow">01 / SOURCE DATA</span>
-              <h3>실측 근거를 연결하세요</h3>
+              <h3>{tr("실측 근거를 연결하세요")}</h3>
             </div>
             <FileInput size={22} />
           </div>
@@ -129,13 +130,12 @@ export default function DataPanel({
               />
             </label>
             <label>
-              실측 종말점
-              <select
+              {tr("실측 종말점")}<select
                 value={endpoint}
                 onChange={(event) => setEndpoint(event.target.value)}
               >
-                <option>Kd</option>
-                <option>Ki</option>
+                <option value="Kd">Kd</option>
+                <option value="Ki">Ki</option>
               </select>
             </label>
           </div>
@@ -158,21 +158,19 @@ export default function DataPanel({
                 })
               }
             >
-              <Database size={15} /> ChEMBL 가져오기
-            </button>
+              <Database size={15} /> {tr(" ChEMBL 가져오기")}</button>
             <button
               className="secondary-button"
               disabled={!!busy}
               onClick={() => execute("example", loadExample)}
             >
-              PTGS2 실측 예제
-            </button>
+              {tr("PTGS2 실측 예제")}</button>
           </div>
           <label className="file-drop">
             <Upload size={20} />
             <span>
-              <strong>CSV 파일 불러오기</strong>
-              <small>원본 값과 출처를 함께 보존합니다.</small>
+              <strong>{tr("CSV 파일 불러오기")}</strong>
+              <small>{tr("원본 값과 출처를 함께 보존합니다.")}</small>
             </span>
             <input
               type="file"
@@ -184,18 +182,16 @@ export default function DataPanel({
             />
           </label>
           <p className="field-help">
-            smiles · target_id · endpoint · value · unit · relation ·
-            is_measured · source가 필요합니다. Kd와 Ki를 혼합하지 않습니다.
-          </p>
+            {tr("smiles · target_id · endpoint · value · unit · relation · is_measured · source가 필요합니다. Kd와 Ki를 혼합하지 않습니다.")}</p>
           <label>
-            레코드 편집 <small>{count} rows</small>
+            {tr("레코드 편집 ")}<small>{tr(count)} rows</small>
             <textarea
               className="code-textarea"
               value={recordsText}
               disabled={!!busy}
               onChange={(event) => updateRecords(event.target.value)}
               rows={10}
-              placeholder="측정 레코드 JSON"
+              placeholder={tr("측정 레코드 JSON")}
             />
           </label>
           <div className="inline-actions">
@@ -211,8 +207,7 @@ export default function DataPanel({
                 })
               }
             >
-              <CheckCheck size={15} /> 중복·assay 점검
-            </button>
+              <CheckCheck size={15} /> {tr(" 중복·assay 점검")}</button>
             <button
               className="secondary-button"
               disabled={!!busy || !count}
@@ -225,17 +220,12 @@ export default function DataPanel({
                 })
               }
             >
-              <Layers3 size={15} /> AF3 특징 연결
-            </button>
+              <Layers3 size={15} /> {tr(" AF3 특징 연결")}</button>
           </div>
-          {audit && Array.isArray(audit.suggested_records) && (
+          {tr(audit && Array.isArray(audit.suggested_records) && (
             <>
               <p className="field-help">
-                입력 {audit.input_count}개 · 유효 {audit.valid_count}개 · 제안{" "}
-                {audit.suggested_count}개 · 제외{" "}
-                {audit.excluded_input_indices.length}개. 제외 사유와 변경 내용을
-                검증 결과에서 검토한 후 적용하세요.
-              </p>
+                {msg("입력 {0}개 · 유효 {1}개 · 제안 {2}개 · 제외 {3}개. 제외 사유와 변경 내용을 검증 결과에서 검토한 후 적용하세요.", audit.input_count, audit.valid_count, audit.suggested_count, audit.excluded_input_indices.length)}</p>
               <button
                 className="text-button"
                 onClick={() => {
@@ -247,34 +237,29 @@ export default function DataPanel({
                   );
                 }}
               >
-                점검 제안 {audit.suggested_records.length}개 적용{" "}
+                {msg("점검 제안 {0}개 적용", audit.suggested_records.length)}
                 <ArrowRight size={14} />
               </button>
             </>
-          )}
+          ))}
           <p className="field-help">
-            AF3 특징 연결은 각 레코드의 af3_job_id와 정확한 protein_sequence가
-            필요합니다. 완료된 로컬 실행의 분자·서열·구조 해시와 품질을
-            검증합니다.
-          </p>
+            {tr("AF3 특징 연결은 각 레코드의 af3_job_id와 정확한 protein_sequence가 필요합니다. 완료된 로컬 실행의 분자·서열·구조 해시와 품질을 검증합니다.")}</p>
           <div className="subsection-line" />
           <div className="section-heading">
             <div>
               <span className="eyebrow">02 / EVALUATION</span>
-              <h3>예측의 적용 범위를 확인합니다</h3>
+              <h3>{tr("예측의 적용 범위를 확인합니다")}</h3>
             </div>
           </div>
           <label>
-            평가 분할
-            <select
+            {tr("평가 분할")}<select
               value={split}
               onChange={(event) => setSplit(event.target.value)}
             >
-              <option value="scaffold">Scaffold 분리 · 단일 표적</option>
+              <option value="scaffold">{tr("Scaffold 분리 · 단일 표적")}</option>
               <option value="scaffold_target">
-                Scaffold + target 동시 분리
-              </option>
-              <option value="target">Target 분리</option>
+                {tr("Scaffold + target 동시 분리")}</option>
+              <option value="target">{tr("Target 분리")}</option>
             </select>
           </label>
           <div className="inline-actions">
@@ -289,8 +274,7 @@ export default function DataPanel({
                 })
               }
             >
-              <Microscope size={16} /> 평가
-            </button>
+              <Microscope size={16} /> {tr(" 평가")}</button>
             <button
               className="primary-button grow"
               disabled={!!busy || !count}
@@ -304,13 +288,12 @@ export default function DataPanel({
                 })
               }
             >
-              {busy === "train" ? (
+              {tr(busy === "train" ? (
                 <LoaderCircle className="spin" size={16} />
               ) : (
                 <Play size={15} />
-              )}{" "}
-              평가 · 학습
-            </button>
+              ))}{tr(" ")}
+              {tr("평가 · 학습")}</button>
           </div>
           <button
             className="text-button"
@@ -323,7 +306,7 @@ export default function DataPanel({
               })
             }
           >
-            실측 8–24개로 로컬 4큐빗 · RBF 모델 비교 <ArrowRight size={14} />
+            {tr("실측 8–24개로 로컬 4큐빗 · RBF 모델 비교 ")}<ArrowRight size={14} />
           </button>
         </div>
         <div className="evidence-right">
@@ -332,49 +315,49 @@ export default function DataPanel({
               <div>
                 <span className="eyebrow">EVIDENCE & OUTCOME</span>
                 <h3>
-                  {resultType === "prediction"
+                  {tr(resultType === "prediction"
                     ? "모델 예측 · 실측 아님"
                     : resultType === "source"
                       ? "가져온 데이터 · 출처"
-                      : "검증 결과"}
+                      : "검증 결과")}
                 </h3>
               </div>
-              {result && (
+              {tr(result && (
                 <button
                   className="icon-button"
-                  aria-label="검증 결과 내보내기"
+                  aria-label={tr("검증 결과 내보내기")}
                   onClick={() => download(result, "evidence-result.json")}
                 >
                   <ArrowDownToLine size={17} />
                 </button>
-              )}
+              ))}
             </div>
-            {busy && (
+            {tr(busy && (
               <div className="processing-line">
                 <LoaderCircle className="spin" size={17} />
-                <span>데이터를 처리하고 있습니다.</span>
+                <span>{tr("데이터를 처리하고 있습니다.")}</span>
               </div>
-            )}
-            {result ? (
+            ))}
+            {tr(result ? (
               <>
-                {Object.keys(metrics).length > 0 && (
+                {tr(Object.keys(metrics).length > 0 && (
                   <div className="metric-grid">
-                    {Object.entries(metrics)
+                    {tr(Object.entries(metrics)
                       .slice(0, 6)
                       .map(([key, value]) => (
                         <div key={key}>
-                          <small>{`${key.replaceAll("_", " ")}${typeof value === "object" && value ? " · RMSE" : ""}`}</small>
+                          <small>{tr(`${key.replaceAll("_", " ")}${typeof value === "object" && value ? " · RMSE" : ""}`)}</small>
                           <strong>
-                            {typeof value === "number"
+                            {tr(typeof value === "number"
                               ? formatNumber(value, 3)
                               : typeof value === "object" && value
                                 ? formatNumber((value as any).rmse, 3)
-                                : String(value)}
+                                : String(value))}
                           </strong>
                         </div>
-                      ))}
+                      )))}
                   </div>
-                )}
+                ))}
                 <pre className="results-json">
                   {JSON.stringify(result, null, 2)}
                 </pre>
@@ -382,24 +365,21 @@ export default function DataPanel({
             ) : (
               <div className="empty-large">
                 <ScanLine size={42} />
-                <h4>근거가 있는 예측을 위해</h4>
+                <h4>{tr("근거가 있는 예측을 위해")}</h4>
                 <p>
-                  데이터를 불러오고 분할을 선택하면
-                  <br />
-                  실측값에 대한 오차와 적용 한계를 확인할 수 있습니다.
-                </p>
+                  {tr("데이터를 불러오고 분할을 선택하면")}<br />
+                  {tr("실측값에 대한 오차와 적용 한계를 확인할 수 있습니다.")}</p>
               </div>
-            )}
+            ))}
           </div>
           <div className="card prediction-card">
             <span className="eyebrow">03 / CANDIDATE PREDICTION</span>
-            <h3>후보를 실측 학습 모델로 평가</h3>
+            <h3>{tr("후보를 실측 학습 모델로 평가")}</h3>
             <label>
-              저장된 모델 ID
-              <input
+              {tr("저장된 모델 ID")}<input
                 value={modelId}
                 onChange={(event) => setModelId(event.target.value)}
-                placeholder="모델 학습 후 자동 입력"
+                placeholder={tr("모델 학습 후 자동 입력")}
               />
             </label>
             <button
@@ -418,12 +398,11 @@ export default function DataPanel({
                 )
               }
             >
-              생성 후보 {candidates.length}개를 질의로 사용{" "}
+              {msg("생성 후보 {0}개를 질의로 사용", candidates.length)}
               <ArrowRight size={14} />
             </button>
             <label>
-              예측 질의
-              <textarea
+              {tr("예측 질의")}<textarea
                 className="code-textarea"
                 rows={5}
                 value={queries}
@@ -445,12 +424,10 @@ export default function DataPanel({
                 })
               }
             >
-              후보 친화도 예측 <ArrowRight size={16} />
+              {tr("후보 친화도 예측 ")}<ArrowRight size={16} />
             </button>
             <p className="field-help">
-              학습 범위를 벗어난 후보는 외삽입니다. 계산값은 효능·독성·실험
-              결합값을 보장하지 않습니다.
-            </p>
+              {tr("학습 범위를 벗어난 후보는 외삽입니다. 계산값은 효능·독성·실험 결합값을 보장하지 않습니다.")}</p>
           </div>
         </div>
       </div>

@@ -7,11 +7,12 @@ import { pathToFileURL } from "node:url";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import ts from "typescript";
+import { i18nModuleUrl } from "./i18n-loader.mjs";
 
 const require = createRequire(import.meta.url);
 const compile = (source) => ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022, jsx: ts.JsxEmit.ReactJSX } }).outputText;
 const dataUrl = (code) => `data:text/javascript;base64,${Buffer.from(code).toString("base64")}`;
-const dependencies = {};
+const dependencies = { "../lib/i18n": await i18nModuleUrl() };
 for (const name of ["predictionEvidence", "predictionProgress"]) dependencies[`../lib/${name}`] = dataUrl(compile(await readFile(new URL(`../src/lib/${name}.ts`, import.meta.url), "utf8")));
 for (const name of ["react", "react/jsx-runtime", "lucide-react"]) dependencies[name] = pathToFileURL(require.resolve(name)).href;
 const source = compile(await readFile(new URL("../src/components/AF3EvidencePanel.tsx", import.meta.url), "utf8"));

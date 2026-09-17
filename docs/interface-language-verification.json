@@ -1,0 +1,376 @@
+{
+ "timestamp": "2026-09-17T05:07:28.706598+00:00",
+ "url": "http://127.0.0.1:9018",
+ "views": {
+  "shell": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "alphafold": {
+   "untranslated": [],
+   "research_values": [
+    {
+     "kind": "input-value",
+     "text": "황금",
+     "tag": "INPUT",
+     "testid": "studio-compound-query",
+     "research": "researcher-input",
+     "where": "library search 황금"
+    }
+   ],
+   "horizontal_overflow": false
+  },
+  "design-pipeline": {
+   "untranslated": [],
+   "research_values": [
+    {
+     "kind": "text",
+     "text": "하이브리드_20260917",
+     "tag": "STRONG",
+     "testid": "drug-design-pipeline",
+     "research": "run-name",
+     "where": "run history"
+    },
+    {
+     "kind": "text",
+     "text": "기능 확인 · 한약 성분 구조 변환",
+     "tag": "STRONG",
+     "testid": "drug-design-pipeline",
+     "research": "run-name",
+     "where": "run history"
+    },
+    {
+     "kind": "text",
+     "text": "기능 확인 · 하이브리드 설계",
+     "tag": "STRONG",
+     "testid": "drug-design-pipeline",
+     "research": "run-name",
+     "where": "run history"
+    },
+    {
+     "kind": "text",
+     "text": "기능 확인 · 성분 조합",
+     "tag": "STRONG",
+     "testid": "drug-design-pipeline",
+     "research": "run-name",
+     "where": "run history"
+    }
+   ],
+   "horizontal_overflow": false
+  },
+  "comparison": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "quantum": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "discovery": {
+   "untranslated": [],
+   "research_values": [
+    {
+     "kind": "text",
+     "text": "황금",
+     "tag": "STRONG",
+     "testid": "discovery-query-resolution",
+     "research": null,
+     "where": "search 황금"
+    },
+    {
+     "kind": "input-value",
+     "text": "황금",
+     "tag": "INPUT",
+     "testid": "discovery-search",
+     "research": "researcher-input",
+     "where": "search 황금"
+    },
+    {
+     "kind": "text",
+     "text": "감초속 성분 × ChEMBL 약물 확장 탐색",
+     "tag": "STRONG",
+     "testid": "discovery-campaign-5dc6a27485934703b902f65fff32aa98",
+     "research": "campaign-name",
+     "where": "campaigns"
+    },
+    {
+     "kind": "text",
+     "text": "LOTUS 실제 자료 500종 × 비교 약물 3종",
+     "tag": "STRONG",
+     "testid": "discovery-campaign-f31db5de956c486daadc1d5c78ce0c2b",
+     "research": "campaign-name",
+     "where": "campaigns"
+    }
+   ],
+   "horizontal_overflow": false
+  },
+  "validation": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "agents": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "evidence": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "archive": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-alphafold": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-design-pipeline": {
+   "untranslated": [],
+   "research_values": [
+    {
+     "kind": "text",
+     "text": "하이브리드_20260917",
+     "tag": "SPAN",
+     "testid": "drug-design-pipeline",
+     "research": "run-name",
+     "where": "initial"
+    }
+   ],
+   "horizontal_overflow": false
+  },
+  "mobile-comparison": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-quantum": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-discovery": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-validation": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-agents": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-evidence": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "mobile-archive": {
+   "untranslated": [],
+   "research_values": [],
+   "horizontal_overflow": false
+  },
+  "legacy": {
+   "untranslated": [],
+   "research_values": [
+    {
+     "kind": "text",
+     "text": "퀘르세틴",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "바이칼레인",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "황금",
+     "tag": "P",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "루테올린",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "더덕",
+     "tag": "P",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "베르베린",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "황련",
+     "tag": "P",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "아스피린",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "이부프로펜",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    },
+    {
+     "kind": "text",
+     "text": "셀레콕시브",
+     "tag": "SPAN",
+     "testid": "",
+     "research": null,
+     "where": "english"
+    }
+   ],
+   "horizontal_overflow": false
+  }
+ },
+ "page_errors": [],
+ "blocked_mutations": [
+  "/api/data/audit",
+  "/api/data/structures",
+  "/api/benchmark/evaluate",
+  "/api/models/train"
+ ],
+ "local_computations": [
+  "/api/molecules/describe",
+  "/api/molecular/resolve",
+  "/api/molecules/describe",
+  "/api/molecular/resolve",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/compare/structures",
+  "/api/molecules/svg",
+  "/api/molecules/describe",
+  "/api/molecular/resolve",
+  "/api/molecules/describe",
+  "/api/molecular/resolve",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/describe",
+  "/api/molecular/resolve",
+  "/api/molecules/describe",
+  "/api/molecular/resolve",
+  "/api/molecules/describe",
+  "/api/molecules/describe",
+  "/api/molecules/describe",
+  "/api/molecules/describe",
+  "/api/molecules/describe",
+  "/api/molecules/describe",
+  "/api/molecules/describe",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg",
+  "/api/molecules/svg"
+ ],
+ "switch_requests": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "state_preserved": {
+  "studio": {
+   "mode": true,
+   "acknowledgement": true,
+   "seed_zero": true,
+   "same_canvas_node": true,
+   "selection_unchanged": true
+  },
+  "design_pipeline": {
+   "researcher_input_unchanged": true,
+   "candidate_list_unchanged": true
+  },
+  "quantum_record": true,
+  "agent_workflow": {
+   "workflow_id": "b86a39c482db4ad1b1c1c0172c77a76e",
+   "preserved": true,
+   "job_id": "6f07b8942cb04005afe1388aae7ddbc9"
+  }
+ },
+ "preference": {
+  "restored_on_reload": true,
+  "synchronized_between_tabs": true,
+  "works_without_storage": true
+ },
+ "legacy": {
+  "english_title": "HerbFold · AlphaFold 3",
+  "korean_restored": true,
+  "form_preserved": true,
+  "roundtrip": true
+ },
+ "research_values_allowed": 583,
+ "summary": {
+  "views_checked": 20,
+  "untranslated_interface_text": 0,
+  "research_values_kept": 20,
+  "horizontal_overflow": [],
+  "state_lost_on_switch": [],
+  "page_errors": [],
+  "requests_caused_by_switching": 0,
+  "blocked_mutations": [
+   "/api/benchmark/evaluate",
+   "/api/data/audit",
+   "/api/data/structures",
+   "/api/models/train"
+  ],
+  "local_computations": [
+   "/api/compare/structures",
+   "/api/molecular/resolve",
+   "/api/molecules/describe",
+   "/api/molecules/svg"
+  ]
+ },
+ "passed": true
+}
