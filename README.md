@@ -4,13 +4,51 @@ A local research platform for selecting a compound, analyzing its molecular prop
 
 **Current local address: http://127.0.0.1:9018** · [API documentation](http://127.0.0.1:9018/docs)
 
+## English and Korean Interface
+
+Every page switches between English and Korean with the **EN / KO** control in the header. Korean is the default, and the choice is stored per browser under `herbfold.language.v1`, restored on reload and synchronized across tabs of the same origin. Switching the language re-renders the current view in place: the selected workspace, compound, saved workflow, form values, seeds, acknowledgements and the loaded 3D scene are all preserved, and no AF3, LLM, QPU, design or assay calculation is submitted by the switch itself. Dates and numbers follow `en-US` or `ko-KR` formatting.
+
+![Interface language control](docs/images/readme-language-switch-en.png)
+
+Translation happens only at display boundaries, from reviewed local catalogs under `frontend/src/i18n/`. There is no online translation service and no LLM translation request. Research records keep their original values: SMILES, compound names entered by the researcher, herb names, run and campaign names, job IDs, target accessions, sequences, assay rows, CSV exports and raw JSON views are shown exactly as stored in both languages. The legacy compatibility view at `/legacy` has the same EN / KO control and shares the same stored preference. [Interface language implementation and verification](docs/interface-language.md).
+
+The longer English labels were checked at desktop and phone widths; no view scrolls horizontally at 390 px.
+
+| Phone width · AlphaFold Studio | Phone width · Agent Analysis | Legacy view at `/legacy` |
+| --- | --- | --- |
+| ![AlphaFold Studio at phone width](docs/images/readme-mobile-alphafold-en.png) | ![Agent Analysis at phone width](docs/images/readme-mobile-agents-en.png) | ![Legacy view in English](docs/images/readme-legacy-en.png) |
+
+**[Drug Design Pipeline / 신약 설계 파이프라인](http://127.0.0.1:9018/#design-pipeline)** provides separate-constituent combination review, BRICS hybrid generation, and single-step natural-product structure transformations. Five deterministic specialist agents validate identities, generate candidates, calculate properties, link exact cached assay observations, and review results; properties and evidence run in parallel. Runs, events and cancellation are saved locally. Inspect actual RDKit conformers in the Three.js viewer, compare parent-relative properties, export results, or continue in AlphaFold Studio. A measured-response calculator compares user-supplied combination inhibition with Bliss and HSA references. Computational proposals and reference-model differences do not establish clinical efficacy or synergy. [Workflow, methods and validation](docs/drug-design-pipeline.md).
+
+![Drug Design Pipeline results in English](docs/images/readme-design-pipeline-en.png)
+
+*A saved hybrid design run reopened: generated candidates, retained parent constituents, and an RDKit conformer in the Three.js viewer.*
+
+![Drug Design Pipeline specialist agents](docs/images/readme-design-pipeline-agents-en.png)
+
+*The five deterministic specialist agents of one saved run, with property calculation and evidence linkage running in parallel.*
+
 **[AlphaFold Studio](http://127.0.0.1:9018/#alphafold)** and **[Quantum Studio](http://127.0.0.1:9018/#quantum)** have separate menus, URLs, and selection states. The structure view shows the selected sample's pTM, ipTM, atomic pLDDT, directional PAE, and MSA evidence. The quantum view shows input features, measured observables, controls, and errors. [Studio separation and validation report](docs/separate-studios-validation.md).
 
 Quantum Studio includes a **five-step visual walkthrough, zoomable actual block circuits, rotation and zoom for XYZ expectation values, a comparison of three kernels, and walkthrough playback**. Visual layouts from the reference paper have been redrawn using the currently stored circuit and measurement data. [User guide and data connections](docs/quantum-studio-visual-guide.md).
 
-**The default workflow is compound selection → molecular analysis → AF3 structure inspection.** There is no need to select another drug alongside it. Multiple compounds are selected only in **[Compound Comparison](http://127.0.0.1:9018/#comparison)**, which also supports comparing natural products with one another or existing drugs with one another. [Single-compound and comparison view verification](docs/single-compound-flow-verification.json).
+![Quantum Studio in English](docs/images/readme-quantum-studio-en.png)
 
-![AlphaFold Studio](docs/images/single-compound-alphafold-desktop.png)
+*Quantum Studio: a completed projected-kernel record with its device, qubit count, inputs and readout method.*
+
+![Quantum walkthrough in English](docs/images/readme-quantum-walkthrough-en.png)
+
+*Step 3 of the walkthrough, drawn from the stored circuit: 156 qubits in 33 independent blocks, with the selected block's rotation angles.*
+
+**The default workflow is compound selection → molecular analysis → AF3 structure inspection.** There is no need to select another drug alongside it. Multiple compounds can be selected in **[Compound Comparison](http://127.0.0.1:9018/#comparison)** or **[Drug Design Pipeline](http://127.0.0.1:9018/#design-pipeline)**. Compound Comparison also supports comparing natural products with one another or existing drugs with one another. [Single-compound and comparison view verification](docs/single-compound-flow-verification.json).
+
+![Compound Comparison in English](docs/images/readme-compound-comparison-en.png)
+
+*Compound Comparison: a local Morgan-fingerprint Tanimoto result for quercetin and aspirin. Structural similarity is not efficacy, affinity or interchangeability.*
+
+![AlphaFold Studio in English](docs/images/readme-alphafold-studio-en.png)
+
+*AlphaFold Studio: the selected compound, the applied protein target, and the predicted structure of a completed job.*
 
 The new React 19 interface uses **Motion 13, GSAP 3, Three.js, React Three Fiber 9, and Drei**. It includes a molecular library, atom and bond exploration, GPT-6 Astra analysis, measured-data validation, and run history. GSAP handles camera zoom and focus movement, while Motion handles UI transitions. The updated high-contrast design supports mouse-wheel, pinch, and keyboard zoom, an actual zoom-level indicator, and an expanded molecular view. [Zoom and design verification](docs/studio-redesign.md).
 
@@ -22,7 +60,9 @@ This workstation currently stores **766,417 structures and 1,436,510 source reco
 
 You can also query this database directly from **AlphaFold Studio → Compounds to Explore**. Search by compound name, source identifier, species, or Korean medicinal-herb name, narrow the results with natural-product/existing-drug and source filters, and browse 30 entries per page. Click a compound name to inspect its molecular formula, properties, and structure. The selection persists within the current session when you change the search, page, or view. **My List** also lets you reopen the default examples and compounds you added yourself. **AF3 Calculation for This Compound** opens calculations and records for the selected compound and applied protein target. Select compounds for comparison separately in **Compound Comparison**. Browsing or selecting a list entry does not submit an AF3 calculation.
 
-![Large-scale data discovery view](docs/images/discovery-desktop.png)
+![Large-scale Discovery in English](docs/images/readme-discovery-en.png)
+
+*Large-scale Discovery: registered structures, source links, retained candidates and the searchable structure library with its source evidence.*
 
 [Collection and bulk generation guide and sources](docs/large-scale-discovery.md) · [Measured verification results](docs/discovery-verification.json) · [Storage scale and limitations](docs/discovery-storage.md)
 
@@ -31,6 +71,14 @@ You can also query this database directly from **AlphaFold Studio → Compounds 
 The **Performance and Efficacy Validation** menu shows actual run results and evidence for each candidate. Using 16 CPU workers, the system processed **5 million distinct fragment combinations** and retained **3,701,740 candidates** after checking molecular properties, duplicates, and contributions from both parents. Preparation took 94.77 seconds, and cumulative active generation and storage time was 304.34 seconds. The current combination limit is 85,150,669, so **generation of 100 million distinct candidates has not been validated and cannot be achieved within the current combination space.** These timings exclude AlphaFold and QPU inference.
 
 Computational efficacy and toxicity evaluations cover all existing candidates and a random sample of 10,000 candidates from the new large-scale set. Measured COX-2/hERG data from ChEMBL and 12 Tox21 assays are used to document independent model evaluation, applicability, and prediction abstention. Candidates outside the sample are not labeled as having confirmed efficacy or safety, and no candidate is classified as a new drug with demonstrated clinical efficacy or human safety.
+
+![Measured scale validation in English](docs/images/readme-validation-scale-en.png)
+
+*Performance and Bioactivity: attempts, structures passing validation and filters, retained structures, duplicates and exclusions, each counted separately. Clinical efficacy and safety remain unverified.*
+
+![Tox21 evaluation in English](docs/images/readme-validation-tox21-en.png)
+
+*Tox21 assay evaluations with applicability-domain counts. Assay activity scores are not human-safety probabilities.*
 
 [Final validation report](docs/validation-report.md) · [Machine-readable results](docs/validation-results.json) · [Raw generation performance data](docs/scale-validation-results.json)
 
@@ -90,7 +138,16 @@ Candidate novelty means that a structure differs from the input molecules. It do
 **Additional targets via UniProt:** Look up and register UniProt IDs in the molecular studio to select proteins beyond COX-2. Review the protein name, species, and sequence length, then apply the target to prepare AF3 inputs using the selected compound and that sequence. Registered targets and per-job sequences and provenance are stored persistently. [Target lookup and registration guide](docs/uniprot-targets.md).
 
 1. Click a compound in **AlphaFold Studio → Compounds to Explore** and inspect its molecular formula, molecular weight, LogP, hydrogen-bond properties, and other characteristics. The default view shows an AF3 prediction; **Free Molecule** mode shows an actual RDKit ETKDGv3 conformer. Add custom molecules through PubChem or SMILES.
-2. Apply a protein target and click **AF3 Calculation for This Compound** to prepare and run inputs for the selected compound. Job IDs, queues, logs, retries, and result selection are supported, and saved AF3 results can be opened directly. Official Google weights and all 9 MSA/template databases are installed, with readiness checks before execution. The default standard search prepares MSA and templates on the CPU, then runs inference for each selected ligand, reusing validated search results for the same protein. Structural confidence and accuracy limitations are displayed together. `No MSA` is an explicitly selected exploratory mode. [Calculation guide](docs/af3-calculation-workflow.md), [Full database installation evidence](docs/af3-full-msa-setup.md).
+2. Apply a protein target in **AlphaFold Studio** and choose the calculation mode, seed, and preparation-only or automatic execution scope. **Prepare/Run in Agents** opens **Agent Analysis → AlphaFold Workflow**, which tracks durable input preparation, queue execution, logs, and output identity validation. Reopening a saved request only reads its status; existing Studio jobs can be attached without rerunning them. Once the exact ligand/target output is verified, **View This Job in Studio** returns that job to the molecular viewer. [Agent workflow and reconnection guide](docs/af3-agent-workflow.md). Job IDs, queues, logs, retries, and result selection are supported, and saved AF3 results can be opened directly. Official Google weights and all 9 MSA/template databases are installed, with readiness checks before execution. The default standard search prepares MSA and templates on the CPU, then runs inference for each selected ligand, reusing validated search results for the same protein. Structural confidence and accuracy limitations are displayed together. `No MSA` is an explicitly selected exploratory mode. [Calculation guide](docs/af3-calculation-workflow.md), [Full database installation evidence](docs/af3-full-msa-setup.md).
+
+   ![AF3 agent workflow in English](docs/images/readme-agent-workflow-en.png)
+
+   *Agent Analysis → AlphaFold Workflow: a saved request with its workflow ID, AF3 job ID and verified compound/target identity. A completed run is not a validation of accuracy, affinity, efficacy or safety.*
+
+   ![AF3 agent workflow stages](docs/images/readme-agent-workflow-stages-en.png)
+
+   *Per-stage progress recorded by the server for that job, from input preparation through MSA and template search to inference and output identity checks.*
+
 3. To compare compounds, select 2–8 entries in **Compound Comparison** and click **Compare Structures**. Compounds in the same category can also be compared; the results represent structural similarity. Expand **Design Candidates from Compared Compounds · Fragment Recombination**, or configure Astra analysis in **Advanced Analysis Settings**. This candidate-design extension requires one natural-product parent and one existing-drug parent.
 4. In **Quantum Studio**, compare the inputs and linked results of each analysis or inspect individual run records. When rerunning only the quantum stage, review the execution plan that preserves the stored compound order and features. To use IBM hardware for a new agent analysis, select **IBM Maximum Available Qubits** in the quantum settings. The default is a local 4-qubit kernel. Default limits per analysis are 8 LLM calls with 1,800 tokens per response, 1 AF3 candidate, and 1 IBM job with 4,096 shots and 30 QPU seconds.
 5. In **Agent Analysis**, inspect per-stage results, response IDs, and actual usage. Stopping and resuming preserves checkpoints for completed stages. Research questions, selected structures, and tool results are sent to the LLM for orchestration.
@@ -103,6 +160,16 @@ Candidate novelty means that a structure differs from the input molecules. It do
 Use `cd frontend && npm run dev` for frontend development and `npm run build` for a static deployment build. Node 20.19+ or 22.12+ is required. `/` serves the new UI, `/legacy` the legacy compatibility view, and `/docs` the OpenAPI documentation. Do not put API keys in the frontend.
 
 Required columns for measured-data CSV files are listed in [data/affinity_template.csv](data/affinity_template.csv). `relation` must be `=`, `is_measured` must be `true`, and `source` must identify traceable original data. IC50 values are neither converted to nor mixed with Kd/Ki. Unit conversions use exact molar concentrations.
+
+## Interface Language Verification — 2026-09-17
+
+Twenty views were inspected in English mode: nine workspaces on the desktop, the same nine at 390 px, the application shell and the legacy view. **No untranslated interface text remained, no view scrolled horizontally, no page error occurred, and switching the language issued no request.** Twenty Korean research values were deliberately kept unchanged, including saved design-run and campaign names and text typed into fields. Calculation mode, exploratory acknowledgement, seed `0`, the WebGL canvas node, the selected agent workflow with its AF3 job, the selected quantum record and the design candidate list all survived an EN → KO → EN round trip.
+
+```bash
+uv run --extra dev python scripts/verify_interface_language.py
+```
+
+[Implementation, research-value policy and full results](docs/interface-language.md) · [Machine-readable verification](docs/interface-language-verification.json) · [Screenshot capture record](docs/readme-capture-report.json)
 
 ## Actual Verification Results — 2026-09-07
 
