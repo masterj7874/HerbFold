@@ -1,0 +1,33 @@
+{
+  "started_utc": "2026-09-17T03:14:41.033161+00:00",
+  "status": "passed",
+  "scope": "isolated real HTTP; synthetic Studio lifecycle only",
+  "new_af3_llm_qpu_executions": 0,
+  "production_runtime_modified": false,
+  "durable_acceptance_seconds": 0.0217,
+  "duplicate_request_reuses_workflow_and_single_execution": true,
+  "request_id_payload_conflict_rejected": true,
+  "process_completion_keeps_identity_validation_active": true,
+  "completed_result_reloads_without_execution": true,
+  "synthetic_unverified_completion_not_claimed_as_available_structure": true,
+  "lost_post_ack_restores_by_request_id_without_duplicate": true,
+  "restart_preserves_completed_and_unresolved_requests_without_automatic_execution": true,
+  "explicit_resume_only_and_strict_boolean_confirmation": true,
+  "interrupted_prepare_only_resume_does_not_submit_inference": true,
+  "existing_job_attach_deduplicates_and_rejects_wrong_identity_without_execution": true,
+  "history_contains_all_workflows": true,
+  "lost_prepare_ack_discovers_exact_saved_job_without_automatic_execution": true,
+  "explicit_execute_active_before_delayed_queue_acknowledgment": true,
+  "job_checkpoint_persisted_before_every_submission": true,
+  "synthetic_adapter_calls": {
+    "execute": 3,
+    "prepare": 8
+  },
+  "finished_utc": "2026-09-17T03:14:47.928165+00:00",
+  "source_sha256": {
+    "src/herbfold/af3_workflow.py": "d3c61232e99c6eb7601352ae5c9b4b97d8f5b6c0e44e24a6e517eab5620591d5",
+    "src/herbfold/af3_workflow_api.py": "0fe3916bea88fec98aee925472f08bc96551b4fd6fbc2a12c381d4f07e74cbfe",
+    "src/herbfold/af3_execution.py": "77629639cf09db51329435616eccbcf5f17bb5c4f8eb0fba40f1a2dc5798e69c",
+    "scripts/verify_af3_workflow.py": "3b37032643f13d6516ca4e7367e9a73cee37986076d26ab3436afd947c7b059f"
+  }
+}

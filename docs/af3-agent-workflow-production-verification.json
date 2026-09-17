@@ -1,0 +1,66 @@
+{
+  "checked_at_utc": "2026-09-17T03:19:21.004225+00:00",
+  "passed": true,
+  "server_url": "http://127.0.0.1:9018",
+  "workflow_id": "b86a39c482db4ad1b1c1c0172c77a76e",
+  "source_job_id": "6f07b8942cb04005afe1388aae7ddbc9",
+  "compound_name": "Shanzhiside Methyl Ester",
+  "compound_id": "discovery_5868",
+  "target_accession": "P35354",
+  "workflow_status": "completed",
+  "stages": [
+    {
+      "id": "input",
+      "label": "입력 준비",
+      "agent": "분자·표적 입력 준비",
+      "status": "completed",
+      "summary": "분자·표적에 연결된 입력 작업이 저장되어 있습니다.",
+      "finished_at": "2026-09-17T01:50:30.898654+00:00"
+    },
+    {
+      "id": "preflight",
+      "label": "실행 환경 확인",
+      "agent": "AF3 실행 전 검사",
+      "status": "completed",
+      "summary": "저장된 실행 전 검사를 통과했습니다."
+    },
+    {
+      "id": "msa",
+      "label": "MSA·템플릿 검색",
+      "agent": "CPU 서열·템플릿 검색",
+      "status": "completed",
+      "summary": "검증된 저장 서열 특징 사용"
+    },
+    {
+      "id": "inference",
+      "label": "AF3 구조 추론",
+      "agent": "AF3 실행 큐",
+      "status": "completed",
+      "summary": "AF3 프로세스와 출력 읽기가 완료되었습니다.",
+      "started_at": "2026-09-17T01:50:35.759794+00:00",
+      "finished_at": "2026-09-17T01:52:22.752830+00:00"
+    },
+    {
+      "id": "validation",
+      "label": "출력 동일성 확인",
+      "agent": "분자·표적 출력 검사",
+      "status": "completed",
+      "summary": "identity_verified_quality_unassessed"
+    },
+    {
+      "id": "results",
+      "label": "결과 연결",
+      "agent": "저장 결과 연결",
+      "status": "completed",
+      "summary": "동일성이 확인된 저장 구조를 연결합니다. 구조 품질은 별도 평가 대상입니다.",
+      "finished_at": "2026-09-17T01:52:23.005093+00:00"
+    }
+  ],
+  "new_engine_submissions": 0,
+  "original_job_states_unchanged": true,
+  "original_job_count": 100,
+  "selected_artifact_sha256_matches": true,
+  "identity_verified": true,
+  "quality_pass": null,
+  "auth_required": true
+}

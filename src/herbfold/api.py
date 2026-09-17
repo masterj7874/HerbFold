@@ -140,9 +140,12 @@ def create_app(data_dir=None):
     async def lifespan(app):
         af3_queue.recover()
         app.state.discovery.recover()
+        app.state.af3_workflows.recover()
         yield
+        app.state.af3_workflows.close()
         af3_queue.close()
         app.state.discovery.close()
+        app.state.design_pipeline.close()
         pool.shutdown(wait=False)
 
     app = FastAPI(title="HerbFold Research API", version=__version__, lifespan=lifespan)
@@ -535,6 +538,9 @@ def create_app(data_dir=None):
         return store.update(job["id"], "completed", result)
 
     from .af3_studio import make_router as studio_router
+    from .af3_workflow_api import make_router as af3_workflow_router
+    from .combination_assay import make_router as combination_assay_router
+    from .design_pipeline_api import make_router as design_pipeline_router
     from .discovery_api import make_router as discovery_router
     from .molecular_api import make_router as molecular_router
     from .orchestration_api import make_router as orchestration_router
@@ -549,9 +555,16 @@ def create_app(data_dir=None):
     prediction_router = studio_router(store, af3_queue)
     app.state.studio_predictions = prediction_router.service
     app.include_router(prediction_router)
+    workflow_router = af3_workflow_router(store, prediction_router.service)
+    app.state.af3_workflows = workflow_router.service
+    app.include_router(workflow_router)
     analysis_router = orchestration_router(store, pool)
     app.state.orchestrator = analysis_router.orchestrator
     app.include_router(analysis_router)
+    design_router = design_pipeline_router(store, pool)
+    app.state.design_pipeline = design_router.engine
+    app.include_router(design_router)
+    app.include_router(combination_assay_router())
     app.include_router(validation_router(store))
     if WEB.is_dir():
         app.mount("/app", StaticFiles(directory=WEB), name="app")

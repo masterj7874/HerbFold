@@ -1,0 +1,201 @@
+{
+  "observed_at_utc": "2026-09-17T02:58:40.723129+00:00",
+  "read_only": true,
+  "new_engine_submissions": 0,
+  "active_jobs": [],
+  "active_analysis_ids": [],
+  "job_state_counts": [
+    {
+      "kind": "alphafold",
+      "status": "blocked",
+      "count": 15
+    },
+    {
+      "kind": "alphafold",
+      "status": "completed",
+      "count": 22
+    },
+    {
+      "kind": "alphafold",
+      "status": "failed",
+      "count": 4
+    },
+    {
+      "kind": "alphafold",
+      "status": "interrupted",
+      "count": 1
+    },
+    {
+      "kind": "alphafold",
+      "status": "prepared",
+      "count": 11
+    },
+    {
+      "kind": "alphafold_smoke",
+      "status": "quarantined",
+      "count": 1
+    },
+    {
+      "kind": "analysis",
+      "status": "completed",
+      "count": 15
+    },
+    {
+      "kind": "benchmark",
+      "status": "completed",
+      "count": 4
+    },
+    {
+      "kind": "bulk_import",
+      "status": "completed",
+      "count": 3
+    },
+    {
+      "kind": "candidate_prediction",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "kind": "discovery",
+      "status": "completed",
+      "count": 11
+    },
+    {
+      "kind": "kernel_experiment",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "kind": "model",
+      "status": "completed",
+      "count": 4
+    },
+    {
+      "kind": "quantum",
+      "status": "completed",
+      "count": 7
+    }
+  ],
+  "latest_studio_jobs": [
+    {
+      "id": "6f07b8942cb04005afe1388aae7ddbc9",
+      "status": "completed",
+      "created": "2026-09-17T01:50:30.898654+00:00",
+      "updated": "2026-09-17T01:52:23.005093+00:00",
+      "target_accession": "P35354",
+      "identity_verified": true,
+      "quality_pass": null,
+      "selected_artifact_exists": true,
+      "selected_artifact_sha256_matches": true,
+      "referenced_by_analyses": []
+    },
+    {
+      "id": "604c39bff14d410082f369b6238fff64",
+      "status": "completed",
+      "created": "2026-09-17T01:06:33.027874+00:00",
+      "updated": "2026-09-17T01:09:42.142702+00:00",
+      "target_accession": "P00533",
+      "identity_verified": true,
+      "quality_pass": null,
+      "selected_artifact_exists": true,
+      "selected_artifact_sha256_matches": true,
+      "referenced_by_analyses": []
+    },
+    {
+      "id": "3f379c50e95e423cb5658449d28b05ea",
+      "status": "completed",
+      "created": "2026-09-16T22:42:57.918273+00:00",
+      "updated": "2026-09-16T22:46:28.490590+00:00",
+      "target_accession": "P00533",
+      "identity_verified": true,
+      "quality_pass": null,
+      "selected_artifact_exists": true,
+      "selected_artifact_sha256_matches": true,
+      "referenced_by_analyses": []
+    }
+  ],
+  "latest_legacy_analysis": {
+    "id": "87c85b9906634e2da23929f5b4976b71",
+    "status": "completed",
+    "created": "2026-09-14T00:05:21.900785+00:00",
+    "updated": "2026-09-17T01:58:48.459132+00:00",
+    "af3_jobs": [
+      {
+        "job_id": "dada0d43e251403aaaf5864b84685592",
+        "status": "blocked",
+        "execution_requested": true,
+        "error": "Database component changed after installation validation: bfd-first_non_consensus_sequences.fasta"
+      }
+    ],
+    "stage_statuses": {
+      "coordinator": "completed",
+      "evidence": "completed",
+      "chemistry": "completed",
+      "candidate_design": "completed",
+      "structure": "completed",
+      "quantum": "completed",
+      "review": "completed",
+      "report": "completed"
+    }
+  },
+  "historical_failed_af3": [
+    {
+      "id": "06cdd043a857401d852a489aa3dbffdd",
+      "status": "failed",
+      "updated": "2026-09-16T02:44:27.432241+00:00",
+      "failure_code": "process_exit",
+      "return_code": 1,
+      "gpu_allocation_warning": true,
+      "explicit_memory_error": [
+        {
+          "line": 204,
+          "message": "jax.errors.JaxRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 6.16GiB. [tf-allocator-allocation-error=''] [executable_name='jit_apply_fn']"
+        }
+      ]
+    },
+    {
+      "id": "7ed7825317c24a1fb82cabf00343d963",
+      "status": "failed",
+      "updated": "2026-09-15T23:27:48.768921+00:00",
+      "failure_code": "process_exit",
+      "return_code": 1,
+      "gpu_allocation_warning": true,
+      "explicit_memory_error": [
+        {
+          "line": 202,
+          "message": "jax.errors.JaxRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 6.16GiB. [executable_name='jit_apply_fn'] [tf-allocator-allocation-error='']"
+        }
+      ]
+    },
+    {
+      "id": "217a558c9f4e4870bcf6d6e2059d79bc",
+      "status": "failed",
+      "updated": "2026-09-15T23:12:48.132741+00:00",
+      "failure_code": "process_exit",
+      "return_code": 1,
+      "gpu_allocation_warning": true,
+      "explicit_memory_error": [
+        {
+          "line": 202,
+          "message": "jax.errors.JaxRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 6.16GiB. [tf-allocator-allocation-error=''] [executable_name='jit_apply_fn']"
+        }
+      ]
+    },
+    {
+      "id": "fa148d1dc925499bbfbd2cb1940e7412",
+      "status": "failed",
+      "updated": "2026-09-15T23:09:50.455842+00:00",
+      "failure_code": "process_exit",
+      "return_code": 1,
+      "gpu_allocation_warning": true,
+      "explicit_memory_error": []
+    }
+  ],
+  "server_log_summary": {
+    "file": "runtime/logs/serve.log",
+    "line_count": 1887,
+    "unauthorized_line_count": 63,
+    "unattributed_auth_failures_note": "Access log lines lack timestamps. Earlier automated browser auth tests may explain these responses; not established as the reported user interruption."
+  },
+  "conclusion": "Latest stored AF3 outputs exist and match their recorded hashes, but are absent from legacy analyses. Historical GPU allocation failures are separate. The exact user-visible interruption cause cannot be established from stored records alone."
+}

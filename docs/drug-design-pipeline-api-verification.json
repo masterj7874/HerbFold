@@ -1,0 +1,70 @@
+{
+  "started_utc": "2026-09-17T01:42:07.257831+00:00",
+  "status": "passed",
+  "mode": "isolated_loopback_api",
+  "python": "3.12.3",
+  "production_runtime_modified": false,
+  "external_engine_submissions": 0,
+  "options_sha256": "c86061e306073c9c8b705634b7239d4093e4fa5c73bab0aa70d9e1dca7090c7f",
+  "synthetic_evidence_scope": "Only temporary parent-structure join controls; no biological accuracy inference",
+  "input_sha256": "b3f888fd514aa49625b0a5065a207c2aa12908dc1cb203063bae7fd39ae0eb46",
+  "inactive_and_zero_parent_values_preserved": true,
+  "modes": {
+    "combination": {
+      "status": "completed",
+      "candidate_count": 1,
+      "candidate_signature_sha256": "6e55fce6ced5f65cbf2ba095cd338f25d1cdba7783075c630f73386882dfae68",
+      "repeat_matches": true,
+      "descriptor_recalculation_matches": true,
+      "descriptor_scope": "individual_components"
+    },
+    "hybrid": {
+      "status": "completed",
+      "candidate_count": 6,
+      "candidate_signature_sha256": "6743f4762d544f4cb09d17dec17b65102bed59d23baeeeafb87b6533672efa0d",
+      "repeat_matches": true,
+      "descriptor_recalculation_matches": true,
+      "descriptor_scope": "generated_structures"
+    },
+    "transform": {
+      "status": "completed",
+      "candidate_count": 6,
+      "candidate_signature_sha256": "ee6df76314f78fd8fca361d81096c6840b482a90ac97bd17d467adbd2b79df1f",
+      "repeat_matches": true,
+      "descriptor_recalculation_matches": true,
+      "descriptor_scope": "generated_structures"
+    }
+  },
+  "history_contains_all_modes": true,
+  "wrong_target_does_not_link_ptgs2_observation": true,
+  "pathway_label_remains_separate_from_selected_target": true,
+  "stereoisomers": {
+    "candidate_count": 2,
+    "distinct_graphs": true,
+    "specified_stereo": true,
+    "same_2d_descriptors": true
+  },
+  "combination_assay_arithmetic": {
+    "synthetic_only": true,
+    "bliss_and_hsa_match": true,
+    "valid_zeros_retained": true,
+    "unmatched_conditions_rejected": true,
+    "coerced_confirmation_rejected": true
+  },
+  "invalid_structure_rejected_before_job_creation": true,
+  "cancel": {
+    "immediate_status": "cancelled",
+    "terminal_status": "cancelled",
+    "completed_before_cancel": false
+  },
+  "completed_cancel_preserves_result": true,
+  "second_service_rejected_without_recovering_first": true,
+  "server_restart_preserves_completed_results": true,
+  "finished_utc": "2026-09-17T01:42:12.464373+00:00",
+  "source_sha256_at_final_review": {
+    "src/herbfold/design_pipeline.py": "d4df18079105885dc3d5f5ace0ef5f07193c48c0e01d4b12dcf08575a8d8b895",
+    "src/herbfold/design_pipeline_api.py": "d868e42072cd3bc593fe83e879ba315b55d9c8409691a99249f8f0bceb42ccb9",
+    "src/herbfold/combination_assay.py": "eef47d742c48ada724329868779bd0af02c9b92a4dc8fc08d103b2d5398af95b",
+    "scripts/verify_design_pipeline.py": "f2028e82a7ff7b0d38935e5501551d1bf144a6c77b5ce94ec86aa48162a3bbeb"
+  }
+}

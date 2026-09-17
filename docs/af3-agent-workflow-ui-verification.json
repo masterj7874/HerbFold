@@ -1,0 +1,69 @@
+{
+  "scope": "Synthetic lifecycle browser test plus final production UI and real stored result",
+  "synthetic_lifecycle": {
+    "timestamp": "2026-09-17T03:15:44.850846+00:00",
+    "synthetic_control_flow_only": true,
+    "scientific_results": false,
+    "javascript_errors": [],
+    "blocked_mutations": [],
+    "screenshots": {
+      "af3-workflow-launcher": "tmp/af3_workflow_20260917/ui-final/af3-workflow-launcher.png",
+      "af3-workflow-running": "tmp/af3_workflow_20260917/ui-final/af3-workflow-running.png",
+      "af3-workflow-validating": "tmp/af3_workflow_20260917/ui-final/af3-workflow-validating.png",
+      "af3-workflow-completed": "tmp/af3_workflow_20260917/ui-final/af3-workflow-completed.png",
+      "af3-workflow-result-studio": "tmp/af3_workflow_20260917/ui-final/af3-workflow-result-studio.png",
+      "af3-workflow-mobile": "tmp/af3_workflow_20260917/ui-final/af3-workflow-mobile.png"
+    },
+    "passed": true,
+    "workflow_id": "0c17066b8d1046439b693aaf00c636b2",
+    "job_id": "b27fbe0a0e7e4a6f9ef0414d6adba91a",
+    "reload_without_submission": true,
+    "process_completed_validation_still_active": true,
+    "offline_reconnect_without_submission": true,
+    "studio_selection": {
+      "compound": {
+        "id": "quercetin",
+        "name": "퀘르세틴",
+        "category": "herbal",
+        "smiles": "O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12",
+        "generated": false
+      },
+      "target": "P35354",
+      "mode": "alphafold3_prediction",
+      "predictionJobId": "b27fbe0a0e7e4a6f9ef0414d6adba91a"
+    },
+    "exact_result_handoff": true,
+    "existing_job_attach_reuses_workflow": true,
+    "legacy_analysis_menu_preserved": true,
+    "mobile_width": 390
+  },
+  "production_ui": {
+    "checked_at_utc": "2026-09-17T03:21:43.918047+00:00",
+    "javascript_errors": [],
+    "unexpected_mutations": [],
+    "passed": true,
+    "auth_recovery_without_remount": true,
+    "latest_saved_workflow_auto_selected": true,
+    "exact_real_result_handoff": true,
+    "drug_design_menu_preserved": true,
+    "mobile_390px_no_overflow": true
+  },
+  "python_tests": 839,
+  "frontend_tests": 64,
+  "build": "passed",
+  "ruff": "passed",
+  "source_sha256": {
+    "frontend/src/App.tsx": "f7069b0e7451abfe6edd826c901d7d9f33120130a1f75d52c878b6e4fc8e9fcd",
+    "frontend/src/components/AF3WorkflowLauncher.tsx": "5ed76d56cbb1e98f92041c8feac0b1f277a18988e678edd92bae048babef63f2",
+    "frontend/src/components/AF3WorkflowWorkspace.tsx": "06bb2aaaafda89c649d2b0a4a662e2ba0eef1ad69f65df0a23f15ae5383d5836",
+    "frontend/src/components/af3-workflow.css": "1be858b89f8dd47d35a6caba6f53fd8d2ae4b8b1c1e817020c191595f50de56f",
+    "frontend/src/components/af3-workflow-launcher.css": "2c685c616df41b79f3194625c025bf9017955a9cc08a07e871ad6adf0131d401",
+    "frontend/src/lib/af3WorkflowSubmission.ts": "38d7f7bdc8a1c296ad16d6f746c159a98dcd6f707db6c36bcaf627965e571700",
+    "frontend/src/lib/af3WorkflowSelection.ts": "b09dfc95e6809182a4d755711979f6f739bbd4dd073c49337da4918562a57d95",
+    "frontend/src/lib/api.ts": "8c26755fbd6b41796c8a8ecedfa1d08beb510a8aa0b36eca5f8ec3d14c012b77",
+    "src/herbfold/api.py": "88e20bbabdbd17f00363ad3ce97e5d8e1027138a525750ba18cec721d0a2af2e",
+    "src/herbfold/af3_workflow.py": "d3c61232e99c6eb7601352ae5c9b4b97d8f5b6c0e44e24a6e517eab5620591d5",
+    "src/herbfold/af3_workflow_api.py": "0fe3916bea88fec98aee925472f08bc96551b4fd6fbc2a12c381d4f07e74cbfe",
+    "src/herbfold/web/index.html": "4ed5ea5944d65a9dcc721211adc2b34dbb404023056eab989f484971b0680be9"
+  }
+}

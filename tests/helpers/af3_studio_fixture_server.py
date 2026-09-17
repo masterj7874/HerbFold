@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import runpy
 import sys
+import time
 from pathlib import Path
 
 import uvicorn
@@ -22,6 +23,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", required=True)
     parser.add_argument("--port", type=int, default=8875)
+    parser.add_argument("--workflow-delay-controls", action="store_true")
     args = parser.parse_args()
     directory = Path(args.data_dir).resolve()
     if not directory.is_relative_to(root / "tmp") or directory.exists():
@@ -59,6 +61,21 @@ def main():
         "source": "synthetic_test_fixture",
     } if accession == "P35354" else None
     app = create_app(directory / "journal")
+    if args.workflow_delay_controls:
+        original_execute = app.state.studio_predictions.execute
+        original_validate = app.state.af3_queue.after_complete
+
+        def delayed_execute(job_id):
+            time.sleep(1)
+            return original_execute(job_id)
+
+        def delayed_validation(job_id):
+            time.sleep(8)
+            return original_validate(job_id)
+
+        app.state.studio_predictions.execute = delayed_execute
+        app.state.af3_queue.after_complete = delayed_validation
+
 
     @app.middleware("http")
     async def fixture_banner(request, call_next):

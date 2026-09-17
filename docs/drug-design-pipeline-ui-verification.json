@@ -1,0 +1,90 @@
+{
+  "started_utc": "2026-09-17T01:43:18.954645+00:00",
+  "javascript_errors": [],
+  "screenshots": {
+    "design-pipeline-desktop": "docs/images/design-pipeline-desktop.png",
+    "design-pipeline-webgl": "docs/images/design-pipeline-webgl.png",
+    "design-pipeline-combination": "docs/images/design-pipeline-combination.png",
+    "design-pipeline-transform": "tmp/design_pipeline_20260917/ui/design-pipeline-transform.png",
+    "design-pipeline-mobile": "docs/images/design-pipeline-mobile.png",
+    "design-pipeline-mobile-result": "tmp/design_pipeline_20260917/ui/design-pipeline-mobile-result.png"
+  },
+  "blocked_mutations": [],
+  "status": "passed",
+  "url": "http://127.0.0.1:9020",
+  "hybrid_run": "c730f8de59ba408580177a0b8449b3bd",
+  "webgl_canvas": {
+    "width": 965,
+    "height": 448,
+    "rotation_and_zoom_exercised": true
+  },
+  "actual_hybrid_count": 4,
+  "synthetic_assay_arithmetic": "Bliss +6 pp; HSA +20 pp; valid zero retained",
+  "history_restores_results_after_reload": true,
+  "mobile_width": 390,
+  "af3_studio_handoff": true,
+  "finished_utc": "2026-09-17T01:43:28.603049+00:00",
+  "production_connection": {
+    "status": "passed",
+    "authentication_refresh_recovers_options": true,
+    "herb_search": "황금",
+    "total_matches": 342,
+    "displayed_rows": 16,
+    "paid_jobs_submitted": 0
+  },
+  "production_runs": {
+    "base_url": "http://127.0.0.1:9018",
+    "stage_count": 5,
+    "runs": {
+      "combination": {
+        "id": "994919abd9724d3ab7520c0166f1e73e",
+        "status": "completed",
+        "candidate_count": 1,
+        "external_calls": 0
+      },
+      "hybrid": {
+        "id": "fbd0e017eac94ed793662beae5fa8494",
+        "status": "completed",
+        "candidate_count": 4,
+        "external_calls": 0
+      },
+      "transform": {
+        "id": "79a7fbfa6a2e479b914b9ca330708ca8",
+        "status": "completed",
+        "candidate_count": 4,
+        "external_calls": 0
+      }
+    },
+    "herb_name_count": 569,
+    "huangqin_search": {
+      "total": 342,
+      "returned": 2
+    },
+    "status": "passed"
+  },
+  "automated_checks": {
+    "python_pytest": {
+      "passed": 813,
+      "warnings": 2
+    },
+    "frontend_node_tests": {
+      "passed": 57
+    },
+    "typescript_vite_build": "passed",
+    "ruff": "passed"
+  },
+  "source_sha256": {
+    "frontend/src/App.tsx": "89b1aa3632934398d5dd40d926cc7bcb17d14cd27e589471fdb4007ebf99e221",
+    "frontend/src/lib/workspaceNavigation.ts": "b7f36d89140cdbe9f6fc10cab5d607375d0130e7b14739abbd0e8f0875c6d4af",
+    "frontend/src/components/DrugDesignPipeline.tsx": "3b181e5b49e9b2bb368959400375baf2e69648b0b7bef7a145fc43e82c62b952",
+    "frontend/src/components/drug-design-pipeline.css": "599571f7b4239dd7d2073245f02326b5331e728aab91ffc63e1cbf2bf8ae8ac8",
+    "frontend/src/components/CombinationAssayPanel.tsx": "c1444308bca40c35c994571672319f2d55533a9623fe5b006017249f2e2278c5",
+    "frontend/src/components/combination-assay-panel.css": "dfa595eca05ea328cfdac4490b7800d56f7c9bdac2dff7ef07558ea2b1ab1465",
+    "frontend/src/types/designPipeline.ts": "db94836844c12a4623ade671fd56ab94b759e113c1b2bf008caa2bd48826954d",
+    "src/herbfold/api.py": "87b83aaf3628f849e4b0a9a75b9d882fbddaee3bdfe00b4b3d1dfc7750ca68a9",
+    "src/herbfold/design_pipeline.py": "d4df18079105885dc3d5f5ace0ef5f07193c48c0e01d4b12dcf08575a8d8b895",
+    "src/herbfold/design_pipeline_api.py": "d868e42072cd3bc593fe83e879ba315b55d9c8409691a99249f8f0bceb42ccb9",
+    "src/herbfold/combination_assay.py": "eef47d742c48ada724329868779bd0af02c9b92a4dc8fc08d103b2d5398af95b",
+    "scripts/verify_design_pipeline_ui.py": "3624b30a57792c1d195b22581e403e45a6bf1e015a0c92acbef16e11dd33577a"
+  }
+}
